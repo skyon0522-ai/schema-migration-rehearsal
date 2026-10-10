@@ -1,0 +1,54 @@
+{
+  "instrumentation": "External pytest hook; upstream source is unchanged",
+  "events": [
+    {
+      "kind": "autocommit_frame",
+      "action": "call",
+      "source": "<historical-candidate>/original/alembic/alembic/runtime/migration.py",
+      "line": 273
+    },
+    {
+      "kind": "autocommit_frame",
+      "action": "return",
+      "source": "<historical-candidate>/original/alembic/alembic/runtime/migration.py",
+      "line": 344
+    },
+    {
+      "kind": "sql",
+      "statement": "ALTER TYPE mood ADD VALUE 'soso'",
+      "dbapi_autocommit": true,
+      "transaction_status": 0
+    },
+    {
+      "kind": "autocommit_frame",
+      "action": "call",
+      "source": "<historical-candidate>/original/alembic/alembic/runtime/migration.py",
+      "line": 344
+    },
+    {
+      "kind": "autocommit_frame",
+      "action": "return",
+      "source": "<historical-candidate>/original/alembic/alembic/runtime/migration.py",
+      "line": 360
+    }
+  ],
+  "nodeid": "tests/test_postgresql.py::PGAutocommitBlockTest_postgresql+psycopg2_18_6::test_alter_enum",
+  "alembic_file": "<historical-candidate>/original/alembic/alembic/__init__.py",
+  "migration_context_source": "<historical-candidate>/original/alembic/alembic/runtime/migration.py",
+  "autocommit_source": "<system-lib>/python3.12/contextlib.py",
+  "autocommit_code_source": "<historical-candidate>/original/alembic/alembic/runtime/migration.py",
+  "labels_before_call": [
+    "sad",
+    "ok",
+    "happy"
+  ],
+  "labels_after_call_before_teardown": [
+    "sad",
+    "ok",
+    "happy",
+    "soso"
+  ],
+  "independent_readback_assertions": "passed",
+  "labels_after_upstream_teardown": [],
+  "upstream_teardown_verified": true
+}

@@ -1,0 +1,105 @@
+{
+  "native_root": "<private-home>/.cache/oss-quality-sql-migration-component-20261009T151827793829Z",
+  "python": "<private-home>/.cache/oss-quality-sql-migration-component-20261009T151827793829Z/venv/bin/python",
+  "python_base": "<system-bin>/python3.12",
+  "python_version": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "postgres_bin": "<private-home>/.local/opt/oss-quality-postgres-18.6/bin",
+  "postgres_versions": {
+    "pg_ctl": "pg_ctl (PostgreSQL) 18.6",
+    "psql": "psql (PostgreSQL) 18.6",
+    "initdb": "initdb (PostgreSQL) 18.6",
+    "createdb": "createdb (PostgreSQL) 18.6"
+  },
+  "postgres_binary_sha256": {
+    "pg_ctl": "e894d1d2c174f1b3153d52e478a2c3100551c340f0ee03ed656a5ff987c43d7c",
+    "psql": "ddc12e7e96e1ec306fb62d326fc158ca2fdf4ccb17571ca979fe29a6ebc6f3bd",
+    "initdb": "c78e7298e1b501be622827e18268a5bfc75b2439d6f6787396fc9e642ce68a73",
+    "createdb": "6bee027daa20b9274ff96746654f68ab79f6e766826f7e273f27da77edc2371c"
+  },
+  "commands": [
+    [
+      "<private-home>/.local/opt/oss-quality-postgres-18.6/bin/pg_ctl",
+      "--version"
+    ],
+    [
+      "<private-home>/.local/opt/oss-quality-postgres-18.6/bin/psql",
+      "--version"
+    ],
+    [
+      "<private-home>/.local/opt/oss-quality-postgres-18.6/bin/initdb",
+      "--version"
+    ],
+    [
+      "<private-home>/.local/opt/oss-quality-postgres-18.6/bin/createdb",
+      "--version"
+    ],
+    [
+      "<system-bin>/python3",
+      "-m",
+      "venv",
+      "<private-home>/.cache/oss-quality-sql-migration-component-20261009T151827793829Z/venv"
+    ],
+    [
+      "<private-home>/.cache/oss-quality-sql-migration-component-20261009T151827793829Z/venv/bin/python",
+      "-m",
+      "pip",
+      "install",
+      "--disable-pip-version-check",
+      "--report",
+      "<historical-candidate>/evidence/dependency-install-report.json",
+      "-r",
+      "<historical-candidate>/requirements-baseline.in"
+    ],
+    [
+      "<private-home>/.cache/oss-quality-sql-migration-component-20261009T151827793829Z/venv/bin/python",
+      "-m",
+      "pip",
+      "freeze"
+    ],
+    [
+      "<private-home>/.cache/oss-quality-sql-migration-component-20261009T151827793829Z/venv/bin/python",
+      "-m",
+      "pip",
+      "check"
+    ]
+  ],
+  "resolved_lock": "black==26.5.1\nclick==8.5.0\nexecnet==2.1.2\nflake8_import_order==0.19.2\niniconfig==2.3.1\njunitparser==5.0.3\nMako==1.4.3\nMarkupSafe==3.0.4\nmypy_extensions==1.1.0\npackaging==26.3\npathspec==1.1.1\nplatformdirs==4.12.4\npluggy==1.6.0\npsycopg2==2.9.13\npycodestyle==2.15.0\npyflakes==4.0.3\nPygments==2.21.0\npytest==9.0.3\npytest-xdist==3.8.0\npytokens==0.4.1\nsetuptools==84.0.0\nSQLAlchemy==2.1.4\ntomli==2.5.0\ntyping_extensions==4.16.0\ntzdata==2026.5\nzimports==0.7.0\n",
+  "shared_cache": "<private-home>/.cache/pip",
+  "cache_usage": [
+    "Using cached typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)",
+    "Using cached pytest_xdist-3.8.0-py3-none-any.whl.metadata (3.0 kB)",
+    "Using cached tzdata-2026.5-py2.py3-none-any.whl.metadata (1.4 kB)",
+    "Using cached markupsafe-3.0.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.7 kB)",
+    "Using cached iniconfig-2.3.1-py3-none-any.whl.metadata (2.8 kB)",
+    "Using cached packaging-26.3-py3-none-any.whl.metadata (3.5 kB)",
+    "Using cached pluggy-1.6.0-py3-none-any.whl.metadata (4.8 kB)",
+    "Using cached pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)",
+    "Using cached execnet-2.1.2-py3-none-any.whl.metadata (2.9 kB)",
+    "Using cached click-8.5.0-py3-none-any.whl.metadata (2.6 kB)",
+    "Using cached mypy_extensions-1.1.0-py3-none-any.whl.metadata (1.1 kB)",
+    "Using cached pathspec-1.1.1-py3-none-any.whl.metadata (14 kB)",
+    "Using cached platformdirs-4.12.4-py3-none-any.whl.metadata (5.5 kB)",
+    "Using cached pytokens-0.4.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (3.8 kB)",
+    "Using cached pyflakes-4.0.3-py2.py3-none-any.whl.metadata (3.7 kB)",
+    "Using cached pycodestyle-2.15.0-py2.py3-none-any.whl.metadata (4.5 kB)",
+    "Using cached setuptools-84.0.0-py3-none-any.whl.metadata (6.6 kB)",
+    "Using cached typing_extensions-4.16.0-py3-none-any.whl (45 kB)",
+    "Using cached pytest_xdist-3.8.0-py3-none-any.whl (46 kB)",
+    "Using cached tzdata-2026.5-py2.py3-none-any.whl (347 kB)",
+    "Using cached click-8.5.0-py3-none-any.whl (125 kB)",
+    "Using cached execnet-2.1.2-py3-none-any.whl (40 kB)",
+    "Using cached iniconfig-2.3.1-py3-none-any.whl (7.6 kB)",
+    "Using cached markupsafe-3.0.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (22 kB)",
+    "Using cached mypy_extensions-1.1.0-py3-none-any.whl (5.0 kB)",
+    "Using cached packaging-26.3-py3-none-any.whl (129 kB)",
+    "Using cached pathspec-1.1.1-py3-none-any.whl (57 kB)",
+    "Using cached platformdirs-4.12.4-py3-none-any.whl (32 kB)",
+    "Using cached pluggy-1.6.0-py3-none-any.whl (20 kB)",
+    "Using cached pygments-2.21.0-py3-none-any.whl (1.3 MB)",
+    "Using cached pytokens-0.4.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (269 kB)",
+    "Using cached pyflakes-4.0.3-py2.py3-none-any.whl (66 kB)",
+    "Using cached pycodestyle-2.15.0-py2.py3-none-any.whl (31 kB)",
+    "Using cached setuptools-84.0.0-py3-none-any.whl (818 kB)"
+  ],
+  "scope": "Only this new venv was installed; no Alembic wheel or editable install."
+}

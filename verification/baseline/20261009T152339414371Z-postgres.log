@@ -1,0 +1,53 @@
+2026-10-10 00:23:45.820 JST [32657] LOG:  starting PostgreSQL 18.6 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0, 64-bit
+2026-10-10 00:23:45.820 JST [32657] LOG:  listening on IPv4 address "127.0.0.1", port 57799
+2026-10-10 00:23:45.826 JST [32663] LOG:  database system was shut down at 2026-10-10 00:23:45 JST
+2026-10-10 00:23:45.829 JST [32657] LOG:  database system is ready to accept connections
+2026-10-10 00:23:45.920 JST [32668] LOG:  statement: SELECT pg_catalog.set_config('search_path', '', false);
+2026-10-10 00:23:45.921 JST [32668] LOG:  statement: CREATE DATABASE sql_baseline_original TEMPLATE template0;
+2026-10-10 00:23:46.681 JST [32671] LOG:  statement: BEGIN
+2026-10-10 00:23:46.681 JST [32671] LOG:  statement: SELECT t.oid, typarray
+	FROM pg_type t JOIN pg_namespace ns
+	    ON typnamespace = ns.oid
+	WHERE typname = 'hstore';
+	
+2026-10-10 00:23:46.682 JST [32671] LOG:  statement: ROLLBACK
+2026-10-10 00:23:46.683 JST [32671] LOG:  statement: BEGIN
+2026-10-10 00:23:46.683 JST [32671] LOG:  statement: select pg_catalog.version()
+2026-10-10 00:23:46.683 JST [32671] LOG:  statement: select current_schema()
+2026-10-10 00:23:46.683 JST [32671] LOG:  statement: show transaction isolation level
+2026-10-10 00:23:46.683 JST [32671] LOG:  statement: show standard_conforming_strings
+2026-10-10 00:23:46.684 JST [32671] LOG:  statement: ROLLBACK
+2026-10-10 00:23:46.684 JST [32671] LOG:  statement: BEGIN
+2026-10-10 00:23:46.684 JST [32671] LOG:  statement: CREATE EXTENSION IF NOT EXISTS citext
+2026-10-10 00:23:46.685 JST [32671] ERROR:  extension "citext" is not available
+2026-10-10 00:23:46.685 JST [32671] HINT:  The extension must first be installed on the system where PostgreSQL is running.
+2026-10-10 00:23:46.685 JST [32671] STATEMENT:  CREATE EXTENSION IF NOT EXISTS citext
+2026-10-10 00:23:46.685 JST [32671] LOG:  statement: ROLLBACK
+2026-10-10 00:23:47.035 JST [32673] LOG:  statement: SELECT pg_catalog.set_config('search_path', '', false);
+2026-10-10 00:23:47.036 JST [32673] LOG:  statement: CREATE DATABASE sql_baseline_duplicate TEMPLATE template0;
+2026-10-10 00:23:47.776 JST [32675] LOG:  statement: BEGIN
+2026-10-10 00:23:47.776 JST [32675] LOG:  statement: SELECT t.oid, typarray
+	FROM pg_type t JOIN pg_namespace ns
+	    ON typnamespace = ns.oid
+	WHERE typname = 'hstore';
+	
+2026-10-10 00:23:47.778 JST [32675] LOG:  statement: ROLLBACK
+2026-10-10 00:23:47.778 JST [32675] LOG:  statement: BEGIN
+2026-10-10 00:23:47.778 JST [32675] LOG:  statement: select pg_catalog.version()
+2026-10-10 00:23:47.779 JST [32675] LOG:  statement: select current_schema()
+2026-10-10 00:23:47.779 JST [32675] LOG:  statement: show transaction isolation level
+2026-10-10 00:23:47.780 JST [32675] LOG:  statement: show standard_conforming_strings
+2026-10-10 00:23:47.780 JST [32675] LOG:  statement: ROLLBACK
+2026-10-10 00:23:47.780 JST [32675] LOG:  statement: BEGIN
+2026-10-10 00:23:47.781 JST [32675] LOG:  statement: CREATE EXTENSION IF NOT EXISTS citext
+2026-10-10 00:23:47.781 JST [32675] ERROR:  extension "citext" is not available
+2026-10-10 00:23:47.781 JST [32675] HINT:  The extension must first be installed on the system where PostgreSQL is running.
+2026-10-10 00:23:47.781 JST [32675] STATEMENT:  CREATE EXTENSION IF NOT EXISTS citext
+2026-10-10 00:23:47.781 JST [32675] LOG:  statement: ROLLBACK
+2026-10-10 00:23:48.150 JST [32657] LOG:  received fast shutdown request
+2026-10-10 00:23:48.153 JST [32657] LOG:  aborting any active transactions
+2026-10-10 00:23:48.154 JST [32657] LOG:  background worker "logical replication launcher" (PID 32666) exited with exit code 1
+2026-10-10 00:23:48.154 JST [32661] LOG:  shutting down
+2026-10-10 00:23:48.157 JST [32661] LOG:  checkpoint starting: shutdown immediate
+2026-10-10 00:23:48.318 JST [32661] LOG:  checkpoint complete: wrote 1819 buffers (11.1%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.062 s, sync=0.091 s, total=0.165 s; sync files=601, longest=0.004 s, average=0.001 s; distance=8211 kB, estimate=8211 kB; lsn=0/1EF4400, redo lsn=0/1EF4400
+2026-10-10 00:23:48.336 JST [32657] LOG:  database system is shut down

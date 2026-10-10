@@ -1,0 +1,106 @@
+{
+  "scope": "Task-local contrib dependencies only; existing installation is unchanged",
+  "postgres_source": "<private-home>/.cache/oss-quality-postgres-18.6/source/postgresql-18.6",
+  "control_directory": "<private-home>/.cache/oss-quality-sql-migration-component-20261009T151827793829Z/extensions/share/extension",
+  "library_directory": "<private-home>/.cache/oss-quality-sql-migration-component-20261009T151827793829Z/extensions/lib",
+  "modules": [
+    {
+      "name": "citext",
+      "source_sha256": {
+        ".gitignore": "7e219f7d4657bf7345a2be9cbf87ecabea1d1ba3a73af40c20eeccf409787b0c",
+        "Makefile": "4f5c8355651e046bf43c5f6a752fbfe8fd21f606a385e02d11ec8f66d0ab0a7f",
+        "citext--1.0--1.1.sql": "8e522f09d70ccaa6794ba3aa9e0eb19e4c4235b6772605506e619f5b77ba23c4",
+        "citext--1.1--1.2.sql": "9f9fe637eab0a2af2a3b6c1595d73fe8a24c8f23668c9ac43190f050055400cf",
+        "citext--1.2--1.3.sql": "7d28362af43aa2cbfe46785afeafea351dc47c75257876aa07e466f7e1c4901f",
+        "citext--1.3--1.4.sql": "7289ff58c1cb20ca73b4c5a0e1c55808661b07d196f28a0b9a1c1dd7679a736e",
+        "citext--1.4--1.5.sql": "8104223ef4f55afc26bddbca5a6f5500a87c026a9692c6bf1f06e2594fe69c21",
+        "citext--1.4.sql": "ca0e42530cef4281e9ee788739c6774cf4d5e1ce8eeb1a84964150a9659d3e0b",
+        "citext--1.5--1.6.sql": "31917f922dcc33b58c34cd9f221d4822eadfd5a190f2d3f0a447e03f46de394e",
+        "citext--1.6--1.7.sql": "2d658cf2defb2a9e510939e84cbe65f5af8eba61c9b0aa76512c65d6f98342e6",
+        "citext--1.7--1.8.sql": "f498dbcfd839b21536d1e474430bd0161b84ee116cb2bdfe88c51d83380c66a2",
+        "citext.c": "f9e0372eb25261bced9108457f02e5e1b4d63b144cb591f2be64aae2e27449e2",
+        "citext.control": "da2a338a0a3eae999cbff9d70df9f8763fc53f77fcec9dced7b9c63d9ea1f541",
+        "expected/citext.out": "4e0f862ab70de6c8007b08c6f9e413662decb4e2371ddbc51ec5051f19b15612",
+        "expected/citext_1.out": "31020a5443288019d7aefddd02d5cd57acea95f8cbbb72459813c1f188ad8645",
+        "expected/citext_utf8.out": "9b16c5a837c7d6e5ea16c3a7ad91bc33f28b719a11dec95a0a9d560937f3dbaa",
+        "expected/citext_utf8_1.out": "352c25e5354e76d45fb74f6d7876717bfa539caee2914fdf7255443a049cc91a",
+        "expected/create_index_acl.out": "5ca18441a61cf8ab0604fd6141dbbcfe52122f20a66fcaaf2a7ef13578cec739",
+        "meson.build": "cf5602f668417b141c9cd4a9b3f8a21b3f35250e745bbe49175ab24c0a9d5d41",
+        "sql/citext.sql": "de33c113bd6cb787ad215a04adf8bc9301bc5071a7546c37319d18998355c598",
+        "sql/citext_utf8.sql": "783c4d3452efa378611b7633d65a2f4dba5d107687b604d8c7d11b3d70e21576",
+        "sql/create_index_acl.sql": "1d607b6871dffbf5cc290a3245f16d0b86bf4b28cbf721e4f1ef0916ef82ed99"
+      },
+      "original_unchanged": true,
+      "duplicate_source_unchanged": true,
+      "binary": "<private-home>/.cache/oss-quality-sql-migration-component-20261009T151827793829Z/extensions/lib/citext.so",
+      "binary_sha256": "aa1f858a42df855473d3e65c038838cce7e0e842b3a6985d6b2d11436a57007d",
+      "control_adaptation": {
+        "from": "module_pathname = '$libdir/citext'",
+        "to": "module_pathname = '<private-home>/.cache/oss-quality-sql-migration-component-20261009T151827793829Z/extensions/lib/citext'",
+        "source_sha256": "da2a338a0a3eae999cbff9d70df9f8763fc53f77fcec9dced7b9c63d9ea1f541",
+        "adapted_sha256": "5ce78fa0fa29142545059a2129995110601bacadb2c3f5892c366086d523b1e3"
+      }
+    },
+    {
+      "name": "hstore",
+      "source_sha256": {
+        ".gitignore": "7e219f7d4657bf7345a2be9cbf87ecabea1d1ba3a73af40c20eeccf409787b0c",
+        "Makefile": "fcddf98982acbabba12aebf01eb0d3f3cfe68d58c8570b5d2dd70694e96664cb",
+        "data/hstore.data": "8f7799e715d5df1d71a4a9429df38f89485c86531f2b688b3051532c56358933",
+        "expected/hstore.out": "e96f38ebcb6030b2a8b7838ebd3c5d90de93159a69d3f6e8989c9b06eb409ddd",
+        "expected/hstore_utf8.out": "bec344b86256e143aaea8a8ae6ba18984b78cffc3b56836302dcc2e54ace271c",
+        "expected/hstore_utf8_1.out": "73de281cf77a7924db6993201748e724489c23f030ef3161b0e7a8ca139ac5e3",
+        "hstore--1.1--1.2.sql": "8e166794ad480bd9141f5627b838d9c9076a76f63237c9058b836c36f0600df7",
+        "hstore--1.2--1.3.sql": "0753c346e86147cb7767f603310b774cff6affb11e65c2d5caf173cf0766ad2c",
+        "hstore--1.3--1.4.sql": "7e8df8d33964ce7ab39d32be90e94b64f9776588fe43b53e70077a3e58ec95f9",
+        "hstore--1.4--1.5.sql": "045d0def508a248fd0049f1bf99bbbec9bccff523f31514ffa3f7daf46b11de6",
+        "hstore--1.4.sql": "bcd0328004e985554dc3831cb0db92da3f45bec48b6501fce962187b7a2c2bbf",
+        "hstore--1.5--1.6.sql": "957ae4e39efc2841766c59e2ece1bc431d87a8cfe39e8433b70ba08cf3e3b8d5",
+        "hstore--1.6--1.7.sql": "0d410440dc457b525626b0fd6f5a0262dd233ec6f299e5c3ca7b090d2f9576db",
+        "hstore--1.7--1.8.sql": "49bbb159d5f67e86ddcb93d11a9d444f6dd70bcb03a8400ce8c3664fbb974dba",
+        "hstore.control": "1df9f2b3059cd77e38920dd35235161b3ad336fc71198c66120d120262ad086d",
+        "hstore.h": "2fcd702873085a6cc3592d4d634efc529983974cb69cd5f5e8a078885db15fab",
+        "hstore_compat.c": "c0dec4bd760aaf93ab0600b0ec4c56a4c277848d875744bc1eff5f89b610ffa1",
+        "hstore_gin.c": "b625a15bbc6cec47997cc600ce70278af05b6d3296ae473e9e617aeb614979f8",
+        "hstore_gist.c": "b15c4105b64273e91a7fede44a1ff0934769e87822521c26f1dfe3b40edd69fc",
+        "hstore_io.c": "4f9e853ca79e1412d989e937749eeb2a251f7e8173d2732098e4c8a67a96b3d4",
+        "hstore_op.c": "25df06aaa6c77de3ef00ed18b2f1528ea0efd10cc86a087cbb9d038e72911312",
+        "hstore_subs.c": "bdaeb1035570d0a342cb9cbf0649d02f57b8e8e889684d7dd0f5eded3e578cf3",
+        "meson.build": "90342c2fe305dcd1dd79126b0b63128930b6ab1c717b38c7af9767dccccaa81b",
+        "sql/hstore.sql": "285dc77d28116fe57a690bb4418128b3723b4004e72ccb3bcbdd7f3d8325aaf8",
+        "sql/hstore_utf8.sql": "3287c34687c0ed9905d4ae2841341e752512a4b1ffae1c30ff0f9fd675eed291"
+      },
+      "original_unchanged": true,
+      "duplicate_source_unchanged": true,
+      "binary": "<private-home>/.cache/oss-quality-sql-migration-component-20261009T151827793829Z/extensions/lib/hstore.so",
+      "binary_sha256": "7557e46e7f6338f07b6fb8936310c6fd1e3e17a953d09837fc37b330fd55160f",
+      "control_adaptation": {
+        "from": "module_pathname = '$libdir/hstore'",
+        "to": "module_pathname = '<private-home>/.cache/oss-quality-sql-migration-component-20261009T151827793829Z/extensions/lib/hstore'",
+        "source_sha256": "1df9f2b3059cd77e38920dd35235161b3ad336fc71198c66120d120262ad086d",
+        "adapted_sha256": "f61f973bc29c0412264ec8a8ce025bd193d13817f151551b482e001bb2025100"
+      }
+    }
+  ],
+  "commands": [
+    {
+      "command": [
+        "<system-bin>/make",
+        "USE_PGXS=1",
+        "PG_CONFIG=<private-home>/.local/opt/oss-quality-postgres-18.6/bin/pg_config"
+      ],
+      "cwd": "<private-home>/.cache/oss-quality-sql-migration-component-20261009T151827793829Z/extensions/source/citext",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "<system-bin>/make",
+        "USE_PGXS=1",
+        "PG_CONFIG=<private-home>/.local/opt/oss-quality-postgres-18.6/bin/pg_config"
+      ],
+      "cwd": "<private-home>/.cache/oss-quality-sql-migration-component-20261009T151827793829Z/extensions/source/hstore",
+      "exit_code": 0
+    }
+  ],
+  "extension_search_path": "<private-home>/.cache/oss-quality-sql-migration-component-20261009T151827793829Z/extensions/share"
+}

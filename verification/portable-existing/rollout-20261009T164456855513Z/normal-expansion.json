@@ -1,0 +1,553 @@
+{
+  "status": "completed",
+  "events": [
+    {
+      "barrier": "before-expansion"
+    },
+    {
+      "autocommit_frame": "call",
+      "line": 273,
+      "source": "<private-home>/.cache/oss-quality-sql-migration-portable-20261009T164405791392Z/schema-migration-20261009T164452366125Z/project/components/alembic/alembic/runtime/migration.py"
+    },
+    {
+      "autocommit_frame": "return",
+      "line": 344,
+      "source": "<private-home>/.cache/oss-quality-sql-migration-portable-20261009T164405791392Z/schema-migration-20261009T164452366125Z/project/components/alembic/alembic/runtime/migration.py"
+    },
+    {
+      "sql": "-- Narrow derivation of pinned test SQL: fixed schema qualification and guarded retry.\n-- MIT notice: ../components/alembic/LICENSE. Strict state validation precedes execution.\nALTER TYPE rehearsal.mood ADD VALUE IF NOT EXISTS 'soso';\n",
+      "dbapi_autocommit": true
+    },
+    {
+      "autocommit_frame": "call",
+      "line": 344,
+      "source": "<private-home>/.cache/oss-quality-sql-migration-portable-20261009T164405791392Z/schema-migration-20261009T164452366125Z/project/components/alembic/alembic/runtime/migration.py"
+    },
+    {
+      "autocommit_frame": "return",
+      "line": 360,
+      "source": "<private-home>/.cache/oss-quality-sql-migration-portable-20261009T164405791392Z/schema-migration-20261009T164452366125Z/project/components/alembic/alembic/runtime/migration.py"
+    },
+    {
+      "barrier": "after-marker-insert"
+    }
+  ],
+  "source": "<private-home>/.cache/oss-quality-sql-migration-portable-20261009T164405791392Z/schema-migration-20261009T164452366125Z/project/components/alembic/alembic/runtime/migration.py",
+  "source_sha256": "3f0137890bd1eedef93e5f6ec217061e9185f5a6f971430ec9a2b4d2192a5c41",
+  "alembic_file": "<private-home>/.cache/oss-quality-sql-migration-portable-20261009T164405791392Z/schema-migration-20261009T164452366125Z/project/components/alembic/alembic/__init__.py",
+  "unwrapped_code_source": "<private-home>/.cache/oss-quality-sql-migration-portable-20261009T164405791392Z/schema-migration-20261009T164452366125Z/project/components/alembic/alembic/runtime/migration.py",
+  "before": {
+    "schema_exists": true,
+    "shape": {
+      "type": [
+        [
+          "e"
+        ]
+      ],
+      "relations": [
+        [
+          "items",
+          "r"
+        ],
+        [
+          "rollout_marker",
+          "r"
+        ]
+      ],
+      "columns": [
+        [
+          "items",
+          "id",
+          "integer",
+          "pg_catalog",
+          "int4",
+          "NO",
+          null
+        ],
+        [
+          "items",
+          "mood",
+          "USER-DEFINED",
+          "rehearsal",
+          "mood",
+          "NO",
+          null
+        ],
+        [
+          "items",
+          "payload",
+          "text",
+          "pg_catalog",
+          "text",
+          "NO",
+          null
+        ],
+        [
+          "rollout_marker",
+          "id",
+          "integer",
+          "pg_catalog",
+          "int4",
+          "NO",
+          null
+        ],
+        [
+          "rollout_marker",
+          "completed",
+          "boolean",
+          "pg_catalog",
+          "bool",
+          "NO",
+          null
+        ]
+      ],
+      "constraints": [
+        [
+          "items",
+          "items_id_not_null",
+          "n",
+          "NOT NULL id",
+          true
+        ],
+        [
+          "items",
+          "items_mood_not_null",
+          "n",
+          "NOT NULL mood",
+          true
+        ],
+        [
+          "items",
+          "items_payload_not_null",
+          "n",
+          "NOT NULL payload",
+          true
+        ],
+        [
+          "items",
+          "items_pkey",
+          "p",
+          "PRIMARY KEY (id)",
+          true
+        ],
+        [
+          "items",
+          "legacy_labels",
+          "c",
+          "CHECK (((mood)::text = ANY (ARRAY['sad'::text, 'ok'::text, 'happy'::text])))",
+          true
+        ],
+        [
+          "rollout_marker",
+          "rollout_marker_completed_check",
+          "c",
+          "CHECK (completed)",
+          true
+        ],
+        [
+          "rollout_marker",
+          "rollout_marker_completed_not_null",
+          "n",
+          "NOT NULL completed",
+          true
+        ],
+        [
+          "rollout_marker",
+          "rollout_marker_id_check",
+          "c",
+          "CHECK ((id = 1))",
+          true
+        ],
+        [
+          "rollout_marker",
+          "rollout_marker_id_not_null",
+          "n",
+          "NOT NULL id",
+          true
+        ],
+        [
+          "rollout_marker",
+          "rollout_marker_pkey",
+          "p",
+          "PRIMARY KEY (id)",
+          true
+        ]
+      ]
+    },
+    "labels": [
+      "sad",
+      "ok",
+      "happy"
+    ],
+    "rows": [
+      {
+        "id": 1,
+        "mood": "sad",
+        "payload": "alpha"
+      },
+      {
+        "id": 2,
+        "mood": "ok",
+        "payload": "beta"
+      },
+      {
+        "id": 3,
+        "mood": "happy",
+        "payload": "gamma"
+      },
+      {
+        "id": 100,
+        "mood": "ok",
+        "payload": "old-client"
+      }
+    ],
+    "marker": []
+  },
+  "expanded": {
+    "schema_exists": true,
+    "shape": {
+      "type": [
+        [
+          "e"
+        ]
+      ],
+      "relations": [
+        [
+          "items",
+          "r"
+        ],
+        [
+          "rollout_marker",
+          "r"
+        ]
+      ],
+      "columns": [
+        [
+          "items",
+          "id",
+          "integer",
+          "pg_catalog",
+          "int4",
+          "NO",
+          null
+        ],
+        [
+          "items",
+          "mood",
+          "USER-DEFINED",
+          "rehearsal",
+          "mood",
+          "NO",
+          null
+        ],
+        [
+          "items",
+          "payload",
+          "text",
+          "pg_catalog",
+          "text",
+          "NO",
+          null
+        ],
+        [
+          "rollout_marker",
+          "id",
+          "integer",
+          "pg_catalog",
+          "int4",
+          "NO",
+          null
+        ],
+        [
+          "rollout_marker",
+          "completed",
+          "boolean",
+          "pg_catalog",
+          "bool",
+          "NO",
+          null
+        ]
+      ],
+      "constraints": [
+        [
+          "items",
+          "items_id_not_null",
+          "n",
+          "NOT NULL id",
+          true
+        ],
+        [
+          "items",
+          "items_mood_not_null",
+          "n",
+          "NOT NULL mood",
+          true
+        ],
+        [
+          "items",
+          "items_payload_not_null",
+          "n",
+          "NOT NULL payload",
+          true
+        ],
+        [
+          "items",
+          "items_pkey",
+          "p",
+          "PRIMARY KEY (id)",
+          true
+        ],
+        [
+          "items",
+          "legacy_labels",
+          "c",
+          "CHECK (((mood)::text = ANY (ARRAY['sad'::text, 'ok'::text, 'happy'::text])))",
+          true
+        ],
+        [
+          "rollout_marker",
+          "rollout_marker_completed_check",
+          "c",
+          "CHECK (completed)",
+          true
+        ],
+        [
+          "rollout_marker",
+          "rollout_marker_completed_not_null",
+          "n",
+          "NOT NULL completed",
+          true
+        ],
+        [
+          "rollout_marker",
+          "rollout_marker_id_check",
+          "c",
+          "CHECK ((id = 1))",
+          true
+        ],
+        [
+          "rollout_marker",
+          "rollout_marker_id_not_null",
+          "n",
+          "NOT NULL id",
+          true
+        ],
+        [
+          "rollout_marker",
+          "rollout_marker_pkey",
+          "p",
+          "PRIMARY KEY (id)",
+          true
+        ]
+      ]
+    },
+    "labels": [
+      "sad",
+      "ok",
+      "happy",
+      "soso"
+    ],
+    "rows": [
+      {
+        "id": 1,
+        "mood": "sad",
+        "payload": "alpha"
+      },
+      {
+        "id": 2,
+        "mood": "ok",
+        "payload": "beta"
+      },
+      {
+        "id": 3,
+        "mood": "happy",
+        "payload": "gamma"
+      },
+      {
+        "id": 100,
+        "mood": "ok",
+        "payload": "old-client"
+      }
+    ],
+    "marker": []
+  },
+  "marker_visible_inside_worker_transaction": [
+    {
+      "id": 1,
+      "completed": true
+    }
+  ],
+  "after": {
+    "schema_exists": true,
+    "shape": {
+      "type": [
+        [
+          "e"
+        ]
+      ],
+      "relations": [
+        [
+          "items",
+          "r"
+        ],
+        [
+          "rollout_marker",
+          "r"
+        ]
+      ],
+      "columns": [
+        [
+          "items",
+          "id",
+          "integer",
+          "pg_catalog",
+          "int4",
+          "NO",
+          null
+        ],
+        [
+          "items",
+          "mood",
+          "USER-DEFINED",
+          "rehearsal",
+          "mood",
+          "NO",
+          null
+        ],
+        [
+          "items",
+          "payload",
+          "text",
+          "pg_catalog",
+          "text",
+          "NO",
+          null
+        ],
+        [
+          "rollout_marker",
+          "id",
+          "integer",
+          "pg_catalog",
+          "int4",
+          "NO",
+          null
+        ],
+        [
+          "rollout_marker",
+          "completed",
+          "boolean",
+          "pg_catalog",
+          "bool",
+          "NO",
+          null
+        ]
+      ],
+      "constraints": [
+        [
+          "items",
+          "items_id_not_null",
+          "n",
+          "NOT NULL id",
+          true
+        ],
+        [
+          "items",
+          "items_mood_not_null",
+          "n",
+          "NOT NULL mood",
+          true
+        ],
+        [
+          "items",
+          "items_payload_not_null",
+          "n",
+          "NOT NULL payload",
+          true
+        ],
+        [
+          "items",
+          "items_pkey",
+          "p",
+          "PRIMARY KEY (id)",
+          true
+        ],
+        [
+          "items",
+          "legacy_labels",
+          "c",
+          "CHECK (((mood)::text = ANY (ARRAY['sad'::text, 'ok'::text, 'happy'::text])))",
+          true
+        ],
+        [
+          "rollout_marker",
+          "rollout_marker_completed_check",
+          "c",
+          "CHECK (completed)",
+          true
+        ],
+        [
+          "rollout_marker",
+          "rollout_marker_completed_not_null",
+          "n",
+          "NOT NULL completed",
+          true
+        ],
+        [
+          "rollout_marker",
+          "rollout_marker_id_check",
+          "c",
+          "CHECK ((id = 1))",
+          true
+        ],
+        [
+          "rollout_marker",
+          "rollout_marker_id_not_null",
+          "n",
+          "NOT NULL id",
+          true
+        ],
+        [
+          "rollout_marker",
+          "rollout_marker_pkey",
+          "p",
+          "PRIMARY KEY (id)",
+          true
+        ]
+      ]
+    },
+    "labels": [
+      "sad",
+      "ok",
+      "happy",
+      "soso"
+    ],
+    "rows": [
+      {
+        "id": 1,
+        "mood": "sad",
+        "payload": "alpha"
+      },
+      {
+        "id": 2,
+        "mood": "ok",
+        "payload": "beta"
+      },
+      {
+        "id": 3,
+        "mood": "happy",
+        "payload": "gamma"
+      },
+      {
+        "id": 100,
+        "mood": "ok",
+        "payload": "old-client"
+      }
+    ],
+    "marker": [
+      {
+        "id": 1,
+        "completed": true
+      }
+    ]
+  }
+}

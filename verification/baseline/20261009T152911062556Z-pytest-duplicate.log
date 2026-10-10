@@ -1,0 +1,13 @@
+=========================== sqlalchemy installation ============================
+SQLAlchemy 2.1.4 (user site loaded)
+Path: <private-home>/.cache/oss-quality-sql-migration-component-20261009T151827793829Z/venv/lib/python3.12/site-packages/sqlalchemy/__init__.py
+compiled extension enabled, e.g. <private-home>/.cache/oss-quality-sql-migration-component-20261009T151827793829Z/venv/lib/python3.12/site-packages/sqlalchemy/engine/_util_cy.cpython-312-x86_64-linux-gnu.so 
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-9.0.3, pluggy-1.6.0
+rootdir: <historical-candidate>/components/alembic
+configfile: pyproject.toml
+collected 1 item
+
+tests/test_postgresql.py .                                               [100%]
+
+============================== 1 passed in 0.55s ===============================

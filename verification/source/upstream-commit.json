@@ -1,0 +1,125 @@
+{
+  "sha": "1bc21b86dd6ddd07ac696e2d73b6cb200dd97bbd",
+  "node_id": "C_kwDOCX47u9oAKDFiYzIxYjg2ZGQ2ZGRkMDdhYzY5NmUyZDczYjZjYjIwMGRkOTdiYmQ",
+  "commit": {
+    "author": {
+      "name": "Mike Bayer",
+      "email": "mike_mp@zzzcomputing.com",
+      "date": "2026-10-03T18:57:37Z"
+    },
+    "committer": {
+      "name": "Mike Bayer",
+      "email": "mike_mp@zzzcomputing.com",
+      "date": "2026-10-03T18:57:37Z"
+    },
+    "message": "Set up plugin module from entrypoint directly\n\nFixed issue where a third party plugin published using the\n``alembic.plugins`` entrypoint, configured to refer to a plugin module\nas documented, would cause ``import alembic`` to fail with a\n``TypeError``, as the loaded module was erroneously iterated rather\nthan being set up directly.  An entrypoint that refers to a collection\nof modules, the form which inadvertently worked previously, continues\nto be accepted but now emits a deprecation warning.\n\nFixes: #1873\nChange-Id: I9a0e8daa7c17a80060ad8d4f32e361878805c186",
+    "tree": {
+      "sha": "e3b8e6cbbd2f64c7b75942a2746dc950a7f97da4",
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/trees/e3b8e6cbbd2f64c7b75942a2746dc950a7f97da4"
+    },
+    "url": "https://api.github.com/repos/sqlalchemy/alembic/git/commits/1bc21b86dd6ddd07ac696e2d73b6cb200dd97bbd",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/sqlalchemy/alembic/commits/1bc21b86dd6ddd07ac696e2d73b6cb200dd97bbd",
+  "html_url": "https://github.com/sqlalchemy/alembic/commit/1bc21b86dd6ddd07ac696e2d73b6cb200dd97bbd",
+  "comments_url": "https://api.github.com/repos/sqlalchemy/alembic/commits/1bc21b86dd6ddd07ac696e2d73b6cb200dd97bbd/comments",
+  "author": {
+    "login": "zzzeek",
+    "id": 128223,
+    "node_id": "MDQ6VXNlcjEyODIyMw==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/128223?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/zzzeek",
+    "html_url": "https://github.com/zzzeek",
+    "followers_url": "https://api.github.com/users/zzzeek/followers",
+    "following_url": "https://api.github.com/users/zzzeek/following{/other_user}",
+    "gists_url": "https://api.github.com/users/zzzeek/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/zzzeek/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/zzzeek/subscriptions",
+    "organizations_url": "https://api.github.com/users/zzzeek/orgs",
+    "repos_url": "https://api.github.com/users/zzzeek/repos",
+    "events_url": "https://api.github.com/users/zzzeek/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/zzzeek/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "zzzeek",
+    "id": 128223,
+    "node_id": "MDQ6VXNlcjEyODIyMw==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/128223?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/zzzeek",
+    "html_url": "https://github.com/zzzeek",
+    "followers_url": "https://api.github.com/users/zzzeek/followers",
+    "following_url": "https://api.github.com/users/zzzeek/following{/other_user}",
+    "gists_url": "https://api.github.com/users/zzzeek/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/zzzeek/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/zzzeek/subscriptions",
+    "organizations_url": "https://api.github.com/users/zzzeek/orgs",
+    "repos_url": "https://api.github.com/users/zzzeek/repos",
+    "events_url": "https://api.github.com/users/zzzeek/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/zzzeek/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "b42ebe1ff576e02b8bfc9ef1c3c3a5fd1ac41bf4",
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/commits/b42ebe1ff576e02b8bfc9ef1c3c3a5fd1ac41bf4",
+      "html_url": "https://github.com/sqlalchemy/alembic/commit/b42ebe1ff576e02b8bfc9ef1c3c3a5fd1ac41bf4"
+    }
+  ],
+  "stats": {
+    "total": 71,
+    "additions": 69,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "4cf111d95c2bc854b45ca1e0884442f3836a20ea",
+      "filename": "alembic/runtime/plugins.py",
+      "status": "modified",
+      "additions": 13,
+      "deletions": 2,
+      "changes": 15,
+      "blob_url": "https://github.com/sqlalchemy/alembic/blob/1bc21b86dd6ddd07ac696e2d73b6cb200dd97bbd/alembic%2Fruntime%2Fplugins.py",
+      "raw_url": "https://github.com/sqlalchemy/alembic/raw/1bc21b86dd6ddd07ac696e2d73b6cb200dd97bbd/alembic%2Fruntime%2Fplugins.py",
+      "contents_url": "https://api.github.com/repos/sqlalchemy/alembic/contents/alembic%2Fruntime%2Fplugins.py?ref=1bc21b86dd6ddd07ac696e2d73b6cb200dd97bbd",
+      "patch": "@@ -196,8 +196,19 @@ def _make_re(name: str) -> Pattern[str]:\n def _setup() -> None:\n     # setup third party plugins\n     for entrypoint in metadata.entry_points(group=\"alembic.plugins\"):\n-        for mod in entrypoint.load():\n-            Plugin.setup_plugin_from_module(mod, entrypoint.name)\n+        loaded = entrypoint.load()\n+        if isinstance(loaded, ModuleType):\n+            Plugin.setup_plugin_from_module(loaded, entrypoint.name)\n+        else:\n+            # prior to #1873, the entrypoint was erroneously iterated;\n+            # continue to accept a collection of modules for now\n+            util.warn_deprecated(\n+                f\"Plugin entrypoint {entrypoint.name!r} refers to a \"\n+                \"collection of modules; the entrypoint should refer to a \"\n+                \"single plugin module that includes a setup() function.\"\n+            )\n+            for mod in loaded:\n+                Plugin.setup_plugin_from_module(mod, entrypoint.name)\n \n \n _setup()"
+    },
+    {
+      "sha": "32ea5d9748923114b344597ad789f2607173331b",
+      "filename": "docs/build/unreleased/1873.rst",
+      "status": "added",
+      "additions": 12,
+      "deletions": 0,
+      "changes": 12,
+      "blob_url": "https://github.com/sqlalchemy/alembic/blob/1bc21b86dd6ddd07ac696e2d73b6cb200dd97bbd/docs%2Fbuild%2Funreleased%2F1873.rst",
+      "raw_url": "https://github.com/sqlalchemy/alembic/raw/1bc21b86dd6ddd07ac696e2d73b6cb200dd97bbd/docs%2Fbuild%2Funreleased%2F1873.rst",
+      "contents_url": "https://api.github.com/repos/sqlalchemy/alembic/contents/docs%2Fbuild%2Funreleased%2F1873.rst?ref=1bc21b86dd6ddd07ac696e2d73b6cb200dd97bbd",
+      "patch": "@@ -0,0 +1,12 @@\n+.. change::\n+    :tags: bug, environment\n+    :tickets: 1873\n+\n+    Fixed issue where a third party plugin published using the\n+    ``alembic.plugins`` entrypoint, configured to refer to a plugin module as\n+    documented at :ref:`alembic.plugins.toplevel`, would cause ``import\n+    alembic`` to fail with a ``TypeError``, as the loaded module was\n+    erroneously iterated rather than being set up directly. An entrypoint\n+    that refers to a collection of modules, the form which inadvertently\n+    worked previously, continues to be accepted but now emits a deprecation\n+    warning."
+    },
+    {
+      "sha": "587ea86c711d6ed9f2b9f2a8ebd85d84ac5b1ecd",
+      "filename": "tests/test_plugin.py",
+      "status": "modified",
+      "additions": 44,
+      "deletions": 0,
+      "changes": 44,
+      "blob_url": "https://github.com/sqlalchemy/alembic/blob/1bc21b86dd6ddd07ac696e2d73b6cb200dd97bbd/tests%2Ftest_plugin.py",
+      "raw_url": "https://github.com/sqlalchemy/alembic/raw/1bc21b86dd6ddd07ac696e2d73b6cb200dd97bbd/tests%2Ftest_plugin.py",
+      "contents_url": "https://api.github.com/repos/sqlalchemy/alembic/contents/tests%2Ftest_plugin.py?ref=1bc21b86dd6ddd07ac696e2d73b6cb200dd97bbd",
+      "patch": "@@ -7,6 +7,7 @@\n from alembic import util\n from alembic.runtime.plugins import _all_plugins\n from alembic.runtime.plugins import _make_re\n+from alembic.runtime.plugins import _setup\n from alembic.runtime.plugins import _translate_legacy_name\n from alembic.runtime.plugins import Plugin\n from alembic.testing import eq_\n@@ -258,6 +259,49 @@ def setup(plugin):\n         # Verify plugin was created\n         assert \"mock.plugin\" in _all_plugins\n \n+    def _entrypoint_fixture(self, loaded):\n+        entrypoint = mock.Mock()\n+        entrypoint.name = \"mock.plugin\"\n+        entrypoint.load.return_value = loaded\n+        return mock.patch(\n+            \"alembic.runtime.plugins.metadata.entry_points\",\n+            return_value=[entrypoint],\n+        )\n+\n+    def _mock_module(self):\n+        mock_module = ModuleType(\"mock_plugin\")\n+        mock_module.setup = mock.Mock()\n+        return mock_module\n+\n+    def test_setup_from_entrypoint_module(self):\n+        \"\"\"an entrypoint referring to a module, as documented, sets up\n+        that module as a plugin; see #1873\"\"\"\n+        mock_module = self._mock_module()\n+\n+        with self._entrypoint_fixture(mock_module):\n+            _setup()\n+\n+        eq_(\n+            mock_module.setup.mock_calls,\n+            [mock.call(_all_plugins[\"mock.plugin\"])],\n+        )\n+\n+    def test_setup_from_entrypoint_iterable_deprecated(self):\n+        \"\"\"an entrypoint referring to a collection of modules continues\n+        to work, with a deprecation warning\"\"\"\n+        mock_module = self._mock_module()\n+\n+        with self._entrypoint_fixture([mock_module]):\n+            with testing.expect_deprecated(\n+                \"Plugin entrypoint 'mock.plugin' refers to a collection\"\n+            ):\n+                _setup()\n+\n+        eq_(\n+            mock_module.setup.mock_calls,\n+            [mock.call(_all_plugins[\"mock.plugin\"])],\n+        )\n+\n     def test_autogenerate_comparators_dispatcher(self):\n         \"\"\"Test that autogenerate_comparators is a PriorityDispatcher.\"\"\"\n         plugin = Plugin(\"test.plugin\")"
+    }
+  ]
+}

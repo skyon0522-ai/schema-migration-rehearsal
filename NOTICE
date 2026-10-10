@@ -1,0 +1,29 @@
+This repository retains the complete sqlalchemy/alembic snapshot
+at commit 1bc21b86dd6ddd07ac696e2d73b6cb200dd97bbd in components/alembic.
+All imported source and MIT notices are unchanged. The original and duplicate
+baseline were compared before the improvement; one complete source copy is
+included here and the adapter materializes both copies for its checks.
+
+Imported and derived Alembic attribution: Copyright 2009-2026 Michael Bayer.
+Root LICENSE, components/alembic/LICENSE and rehearsal/LICENSE retain the
+upstream MIT notice byte-for-byte. This covers the imported 195-file component
+and the retained/derived upstream enum statements in rehearsal/fixture.sql
+and rehearsal/expand.sql. Keep those notices with the derived material.
+
+LICENSE.authored supplies the MIT notice:
+Copyright (c) 2026 skyon0522-ai. It covers task-authored coordination in
+rehearsal/worker.py and rehearsal/check_contract.py, authored gate/table/marker
+and observation/activation portions of the four SQL files, root authored
+documentation/provenance metadata, and tools/verify_source.py and
+tools/run_contract.py. It does not replace upstream or dependency licenses,
+reassign imported/derived authorship, or remove Michael Bayer attribution.
+
+The retained dependency notice files describe the historical installed set;
+no dependency binaries or wheels are included. PostgreSQL source attribution
+is retained in verification/source/postgresql-COPYRIGHT for historical contrib
+build evidence. No PostgreSQL binaries or built contrib modules are included.
+
+requirements.lock contains 26 exact pins; pip 24.0 is observed bootstrap
+metadata outside that lock. The official-artifact hash lock and artifact
+metadata describe selected bytes for the observed Linux x86_64/CPython 3.12.3
+profile. No wheel binary or local-built-wheel install lock is distributed.

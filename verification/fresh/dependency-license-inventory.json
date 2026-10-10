@@ -1,0 +1,596 @@
+{
+  "dependencies": [
+    {
+      "name": "black",
+      "version": "26.5.1",
+      "license_expression": "MIT",
+      "license_metadata": null,
+      "notice_files": [
+        {
+          "installed_path": "<private-home>/.cache/oss-quality-sql-migration-fresh-20261009T165253131882Z/venv/lib/python3.12/site-packages/black-26.5.1.dist-info/licenses/LICENSE",
+          "filename": "LICENSE",
+          "sha256": "9c0428f0c3b4779850cf5bd96e11aaa8afc72d4a86d4a36223d7aba2e58d6e00",
+          "retained_path": "verification/dependency-notices/black-26.5.1/LICENSE",
+          "reused_existing_notice": true,
+          "readback_equal": true
+        },
+        {
+          "installed_path": "<private-home>/.cache/oss-quality-sql-migration-fresh-20261009T165253131882Z/venv/lib/python3.12/site-packages/blib2to3/LICENSE",
+          "filename": "LICENSE",
+          "sha256": "5789881b8aeb9c91f5835f5bb7cabe84a0fecd4bb2be2f54c9e6957a78ec799d",
+          "retained_path": "verification/dependency-notices/black-26.5.1/5789881b8aeb-LICENSE",
+          "reused_existing_notice": true,
+          "readback_equal": true
+        }
+      ]
+    },
+    {
+      "name": "click",
+      "version": "8.5.0",
+      "license_expression": "BSD-3-Clause",
+      "license_metadata": null,
+      "notice_files": [
+        {
+          "installed_path": "<private-home>/.cache/oss-quality-sql-migration-fresh-20261009T165253131882Z/venv/lib/python3.12/site-packages/click-8.5.0.dist-info/licenses/LICENSE.txt",
+          "filename": "LICENSE.txt",
+          "sha256": "9a8ad106a394e853bfe21f42f4e72d592819a22805d991b5f3275029292b658d",
+          "retained_path": "verification/dependency-notices/click-8.5.0/LICENSE.txt",
+          "reused_existing_notice": true,
+          "readback_equal": true
+        }
+      ]
+    },
+    {
+      "name": "execnet",
+      "version": "2.1.2",
+      "license_expression": "MIT",
+      "license_metadata": null,
+      "notice_files": [
+        {
+          "installed_path": "<private-home>/.cache/oss-quality-sql-migration-fresh-20261009T165253131882Z/venv/lib/python3.12/site-packages/execnet-2.1.2.dist-info/licenses/LICENSE",
+          "filename": "LICENSE",
+          "sha256": "e89eed1074d3a943198ba139b80844f5b445b860bba74a8aeadc0610566164ea",
+          "retained_path": "verification/dependency-notices/execnet-2.1.2/LICENSE",
+          "reused_existing_notice": true,
+          "readback_equal": true
+        }
+      ]
+    },
+    {
+      "name": "flake8_import_order",
+      "version": "0.19.2",
+      "license_expression": null,
+      "license_metadata": "LGPLv3",
+      "notice_files": [
+        {
+          "installed_path": "<private-home>/.cache/oss-quality-sql-migration-fresh-20261009T165253131882Z/venv/lib/python3.12/site-packages/flake8_import_order-0.19.2.dist-info/licenses/COPYING",
+          "filename": "COPYING",
+          "sha256": "da7eabb7bafdf7d3ae5e9f223aa5bdc1eece45ac569dc21b3b037520b4464768",
+          "retained_path": "verification/dependency-notices/flake8_import_order-0.19.2/COPYING",
+          "reused_existing_notice": true,
+          "readback_equal": true
+        }
+      ]
+    },
+    {
+      "name": "iniconfig",
+      "version": "2.3.1",
+      "license_expression": "MIT",
+      "license_metadata": null,
+      "notice_files": [
+        {
+          "installed_path": "<private-home>/.cache/oss-quality-sql-migration-fresh-20261009T165253131882Z/venv/lib/python3.12/site-packages/iniconfig-2.3.1.dist-info/licenses/LICENSE",
+          "filename": "LICENSE",
+          "sha256": "3409fa91f7ace557894632676656e32264fe5ef7581535725dc9a23774551bd4",
+          "retained_path": "verification/dependency-notices/iniconfig-2.3.1/LICENSE",
+          "reused_existing_notice": true,
+          "readback_equal": true
+        }
+      ]
+    },
+    {
+      "name": "junitparser",
+      "version": "5.0.3",
+      "license_expression": "Apache-2.0",
+      "license_metadata": null,
+      "notice_files": [
+        {
+          "installed_path": "<private-home>/.cache/oss-quality-sql-migration-fresh-20261009T165253131882Z/venv/lib/python3.12/site-packages/junitparser-5.0.3.dist-info/licenses/LICENSE",
+          "filename": "LICENSE",
+          "sha256": "51bae38bd50369849f7006fa5fdde9ecbd81824ebb07667800818f63bc82c359",
+          "retained_path": "verification/dependency-notices/junitparser-5.0.3/LICENSE",
+          "reused_existing_notice": true,
+          "readback_equal": true
+        }
+      ]
+    },
+    {
+      "name": "Mako",
+      "version": "1.4.3",
+      "license_expression": "MIT",
+      "license_metadata": null,
+      "notice_files": [
+        {
+          "installed_path": "<private-home>/.cache/oss-quality-sql-migration-fresh-20261009T165253131882Z/venv/lib/python3.12/site-packages/mako-1.4.3.dist-info/licenses/LICENSE",
+          "filename": "LICENSE",
+          "sha256": "8c1d171bc5d341ad9cd33d5e2c39b96a82c7bd49b3ae89a470c37e5822232054",
+          "retained_path": "verification/dependency-notices/Mako-1.4.3/LICENSE",
+          "reused_existing_notice": true,
+          "readback_equal": true
+        }
+      ]
+    },
+    {
+      "name": "MarkupSafe",
+      "version": "3.0.4",
+      "license_expression": "BSD-3-Clause",
+      "license_metadata": null,
+      "notice_files": [
+        {
+          "installed_path": "<private-home>/.cache/oss-quality-sql-migration-fresh-20261009T165253131882Z/venv/lib/python3.12/site-packages/markupsafe-3.0.4.dist-info/licenses/LICENSE.txt",
+          "filename": "LICENSE.txt",
+          "sha256": "489a8e1108509ed98a37bb983e11e0f7e1d31f0bd8f99a79c8448e7ff37d07ea",
+          "retained_path": "verification/dependency-notices/MarkupSafe-3.0.4/LICENSE.txt",
+          "reused_existing_notice": true,
+          "readback_equal": true
+        }
+      ]
+    },
+    {
+      "name": "mypy_extensions",
+      "version": "1.1.0",
+      "license_expression": "MIT",
+      "license_metadata": null,
+      "notice_files": [
+        {
+          "installed_path": "<private-home>/.cache/oss-quality-sql-migration-fresh-20261009T165253131882Z/venv/lib/python3.12/site-packages/mypy_extensions-1.1.0.dist-info/licenses/LICENSE",
+          "filename": "LICENSE",
+          "sha256": "a50450da1d53cd777b80ced77c58ff96abe0ccd879706bd142c3ec20e245f0b4",
+          "retained_path": "verification/dependency-notices/mypy_extensions-1.1.0/LICENSE",
+          "reused_existing_notice": true,
+          "readback_equal": true
+        }
+      ]
+    },
+    {
+      "name": "packaging",
+      "version": "26.3",
+      "license_expression": "Apache-2.0 OR BSD-2-Clause",
+      "license_metadata": null,
+      "notice_files": [
+        {
+          "installed_path": "<private-home>/.cache/oss-quality-sql-migration-fresh-20261009T165253131882Z/venv/lib/python3.12/site-packages/packaging-26.3.dist-info/licenses/LICENSE",
+          "filename": "LICENSE",
+          "sha256": "cad1ef5bd340d73e074ba614d26f7deaca5c7940c3d8c34852e65c4909686c48",
+          "retained_path": "verification/dependency-notices/packaging-26.3/LICENSE",
+          "reused_existing_notice": true,
+          "readback_equal": true
+        },
+        {
+          "installed_path": "<private-home>/.cache/oss-quality-sql-migration-fresh-20261009T165253131882Z/venv/lib/python3.12/site-packages/packaging-26.3.dist-info/licenses/LICENSE.APACHE",
+          "filename": "LICENSE.APACHE",
+          "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594",
+          "retained_path": "verification/dependency-notices/packaging-26.3/LICENSE.APACHE",
+          "reused_existing_notice": true,
+          "readback_equal": true
+        },
+        {
+          "installed_path": "<private-home>/.cache/oss-quality-sql-migration-fresh-20261009T165253131882Z/venv/lib/python3.12/site-packages/packaging-26.3.dist-info/licenses/LICENSE.BSD",
+          "filename": "LICENSE.BSD",
+          "sha256": "b70e7e9b742f1cc6f948b34c16aa39ffece94196364bc88ff0d2180f0028fac5",
+          "retained_path": "verification/dependency-notices/packaging-26.3/LICENSE.BSD",
+          "reused_existing_notice": true,
+          "readback_equal": true
+        }
+      ]
+    },
+    {
+      "name": "pathspec",
+      "version": "1.1.1",
+      "license_expression": null,
+      "license_metadata": null,
+      "notice_files": [
+        {
+          "installed_path": "<private-home>/.cache/oss-quality-sql-migration-fresh-20261009T165253131882Z/venv/lib/python3.12/site-packages/pathspec-1.1.1.dist-info/licenses/LICENSE",
+          "filename": "LICENSE",
+          "sha256": "fab3dd6bdab226f1c08630b1dd917e11fcb4ec5e1e020e2c16f83a0a13863e85",
+          "retained_path": "verification/dependency-notices/pathspec-1.1.1/LICENSE",
+          "reused_existing_notice": true,
+          "readback_equal": true
+        }
+      ]
+    },
+    {
+      "name": "pip",
+      "version": "24.0",
+      "license_expression": null,
+      "license_metadata": "MIT",
+      "notice_files": [
+        {
+          "installed_path": "<private-home>/.cache/oss-quality-sql-migration-fresh-20261009T165253131882Z/venv/lib/python3.12/site-packages/pip-24.0.dist-info/LICENSE.txt",
+          "filename": "LICENSE.txt",
+          "sha256": "634300a669d49aeae65b12c6c48c924c51a4cdf3d1ff086dc3456dc8bcaa2104",
+          "retained_path": "verification/dependency-notices/pip-24.0/LICENSE.txt",
+          "reused_existing_notice": true,
+          "readback_equal": true
+        }
+      ]
+    },
+    {
+      "name": "platformdirs",
+      "version": "4.12.4",
+      "license_expression": "MIT",
+      "license_metadata": null,
+      "notice_files": [
+        {
+          "installed_path": "<private-home>/.cache/oss-quality-sql-migration-fresh-20261009T165253131882Z/venv/lib/python3.12/site-packages/platformdirs-4.12.4.dist-info/licenses/LICENSE",
+          "filename": "LICENSE",
+          "sha256": "29e0fd62e929850e86eb28c3fdccf0cefdf4fa94879011cffb3d0d4bed6d4db6",
+          "retained_path": "verification/dependency-notices/platformdirs-4.12.4/LICENSE",
+          "reused_existing_notice": true,
+          "readback_equal": true
+        }
+      ]
+    },
+    {
+      "name": "pluggy",
+      "version": "1.6.0",
+      "license_expression": null,
+      "license_metadata": "MIT",
+      "notice_files": [
+        {
+          "installed_path": "<private-home>/.cache/oss-quality-sql-migration-fresh-20261009T165253131882Z/venv/lib/python3.12/site-packages/pluggy-1.6.0.dist-info/licenses/LICENSE",
+          "filename": "LICENSE",
+          "sha256": "d6b65e6c213a5d0b577911d34d6e5949b9f59d76c238c5071a2f3fc16cfb2606",
+          "retained_path": "verification/dependency-notices/pluggy-1.6.0/LICENSE",
+          "reused_existing_notice": true,
+          "readback_equal": true
+        }
+      ]
+    },
+    {
+      "name": "psycopg2",
+      "version": "2.9.13",
+      "license_expression": null,
+      "license_metadata": "LGPL with exceptions",
+      "notice_files": [
+        {
+          "installed_path": "<private-home>/.cache/oss-quality-sql-migration-fresh-20261009T165253131882Z/venv/lib/python3.12/site-packages/psycopg2-2.9.13.dist-info/licenses/LICENSE",
+          "filename": "LICENSE",
+          "sha256": "9614b85dfc9a72c5b2ca33144c1d7e1ed3b1c297459d9fb28a6a5762c2e8d71b",
+          "retained_path": "verification/dependency-notices/psycopg2-2.9.13/LICENSE",
+          "reused_existing_notice": true,
+          "readback_equal": true
+        }
+      ]
+    },
+    {
+      "name": "pycodestyle",
+      "version": "2.15.0",
+      "license_expression": null,
+      "license_metadata": "MIT",
+      "notice_files": [
+        {
+          "installed_path": "<private-home>/.cache/oss-quality-sql-migration-fresh-20261009T165253131882Z/venv/lib/python3.12/site-packages/pycodestyle-2.15.0.dist-info/LICENSE",
+          "filename": "LICENSE",
+          "sha256": "f772295e81af3478d34e88e52d076200230ec7dd6a39e123bc5cb35aa66abdae",
+          "retained_path": "verification/dependency-notices/pycodestyle-2.15.0/LICENSE",
+          "reused_existing_notice": true,
+          "readback_equal": true
+        }
+      ]
+    },
+    {
+      "name": "pyflakes",
+      "version": "4.0.3",
+      "license_expression": null,
+      "license_metadata": "MIT",
+      "notice_files": [
+        {
+          "installed_path": "<private-home>/.cache/oss-quality-sql-migration-fresh-20261009T165253131882Z/venv/lib/python3.12/site-packages/pyflakes-4.0.3.dist-info/licenses/LICENSE",
+          "filename": "LICENSE",
+          "sha256": "22c47569cc0aae531b372361366818af01c6fc2e314770584a7866c92b3a0463",
+          "retained_path": "verification/dependency-notices/pyflakes-4.0.3/LICENSE",
+          "reused_existing_notice": true,
+          "readback_equal": true
+        }
+      ]
+    },
+    {
+      "name": "Pygments",
+      "version": "2.21.0",
+      "license_expression": "BSD-2-Clause",
+      "license_metadata": null,
+      "notice_files": [
+        {
+          "installed_path": "<private-home>/.cache/oss-quality-sql-migration-fresh-20261009T165253131882Z/venv/lib/python3.12/site-packages/pygments-2.21.0.dist-info/licenses/LICENSE",
+          "filename": "LICENSE",
+          "sha256": "a9d66f1d526df02e29dce73436d34e56e8632f46c275bbdffc70569e882f9f17",
+          "retained_path": "verification/dependency-notices/Pygments-2.21.0/LICENSE",
+          "reused_existing_notice": true,
+          "readback_equal": true
+        }
+      ]
+    },
+    {
+      "name": "pytest",
+      "version": "9.0.3",
+      "license_expression": "MIT",
+      "license_metadata": null,
+      "notice_files": [
+        {
+          "installed_path": "<private-home>/.cache/oss-quality-sql-migration-fresh-20261009T165253131882Z/venv/lib/python3.12/site-packages/pytest-9.0.3.dist-info/licenses/LICENSE",
+          "filename": "LICENSE",
+          "sha256": "ca836a5f9ecca3b2f350230faa20a48fb8b145653b5568d784862df864706b9b",
+          "retained_path": "verification/dependency-notices/pytest-9.0.3/LICENSE",
+          "reused_existing_notice": true,
+          "readback_equal": true
+        }
+      ]
+    },
+    {
+      "name": "pytest-xdist",
+      "version": "3.8.0",
+      "license_expression": "MIT",
+      "license_metadata": null,
+      "notice_files": [
+        {
+          "installed_path": "<private-home>/.cache/oss-quality-sql-migration-fresh-20261009T165253131882Z/venv/lib/python3.12/site-packages/pytest_xdist-3.8.0.dist-info/licenses/LICENSE",
+          "filename": "LICENSE",
+          "sha256": "36c15bf831b218a24d122e3b30256b3e1ca285716c24937fe6d8475074ee9032",
+          "retained_path": "verification/dependency-notices/pytest-xdist-3.8.0/LICENSE",
+          "reused_existing_notice": true,
+          "readback_equal": true
+        }
+      ]
+    },
+    {
+      "name": "pytokens",
+      "version": "0.4.1",
+      "license_expression": null,
+      "license_metadata": "MIT License\n\nCopyright (c) 2024 Tushar Sadhwani\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "notice_files": [
+        {
+          "installed_path": "<private-home>/.cache/oss-quality-sql-migration-fresh-20261009T165253131882Z/venv/lib/python3.12/site-packages/pytokens-0.4.1.dist-info/licenses/LICENSE",
+          "filename": "LICENSE",
+          "sha256": "94bf7ae4ea6833b0853a7cc1f1f28dd8579b34a31c9c162aeb8825dec23ed5dc",
+          "retained_path": "verification/dependency-notices/pytokens-0.4.1/LICENSE",
+          "reused_existing_notice": true,
+          "readback_equal": true
+        }
+      ]
+    },
+    {
+      "name": "setuptools",
+      "version": "84.0.0",
+      "license_expression": "MIT",
+      "license_metadata": null,
+      "notice_files": [
+        {
+          "installed_path": "<private-home>/.cache/oss-quality-sql-migration-fresh-20261009T165253131882Z/venv/lib/python3.12/site-packages/setuptools-84.0.0.dist-info/licenses/LICENSE",
+          "filename": "LICENSE",
+          "sha256": "86da0f01aeae46348a3c3d465195dc1ceccde79f79e87769a64b8da04b2a4741",
+          "retained_path": "verification/dependency-notices/setuptools-84.0.0/LICENSE",
+          "reused_existing_notice": true,
+          "readback_equal": true
+        },
+        {
+          "installed_path": "<private-home>/.cache/oss-quality-sql-migration-fresh-20261009T165253131882Z/venv/lib/python3.12/site-packages/setuptools/_vendor/autocommand-2.2.2.dist-info/LICENSE",
+          "filename": "LICENSE",
+          "sha256": "ade78d04982d69972d444a8e14a94f87a2334dd3855cc80348ea8e240aa0df2d",
+          "retained_path": "verification/dependency-notices/setuptools-84.0.0/ade78d04982d-LICENSE",
+          "reused_existing_notice": true,
+          "readback_equal": true
+        },
+        {
+          "installed_path": "<private-home>/.cache/oss-quality-sql-migration-fresh-20261009T165253131882Z/venv/lib/python3.12/site-packages/setuptools/_vendor/backports.tarfile-1.2.0.dist-info/LICENSE",
+          "filename": "LICENSE",
+          "sha256": "86da0f01aeae46348a3c3d465195dc1ceccde79f79e87769a64b8da04b2a4741",
+          "retained_path": "verification/dependency-notices/setuptools-84.0.0/LICENSE",
+          "reused_existing_notice": true,
+          "readback_equal": true
+        },
+        {
+          "installed_path": "<private-home>/.cache/oss-quality-sql-migration-fresh-20261009T165253131882Z/venv/lib/python3.12/site-packages/setuptools/_vendor/importlib_metadata-8.7.1.dist-info/licenses/LICENSE",
+          "filename": "LICENSE",
+          "sha256": "458502e12d97bbf64438606a20044aa85eb05fb0a8a807bb35dbec253fd1fc04",
+          "retained_path": "verification/dependency-notices/setuptools-84.0.0/458502e12d97-LICENSE",
+          "reused_existing_notice": true,
+          "readback_equal": true
+        },
+        {
+          "installed_path": "<private-home>/.cache/oss-quality-sql-migration-fresh-20261009T165253131882Z/venv/lib/python3.12/site-packages/setuptools/_vendor/jaraco.text-4.0.0.dist-info/LICENSE",
+          "filename": "LICENSE",
+          "sha256": "86da0f01aeae46348a3c3d465195dc1ceccde79f79e87769a64b8da04b2a4741",
+          "retained_path": "verification/dependency-notices/setuptools-84.0.0/LICENSE",
+          "reused_existing_notice": true,
+          "readback_equal": true
+        },
+        {
+          "installed_path": "<private-home>/.cache/oss-quality-sql-migration-fresh-20261009T165253131882Z/venv/lib/python3.12/site-packages/setuptools/_vendor/jaraco_context-6.1.0.dist-info/licenses/LICENSE",
+          "filename": "LICENSE",
+          "sha256": "9755a18519666e5f0f4cae3daad3d7012bcae48a600b31237d75e9fe134e6683",
+          "retained_path": "verification/dependency-notices/setuptools-84.0.0/9755a1851966-LICENSE",
+          "reused_existing_notice": true,
+          "readback_equal": true
+        },
+        {
+          "installed_path": "<private-home>/.cache/oss-quality-sql-migration-fresh-20261009T165253131882Z/venv/lib/python3.12/site-packages/setuptools/_vendor/jaraco_functools-4.4.0.dist-info/licenses/LICENSE",
+          "filename": "LICENSE",
+          "sha256": "5a57cb4db85e2a2dd88c290628908add57e3451449e0a9a71fdfb38776fd759d",
+          "retained_path": "verification/dependency-notices/setuptools-84.0.0/5a57cb4db85e-LICENSE",
+          "reused_existing_notice": true,
+          "readback_equal": true
+        },
+        {
+          "installed_path": "<private-home>/.cache/oss-quality-sql-migration-fresh-20261009T165253131882Z/venv/lib/python3.12/site-packages/setuptools/_vendor/more_itertools-10.8.0.dist-info/licenses/LICENSE",
+          "filename": "LICENSE",
+          "sha256": "09f1c8c9e941af3e584d59641ea9b87d83c0cb0fd007eb5ef391a7e2643c1a46",
+          "retained_path": "verification/dependency-notices/setuptools-84.0.0/09f1c8c9e941-LICENSE",
+          "reused_existing_notice": true,
+          "readback_equal": true
+        },
+        {
+          "installed_path": "<private-home>/.cache/oss-quality-sql-migration-fresh-20261009T165253131882Z/venv/lib/python3.12/site-packages/setuptools/_vendor/packaging-26.0.dist-info/licenses/LICENSE",
+          "filename": "LICENSE",
+          "sha256": "cad1ef5bd340d73e074ba614d26f7deaca5c7940c3d8c34852e65c4909686c48",
+          "retained_path": "verification/dependency-notices/setuptools-84.0.0/cad1ef5bd340-LICENSE",
+          "reused_existing_notice": true,
+          "readback_equal": true
+        },
+        {
+          "installed_path": "<private-home>/.cache/oss-quality-sql-migration-fresh-20261009T165253131882Z/venv/lib/python3.12/site-packages/setuptools/_vendor/packaging-26.0.dist-info/licenses/LICENSE.APACHE",
+          "filename": "LICENSE.APACHE",
+          "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594",
+          "retained_path": "verification/dependency-notices/setuptools-84.0.0/LICENSE.APACHE",
+          "reused_existing_notice": true,
+          "readback_equal": true
+        },
+        {
+          "installed_path": "<private-home>/.cache/oss-quality-sql-migration-fresh-20261009T165253131882Z/venv/lib/python3.12/site-packages/setuptools/_vendor/packaging-26.0.dist-info/licenses/LICENSE.BSD",
+          "filename": "LICENSE.BSD",
+          "sha256": "b70e7e9b742f1cc6f948b34c16aa39ffece94196364bc88ff0d2180f0028fac5",
+          "retained_path": "verification/dependency-notices/setuptools-84.0.0/LICENSE.BSD",
+          "reused_existing_notice": true,
+          "readback_equal": true
+        },
+        {
+          "installed_path": "<private-home>/.cache/oss-quality-sql-migration-fresh-20261009T165253131882Z/venv/lib/python3.12/site-packages/setuptools/_vendor/platformdirs-4.4.0.dist-info/licenses/LICENSE",
+          "filename": "LICENSE",
+          "sha256": "29e0fd62e929850e86eb28c3fdccf0cefdf4fa94879011cffb3d0d4bed6d4db6",
+          "retained_path": "verification/dependency-notices/setuptools-84.0.0/29e0fd62e929-LICENSE",
+          "reused_existing_notice": true,
+          "readback_equal": true
+        },
+        {
+          "installed_path": "<private-home>/.cache/oss-quality-sql-migration-fresh-20261009T165253131882Z/venv/lib/python3.12/site-packages/setuptools/_vendor/tomli-2.4.0.dist-info/licenses/LICENSE",
+          "filename": "LICENSE",
+          "sha256": "b80816b0d530b8accb4c2211783790984a6e3b61922c2b5ee92f3372ab2742fe",
+          "retained_path": "verification/dependency-notices/setuptools-84.0.0/b80816b0d530-LICENSE",
+          "reused_existing_notice": true,
+          "readback_equal": true
+        },
+        {
+          "installed_path": "<private-home>/.cache/oss-quality-sql-migration-fresh-20261009T165253131882Z/venv/lib/python3.12/site-packages/setuptools/_vendor/wheel-0.46.3.dist-info/licenses/LICENSE.txt",
+          "filename": "LICENSE.txt",
+          "sha256": "30c23618679108f3e8ea1d2a658c7ca417bdfc891c98ef1a89fa4ff0c9828654",
+          "retained_path": "verification/dependency-notices/setuptools-84.0.0/LICENSE.txt",
+          "reused_existing_notice": true,
+          "readback_equal": true
+        },
+        {
+          "installed_path": "<private-home>/.cache/oss-quality-sql-migration-fresh-20261009T165253131882Z/venv/lib/python3.12/site-packages/setuptools/_vendor/zipp-3.23.0.dist-info/licenses/LICENSE",
+          "filename": "LICENSE",
+          "sha256": "5a57cb4db85e2a2dd88c290628908add57e3451449e0a9a71fdfb38776fd759d",
+          "retained_path": "verification/dependency-notices/setuptools-84.0.0/5a57cb4db85e-LICENSE",
+          "reused_existing_notice": true,
+          "readback_equal": true
+        },
+        {
+          "installed_path": "<private-home>/.cache/oss-quality-sql-migration-fresh-20261009T165253131882Z/venv/lib/python3.12/site-packages/setuptools/config/NOTICE",
+          "filename": "NOTICE",
+          "sha256": "2dddf08818297a3b89d43d95ff659d8da85741108c9136dfa3a4d856c0623bd8",
+          "retained_path": "verification/dependency-notices/setuptools-84.0.0/NOTICE",
+          "reused_existing_notice": true,
+          "readback_equal": true
+        },
+        {
+          "installed_path": "<private-home>/.cache/oss-quality-sql-migration-fresh-20261009T165253131882Z/venv/lib/python3.12/site-packages/setuptools/config/_validate_pyproject/NOTICE",
+          "filename": "NOTICE",
+          "sha256": "09c9bcea95ca086f8bc5bed174e40bc835b297d40fb5f86bbbb570fe0a5581a7",
+          "retained_path": "verification/dependency-notices/setuptools-84.0.0/09c9bcea95ca-NOTICE",
+          "reused_existing_notice": true,
+          "readback_equal": true
+        }
+      ]
+    },
+    {
+      "name": "SQLAlchemy",
+      "version": "2.1.4",
+      "license_expression": "MIT",
+      "license_metadata": null,
+      "notice_files": [
+        {
+          "installed_path": "<private-home>/.cache/oss-quality-sql-migration-fresh-20261009T165253131882Z/venv/lib/python3.12/site-packages/sqlalchemy-2.1.4.dist-info/licenses/LICENSE",
+          "filename": "LICENSE",
+          "sha256": "e862bb5b904fb5513c3e14288d7a25a12eb0ecc7847a0a965d310e9a955e7cb9",
+          "retained_path": "verification/dependency-notices/SQLAlchemy-2.1.4/LICENSE",
+          "reused_existing_notice": true,
+          "readback_equal": true
+        }
+      ]
+    },
+    {
+      "name": "tomli",
+      "version": "2.5.0",
+      "license_expression": "MIT",
+      "license_metadata": null,
+      "notice_files": [
+        {
+          "installed_path": "<private-home>/.cache/oss-quality-sql-migration-fresh-20261009T165253131882Z/venv/lib/python3.12/site-packages/tomli-2.5.0.dist-info/licenses/LICENSE",
+          "filename": "LICENSE",
+          "sha256": "b80816b0d530b8accb4c2211783790984a6e3b61922c2b5ee92f3372ab2742fe",
+          "retained_path": "verification/dependency-notices/tomli-2.5.0/LICENSE",
+          "reused_existing_notice": true,
+          "readback_equal": true
+        }
+      ]
+    },
+    {
+      "name": "typing_extensions",
+      "version": "4.16.0",
+      "license_expression": "PSF-2.0",
+      "license_metadata": null,
+      "notice_files": [
+        {
+          "installed_path": "<private-home>/.cache/oss-quality-sql-migration-fresh-20261009T165253131882Z/venv/lib/python3.12/site-packages/typing_extensions-4.16.0.dist-info/licenses/LICENSE",
+          "filename": "LICENSE",
+          "sha256": "3b2f81fe21d181c499c59a256c8e1968455d6689d269aa85373bfb6af41da3bf",
+          "retained_path": "verification/dependency-notices/typing_extensions-4.16.0/LICENSE",
+          "reused_existing_notice": true,
+          "readback_equal": true
+        }
+      ]
+    },
+    {
+      "name": "tzdata",
+      "version": "2026.5",
+      "license_expression": null,
+      "license_metadata": "Apache-2.0",
+      "notice_files": [
+        {
+          "installed_path": "<private-home>/.cache/oss-quality-sql-migration-fresh-20261009T165253131882Z/venv/lib/python3.12/site-packages/tzdata-2026.5.dist-info/licenses/LICENSE",
+          "filename": "LICENSE",
+          "sha256": "df58f69ea88683035d720b5375bcef0cf5aeaa98a1d098d572e0992c378deb46",
+          "retained_path": "verification/dependency-notices/tzdata-2026.5/LICENSE",
+          "reused_existing_notice": true,
+          "readback_equal": true
+        },
+        {
+          "installed_path": "<private-home>/.cache/oss-quality-sql-migration-fresh-20261009T165253131882Z/venv/lib/python3.12/site-packages/tzdata-2026.5.dist-info/licenses/licenses/LICENSE_APACHE",
+          "filename": "LICENSE_APACHE",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+          "retained_path": "verification/dependency-notices/tzdata-2026.5/LICENSE_APACHE",
+          "reused_existing_notice": true,
+          "readback_equal": true
+        }
+      ]
+    },
+    {
+      "name": "zimports",
+      "version": "0.7.0",
+      "license_expression": "MIT",
+      "license_metadata": null,
+      "notice_files": [
+        {
+          "installed_path": "<private-home>/.cache/oss-quality-sql-migration-fresh-20261009T165253131882Z/venv/lib/python3.12/site-packages/zimports-0.7.0.dist-info/licenses/LICENSE",
+          "filename": "LICENSE",
+          "sha256": "b82716e8df2ddb79b3bd061b3aa984c8e55bc5e356c09b652f37e9e467fe4681",
+          "retained_path": "verification/dependency-notices/zimports-0.7.0/LICENSE",
+          "reused_existing_notice": true,
+          "readback_equal": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+=========================== sqlalchemy installation ============================
+SQLAlchemy 2.1.4 (user site loaded)
+Path: <private-home>/.cache/oss-quality-sql-migration-component-20261009T151827793829Z/venv/lib/python3.12/site-packages/sqlalchemy/__init__.py
+compiled extension enabled, e.g. <private-home>/.cache/oss-quality-sql-migration-component-20261009T151827793829Z/venv/lib/python3.12/site-packages/sqlalchemy/engine/_util_cy.cpython-312-x86_64-linux-gnu.so 
+INTERNALERROR> Traceback (most recent call last):
+INTERNALERROR>   File "<private-home>/.cache/oss-quality-sql-migration-component-20261009T151827793829Z/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1946, in _exec_single_context
+INTERNALERROR>     self.dialect.do_execute(
+INTERNALERROR>   File "<private-home>/.cache/oss-quality-sql-migration-component-20261009T151827793829Z/venv/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 1192, in do_execute
+INTERNALERROR>     cursor.execute(statement, parameters)
+INTERNALERROR> psycopg2.errors.FeatureNotSupported: extension "citext" is not available
+INTERNALERROR> HINT:  The extension must first be installed on the system where PostgreSQL is running.
+INTERNALERROR> 
+INTERNALERROR> 
+INTERNALERROR> The above exception was the direct cause of the following exception:
+INTERNALERROR> 
+INTERNALERROR> Traceback (most recent call last):
+INTERNALERROR>   File "<private-home>/.cache/oss-quality-sql-migration-component-20261009T151827793829Z/venv/lib/python3.12/site-packages/_pytest/main.py", line 316, in wrap_session
+INTERNALERROR>     config.hook.pytest_sessionstart(session=session)
+INTERNALERROR>   File "<private-home>/.cache/oss-quality-sql-migration-component-20261009T151827793829Z/venv/lib/python3.12/site-packages/pluggy/_hooks.py", line 512, in __call__
+INTERNALERROR>     return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+INTERNALERROR>            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+INTERNALERROR>   File "<private-home>/.cache/oss-quality-sql-migration-component-20261009T151827793829Z/venv/lib/python3.12/site-packages/pluggy/_manager.py", line 120, in _hookexec
+INTERNALERROR>     return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+INTERNALERROR>            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+INTERNALERROR>   File "<private-home>/.cache/oss-quality-sql-migration-component-20261009T151827793829Z/venv/lib/python3.12/site-packages/pluggy/_callers.py", line 167, in _multicall
+INTERNALERROR>     raise exception
+INTERNALERROR>   File "<private-home>/.cache/oss-quality-sql-migration-component-20261009T151827793829Z/venv/lib/python3.12/site-packages/pluggy/_callers.py", line 121, in _multicall
+INTERNALERROR>     res = hook_impl.function(*args)
+INTERNALERROR>           ^^^^^^^^^^^^^^^^^^^^^^^^^
+INTERNALERROR>   File "<historical-candidate>/components/alembic/tests/conftest.py", line 50, in pytest_sessionstart
+INTERNALERROR>     wrap_pytest_sessionstart(session)
+INTERNALERROR>   File "<private-home>/.cache/oss-quality-sql-migration-component-20261009T151827793829Z/venv/lib/python3.12/site-packages/sqlalchemy/testing/plugin/pytestplugin.py", line 172, in pytest_sessionstart
+INTERNALERROR>     asyncio._assume_async(plugin_base.post_begin)
+INTERNALERROR>   File "<private-home>/.cache/oss-quality-sql-migration-component-20261009T151827793829Z/venv/lib/python3.12/site-packages/sqlalchemy/testing/asyncio.py", line 49, in _assume_async
+INTERNALERROR>     return fn(*args, **kwargs)
+INTERNALERROR>            ^^^^^^^^^^^^^^^^^^^
+INTERNALERROR>   File "<private-home>/.cache/oss-quality-sql-migration-component-20261009T151827793829Z/venv/lib/python3.12/site-packages/sqlalchemy/testing/plugin/plugin_base.py", line 296, in post_begin
+INTERNALERROR>     fn(options, file_config)
+INTERNALERROR>   File "<private-home>/.cache/oss-quality-sql-migration-component-20261009T151827793829Z/venv/lib/python3.12/site-packages/sqlalchemy/testing/plugin/plugin_base.py", line 466, in _engine_uri
+INTERNALERROR>     cfg = provision.setup_config(
+INTERNALERROR>           ^^^^^^^^^^^^^^^^^^^^^^^
+INTERNALERROR>   File "<private-home>/.cache/oss-quality-sql-migration-component-20261009T151827793829Z/venv/lib/python3.12/site-packages/sqlalchemy/testing/provision.py", line 96, in setup_config
+INTERNALERROR>     post_configure_engine(db_url, eng, follower_ident)
+INTERNALERROR>   File "<private-home>/.cache/oss-quality-sql-migration-component-20261009T151827793829Z/venv/lib/python3.12/site-packages/sqlalchemy/testing/provision.py", line 70, in __call__
+INTERNALERROR>     return self.fns[backend](cfg, *arg, **kw)
+INTERNALERROR>            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+INTERNALERROR>   File "<private-home>/.cache/oss-quality-sql-migration-component-20261009T151827793829Z/venv/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/provision.py", line 182, in _create_citext_extension
+INTERNALERROR>     conn.execute(
+INTERNALERROR>   File "<private-home>/.cache/oss-quality-sql-migration-component-20261009T151827793829Z/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1451, in execute
+INTERNALERROR>     return meth(
+INTERNALERROR>            ^^^^^
+INTERNALERROR>   File "<private-home>/.cache/oss-quality-sql-migration-component-20261009T151827793829Z/venv/lib/python3.12/site-packages/sqlalchemy/sql/elements.py", line 533, in _execute_on_connection
+INTERNALERROR>     return connection._execute_clauseelement(
+INTERNALERROR>            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+INTERNALERROR>   File "<private-home>/.cache/oss-quality-sql-migration-component-20261009T151827793829Z/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1671, in _execute_clauseelement
+INTERNALERROR>     ret = self._execute_context(
+INTERNALERROR>           ^^^^^^^^^^^^^^^^^^^^^^
+INTERNALERROR>   File "<private-home>/.cache/oss-quality-sql-migration-component-20261009T151827793829Z/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1825, in _execute_context
+INTERNALERROR>     return self._exec_single_context(
+INTERNALERROR>            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+INTERNALERROR>   File "<private-home>/.cache/oss-quality-sql-migration-component-20261009T151827793829Z/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1965, in _exec_single_context
+INTERNALERROR>     self._handle_dbapi_exception(
+INTERNALERROR>   File "<private-home>/.cache/oss-quality-sql-migration-component-20261009T151827793829Z/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 2335, in _handle_dbapi_exception
+INTERNALERROR>     raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+INTERNALERROR>   File "<private-home>/.cache/oss-quality-sql-migration-component-20261009T151827793829Z/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1946, in _exec_single_context
+INTERNALERROR>     self.dialect.do_execute(
+INTERNALERROR>   File "<private-home>/.cache/oss-quality-sql-migration-component-20261009T151827793829Z/venv/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 1192, in do_execute
+INTERNALERROR>     cursor.execute(statement, parameters)
+INTERNALERROR> sqlalchemy.exc.NotSupportedError: (psycopg2.errors.FeatureNotSupported) extension "citext" is not available
+INTERNALERROR> HINT:  The extension must first be installed on the system where PostgreSQL is running.
+INTERNALERROR> 
+INTERNALERROR> [SQL: CREATE EXTENSION IF NOT EXISTS citext]
+INTERNALERROR> (Background on this error at: https://sqlalche.me/e/21/tw8g)

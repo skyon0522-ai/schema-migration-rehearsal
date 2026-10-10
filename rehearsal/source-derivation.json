@@ -1,0 +1,32 @@
+{
+  "upstream_repository": "https://github.com/sqlalchemy/alembic",
+  "pin": "1bc21b86dd6ddd07ac696e2d73b6cb200dd97bbd",
+  "license": "MIT",
+  "retained_license": "rehearsal/LICENSE",
+  "license_sha256": "6e68d94a03a0e3e327ddf3e86d1ebedc14eece3922022618fc246a36296fd0cc",
+  "unchanged_runner": "components/alembic/alembic/runtime/migration.py",
+  "runner_sha256": "3f0137890bd1eedef93e5f6ec217061e9185f5a6f971430ec9a2b4d2192a5c41",
+  "source_test": "components/alembic/tests/test_postgresql.py",
+  "source_test_sha256": "325797a1eda249606b96066604d8b59308a9893594dcd8bf7935b1634d0da77a",
+  "source_mapping": [
+    {
+      "derived": "rehearsal/fixture.sql",
+      "original": "tests/test_postgresql.py:518-524",
+      "source_sql": "CREATE TYPE mood AS ENUM ('sad', 'ok', 'happy')",
+      "changes": "Schema qualification only for copied type SQL; table, fixed rows, compatibility gate and marker are task-specific glue."
+    },
+    {
+      "derived": "rehearsal/expand.sql",
+      "original": "tests/test_postgresql.py:530-535",
+      "source_sql": "ALTER TYPE mood ADD VALUE 'soso'",
+      "changes": "Fixed schema qualification and IF NOT EXISTS, executed only after expected-shape/marker/row checks."
+    }
+  ],
+  "new_glue": {
+    "worker.py": "Fixed state inspection, copied API calls, completion transaction and controlled barriers.",
+    "check_contract.py": "Disposable cluster, old-client checks, child process termination, drift and activation checks.",
+    "verification.sql": "Catalog and full-row observation queries.",
+    "activation.sql": "Separate explicit gate removal and new-label negative control."
+  },
+  "scope": "No edits to original/duplicate package or test source; no independently reimplemented autocommit method; no general migration engine."
+}

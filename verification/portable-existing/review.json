@@ -1,0 +1,3538 @@
+{
+  "at_utc": "2026-10-09T16:44:05.793267+00:00",
+  "stage": "<private-workspace>/work/oss-quality-20261008/portfolio-twenty-20261009/publication-review/staged/schema-migration-rehearsal-source-v2",
+  "native_parent": "<private-home>/.cache/oss-quality-sql-migration-portable-20261009T164405791392Z",
+  "report": "<private-workspace>/work/oss-quality-20261008/portfolio-twenty-20261009/reviews/sql-migration-component-20261010T014405-portable.json",
+  "python": "<private-home>/.cache/oss-quality-sql-migration-component-20261009T151827793829Z/venv/bin/python",
+  "postgres_bin": "<private-home>/.local/opt/oss-quality-postgres-18.6/bin",
+  "postgres_versions": {
+    "postgres": "postgres (PostgreSQL) 18.6",
+    "pg_ctl": "pg_ctl (PostgreSQL) 18.6",
+    "initdb": "initdb (PostgreSQL) 18.6",
+    "createdb": "createdb (PostgreSQL) 18.6",
+    "psql": "psql (PostgreSQL) 18.6",
+    "pg_config": "PostgreSQL 18.6"
+  },
+  "preflight_commands": [
+    {
+      "command": [
+        "<private-home>/.local/opt/oss-quality-postgres-18.6/bin/postgres",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "postgres (PostgreSQL) 18.6\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "<private-home>/.local/opt/oss-quality-postgres-18.6/bin/pg_ctl",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "pg_ctl (PostgreSQL) 18.6\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "<private-home>/.local/opt/oss-quality-postgres-18.6/bin/initdb",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "initdb (PostgreSQL) 18.6\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "<private-home>/.local/opt/oss-quality-postgres-18.6/bin/createdb",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "createdb (PostgreSQL) 18.6\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "<private-home>/.local/opt/oss-quality-postgres-18.6/bin/psql",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "psql (PostgreSQL) 18.6\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "<private-home>/.local/opt/oss-quality-postgres-18.6/bin/pg_config",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "PostgreSQL 18.6\n",
+      "stderr": ""
+    }
+  ],
+  "stage_before": {
+    ".gitattributes": {
+      "bytes": 8,
+      "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da"
+    },
+    ".gitignore": {
+      "bytes": 30,
+      "sha256": "22bc478fc0eb97818e8c2efd9a6c8f9dce55490bdd8074a3f2b6b8653c5c12d5"
+    },
+    "LICENSE": {
+      "bytes": 1059,
+      "sha256": "6e68d94a03a0e3e327ddf3e86d1ebedc14eece3922022618fc246a36296fd0cc"
+    },
+    "NOTICE": {
+      "bytes": 960,
+      "sha256": "d3f0fdff0e7eabe8d6565fdc07f2eb1e1c5047d10c5c808379ee418e6e2c5c15"
+    },
+    "PROVENANCE.md": {
+      "bytes": 6173,
+      "sha256": "c55f80f79cc87452c54991f6d3a8f86c45d41764a4d4ac2f1f8a1afa62d0edb3"
+    },
+    "README.md": {
+      "bytes": 6897,
+      "sha256": "576a84ff5db27d743de4559510b097df3b41e985f0ef57b1de6a2e6dc195b381"
+    },
+    "RESEARCH.md": {
+      "bytes": 2136,
+      "sha256": "a862ca1aa9a2009b49140ace3e2106476169daa374d518c78bb906ac93ee4435"
+    },
+    "VERIFICATION.md": {
+      "bytes": 5944,
+      "sha256": "f172cf809263e51f0d039f856a3a133c846ec3e239faa1cb153d234d38bb03fb"
+    },
+    "components/alembic/.github/CODE_OF_CONDUCT.md": {
+      "bytes": 2090,
+      "sha256": "d67fa3b78b462be047e2d7c52953fcd4b5cf5ae2e652de3d44f6799dc6cac1e3"
+    },
+    "components/alembic/.github/CONTRIBUTING.md": {
+      "bytes": 2977,
+      "sha256": "f31fffa7231280edc9e31dc5da2ab5dd0a4551d061df8c8d3e5359bf2abb7e56"
+    },
+    "components/alembic/.github/FUNDING.yml": {
+      "bytes": 108,
+      "sha256": "ae90c24ca997085b9a0d76485c5d7967956ee1ef21d6315edc24754e8e48d4cc"
+    },
+    "components/alembic/.github/ISSUE_TEMPLATE/bug_report.md": {
+      "bytes": 1112,
+      "sha256": "693da0a09609aaad5fc4f8554249602acdb1c5ac1b326e5429568f15fbeb8415"
+    },
+    "components/alembic/.github/ISSUE_TEMPLATE/config.yml": {
+      "bytes": 734,
+      "sha256": "f8ef0a39157de1922bb16f6644500941cc8038febddb1bca3fc037cf40c1c73f"
+    },
+    "components/alembic/.github/ISSUE_TEMPLATE/use_case.md": {
+      "bytes": 842,
+      "sha256": "808ac3ac398d689548141bbd89dd5875d535aac9f4c65eb69dcbf0ccbe605414"
+    },
+    "components/alembic/.github/SECURITY.md": {
+      "bytes": 277,
+      "sha256": "3858d52d46ec322f45800fa4078b97628e8ccc1ff2fdfc5d1977372710dab845"
+    },
+    "components/alembic/.github/dependabot.yml": {
+      "bytes": 903,
+      "sha256": "c1c6566d6a6319010cccf775d490fc05dc66747cfc00495bce1f038a3b42f366"
+    },
+    "components/alembic/.github/pull_request_template.md": {
+      "bytes": 1124,
+      "sha256": "04d12aeea30d2f44f5e9307384c5eca49841cdbae002536d2a64eb76a4b55fa6"
+    },
+    "components/alembic/.github/workflows/run-on-pr.yaml": {
+      "bytes": 2118,
+      "sha256": "2a58d00da15f456eb4396e512fe2e5e01e3753084289dfd13d7fcec771fd562f"
+    },
+    "components/alembic/.github/workflows/run-test.yaml": {
+      "bytes": 2389,
+      "sha256": "c3038ce8b366d4697afd7bffb94e96e9bc0bf78f3e72fb2919696d83481b3d09"
+    },
+    "components/alembic/.gitignore": {
+      "bytes": 280,
+      "sha256": "7bb5a0d0d6e46d8fe82b54cca9218f1487051fed6f0a1be0e54811b6da8c5798"
+    },
+    "components/alembic/.gitreview": {
+      "bytes": 177,
+      "sha256": "2c71d22c54553a0ab431c838a18fc50c75f25b227fbbbca72bfc790df7ea84e8"
+    },
+    "components/alembic/.pre-commit-config.yaml": {
+      "bytes": 697,
+      "sha256": "34c62a9fcb6c32f4361393da6c6ab5555b6e18e6b9e2a4093e73aca080ea4463"
+    },
+    "components/alembic/CHANGES": {
+      "bytes": 178,
+      "sha256": "3a70791e5e2db9819ac8f7c3498daab0104056d2552fb1a220a0ee9333f42325"
+    },
+    "components/alembic/LICENSE": {
+      "bytes": 1059,
+      "sha256": "6e68d94a03a0e3e327ddf3e86d1ebedc14eece3922022618fc246a36296fd0cc"
+    },
+    "components/alembic/MANIFEST.in": {
+      "bytes": 341,
+      "sha256": "c7e535119fa777a8333dc9691439b7dc0bb6fca7f4714bc80080a93d3dfa79cd"
+    },
+    "components/alembic/README.rst": {
+      "bytes": 5737,
+      "sha256": "422e4662fb3bfb4170bd3323db618f3c495cb4d729d077a481ad29730148d87e"
+    },
+    "components/alembic/README.unittests.rst": {
+      "bytes": 15006,
+      "sha256": "eaa5b77d1c3b4cbee1b8621fb4d76ce9bd9fb210abb6718f24ab6dad7992af1c"
+    },
+    "components/alembic/alembic/__init__.py": {
+      "bytes": 92,
+      "sha256": "d8df16a7dbd9a840999607290340b2ce89124926ab0f3f1568e8b901e87ab18c"
+    },
+    "components/alembic/alembic/__main__.py": {
+      "bytes": 78,
+      "sha256": "dfbde6efe4c187bd89aab48c62f886af1087668f9c9f078cf00185f00db63e66"
+    },
+    "components/alembic/alembic/autogenerate/__init__.py": {
+      "bytes": 543,
+      "sha256": "9ed9944d78632e6e3fce6a88c3255a1027693c39fafeed7233dbd893afb9e771"
+    },
+    "components/alembic/alembic/autogenerate/api.py": {
+      "bytes": 22614,
+      "sha256": "85887aac9e1fe3e6cfc47781de1bc7862f2c1f531d1a3a49fa806737f543b4fe"
+    },
+    "components/alembic/alembic/autogenerate/compare/__init__.py": {
+      "bytes": 2217,
+      "sha256": "b0cd39e0e6046cb7a635ff704beaf59dcd8746e0b2c5953810fc1d091b9f558d"
+    },
+    "components/alembic/alembic/autogenerate/compare/comments.py": {
+      "bytes": 3157,
+      "sha256": "e1d93b590b518fe99c061a37bb935d519a03dd212f8a4f902e0015bc51c1d1d2"
+    },
+    "components/alembic/alembic/autogenerate/compare/constraints.py": {
+      "bytes": 27993,
+      "sha256": "9c06148b69990a3fcab8b7192d995958b698d9b4843c1589981c4b8c977abeee"
+    },
+    "components/alembic/alembic/autogenerate/compare/schema.py": {
+      "bytes": 1641,
+      "sha256": "79e8904d8b7e85800a1efd468d4d2c6c4d6bf830c64377f3ce0b0e15296061dd"
+    },
+    "components/alembic/alembic/autogenerate/compare/server_defaults.py": {
+      "bytes": 10678,
+      "sha256": "67fcb2ea4fd3ea225decb2833b71efe114dce6e2b388abf806aaa602270a5f6d"
+    },
+    "components/alembic/alembic/autogenerate/compare/tables.py": {
+      "bytes": 10504,
+      "sha256": "68b2023090fb3081bb704d3b8c165fe8a18ca7a8e932932a5b2f08eaa6a43338"
+    },
+    "components/alembic/alembic/autogenerate/compare/types.py": {
+      "bytes": 3910,
+      "sha256": "0abf40d93739dde8899d1231413215ebb262483c4610e7f849d739d2c47d29b6"
+    },
+    "components/alembic/alembic/autogenerate/compare/util.py": {
+      "bytes": 7196,
+      "sha256": "8d8cf847dc0f17c2f290aef0d588da9c098d7503b52f1f1b848fbfa2f5d95d7e"
+    },
+    "components/alembic/alembic/autogenerate/render.py": {
+      "bytes": 38880,
+      "sha256": "c307dbc9135b02fe0278853cd42eccc1c0cd7296c2c300d396139008f542d348"
+    },
+    "components/alembic/alembic/autogenerate/rewriter.py": {
+      "bytes": 7676,
+      "sha256": "b96ce1d6256210c7bd8dadcafb70a7a72d5637bad4f01dbce463716fe35bbc9c"
+    },
+    "components/alembic/alembic/command.py": {
+      "bytes": 25359,
+      "sha256": "40fa925f798b81fb4f35c8bc8deb25af5ee697ace63bb680856b6de7292e90ad"
+    },
+    "components/alembic/alembic/config.py": {
+      "bytes": 34788,
+      "sha256": "34bfe62f3ee3021a29c22057e5e9c61c3eff128fe92aa9dee31fd20a33552e84"
+    },
+    "components/alembic/alembic/context.py": {
+      "bytes": 195,
+      "sha256": "84ad4024e417276f41867dbbe8661ca2cc5e1bba42e5a6514f913c7386cc2784"
+    },
+    "components/alembic/alembic/context.pyi": {
+      "bytes": 32585,
+      "sha256": "eb39e73baecbfbf0c75a1c5b36339f8e75c21a48323b3549f667d25cedf3d639"
+    },
+    "components/alembic/alembic/ddl/__init__.py": {
+      "bytes": 152,
+      "sha256": "0dff1fcb8567fda6cff01eeadf1f20c85c04c272f0ea1b362e3b7f6d5dc46561"
+    },
+    "components/alembic/alembic/ddl/_autogen.py": {
+      "bytes": 10176,
+      "sha256": "553f968d23c0acc7723dab875663421752e2081d8d34f11ff9ff92f4646ec1d3"
+    },
+    "components/alembic/alembic/ddl/base.py": {
+      "bytes": 12111,
+      "sha256": "c367416334a7e0bab91ace9405c150e9ed59b9dfebdcd6a9ecf91502f85ee42e"
+    },
+    "components/alembic/alembic/ddl/impl.py": {
+      "bytes": 31352,
+      "sha256": "f9c80657e52a12ce879e373b5730bc9eb83ab3cd2070ddbc983e254753e51c0b"
+    },
+    "components/alembic/alembic/ddl/mssql.py": {
+      "bytes": 17121,
+      "sha256": "e16891474fd4b869dc3a4025e5cc9fbf6b5f9cce4b9fb68409b460e53b78f064"
+    },
+    "components/alembic/alembic/ddl/mysql.py": {
+      "bytes": 21188,
+      "sha256": "ffb7fe57fef20eeb3b7fa82851dd9c6828c66a2725ab2d439bc2d2c7ada09a28"
+    },
+    "components/alembic/alembic/ddl/oracle.py": {
+      "bytes": 6212,
+      "sha256": "3c7c667b9de91b48b2a0c3b3eb58d28bca4b2efe795414918baf6c1d727232d2"
+    },
+    "components/alembic/alembic/ddl/postgresql.py": {
+      "bytes": 30061,
+      "sha256": "aa7f1702f93a98b10f140adf3d728c96ad2ab37412223104deaa972c2a424bba"
+    },
+    "components/alembic/alembic/ddl/sqlite.py": {
+      "bytes": 7925,
+      "sha256": "88ccb511e6b106d9547b030aaab3caeef1e47211f4c87cbffb888ffb2e96a215"
+    },
+    "components/alembic/alembic/environment.py": {
+      "bytes": 43,
+      "sha256": "30ce653dac864f4e07dda7a78351fb190f07100b375465f9cb2ea60cb08f2d3e"
+    },
+    "components/alembic/alembic/ext/__init__.py": {
+      "bytes": 318,
+      "sha256": "da4176392444bc6e936266beaa5b7c8c85449dba69a7eb1bddd59a1dad30b655"
+    },
+    "components/alembic/alembic/ext/checkconstraint_byname.py": {
+      "bytes": 6465,
+      "sha256": "aba227d9f145201a784aab7dbec75d34981e53ad5c70dbfdbbebc1f24938b18b"
+    },
+    "components/alembic/alembic/migration.py": {
+      "bytes": 41,
+      "sha256": "315e858eeeab66d9f67d34442b35eb09933a688046208e0e319162c745fe18bb"
+    },
+    "components/alembic/alembic/op.py": {
+      "bytes": 167,
+      "sha256": "7e51ed72c56a383f9981928ada9bfe089e42c21f8a27ba6e314357ce2b21c4bc"
+    },
+    "components/alembic/alembic/op.pyi": {
+      "bytes": 52937,
+      "sha256": "30bcd57e4d83b4df52785beb06132998777e38a5931e1d81e8fe984780e5ebba"
+    },
+    "components/alembic/alembic/operations/__init__.py": {
+      "bytes": 317,
+      "sha256": "c5d6573161894506a6e826d3b4157812468e7bb0d490795a5ec551d9ef626e37"
+    },
+    "components/alembic/alembic/operations/base.py": {
+      "bytes": 77791,
+      "sha256": "78682ee119dae948082c3f687a19988a32ac7a075f91382cacd97833122dcdf0"
+    },
+    "components/alembic/alembic/operations/batch.py": {
+      "bytes": 29518,
+      "sha256": "f13a33aba36068943825d19d51709d34e69d61ce8b466ec3502ccef2a1a5ebe4"
+    },
+    "components/alembic/alembic/operations/ops.py": {
+      "bytes": 98319,
+      "sha256": "f0df2e6f9e88f7cf319df746c9f1243752f9e5119bd683c32ece6043b9951419"
+    },
+    "components/alembic/alembic/operations/schemaobj.py": {
+      "bytes": 8975,
+      "sha256": "babaefacd6e3e6efd74c9023120213f5336a8b09c4cc855d2ca5c2ca495fbeb5"
+    },
+    "components/alembic/alembic/operations/toimpl.py": {
+      "bytes": 8340,
+      "sha256": "c30d6b8e081b1a9c29348ceffa7324269a076d2330a7b5c86a1b30c3e436798a"
+    },
+    "components/alembic/alembic/py.typed": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "components/alembic/alembic/runtime/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "components/alembic/alembic/runtime/environment.py": {
+      "bytes": 42511,
+      "sha256": "ef1e6d897b6df59be0a99dedf32ff09429631873ccb9585e9680efaaf5fc3159"
+    },
+    "components/alembic/alembic/runtime/migration.py": {
+      "bytes": 48090,
+      "sha256": "3f0137890bd1eedef93e5f6ec217061e9185f5a6f971430ec9a2b4d2192a5c41"
+    },
+    "components/alembic/alembic/runtime/plugins.py": {
+      "bytes": 7208,
+      "sha256": "d31de53e33ff8ddd1da495c0fa2b4f5f88e9ad6d9e40bbccdeeeeb3b65a5e7f1"
+    },
+    "components/alembic/alembic/script/__init__.py": {
+      "bytes": 100,
+      "sha256": "9528f4e8edfdd48cb96af5808aaf123ece8df11060c6448f8cff30a5770d0c68"
+    },
+    "components/alembic/alembic/script/base.py": {
+      "bytes": 36992,
+      "sha256": "377bfedf325ccf3cab4c7eaa1dd45613209aeb4d1a1b9223436830e7ec0ee98d"
+    },
+    "components/alembic/alembic/script/revision.py": {
+      "bytes": 61943,
+      "sha256": "e344a758dfabad1925d9cc91f5af9b29cf81e65d184bf48c78f8a5bf02b58a95"
+    },
+    "components/alembic/alembic/script/write_hooks.py": {
+      "bytes": 5369,
+      "sha256": "2961f5db6e7487f25c741906b0b568f492982a935c2710548f067daffafcf017"
+    },
+    "components/alembic/alembic/templates/async/README": {
+      "bytes": 58,
+      "sha256": "21256d00ebeabca93fe5384ce62a0913e94c92f7fd21b92715415553fbcf99ae"
+    },
+    "components/alembic/alembic/templates/async/alembic.ini.mako": {
+      "bytes": 5010,
+      "sha256": "7ac6ee0a7a64ca39ed242ee4f4d9d870203386b450f0d542e295a29de89193fc"
+    },
+    "components/alembic/alembic/templates/async/env.py": {
+      "bytes": 2389,
+      "sha256": "cdb3827f763bc36960f768714b0986d4c33fef2e7a8bfa111f800aa74a50058a"
+    },
+    "components/alembic/alembic/templates/async/script.py.mako": {
+      "bytes": 704,
+      "sha256": "d38920781b4d31ae1c0a71bc09f41c2ade8feab9e5a087e3f30cb4bbf0c1c9d3"
+    },
+    "components/alembic/alembic/templates/generic/README": {
+      "bytes": 38,
+      "sha256": "31595cf53626af9ed16e15c44fa43183209cc163fbc3ebcb904b22ac436a8884"
+    },
+    "components/alembic/alembic/templates/generic/alembic.ini.mako": {
+      "bytes": 5010,
+      "sha256": "da2daf3ec1904a613d5cc88bcfcb52045fd4200f0f265d3e7c0bdb4559a22bfc"
+    },
+    "components/alembic/alembic/templates/generic/env.py": {
+      "bytes": 2103,
+      "sha256": "4cb4563955b75e9b7f4e97fc245ce59e83e7feaa14bbc515efb638a3d5c3eb22"
+    },
+    "components/alembic/alembic/templates/generic/script.py.mako": {
+      "bytes": 704,
+      "sha256": "d38920781b4d31ae1c0a71bc09f41c2ade8feab9e5a087e3f30cb4bbf0c1c9d3"
+    },
+    "components/alembic/alembic/templates/multidb/README": {
+      "bytes": 606,
+      "sha256": "7562c3867060a610383736fbb0d94c7c24b7ff4e98a956c7873fbd3b924dab22"
+    },
+    "components/alembic/alembic/templates/multidb/alembic.ini.mako": {
+      "bytes": 5336,
+      "sha256": "6ac56ddda255c23baec3d6e8a5f3287d5be89cedf57285c16d5e4378c44de9c3"
+    },
+    "components/alembic/alembic/templates/multidb/env.py": {
+      "bytes": 4230,
+      "sha256": "eb33639d6f265c6524edead3b00beb7e1beaa1ccc9fa06a08d5ab56298366084"
+    },
+    "components/alembic/alembic/templates/multidb/script.py.mako": {
+      "bytes": 1235,
+      "sha256": "65b0973242395a3d9dc0d29cc6e54690a67b21abfddc1371fdb338cdb1a2ddcf"
+    },
+    "components/alembic/alembic/templates/pyproject/README": {
+      "bytes": 60,
+      "sha256": "74c848885a1e33b11d79a39706cde6550eb35c008cc865c36ff50107ab06440d"
+    },
+    "components/alembic/alembic/templates/pyproject/alembic.ini.mako": {
+      "bytes": 782,
+      "sha256": "6d09c4a327672ce52083dbcd6d33b2b38af931a5bc966c181574ab95f744124c"
+    },
+    "components/alembic/alembic/templates/pyproject/env.py": {
+      "bytes": 2103,
+      "sha256": "4cb4563955b75e9b7f4e97fc245ce59e83e7feaa14bbc515efb638a3d5c3eb22"
+    },
+    "components/alembic/alembic/templates/pyproject/pyproject.toml.mako": {
+      "bytes": 3000,
+      "sha256": "5bac7f2bec4b7c4bf233c0f8077160d25db43f587a48f2b7df5f3ca6a445ae84"
+    },
+    "components/alembic/alembic/templates/pyproject/script.py.mako": {
+      "bytes": 704,
+      "sha256": "d38920781b4d31ae1c0a71bc09f41c2ade8feab9e5a087e3f30cb4bbf0c1c9d3"
+    },
+    "components/alembic/alembic/templates/pyproject_async/README": {
+      "bytes": 45,
+      "sha256": "d90e57704a2e8aa43e4c9b2c3bdf34e4b44e91551dd05e9def8ad39ee2eb89f0"
+    },
+    "components/alembic/alembic/templates/pyproject_async/alembic.ini.mako": {
+      "bytes": 782,
+      "sha256": "6d09c4a327672ce52083dbcd6d33b2b38af931a5bc966c181574ab95f744124c"
+    },
+    "components/alembic/alembic/templates/pyproject_async/env.py": {
+      "bytes": 2389,
+      "sha256": "cdb3827f763bc36960f768714b0986d4c33fef2e7a8bfa111f800aa74a50058a"
+    },
+    "components/alembic/alembic/templates/pyproject_async/pyproject.toml.mako": {
+      "bytes": 3000,
+      "sha256": "5bac7f2bec4b7c4bf233c0f8077160d25db43f587a48f2b7df5f3ca6a445ae84"
+    },
+    "components/alembic/alembic/templates/pyproject_async/script.py.mako": {
+      "bytes": 704,
+      "sha256": "d38920781b4d31ae1c0a71bc09f41c2ade8feab9e5a087e3f30cb4bbf0c1c9d3"
+    },
+    "components/alembic/alembic/testing/__init__.py": {
+      "bytes": 1178,
+      "sha256": "2a427878890dce5eb2dde5d5277c350ea9471ee311e745a10e5fa2eb53cf186e"
+    },
+    "components/alembic/alembic/testing/assertions.py": {
+      "bytes": 5193,
+      "sha256": "9f55ca2db8b0bd186bc3c59ee70a3390fb86ff5e37ac2f67cc6a608db5ecaa7d"
+    },
+    "components/alembic/alembic/testing/env.py": {
+      "bytes": 11591,
+      "sha256": "a91b281d75bffd04917b199eec4c0af2c4111ad702cb8bf17a665c26b7000703"
+    },
+    "components/alembic/alembic/testing/fixtures.py": {
+      "bytes": 11677,
+      "sha256": "f342d2f9ccc0ebe0775260a6e198ead049f55d5e8923918608db25351753d30c"
+    },
+    "components/alembic/alembic/testing/plugin/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "components/alembic/alembic/testing/plugin/bootstrap.py": {
+      "bytes": 50,
+      "sha256": "f42eb0b631ab215ced67ddbcc36ee1b1013429c8c32c852d50ddddbd92ac3159"
+    },
+    "components/alembic/alembic/testing/requirements.py": {
+      "bytes": 4707,
+      "sha256": "d2e0416637615ab6f0b58c080f272a18e65676f5af8f497601c0e05ded96484f"
+    },
+    "components/alembic/alembic/testing/schemacompare.py": {
+      "bytes": 4838,
+      "sha256": "37952a48d08e25eb48282e2f2a1a58cd01298f4f1791d808a2a06610f437b657"
+    },
+    "components/alembic/alembic/testing/suite/__init__.py": {
+      "bytes": 288,
+      "sha256": "32f13bfa1c1b695375ab734cfb3b46c4e454f5d9c87a550220d2aa3717b09fb6"
+    },
+    "components/alembic/alembic/testing/suite/_autogen_fixtures.py": {
+      "bytes": 14153,
+      "sha256": "c062d8d32d50f628812b58c6221d4bec5e8663036957388a949d2f5bd1de6b0c"
+    },
+    "components/alembic/alembic/testing/suite/test_autogen_comments.py": {
+      "bytes": 6283,
+      "sha256": "6841aa2940f0e241e39c3936f7c6a819c42f5c95a66577085ffd85c47e1c24af"
+    },
+    "components/alembic/alembic/testing/suite/test_autogen_computed.py": {
+      "bytes": 4554,
+      "sha256": "a6e274841b4bccdcfc2e23c6a833d2f2fb1ee9d512f55081a54770f9c3a4b19a"
+    },
+    "components/alembic/alembic/testing/suite/test_autogen_diffs.py": {
+      "bytes": 8394,
+      "sha256": "4f8491d67fe499c38a6214785b5f9d0347b9b1d749ebd0d254bd875bdea40241"
+    },
+    "components/alembic/alembic/testing/suite/test_autogen_fks.py": {
+      "bytes": 32930,
+      "sha256": "c072a30f81207fb219947d07630f9cf2eb62d23849a4e9b92b8d903177f9b48c"
+    },
+    "components/alembic/alembic/testing/suite/test_autogen_identity.py": {
+      "bytes": 5824,
+      "sha256": "91cbaa9e01bba9700a3c90d7e14f2c4733ca1c4244087b99d03b6e692ead5649"
+    },
+    "components/alembic/alembic/testing/suite/test_environment.py": {
+      "bytes": 11260,
+      "sha256": "ac2cf5c014115d097d984691fafa0d4cec382708b6890acf3c9f02276ec0dc7d"
+    },
+    "components/alembic/alembic/testing/suite/test_op.py": {
+      "bytes": 1343,
+      "sha256": "d97402766fcd9a73f11c6b868fb866c4ccc884ac57368b54b0a740097cc4d663"
+    },
+    "components/alembic/alembic/testing/util.py": {
+      "bytes": 3003,
+      "sha256": "44b7a15919403ee6d7c0472335ec54cba04e3de4094b25e8c3a0dc4a729b10ed"
+    },
+    "components/alembic/alembic/testing/warnings.py": {
+      "bytes": 1322,
+      "sha256": "1e8e050fa83560ecddf315eb1da3ec94e8f6dc27426407339ff909218c4a90a5"
+    },
+    "components/alembic/alembic/util/__init__.py": {
+      "bytes": 1781,
+      "sha256": "eea60014e31ea4a88e0429c68bb8cc803fe66eaf9b30c84308119577361dee8e"
+    },
+    "components/alembic/alembic/util/compat.py": {
+      "bytes": 3828,
+      "sha256": "bb769ab0cc9339c72366136df7b23ec0c52b677ffc0a220ba08f6c94f8c8cead"
+    },
+    "components/alembic/alembic/util/editor.py": {
+      "bytes": 2467,
+      "sha256": "15c76ae48fb16451b5c18ea33219a41954137466f8c369928075477b78784d0e"
+    },
+    "components/alembic/alembic/util/exc.py": {
+      "bytes": 944,
+      "sha256": "3ca150476cae5b83db92774b6cfabd1110ba625334e8efe94ec89e6e6936f8cd"
+    },
+    "components/alembic/alembic/util/langhelpers.py": {
+      "bytes": 13053,
+      "sha256": "bb0c7399a0c453b66b0d17da50514f72c66c77fc9ea966c0b88ad826811f63c0"
+    },
+    "components/alembic/alembic/util/messaging.py": {
+      "bytes": 3235,
+      "sha256": "b98946376b27ddd3b21e62ed69247751740206bf1de304f9274ba3ef8c2b0f49"
+    },
+    "components/alembic/alembic/util/pyfiles.py": {
+      "bytes": 4603,
+      "sha256": "3c6d0fdde6a9b92b01cb19e8302a60131373d1f386ecdceba6a722a3f94011c5"
+    },
+    "components/alembic/alembic/util/sqla_compat.py": {
+      "bytes": 19346,
+      "sha256": "b4cf72728c191352e61ef133f028fef036e4cec52b292a3cbc824e2e748bcbab"
+    },
+    "components/alembic/docs/build/Makefile": {
+      "bytes": 3564,
+      "sha256": "23bcf78b241559e8c8723a477dc6f2d89a732832531d2ac726d3f5642af04432"
+    },
+    "components/alembic/docs/build/_static/nature_override.css": {
+      "bytes": 507,
+      "sha256": "19251f5d55a0c51769f29737fbe7a198d2384370537c3098f8d3a1c5e5be151b"
+    },
+    "components/alembic/docs/build/_static/site_custom_css.css": {
+      "bytes": 43,
+      "sha256": "f213bd1206c02d8fb28c28bd1cc2c99addc58463c150fccda5525cb6cb76cf37"
+    },
+    "components/alembic/docs/build/_templates/site_custom_sidebars.html": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "components/alembic/docs/build/api/api_overview.png": {
+      "bytes": 123965,
+      "sha256": "b403281a4d83d6d921600e7f5c4701c956c1ec33f5b07c0430f68399316f2434"
+    },
+    "components/alembic/docs/build/api/autogenerate.rst": {
+      "bytes": 24750,
+      "sha256": "6402e9dc4e3f8b6b65aa4b1838c37ea56e53093dcb32a69d3951b7ef148c944b"
+    },
+    "components/alembic/docs/build/api/commands.rst": {
+      "bytes": 1721,
+      "sha256": "54b90e9bcf861648b5752e2fc1020a78e20de280f635ec24518cde6a060c5815"
+    },
+    "components/alembic/docs/build/api/config.rst": {
+      "bytes": 1232,
+      "sha256": "93747bd208fcd1e78630990baa971a5007994f3ccedd2f1f60ae9df83c9de579"
+    },
+    "components/alembic/docs/build/api/ddl.rst": {
+      "bytes": 1090,
+      "sha256": "9c53c16786947b4864a196220897e0c282cdcaf8fc23713c86880e290bb00cf1"
+    },
+    "components/alembic/docs/build/api/exceptions.rst": {
+      "bytes": 157,
+      "sha256": "754b56572821ad0272adf0d6f5407232c646b18740883d5d36fe3d9091faa424"
+    },
+    "components/alembic/docs/build/api/index.rst": {
+      "bytes": 1037,
+      "sha256": "1d7ce214c5f2370ea3c5b68cc3877dc72c76517c3404eeeef93e3aaefb60f348"
+    },
+    "components/alembic/docs/build/api/operations.rst": {
+      "bytes": 9415,
+      "sha256": "0f77297baa304fd90fa011edfdca2e1547cd8b33590401e7a5a6297cc5ff2414"
+    },
+    "components/alembic/docs/build/api/overview.rst": {
+      "bytes": 3409,
+      "sha256": "a87f41b590ecbf60fc87644a4802e133201fc023ffe3344228e4e1c4e706d694"
+    },
+    "components/alembic/docs/build/api/plugins.rst": {
+      "bytes": 20498,
+      "sha256": "2a2afc9ada1dd5bb00f934376eee09700babc2e401f17064c9a9db06f4e58331"
+    },
+    "components/alembic/docs/build/api/runtime.rst": {
+      "bytes": 1505,
+      "sha256": "21dd263c5a8377d5aa05c878549183ccc2c7931bf9cad42820c8af49e868ac5a"
+    },
+    "components/alembic/docs/build/api/script.rst": {
+      "bytes": 533,
+      "sha256": "ca8c89855d86dc4b94624eeb79cf36fe405572ecc6919efe22765b4a66869e19"
+    },
+    "components/alembic/docs/build/assets/api_overview.graffle": {
+      "bytes": 69295,
+      "sha256": "f728fc67cafd944d318be81563e73256269ca68958422b8df98fae0956a91286"
+    },
+    "components/alembic/docs/build/autogenerate.rst": {
+      "bytes": 42995,
+      "sha256": "c76115a47236cd779097d1535a0490cdf505c83fdadae695b15d59d9ca92e31b"
+    },
+    "components/alembic/docs/build/batch.rst": {
+      "bytes": 17975,
+      "sha256": "99faadcdd062e020e9a76fb8e52c7066980d7aae467800fa62d7457357b26f9b"
+    },
+    "components/alembic/docs/build/branches.rst": {
+      "bytes": 35218,
+      "sha256": "d5a5ec1063e16b264cc15431853bed0947c9851ad571c7c334038e77099559f8"
+    },
+    "components/alembic/docs/build/changelog.rst": {
+      "bytes": 260838,
+      "sha256": "32389d3d8a27e2608583c0a57a2a6ffa3769aaad43f2b9ef74e9815430c0e06d"
+    },
+    "components/alembic/docs/build/conf.py": {
+      "bytes": 8770,
+      "sha256": "35bf9d5e4f053960e049eef0ecb2cc35f526a55eddd586a402d49d0d927d5fc3"
+    },
+    "components/alembic/docs/build/cookbook.rst": {
+      "bytes": 65066,
+      "sha256": "d63835342aad868f68d1fa602634057c8609cc11ae913a58094b4a73a1821cfa"
+    },
+    "components/alembic/docs/build/front.rst": {
+      "bytes": 4323,
+      "sha256": "36d5da0081c0d3dc30fbbab6b00b23a4a1f0114c6fc4d3f270e3ab94949efafd"
+    },
+    "components/alembic/docs/build/index.rst": {
+      "bytes": 533,
+      "sha256": "58a926546f87afb165c70013086d8e81f1317d87ebc60ad649760a75769e113b"
+    },
+    "components/alembic/docs/build/make.bat": {
+      "bytes": 3077,
+      "sha256": "9483b8ec3b7eaac0b84e773b2cb392ff32de565ce9d6f9172496cf1d4776997b"
+    },
+    "components/alembic/docs/build/naming.rst": {
+      "bytes": 11025,
+      "sha256": "34c923c1a7e5b9a393c5b5960639c344c3242a3079e51e1bb0e33011c6389f0b"
+    },
+    "components/alembic/docs/build/offline.rst": {
+      "bytes": 5620,
+      "sha256": "cce36a5f258bc190c94074c62087872b798517c1b7a3fe8f4dc22f7622eebd66"
+    },
+    "components/alembic/docs/build/ops.rst": {
+      "bytes": 2144,
+      "sha256": "ef4fa33d5b8e34c713ff24ab466a8abd4ee895e49ce62c9b7be3338b3eee9501"
+    },
+    "components/alembic/docs/build/requirements.txt": {
+      "bytes": 411,
+      "sha256": "c4aa282e734c5fee38062b21b91a8f300c875ddd36f44dd7bb2dfb7b2f198f29"
+    },
+    "components/alembic/docs/build/tutorial.rst": {
+      "bytes": 43214,
+      "sha256": "34657d5591e198c922448abff12f12f619ecf0b2fbdb2e188b03d8a2e4427d42"
+    },
+    "components/alembic/docs/build/unreleased/1504.rst": {
+      "bytes": 395,
+      "sha256": "4c1dcd2b00de48dcb470aa2fb6c2ef2d16204ad6951314343449379b59224720"
+    },
+    "components/alembic/docs/build/unreleased/1873.rst": {
+      "bytes": 578,
+      "sha256": "4d9c6ff84936a46be9999f56182931756bde68a24544af9c6620d84a02584d46"
+    },
+    "components/alembic/docs/build/unreleased/README.txt": {
+      "bytes": 413,
+      "sha256": "9dd9b3fed6fe8ef6e892045464ecde62e94cc2746a993f92eccb2892b49d3407"
+    },
+    "components/alembic/noxfile.py": {
+      "bytes": 6568,
+      "sha256": "ccfd89eff2aa2f7fa518a6896ea305fa8f3984a359ec6716d0c1506ef5a9d541"
+    },
+    "components/alembic/pyproject.toml": {
+      "bytes": 3446,
+      "sha256": "5290b8729141fc48cf02d9abd06be65e66ecd9be68c2d85465aa51e4a4274fe8"
+    },
+    "components/alembic/reap_dbs.py": {
+      "bytes": 708,
+      "sha256": "66bd9bac399a545bdcd02cc97b95a7995134dce74471f88f8981b5da5e0b343b"
+    },
+    "components/alembic/setup.cfg": {
+      "bytes": 1207,
+      "sha256": "bdeb663c0f787792f757737282fdd70defe9b4072b8e41a13d613733c7c1e89c"
+    },
+    "components/alembic/setup.py": {
+      "bytes": 38,
+      "sha256": "843ac26c38a41abae578250bc0f9419194b320a0f67327d941037a4268f6cfe7"
+    },
+    "components/alembic/tests/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "components/alembic/tests/_large_map.py": {
+      "bytes": 7317,
+      "sha256": "98dbaebcd430d47bb16973677944c72813451d4dece5043e4717e74dc37bb4fe"
+    },
+    "components/alembic/tests/conftest.py": {
+      "bytes": 2278,
+      "sha256": "162a5042948e6f6c8a27e95de2970741adc6e226985761270f85314c4ac3768c"
+    },
+    "components/alembic/tests/requirements.py": {
+      "bytes": 13233,
+      "sha256": "60425c11a2772d1c07a818d90aa1beb6c662006c5b48140e184fb04ec6c75b58"
+    },
+    "components/alembic/tests/test_autogen_check_constraints.py": {
+      "bytes": 30646,
+      "sha256": "6f5bfb3842740cefe4173aa46bff0880dea2f9c5e116825f54f61734e2be565d"
+    },
+    "components/alembic/tests/test_autogen_composition.py": {
+      "bytes": 24596,
+      "sha256": "7962a51bf4bf7825fa273b3ce855ad8a661273c1ab31ca5b421718c4ccaacbd9"
+    },
+    "components/alembic/tests/test_autogen_diffs.py": {
+      "bytes": 82981,
+      "sha256": "883294cf02f40a1a9698466c557e84cdef3a8f57638f10e0421dff96d2d8779d"
+    },
+    "components/alembic/tests/test_autogen_indexes.py": {
+      "bytes": 63794,
+      "sha256": "9c76cf78c689adf18cc8303a443d5fbec58ea37f31fc4deb9511d61351d6ef62"
+    },
+    "components/alembic/tests/test_autogen_render.py": {
+      "bytes": 101647,
+      "sha256": "20abc1b2cb3098987149bff2fe8702787c7505e18dd7a0c74e9986bd346e6bdf"
+    },
+    "components/alembic/tests/test_batch.py": {
+      "bytes": 104107,
+      "sha256": "d7770b8941ee964c218b530a9f03e01c4f25f137a68119badc3bcf479bcebf28"
+    },
+    "components/alembic/tests/test_bulk_insert.py": {
+      "bytes": 10358,
+      "sha256": "0223c6d9da38dc9bb14d591803e676b7a80ed7b6ae8985cda1f5ef21c934fbcc"
+    },
+    "components/alembic/tests/test_command.py": {
+      "bytes": 57964,
+      "sha256": "6ef21fc99a4e49d8235a00b0a815d2a112a5b05fe89b808747d0a50f4c8f2d29"
+    },
+    "components/alembic/tests/test_config.py": {
+      "bytes": 22754,
+      "sha256": "499f787f87ebbafe16882cf954a91baa55768172df2368cd09d797410c8ee3bf"
+    },
+    "components/alembic/tests/test_dispatch.py": {
+      "bytes": 12878,
+      "sha256": "b2031fbf88cab0d3f5bf68214f804688d25289db91c91881983e88bb1c2d8190"
+    },
+    "components/alembic/tests/test_editor.py": {
+      "bytes": 3873,
+      "sha256": "f2a3957cd210f4ebe9072af259ca5f7be8c26e8b5ebc81079da74dffb2777173"
+    },
+    "components/alembic/tests/test_environment.py": {
+      "bytes": 5796,
+      "sha256": "5540b0492ea5d135f41ae1d7b5a56f122db505abab2bff87921e92ea9ad36529"
+    },
+    "components/alembic/tests/test_external_dialect.py": {
+      "bytes": 4093,
+      "sha256": "21a1fef26c679f17ae949193e5016d0549180e629acf045ddfb94e9cc199a222"
+    },
+    "components/alembic/tests/test_impl.py": {
+      "bytes": 2206,
+      "sha256": "56cb8d9cf7aab6190ba87511b2747d9f073cdf4db7185b2ee2a140e94424fbcd"
+    },
+    "components/alembic/tests/test_messaging.py": {
+      "bytes": 996,
+      "sha256": "5b08540d851e116e6929dfe55e4f58651ab6364fdec676959ce3b3e7a6023f70"
+    },
+    "components/alembic/tests/test_mssql.py": {
+      "bytes": 25076,
+      "sha256": "5dd8bacb1624bf064007b6f2f060a809a6bfb68d444ed05e0942d2eb6adbb1d1"
+    },
+    "components/alembic/tests/test_mysql.py": {
+      "bytes": 32908,
+      "sha256": "13c67fafe534465fb4d9dcca757ff045d798ead63b1ab9829f9c7910927a7bc1"
+    },
+    "components/alembic/tests/test_offline_environment.py": {
+      "bytes": 9111,
+      "sha256": "866aad16dc0b1a9d5eddd6e9173a8da5d3ea31fd6214113c62871985e465f437"
+    },
+    "components/alembic/tests/test_op.py": {
+      "bytes": 62401,
+      "sha256": "40142675623b7e9ccdb3408c9e77c6e0230d9d7c7871293b7139fa6f4fcaedaa"
+    },
+    "components/alembic/tests/test_op_naming_convention.py": {
+      "bytes": 6194,
+      "sha256": "277cc93dd245718d15694254a897eca660b0e95e176a864fa40205dc26bf3561"
+    },
+    "components/alembic/tests/test_oracle.py": {
+      "bytes": 14945,
+      "sha256": "285dba7c2652c182458693aeae20424e975e9353c2489f76944daf2ceb4e6030"
+    },
+    "components/alembic/tests/test_plugin.py": {
+      "bytes": 14877,
+      "sha256": "a19fa928f0f8718a13a8824c0d5844b16f4f563eec6bc2a0abf3f14dc937b4d0"
+    },
+    "components/alembic/tests/test_post_write.py": {
+      "bytes": 18704,
+      "sha256": "a94c244ce934ed7ef48fbefa0354803ecdc608a8fed471f1856a9555c170f00d"
+    },
+    "components/alembic/tests/test_postgresql.py": {
+      "bytes": 59754,
+      "sha256": "325797a1eda249606b96066604d8b59308a9893594dcd8bf7935b1634d0da77a"
+    },
+    "components/alembic/tests/test_revision.py": {
+      "bytes": 50763,
+      "sha256": "5e3d2e35cb3af89a4cb416e63fd6285e6408f501c8f7df0a9670b41903a65a64"
+    },
+    "components/alembic/tests/test_script_consumption.py": {
+      "bytes": 36926,
+      "sha256": "f9e8cdbebfdff1d46d34b1db1f06fca04006f81aff44168c5d48dea3a712aec5"
+    },
+    "components/alembic/tests/test_script_production.py": {
+      "bytes": 52610,
+      "sha256": "963ab613e15a41f456f72c5f85a6f94108e92c533fde91f708b8c9b4e13c6855"
+    },
+    "components/alembic/tests/test_sqlite.py": {
+      "bytes": 11115,
+      "sha256": "7df27604ad46b4d9917f0730abaab6d6f197a2daceee63dfed8f628619a8e10e"
+    },
+    "components/alembic/tests/test_stubs.py": {
+      "bytes": 1715,
+      "sha256": "b9b3f6cfcbd48b74e8390ffcc8933e9b1bed98e68a80e8fef9a7efadccb3d76d"
+    },
+    "components/alembic/tests/test_suite.py": {
+      "bytes": 44,
+      "sha256": "fbe621b851a3fa2050de3a60af5d20e79549497c533b8d968503ee2ff830835b"
+    },
+    "components/alembic/tests/test_version_table.py": {
+      "bytes": 15008,
+      "sha256": "833bf0a38c95acdf411007deb78f1d245338824b5adf833eca3811c2b109b493"
+    },
+    "components/alembic/tests/test_version_traversal.py": {
+      "bytes": 47935,
+      "sha256": "aef8aca28544778ace3b67bedd1fb77a72bf21faa33e0cb0cf9c22c7af9717bf"
+    },
+    "components/alembic/tools/toxnox.py": {
+      "bytes": 8965,
+      "sha256": "134a7006275108beacf29f14e0bbab7d62277fde728034391d0215e5a75e8bbe"
+    },
+    "components/alembic/tools/warn_tox.py": {
+      "bytes": 303,
+      "sha256": "30837af102c3cd6c4eea825394217ea6afc2e97618dc3e184c1bb5b1e78da82d"
+    },
+    "components/alembic/tools/write_pyi.py": {
+      "bytes": 14992,
+      "sha256": "7bc15710ff147740b14af4ce1e3cc96e40fe34ea30fb7792a9662a6976e8b282"
+    },
+    "components/alembic/tox.ini": {
+      "bytes": 2948,
+      "sha256": "6e348fba49e43afe403a6f6cf73cffb26010aaf03009675fbff329ccb60dfb62"
+    },
+    "publication-file-manifest.json": {
+      "bytes": 61926,
+      "sha256": "e3b972004244c54aefac26be5b0e42bb12e8efcac6ac1500aaccf31d89e57e25"
+    },
+    "rehearsal/LICENSE": {
+      "bytes": 1059,
+      "sha256": "6e68d94a03a0e3e327ddf3e86d1ebedc14eece3922022618fc246a36296fd0cc"
+    },
+    "rehearsal/activation.sql": {
+      "bytes": 218,
+      "sha256": "58501c611c050ab1eede41ceae82480812751d481c6b1cf772d778851673b81e"
+    },
+    "rehearsal/check_contract.py": {
+      "bytes": 14229,
+      "sha256": "99af223eaeca148d90756439a48593afbbb05dca974cbc79c59766017db76055"
+    },
+    "rehearsal/expand.sql": {
+      "bytes": 235,
+      "sha256": "a2b2a6956fbe4ed14e49132a7cacf8d31a83f32cf4a177482478a5d0bcb1874b"
+    },
+    "rehearsal/fixture.sql": {
+      "bytes": 603,
+      "sha256": "ccc3bda6a4b735357d32a6bdc67a5363458ce7e221eb35bbc1d5dbf8e5912c21"
+    },
+    "rehearsal/source-derivation.json": {
+      "bytes": 1775,
+      "sha256": "b2a3f993e18a32fcec652fd1e47aeab450ba32f19c0fc6f15cd2da225d991452"
+    },
+    "rehearsal/verification.sql": {
+      "bytes": 1370,
+      "sha256": "4b52a31a4cdcf62a926cc8669507f425547ff9cfb95c22892ab8c825867078af"
+    },
+    "rehearsal/worker.py": {
+      "bytes": 5932,
+      "sha256": "74f0435a4b45e665bfa29c98ab9c743b7c1f5899d9b80fe47fd21098e479ead7"
+    },
+    "requirements.lock": {
+      "bytes": 453,
+      "sha256": "9b236ad5b5ff1b907af181b3f2941cd91d0e389ddbcfda8df1993a86bbdee567"
+    },
+    "source-copy-manifest.json": {
+      "bytes": 57766,
+      "sha256": "0d69e3f3fb86b2aa804b755a0ecae13a9cf6efd7e2d536a8636d2fd16b8eac3a"
+    },
+    "tools/run_contract.py": {
+      "bytes": 6251,
+      "sha256": "f8f171e9fda4c4a9bac83ce7e4a2ff0afd62f7c70c0dc2e5e503924fa0e77750"
+    },
+    "tools/verify_source.py": {
+      "bytes": 2020,
+      "sha256": "2cbc00c81f46e09efb23fb6983b6ed363e75bfadfe8ea3af0fe4add5ef6bad85"
+    },
+    "verification/baseline/20261009T152041000712Z-final-status.log": {
+      "bytes": 26,
+      "sha256": "e138ccb54fdb08283c6eb21159c53207bbbbf07077246e2804e18d22efe6e250"
+    },
+    "verification/baseline/20261009T152041000712Z-initdb.log": {
+      "bytes": 1051,
+      "sha256": "ea00f9f412b8d3e4aaa6aafd89efaa4b7d08edc8efbc6ec5a759bcb75a175a0f"
+    },
+    "verification/baseline/20261009T152041000712Z-postgres.log": {
+      "bytes": 857,
+      "sha256": "cd9306658fea2537e13148e26a1c00d7d14b9d202f4026b70176794f7bdbe548"
+    },
+    "verification/baseline/20261009T152041000712Z-start.log": {
+      "bytes": 103,
+      "sha256": "072bdd374cf4acca521b5f507cda71baccaba16e1ebc37c9bcecf8f3f5f1fd02"
+    },
+    "verification/baseline/20261009T152153317939Z-create-duplicate.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "verification/baseline/20261009T152153317939Z-create-original.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "verification/baseline/20261009T152153317939Z-final-status.log": {
+      "bytes": 26,
+      "sha256": "e138ccb54fdb08283c6eb21159c53207bbbbf07077246e2804e18d22efe6e250"
+    },
+    "verification/baseline/20261009T152153317939Z-initdb.log": {
+      "bytes": 1051,
+      "sha256": "7db6952f2e60a7d46d0908dde35d6e40033b98fd7aa307b61c8489c39ba27f27"
+    },
+    "verification/baseline/20261009T152153317939Z-postgres.log": {
+      "bytes": 1681,
+      "sha256": "b4bf008418ad2e4d2db3a3a2b11959304118f14039339d3160e04a9658b339ae"
+    },
+    "verification/baseline/20261009T152153317939Z-pytest-duplicate.log": {
+      "bytes": 5396,
+      "sha256": "ca3d47ab22c10c1df10366053ae0cb9b46cb3a3e3be08c41b0787461c4222612"
+    },
+    "verification/baseline/20261009T152153317939Z-pytest-original.log": {
+      "bytes": 5394,
+      "sha256": "2a453d42871905485e41f20d223f5b069da1e629d75336e6f0e11191b6cda557"
+    },
+    "verification/baseline/20261009T152153317939Z-start.log": {
+      "bytes": 52,
+      "sha256": "66afd0411ccc09366e99fdd99b85f21899c8d2d064f5835126859618802153ad"
+    },
+    "verification/baseline/20261009T152153317939Z-stop.log": {
+      "bytes": 56,
+      "sha256": "ca19178a35ab4153b75b494963b66ce8243e1b94c173107c87b44d09db23652d"
+    },
+    "verification/baseline/20261009T152339414371Z-create-duplicate.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "verification/baseline/20261009T152339414371Z-create-original.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "verification/baseline/20261009T152339414371Z-final-status.log": {
+      "bytes": 26,
+      "sha256": "e138ccb54fdb08283c6eb21159c53207bbbbf07077246e2804e18d22efe6e250"
+    },
+    "verification/baseline/20261009T152339414371Z-initdb.log": {
+      "bytes": 1051,
+      "sha256": "5fdc0316b2d8ad37a7ba9b481e50550d3ecb7f1cc4c3a0061cde1e3cf2ed966f"
+    },
+    "verification/baseline/20261009T152339414371Z-postgres.log": {
+      "bytes": 4173,
+      "sha256": "1838c029cf4e8728e34b22784dfab866ab874280482f7dbd2c0830637efdc485"
+    },
+    "verification/baseline/20261009T152339414371Z-pytest-duplicate.log": {
+      "bytes": 7588,
+      "sha256": "5821cb44f5ffbda600154923ce4bfd056ceab499fb29a942b7fcc0b597071050"
+    },
+    "verification/baseline/20261009T152339414371Z-pytest-original.log": {
+      "bytes": 7586,
+      "sha256": "6cfbaf4284451a9277a9237a270a0fca31a7a02b1e7796757748f90370dbf623"
+    },
+    "verification/baseline/20261009T152339414371Z-start.log": {
+      "bytes": 52,
+      "sha256": "66afd0411ccc09366e99fdd99b85f21899c8d2d064f5835126859618802153ad"
+    },
+    "verification/baseline/20261009T152339414371Z-stop.log": {
+      "bytes": 56,
+      "sha256": "ca19178a35ab4153b75b494963b66ce8243e1b94c173107c87b44d09db23652d"
+    },
+    "verification/baseline/20261009T152911062556Z-configuration-duplicate.log": {
+      "bytes": 125,
+      "sha256": "13f78372d53c980387a4055aeb0d8622ead003bb9979f2abca5c15b0d276081d"
+    },
+    "verification/baseline/20261009T152911062556Z-configuration-original.log": {
+      "bytes": 125,
+      "sha256": "13f78372d53c980387a4055aeb0d8622ead003bb9979f2abca5c15b0d276081d"
+    },
+    "verification/baseline/20261009T152911062556Z-create-duplicate.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "verification/baseline/20261009T152911062556Z-create-original.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "verification/baseline/20261009T152911062556Z-duplicate-observation.json": {
+      "bytes": 1705,
+      "sha256": "2a4e689158f3e480d7d530e0f7127e46dd6bbc00a15d25a9ded710059b0fb9e8"
+    },
+    "verification/baseline/20261009T152911062556Z-final-status.log": {
+      "bytes": 26,
+      "sha256": "e138ccb54fdb08283c6eb21159c53207bbbbf07077246e2804e18d22efe6e250"
+    },
+    "verification/baseline/20261009T152911062556Z-initdb.log": {
+      "bytes": 1051,
+      "sha256": "506f3d8246fbd28345280eed2c09527272373a7fb7bb0c4811355419ddfdafad"
+    },
+    "verification/baseline/20261009T152911062556Z-original-observation.json": {
+      "bytes": 1691,
+      "sha256": "135bc77dab04017cf36d00c288346bd014f2af6fe7b6fa42e3feacecc734c5d6"
+    },
+    "verification/baseline/20261009T152911062556Z-postgres.log": {
+      "bytes": 7639,
+      "sha256": "0f1fcfe247d485b44835a09243a5ded92c128d4d19e1d62431a86d2e5f1e5044"
+    },
+    "verification/baseline/20261009T152911062556Z-pytest-duplicate.log": {
+      "bytes": 868,
+      "sha256": "325acc02cb8ce2dac07c1dc4b3cc1c1858db10807cd4b91cf09fc79ecc8298b1"
+    },
+    "verification/baseline/20261009T152911062556Z-pytest-original.log": {
+      "bytes": 866,
+      "sha256": "6556e1a30134f0ccac904e533f581173eb5ec16419c2737ee7a8472138349d34"
+    },
+    "verification/baseline/20261009T152911062556Z-start.log": {
+      "bytes": 52,
+      "sha256": "66afd0411ccc09366e99fdd99b85f21899c8d2d064f5835126859618802153ad"
+    },
+    "verification/baseline/20261009T152911062556Z-stop.log": {
+      "bytes": 56,
+      "sha256": "ca19178a35ab4153b75b494963b66ce8243e1b94c173107c87b44d09db23652d"
+    },
+    "verification/baseline/baseline-20261009T152041000712Z.json": {
+      "bytes": 3207,
+      "sha256": "e658a01f9f5ce6a8c69981810b49fd2d2b726133ac78796c1ede34cc120ab36c"
+    },
+    "verification/baseline/baseline-20261009T152153317939Z.json": {
+      "bytes": 5608,
+      "sha256": "3a5bffa81a18e65a4ecd53580d21a20005712d4b25e57082457e539533b39f44"
+    },
+    "verification/baseline/baseline-20261009T152339414371Z.json": {
+      "bytes": 5688,
+      "sha256": "d819bc920b2f4d03ec961df209f55589d7845bcc5f8b3efaea3fb12ee085a8a5"
+    },
+    "verification/baseline/baseline-20261009T152911062556Z.json": {
+      "bytes": 7584,
+      "sha256": "6ad522b9640cedd9e631578a334c5f9b00bfb3de2c5252f297cc020c7ed74ef9"
+    },
+    "verification/dependency-notices/Mako-1.4.3/LICENSE": {
+      "bytes": 1098,
+      "sha256": "8c1d171bc5d341ad9cd33d5e2c39b96a82c7bd49b3ae89a470c37e5822232054"
+    },
+    "verification/dependency-notices/MarkupSafe-3.0.4/LICENSE.txt": {
+      "bytes": 1475,
+      "sha256": "489a8e1108509ed98a37bb983e11e0f7e1d31f0bd8f99a79c8448e7ff37d07ea"
+    },
+    "verification/dependency-notices/Pygments-2.21.0/LICENSE": {
+      "bytes": 1331,
+      "sha256": "a9d66f1d526df02e29dce73436d34e56e8632f46c275bbdffc70569e882f9f17"
+    },
+    "verification/dependency-notices/SQLAlchemy-2.1.4/LICENSE": {
+      "bytes": 1100,
+      "sha256": "e862bb5b904fb5513c3e14288d7a25a12eb0ecc7847a0a965d310e9a955e7cb9"
+    },
+    "verification/dependency-notices/black-26.5.1/5789881b8aeb-LICENSE": {
+      "bytes": 12762,
+      "sha256": "5789881b8aeb9c91f5835f5bb7cabe84a0fecd4bb2be2f54c9e6957a78ec799d"
+    },
+    "verification/dependency-notices/black-26.5.1/LICENSE": {
+      "bytes": 1080,
+      "sha256": "9c0428f0c3b4779850cf5bd96e11aaa8afc72d4a86d4a36223d7aba2e58d6e00"
+    },
+    "verification/dependency-notices/click-8.5.0/LICENSE.txt": {
+      "bytes": 1475,
+      "sha256": "9a8ad106a394e853bfe21f42f4e72d592819a22805d991b5f3275029292b658d"
+    },
+    "verification/dependency-notices/execnet-2.1.2/LICENSE": {
+      "bytes": 1054,
+      "sha256": "e89eed1074d3a943198ba139b80844f5b445b860bba74a8aeadc0610566164ea"
+    },
+    "verification/dependency-notices/flake8_import_order-0.19.2/COPYING": {
+      "bytes": 7651,
+      "sha256": "da7eabb7bafdf7d3ae5e9f223aa5bdc1eece45ac569dc21b3b037520b4464768"
+    },
+    "verification/dependency-notices/iniconfig-2.3.1/LICENSE": {
+      "bytes": 1098,
+      "sha256": "3409fa91f7ace557894632676656e32264fe5ef7581535725dc9a23774551bd4"
+    },
+    "verification/dependency-notices/junitparser-5.0.3/LICENSE": {
+      "bytes": 579,
+      "sha256": "51bae38bd50369849f7006fa5fdde9ecbd81824ebb07667800818f63bc82c359"
+    },
+    "verification/dependency-notices/mypy_extensions-1.1.0/LICENSE": {
+      "bytes": 1204,
+      "sha256": "a50450da1d53cd777b80ced77c58ff96abe0ccd879706bd142c3ec20e245f0b4"
+    },
+    "verification/dependency-notices/packaging-26.3/LICENSE": {
+      "bytes": 197,
+      "sha256": "cad1ef5bd340d73e074ba614d26f7deaca5c7940c3d8c34852e65c4909686c48"
+    },
+    "verification/dependency-notices/packaging-26.3/LICENSE.APACHE": {
+      "bytes": 10174,
+      "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594"
+    },
+    "verification/dependency-notices/packaging-26.3/LICENSE.BSD": {
+      "bytes": 1344,
+      "sha256": "b70e7e9b742f1cc6f948b34c16aa39ffece94196364bc88ff0d2180f0028fac5"
+    },
+    "verification/dependency-notices/pathspec-1.1.1/LICENSE": {
+      "bytes": 16726,
+      "sha256": "fab3dd6bdab226f1c08630b1dd917e11fcb4ec5e1e020e2c16f83a0a13863e85"
+    },
+    "verification/dependency-notices/pip-24.0/LICENSE.txt": {
+      "bytes": 1093,
+      "sha256": "634300a669d49aeae65b12c6c48c924c51a4cdf3d1ff086dc3456dc8bcaa2104"
+    },
+    "verification/dependency-notices/platformdirs-4.12.4/LICENSE": {
+      "bytes": 1089,
+      "sha256": "29e0fd62e929850e86eb28c3fdccf0cefdf4fa94879011cffb3d0d4bed6d4db6"
+    },
+    "verification/dependency-notices/pluggy-1.6.0/LICENSE": {
+      "bytes": 1110,
+      "sha256": "d6b65e6c213a5d0b577911d34d6e5949b9f59d76c238c5071a2f3fc16cfb2606"
+    },
+    "verification/dependency-notices/psycopg2-2.9.13/LICENSE": {
+      "bytes": 2238,
+      "sha256": "9614b85dfc9a72c5b2ca33144c1d7e1ed3b1c297459d9fb28a6a5762c2e8d71b"
+    },
+    "verification/dependency-notices/pycodestyle-2.15.0/LICENSE": {
+      "bytes": 1254,
+      "sha256": "f772295e81af3478d34e88e52d076200230ec7dd6a39e123bc5cb35aa66abdae"
+    },
+    "verification/dependency-notices/pyflakes-4.0.3/LICENSE": {
+      "bytes": 1093,
+      "sha256": "22c47569cc0aae531b372361366818af01c6fc2e314770584a7866c92b3a0463"
+    },
+    "verification/dependency-notices/pytest-9.0.3/LICENSE": {
+      "bytes": 1091,
+      "sha256": "ca836a5f9ecca3b2f350230faa20a48fb8b145653b5568d784862df864706b9b"
+    },
+    "verification/dependency-notices/pytest-xdist-3.8.0/LICENSE": {
+      "bytes": 1088,
+      "sha256": "36c15bf831b218a24d122e3b30256b3e1ca285716c24937fe6d8475074ee9032"
+    },
+    "verification/dependency-notices/pytokens-0.4.1/LICENSE": {
+      "bytes": 1072,
+      "sha256": "94bf7ae4ea6833b0853a7cc1f1f28dd8579b34a31c9c162aeb8825dec23ed5dc"
+    },
+    "verification/dependency-notices/setuptools-84.0.0/09c9bcea95ca-NOTICE": {
+      "bytes": 18737,
+      "sha256": "09c9bcea95ca086f8bc5bed174e40bc835b297d40fb5f86bbbb570fe0a5581a7"
+    },
+    "verification/dependency-notices/setuptools-84.0.0/09f1c8c9e941-LICENSE": {
+      "bytes": 1053,
+      "sha256": "09f1c8c9e941af3e584d59641ea9b87d83c0cb0fd007eb5ef391a7e2643c1a46"
+    },
+    "verification/dependency-notices/setuptools-84.0.0/29e0fd62e929-LICENSE": {
+      "bytes": 1089,
+      "sha256": "29e0fd62e929850e86eb28c3fdccf0cefdf4fa94879011cffb3d0d4bed6d4db6"
+    },
+    "verification/dependency-notices/setuptools-84.0.0/458502e12d97-LICENSE": {
+      "bytes": 10278,
+      "sha256": "458502e12d97bbf64438606a20044aa85eb05fb0a8a807bb35dbec253fd1fc04"
+    },
+    "verification/dependency-notices/setuptools-84.0.0/5a57cb4db85e-LICENSE": {
+      "bytes": 1076,
+      "sha256": "5a57cb4db85e2a2dd88c290628908add57e3451449e0a9a71fdfb38776fd759d"
+    },
+    "verification/dependency-notices/setuptools-84.0.0/9755a1851966-LICENSE": {
+      "bytes": 1076,
+      "sha256": "9755a18519666e5f0f4cae3daad3d7012bcae48a600b31237d75e9fe134e6683"
+    },
+    "verification/dependency-notices/setuptools-84.0.0/LICENSE": {
+      "bytes": 1023,
+      "sha256": "86da0f01aeae46348a3c3d465195dc1ceccde79f79e87769a64b8da04b2a4741"
+    },
+    "verification/dependency-notices/setuptools-84.0.0/LICENSE.APACHE": {
+      "bytes": 10174,
+      "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594"
+    },
+    "verification/dependency-notices/setuptools-84.0.0/LICENSE.BSD": {
+      "bytes": 1344,
+      "sha256": "b70e7e9b742f1cc6f948b34c16aa39ffece94196364bc88ff0d2180f0028fac5"
+    },
+    "verification/dependency-notices/setuptools-84.0.0/LICENSE.txt": {
+      "bytes": 1107,
+      "sha256": "30c23618679108f3e8ea1d2a658c7ca417bdfc891c98ef1a89fa4ff0c9828654"
+    },
+    "verification/dependency-notices/setuptools-84.0.0/NOTICE": {
+      "bytes": 493,
+      "sha256": "2dddf08818297a3b89d43d95ff659d8da85741108c9136dfa3a4d856c0623bd8"
+    },
+    "verification/dependency-notices/setuptools-84.0.0/ade78d04982d-LICENSE": {
+      "bytes": 7634,
+      "sha256": "ade78d04982d69972d444a8e14a94f87a2334dd3855cc80348ea8e240aa0df2d"
+    },
+    "verification/dependency-notices/setuptools-84.0.0/b80816b0d530-LICENSE": {
+      "bytes": 1072,
+      "sha256": "b80816b0d530b8accb4c2211783790984a6e3b61922c2b5ee92f3372ab2742fe"
+    },
+    "verification/dependency-notices/setuptools-84.0.0/cad1ef5bd340-LICENSE": {
+      "bytes": 197,
+      "sha256": "cad1ef5bd340d73e074ba614d26f7deaca5c7940c3d8c34852e65c4909686c48"
+    },
+    "verification/dependency-notices/tomli-2.5.0/LICENSE": {
+      "bytes": 1072,
+      "sha256": "b80816b0d530b8accb4c2211783790984a6e3b61922c2b5ee92f3372ab2742fe"
+    },
+    "verification/dependency-notices/typing_extensions-4.16.0/LICENSE": {
+      "bytes": 13936,
+      "sha256": "3b2f81fe21d181c499c59a256c8e1968455d6689d269aa85373bfb6af41da3bf"
+    },
+    "verification/dependency-notices/tzdata-2026.5/LICENSE": {
+      "bytes": 625,
+      "sha256": "df58f69ea88683035d720b5375bcef0cf5aeaa98a1d098d572e0992c378deb46"
+    },
+    "verification/dependency-notices/tzdata-2026.5/LICENSE_APACHE": {
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    "verification/dependency-notices/zimports-0.7.0/LICENSE": {
+      "bytes": 1102,
+      "sha256": "b82716e8df2ddb79b3bd061b3aa984c8e55bc5e356c09b652f37e9e467fe4681"
+    },
+    "verification/environment/dependency-license-inventory.json": {
+      "bytes": 29275,
+      "sha256": "249935cf46b99c5f4a93d834714fb940e84472fd36632d94ef1eb3a43b21fdc1"
+    },
+    "verification/environment/environment.json": {
+      "bytes": 5452,
+      "sha256": "a5a288f414c55c08ade7e183eb90ea506c0dab5bb1499c3dc29752afee9ee47e"
+    },
+    "verification/environment/source-manifest.json": {
+      "bytes": 29669,
+      "sha256": "a99598aae334810a22a3af3b793ae29c9d930f6cdbd4b1adb4c01dd3355448c0"
+    },
+    "verification/environment/test-extension-inventory.json": {
+      "bytes": 7371,
+      "sha256": "2d9791f050f5acedf5e7363fb9c428060159c7cf693c0955b041e5e31d5556a6"
+    },
+    "verification/environment/test-extension-source-verification.json": {
+      "bytes": 2030,
+      "sha256": "bcc88a0155f6d7b30ff831c7b07a886d958ae0cc6a6dde5c3f8a6b12bb7e97a1"
+    },
+    "verification/independent-review.md": {
+      "bytes": 4045,
+      "sha256": "de02dccf90e2b94f1a7788f76fb4a54fbe717754c9d66ddae5dd5b01a96eb3c4"
+    },
+    "verification/redactions.json": {
+      "bytes": 31062,
+      "sha256": "c81a7202565330b1080e1cdb82c77bb43d95054b67663316baf465a9814fe8b1"
+    },
+    "verification/rollout-20261009T154922160131Z/activation-expansion.json": {
+      "bytes": 10357,
+      "sha256": "48e8ba2cfa48850b6ffd6956e5655bd59ed4a5aefea623bf81503170493f2bf9"
+    },
+    "verification/rollout-20261009T154922160131Z/activation-expansion.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "verification/rollout-20261009T154922160131Z/changed_original_row.json": {
+      "bytes": 3360,
+      "sha256": "970c27bd42381b1a8f43badfb221225c27e154e28ffb2a4486656233dd3325f9"
+    },
+    "verification/rollout-20261009T154922160131Z/changed_original_row.stderr.log": {
+      "bytes": 466,
+      "sha256": "8996c3f2b9fdd4fc9525a3551687ea810e309e73831a628ff3198caca1e3eefb"
+    },
+    "verification/rollout-20261009T154922160131Z/contract-result.json": {
+      "bytes": 269676,
+      "sha256": "6e1a5c637e09f898888f7f9407187a6d53f5053d084e251d4928bbba0e14d84c"
+    },
+    "verification/rollout-20261009T154922160131Z/contradictory_marker.json": {
+      "bytes": 3437,
+      "sha256": "a1a237f5187ff3ffa35274e340d60dcee3257235bc69f19c012360782d1cee4a"
+    },
+    "verification/rollout-20261009T154922160131Z/contradictory_marker.stderr.log": {
+      "bytes": 498,
+      "sha256": "14f76e49056c4faa542fca48ae03da09d4dfc5cb558221e34af845338e20c69b"
+    },
+    "verification/rollout-20261009T154922160131Z/createdb-activation_negative_control.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "verification/rollout-20261009T154922160131Z/createdb-changed_original_row.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "verification/rollout-20261009T154922160131Z/createdb-contradictory_marker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "verification/rollout-20261009T154922160131Z/createdb-normal.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "verification/rollout-20261009T154922160131Z/createdb-stop_after_durable_expansion.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "verification/rollout-20261009T154922160131Z/createdb-stop_before_expansion.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "verification/rollout-20261009T154922160131Z/createdb-wrong_gate.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "verification/rollout-20261009T154922160131Z/createdb-wrong_label_order.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "verification/rollout-20261009T154922160131Z/createdb-wrong_schema.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "verification/rollout-20261009T154922160131Z/createdb-wrong_table.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "verification/rollout-20261009T154922160131Z/createdb-wrong_type.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "verification/rollout-20261009T154922160131Z/expected-shape.json": {
+      "bytes": 1960,
+      "sha256": "d78d3d96703c53782a9bccadf10330d483a5b9e74efcd8dd845e0cd52d9338f0"
+    },
+    "verification/rollout-20261009T154922160131Z/initdb.log": {
+      "bytes": 1049,
+      "sha256": "a4aeb29381f3b9de43066a6ea490fed6ca9cfd4f0f721f9bcd7862b9d8445fc7"
+    },
+    "verification/rollout-20261009T154922160131Z/normal-expansion.json": {
+      "bytes": 10627,
+      "sha256": "ee1babbbe228d1415eee76e051696f9f9fa55c875535715e1ac540c5b57804fd"
+    },
+    "verification/rollout-20261009T154922160131Z/normal-expansion.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "verification/rollout-20261009T154922160131Z/normal-resume-again.json": {
+      "bytes": 6745,
+      "sha256": "4736e2c3b2b5a97472ce7d6c70675e7dee111dba2e7e9b2d8552674a0b7d6081"
+    },
+    "verification/rollout-20261009T154922160131Z/normal-resume-again.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "verification/rollout-20261009T154922160131Z/normal-resume.json": {
+      "bytes": 6745,
+      "sha256": "4736e2c3b2b5a97472ce7d6c70675e7dee111dba2e7e9b2d8552674a0b7d6081"
+    },
+    "verification/rollout-20261009T154922160131Z/normal-resume.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "verification/rollout-20261009T154922160131Z/postgres.log": {
+      "bytes": 198757,
+      "sha256": "829d900bca2ac3182bdacc3a9fb884ea255c3d4e2ecd47e510c3f895b5b4e218"
+    },
+    "verification/rollout-20261009T154922160131Z/start.log": {
+      "bytes": 52,
+      "sha256": "66afd0411ccc09366e99fdd99b85f21899c8d2d064f5835126859618802153ad"
+    },
+    "verification/rollout-20261009T154922160131Z/stop.log": {
+      "bytes": 56,
+      "sha256": "ca19178a35ab4153b75b494963b66ce8243e1b94c173107c87b44d09db23652d"
+    },
+    "verification/rollout-20261009T154922160131Z/stop_after_durable_expansion-resume-again.json": {
+      "bytes": 6565,
+      "sha256": "894439ac23f43c653f8adb4190ee309033a9fa9b60694fefd1f0166371b00413"
+    },
+    "verification/rollout-20261009T154922160131Z/stop_after_durable_expansion-resume-again.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "verification/rollout-20261009T154922160131Z/stop_after_durable_expansion-resume.json": {
+      "bytes": 10641,
+      "sha256": "cd1e2cafbe1252a45cf45d5242dde38a15dc6ae17aedadba8652d5cad7e8c144"
+    },
+    "verification/rollout-20261009T154922160131Z/stop_after_durable_expansion-resume.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "verification/rollout-20261009T154922160131Z/stop_after_durable_expansion.json": {
+      "bytes": 7367,
+      "sha256": "f3a4e2d17635d12149b9ab5923a018a4242cd19483dc3d625e60173c7b298c24"
+    },
+    "verification/rollout-20261009T154922160131Z/stop_after_durable_expansion.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "verification/rollout-20261009T154922160131Z/stop_before_expansion-resume-again.json": {
+      "bytes": 6565,
+      "sha256": "894439ac23f43c653f8adb4190ee309033a9fa9b60694fefd1f0166371b00413"
+    },
+    "verification/rollout-20261009T154922160131Z/stop_before_expansion-resume-again.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "verification/rollout-20261009T154922160131Z/stop_before_expansion-resume.json": {
+      "bytes": 10627,
+      "sha256": "ee1babbbe228d1415eee76e051696f9f9fa55c875535715e1ac540c5b57804fd"
+    },
+    "verification/rollout-20261009T154922160131Z/stop_before_expansion-resume.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "verification/rollout-20261009T154922160131Z/stop_before_expansion.json": {
+      "bytes": 3361,
+      "sha256": "a7cd1d23757c93657f67e340cf6f9456719048cfded3361e47923889a7ff2fac"
+    },
+    "verification/rollout-20261009T154922160131Z/stop_before_expansion.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "verification/rollout-20261009T154922160131Z/wrong_gate.json": {
+      "bytes": 3207,
+      "sha256": "80ef511fb36ec19b12be0ce2a305758a3d2e2402bacc923a12a649c7388b8cb6"
+    },
+    "verification/rollout-20261009T154922160131Z/wrong_gate.stderr.log": {
+      "bytes": 540,
+      "sha256": "b7b9f0dcff725f9540291073fe62ad56fa0620061faa86d5d5655dc7a0cc3ac5"
+    },
+    "verification/rollout-20261009T154922160131Z/wrong_label_order.json": {
+      "bytes": 3360,
+      "sha256": "4bf83c485eab3fdadc1e962000f62ac440a4a7201d35ffd8d57eaa134924dce3"
+    },
+    "verification/rollout-20261009T154922160131Z/wrong_label_order.stderr.log": {
+      "bytes": 472,
+      "sha256": "e4921783a5433dd2fa6589159f684f0e4494608992a17850e0ca4d20ee694bd0"
+    },
+    "verification/rollout-20261009T154922160131Z/wrong_schema.json": {
+      "bytes": 689,
+      "sha256": "29211879c9d4908a8131b6a972e5af499d82a0ae8fc31efdf91f5ea5c4154933"
+    },
+    "verification/rollout-20261009T154922160131Z/wrong_schema.stderr.log": {
+      "bytes": 540,
+      "sha256": "b7b9f0dcff725f9540291073fe62ad56fa0620061faa86d5d5655dc7a0cc3ac5"
+    },
+    "verification/rollout-20261009T154922160131Z/wrong_table.json": {
+      "bytes": 3627,
+      "sha256": "092d14ee71cd1a1f3bdb671e15898228947cafed969c98bf909ec9f2fd56d6aa"
+    },
+    "verification/rollout-20261009T154922160131Z/wrong_table.stderr.log": {
+      "bytes": 540,
+      "sha256": "b7b9f0dcff725f9540291073fe62ad56fa0620061faa86d5d5655dc7a0cc3ac5"
+    },
+    "verification/rollout-20261009T154922160131Z/wrong_type.json": {
+      "bytes": 3343,
+      "sha256": "f31d64dacf927b5a1257a06a900f7da3bf10170b62a0f819294d619dde0044e3"
+    },
+    "verification/rollout-20261009T154922160131Z/wrong_type.stderr.log": {
+      "bytes": 540,
+      "sha256": "b7b9f0dcff725f9540291073fe62ad56fa0620061faa86d5d5655dc7a0cc3ac5"
+    },
+    "verification/source/postgresql-COPYRIGHT": {
+      "bytes": 1198,
+      "sha256": "3d6af92ff8a4c2cdf69afb1cf44edea727922f5cd0cf8b5f72b11cdecac8fdfd"
+    },
+    "verification/source/upstream-commit.json": {
+      "bytes": 10193,
+      "sha256": "6cc4bd76865a426b0aa704efecbeb072633f4540499e02e7ec6b11a5ce882551"
+    },
+    "verification/source/upstream-tree.json": {
+      "bytes": 67432,
+      "sha256": "91c88a25837f04c3a15c68809344da238d5fee4de530deefcefe9d54ece42b2e"
+    }
+  },
+  "source_verifier_before": {
+    "command": [
+      "<system-bin>/python3",
+      "-B",
+      "<private-workspace>/work/oss-quality-20261008/portfolio-twenty-20261009/publication-review/staged/schema-migration-rehearsal-source-v2/tools/verify_source.py"
+    ],
+    "exit_code": 0,
+    "stdout": "{\n  \"status\": \"source_verified\",\n  \"source_files\": {\n    \"components/alembic\": 195\n  },\n  \"rehearsal_files\": 8,\n  \"changed\": []\n}\n",
+    "stderr": ""
+  },
+  "status": "portable_adapter_passed_existing_environment",
+  "fresh_dependencies_acquired": false,
+  "providers_called": false,
+  "published": false,
+  "adapter_command": {
+    "command": [
+      "<system-bin>/python3",
+      "-B",
+      "<private-workspace>/work/oss-quality-20261008/portfolio-twenty-20261009/publication-review/staged/schema-migration-rehearsal-source-v2/tools/run_contract.py",
+      "--python",
+      "<private-home>/.cache/oss-quality-sql-migration-component-20261009T151827793829Z/venv/bin/python",
+      "--pg-bin",
+      "<private-home>/.local/opt/oss-quality-postgres-18.6/bin",
+      "--output-parent",
+      "<private-home>/.cache/oss-quality-sql-migration-portable-20261009T164405791392Z"
+    ],
+    "cwd": "<private-workspace>/work/oss-quality-20261008/portfolio-twenty-20261009/publication-review/staged/schema-migration-rehearsal-source-v2",
+    "scoped_environment": {
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LD_LIBRARY_PATH": "<private-home>/.local/opt/oss-quality-postgres-18.6/lib"
+    },
+    "exit_code": 0,
+    "elapsed_seconds": 27.07152188099826,
+    "stdout": "<private-home>/.cache/oss-quality-sql-migration-portable-20261009T164405791392Z/adapter.stdout.log",
+    "stderr": "<private-home>/.cache/oss-quality-sql-migration-portable-20261009T164405791392Z/adapter.stderr.log"
+  },
+  "adapter_executed_at_utc": "2026-10-09T16:45:17.637936+00:00",
+  "portable_receipts": [
+    "<private-home>/.cache/oss-quality-sql-migration-portable-20261009T164405791392Z/schema-migration-20261009T164452366125Z/portable-run.json"
+  ],
+  "functional_receipts": [
+    "<private-home>/.cache/oss-quality-sql-migration-portable-20261009T164405791392Z/schema-migration-20261009T164452366125Z/project/evidence/rollout-20261009T164456855513Z/contract-result.json"
+  ],
+  "functional_at_utc": "2026-10-09T16:44:56.856745+00:00",
+  "scenario_count": 11,
+  "worker_count": 17,
+  "functional_receipt": {
+    "path": "<private-home>/.cache/oss-quality-sql-migration-portable-20261009T164405791392Z/schema-migration-20261009T164452366125Z/project/evidence/rollout-20261009T164456855513Z/contract-result.json",
+    "sha256": "b88ff614465beac2af0281a4d7f2919752597f6067751196e113ba6805c847bd"
+  },
+  "portable_receipt": {
+    "path": "<private-home>/.cache/oss-quality-sql-migration-portable-20261009T164405791392Z/schema-migration-20261009T164452366125Z/portable-run.json",
+    "sha256": "a739640a56f39ac661d336911d5f3981231074a66c2a5d3ce27dad6b03fbb767"
+  },
+  "evidence_inventory": {
+    "project/evidence/environment.json": {
+      "bytes": 330,
+      "sha256": "1fddb05c29ba23b6627c83b5931c86fa22f44a0088f0eb38c86ef0c658f0ebc2"
+    },
+    "project/evidence/rollout-20261009T164456855513Z/activation-expansion.json": {
+      "bytes": 11071,
+      "sha256": "bd019d69ee87389ebca10fba583043a33c898747f6af12f51dcd142496d1070b"
+    },
+    "project/evidence/rollout-20261009T164456855513Z/activation-expansion.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "project/evidence/rollout-20261009T164456855513Z/changed_original_row.json": {
+      "bytes": 3666,
+      "sha256": "afeec23a6dba33e5e147e637d763cfa7ffd861b909e7a342f1c0dc5242f4c9a7"
+    },
+    "project/evidence/rollout-20261009T164456855513Z/changed_original_row.stderr.log": {
+      "bytes": 772,
+      "sha256": "a2cc53d949a608794eca4169f9fe91f7866e66d2af9a336e1e1d1cbaf2b90f5f"
+    },
+    "project/evidence/rollout-20261009T164456855513Z/contract-result.json": {
+      "bytes": 285990,
+      "sha256": "b88ff614465beac2af0281a4d7f2919752597f6067751196e113ba6805c847bd"
+    },
+    "project/evidence/rollout-20261009T164456855513Z/contradictory_marker.json": {
+      "bytes": 3743,
+      "sha256": "0f81ffc07a08056d3404ed2f31803498c45a55e32fd7ccea2778d936436e2e8f"
+    },
+    "project/evidence/rollout-20261009T164456855513Z/contradictory_marker.stderr.log": {
+      "bytes": 804,
+      "sha256": "1a0e75b72d1b493e5b55d9bfd3a88e0b8d4a1f980f2ff03e68423e97bdc52dd0"
+    },
+    "project/evidence/rollout-20261009T164456855513Z/createdb-activation_negative_control.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "project/evidence/rollout-20261009T164456855513Z/createdb-changed_original_row.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "project/evidence/rollout-20261009T164456855513Z/createdb-contradictory_marker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "project/evidence/rollout-20261009T164456855513Z/createdb-normal.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "project/evidence/rollout-20261009T164456855513Z/createdb-stop_after_durable_expansion.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "project/evidence/rollout-20261009T164456855513Z/createdb-stop_before_expansion.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "project/evidence/rollout-20261009T164456855513Z/createdb-wrong_gate.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "project/evidence/rollout-20261009T164456855513Z/createdb-wrong_label_order.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "project/evidence/rollout-20261009T164456855513Z/createdb-wrong_schema.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "project/evidence/rollout-20261009T164456855513Z/createdb-wrong_table.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "project/evidence/rollout-20261009T164456855513Z/createdb-wrong_type.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "project/evidence/rollout-20261009T164456855513Z/expected-shape.json": {
+      "bytes": 1960,
+      "sha256": "d78d3d96703c53782a9bccadf10330d483a5b9e74efcd8dd845e0cd52d9338f0"
+    },
+    "project/evidence/rollout-20261009T164456855513Z/initdb.log": {
+      "bytes": 1132,
+      "sha256": "aff2a92c6bde140e163bdd3c3abbedb97d329c3cc0d9a9e628bfb76b7c530a77"
+    },
+    "project/evidence/rollout-20261009T164456855513Z/normal-expansion.json": {
+      "bytes": 11341,
+      "sha256": "09f4c0335a9e70a114cbef75958120a450cb930bb230829973495cb00324297d"
+    },
+    "project/evidence/rollout-20261009T164456855513Z/normal-expansion.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "project/evidence/rollout-20261009T164456855513Z/normal-resume-again.json": {
+      "bytes": 7051,
+      "sha256": "463e758dd3da1b5c116a987f7fa8f0d82b7d1fde8ab14f408f135db38493d78d"
+    },
+    "project/evidence/rollout-20261009T164456855513Z/normal-resume-again.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "project/evidence/rollout-20261009T164456855513Z/normal-resume.json": {
+      "bytes": 7051,
+      "sha256": "463e758dd3da1b5c116a987f7fa8f0d82b7d1fde8ab14f408f135db38493d78d"
+    },
+    "project/evidence/rollout-20261009T164456855513Z/normal-resume.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "project/evidence/rollout-20261009T164456855513Z/postgres.log": {
+      "bytes": 198757,
+      "sha256": "3877d83f2d6268c44afe882c0e7e92fa2ab7f9d03b4c70ed27672eb62ab73fe0"
+    },
+    "project/evidence/rollout-20261009T164456855513Z/start.log": {
+      "bytes": 52,
+      "sha256": "66afd0411ccc09366e99fdd99b85f21899c8d2d064f5835126859618802153ad"
+    },
+    "project/evidence/rollout-20261009T164456855513Z/stop.log": {
+      "bytes": 58,
+      "sha256": "c1523409ba1a5a6fa5d744982f42a44402a8cfb8b8b32bca92b4a39560042db9"
+    },
+    "project/evidence/rollout-20261009T164456855513Z/stop_after_durable_expansion-resume-again.json": {
+      "bytes": 6871,
+      "sha256": "3576dc99c7d20dbc4d94ccbd7d89a7c148487aaec5e0194a2617ef347eb9ffb6"
+    },
+    "project/evidence/rollout-20261009T164456855513Z/stop_after_durable_expansion-resume-again.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "project/evidence/rollout-20261009T164456855513Z/stop_after_durable_expansion-resume.json": {
+      "bytes": 11355,
+      "sha256": "b2d7e0eb7584ec2104b7b67be591c5fcfac12d23fdd0d1ac359b679bef0a4cf9"
+    },
+    "project/evidence/rollout-20261009T164456855513Z/stop_after_durable_expansion-resume.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "project/evidence/rollout-20261009T164456855513Z/stop_after_durable_expansion.json": {
+      "bytes": 8081,
+      "sha256": "4d2adf0f3f505359174ff3404e8b98eb55b9abfb919811d7050b8a7d4e720a20"
+    },
+    "project/evidence/rollout-20261009T164456855513Z/stop_after_durable_expansion.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "project/evidence/rollout-20261009T164456855513Z/stop_before_expansion-resume-again.json": {
+      "bytes": 6871,
+      "sha256": "3576dc99c7d20dbc4d94ccbd7d89a7c148487aaec5e0194a2617ef347eb9ffb6"
+    },
+    "project/evidence/rollout-20261009T164456855513Z/stop_before_expansion-resume-again.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "project/evidence/rollout-20261009T164456855513Z/stop_before_expansion-resume.json": {
+      "bytes": 11341,
+      "sha256": "09f4c0335a9e70a114cbef75958120a450cb930bb230829973495cb00324297d"
+    },
+    "project/evidence/rollout-20261009T164456855513Z/stop_before_expansion-resume.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "project/evidence/rollout-20261009T164456855513Z/stop_before_expansion.json": {
+      "bytes": 3667,
+      "sha256": "d73a943c8646aa74019ff2edb8caf7e981a4a1e026c8308b56d3c3748080cf11"
+    },
+    "project/evidence/rollout-20261009T164456855513Z/stop_before_expansion.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "project/evidence/rollout-20261009T164456855513Z/wrong_gate.json": {
+      "bytes": 3513,
+      "sha256": "83fac8647353b3a403a81bb6e2c70ed9cc38d819c65b57510eb1f2839c1f22d5"
+    },
+    "project/evidence/rollout-20261009T164456855513Z/wrong_gate.stderr.log": {
+      "bytes": 846,
+      "sha256": "2f2d7fb826b6a3cc455022697ec25ff91a94fd908314baa90c5484634c979701"
+    },
+    "project/evidence/rollout-20261009T164456855513Z/wrong_label_order.json": {
+      "bytes": 3666,
+      "sha256": "b6fd5cf68eae79cdebdca68f2ebf946a5994df785f22f2d5fcb534cefaf3442e"
+    },
+    "project/evidence/rollout-20261009T164456855513Z/wrong_label_order.stderr.log": {
+      "bytes": 778,
+      "sha256": "9f2ecc36ef56081c071197a5bab5cb62f5f4ac79b590d1f9a949bf5964baa36a"
+    },
+    "project/evidence/rollout-20261009T164456855513Z/wrong_schema.json": {
+      "bytes": 995,
+      "sha256": "e59729e0723c488a83ac4aeb857d386d7c0b5ba1c1339896dc20bd31a1f14e20"
+    },
+    "project/evidence/rollout-20261009T164456855513Z/wrong_schema.stderr.log": {
+      "bytes": 846,
+      "sha256": "2f2d7fb826b6a3cc455022697ec25ff91a94fd908314baa90c5484634c979701"
+    },
+    "project/evidence/rollout-20261009T164456855513Z/wrong_table.json": {
+      "bytes": 3933,
+      "sha256": "fe6ad82bdfca5e1fb5bfa5b985570b480639381c49b07ba0778bc966d9c9cf56"
+    },
+    "project/evidence/rollout-20261009T164456855513Z/wrong_table.stderr.log": {
+      "bytes": 846,
+      "sha256": "2f2d7fb826b6a3cc455022697ec25ff91a94fd908314baa90c5484634c979701"
+    },
+    "project/evidence/rollout-20261009T164456855513Z/wrong_type.json": {
+      "bytes": 3649,
+      "sha256": "5c3286778d922122cfd6403740d399b9ee7bbcb6153565ada975fd2568d77316"
+    },
+    "project/evidence/rollout-20261009T164456855513Z/wrong_type.stderr.log": {
+      "bytes": 846,
+      "sha256": "2f2d7fb826b6a3cc455022697ec25ff91a94fd908314baa90c5484634c979701"
+    },
+    "project/evidence/source-manifest.json": {
+      "bytes": 57766,
+      "sha256": "0d69e3f3fb86b2aa804b755a0ecae13a9cf6efd7e2d536a8636d2fd16b8eac3a"
+    },
+    "project/evidence/test-extension-inventory.json": {
+      "bytes": 84,
+      "sha256": "9f3026e4d965739b64b2971232b1cb80b3494a9aea220fac31bfb3153a9ed9cb"
+    }
+  },
+  "materialized_sources": {
+    "original": {
+      "files": 195,
+      "manifest_equal": true
+    },
+    "components": {
+      "files": 195,
+      "manifest_equal": true
+    }
+  },
+  "materialized_rehearsal_equal": true,
+  "copied_runtime_execution": [
+    {
+      "worker": "normal-expansion",
+      "source": "<private-home>/.cache/oss-quality-sql-migration-portable-20261009T164405791392Z/schema-migration-20261009T164452366125Z/project/components/alembic/alembic/runtime/migration.py",
+      "sha256": "3f0137890bd1eedef93e5f6ec217061e9185f5a6f971430ec9a2b4d2192a5c41",
+      "frames": [
+        {
+          "autocommit_frame": "call",
+          "line": 273,
+          "source": "<private-home>/.cache/oss-quality-sql-migration-portable-20261009T164405791392Z/schema-migration-20261009T164452366125Z/project/components/alembic/alembic/runtime/migration.py"
+        },
+        {
+          "autocommit_frame": "return",
+          "line": 344,
+          "source": "<private-home>/.cache/oss-quality-sql-migration-portable-20261009T164405791392Z/schema-migration-20261009T164452366125Z/project/components/alembic/alembic/runtime/migration.py"
+        },
+        {
+          "autocommit_frame": "call",
+          "line": 344,
+          "source": "<private-home>/.cache/oss-quality-sql-migration-portable-20261009T164405791392Z/schema-migration-20261009T164452366125Z/project/components/alembic/alembic/runtime/migration.py"
+        },
+        {
+          "autocommit_frame": "return",
+          "line": 360,
+          "source": "<private-home>/.cache/oss-quality-sql-migration-portable-20261009T164405791392Z/schema-migration-20261009T164452366125Z/project/components/alembic/alembic/runtime/migration.py"
+        }
+      ],
+      "statements": [
+        {
+          "sql": "-- Narrow derivation of pinned test SQL: fixed schema qualification and guarded retry.\n-- MIT notice: ../components/alembic/LICENSE. Strict state validation precedes execution.\nALTER TYPE rehearsal.mood ADD VALUE IF NOT EXISTS 'soso';\n",
+          "dbapi_autocommit": true
+        }
+      ]
+    },
+    {
+      "worker": "stop_before_expansion-resume",
+      "source": "<private-home>/.cache/oss-quality-sql-migration-portable-20261009T164405791392Z/schema-migration-20261009T164452366125Z/project/components/alembic/alembic/runtime/migration.py",
+      "sha256": "3f0137890bd1eedef93e5f6ec217061e9185f5a6f971430ec9a2b4d2192a5c41",
+      "frames": [
+        {
+          "autocommit_frame": "call",
+          "line": 273,
+          "source": "<private-home>/.cache/oss-quality-sql-migration-portable-20261009T164405791392Z/schema-migration-20261009T164452366125Z/project/components/alembic/alembic/runtime/migration.py"
+        },
+        {
+          "autocommit_frame": "return",
+          "line": 344,
+          "source": "<private-home>/.cache/oss-quality-sql-migration-portable-20261009T164405791392Z/schema-migration-20261009T164452366125Z/project/components/alembic/alembic/runtime/migration.py"
+        },
+        {
+          "autocommit_frame": "call",
+          "line": 344,
+          "source": "<private-home>/.cache/oss-quality-sql-migration-portable-20261009T164405791392Z/schema-migration-20261009T164452366125Z/project/components/alembic/alembic/runtime/migration.py"
+        },
+        {
+          "autocommit_frame": "return",
+          "line": 360,
+          "source": "<private-home>/.cache/oss-quality-sql-migration-portable-20261009T164405791392Z/schema-migration-20261009T164452366125Z/project/components/alembic/alembic/runtime/migration.py"
+        }
+      ],
+      "statements": [
+        {
+          "sql": "-- Narrow derivation of pinned test SQL: fixed schema qualification and guarded retry.\n-- MIT notice: ../components/alembic/LICENSE. Strict state validation precedes execution.\nALTER TYPE rehearsal.mood ADD VALUE IF NOT EXISTS 'soso';\n",
+          "dbapi_autocommit": true
+        }
+      ]
+    },
+    {
+      "worker": "stop_after_durable_expansion",
+      "source": "<private-home>/.cache/oss-quality-sql-migration-portable-20261009T164405791392Z/schema-migration-20261009T164452366125Z/project/components/alembic/alembic/runtime/migration.py",
+      "sha256": "3f0137890bd1eedef93e5f6ec217061e9185f5a6f971430ec9a2b4d2192a5c41",
+      "frames": [
+        {
+          "autocommit_frame": "call",
+          "line": 273,
+          "source": "<private-home>/.cache/oss-quality-sql-migration-portable-20261009T164405791392Z/schema-migration-20261009T164452366125Z/project/components/alembic/alembic/runtime/migration.py"
+        },
+        {
+          "autocommit_frame": "return",
+          "line": 344,
+          "source": "<private-home>/.cache/oss-quality-sql-migration-portable-20261009T164405791392Z/schema-migration-20261009T164452366125Z/project/components/alembic/alembic/runtime/migration.py"
+        },
+        {
+          "autocommit_frame": "call",
+          "line": 344,
+          "source": "<private-home>/.cache/oss-quality-sql-migration-portable-20261009T164405791392Z/schema-migration-20261009T164452366125Z/project/components/alembic/alembic/runtime/migration.py"
+        },
+        {
+          "autocommit_frame": "return",
+          "line": 360,
+          "source": "<private-home>/.cache/oss-quality-sql-migration-portable-20261009T164405791392Z/schema-migration-20261009T164452366125Z/project/components/alembic/alembic/runtime/migration.py"
+        }
+      ],
+      "statements": [
+        {
+          "sql": "-- Narrow derivation of pinned test SQL: fixed schema qualification and guarded retry.\n-- MIT notice: ../components/alembic/LICENSE. Strict state validation precedes execution.\nALTER TYPE rehearsal.mood ADD VALUE IF NOT EXISTS 'soso';\n",
+          "dbapi_autocommit": true
+        }
+      ]
+    },
+    {
+      "worker": "stop_after_durable_expansion-resume",
+      "source": "<private-home>/.cache/oss-quality-sql-migration-portable-20261009T164405791392Z/schema-migration-20261009T164452366125Z/project/components/alembic/alembic/runtime/migration.py",
+      "sha256": "3f0137890bd1eedef93e5f6ec217061e9185f5a6f971430ec9a2b4d2192a5c41",
+      "frames": [
+        {
+          "autocommit_frame": "call",
+          "line": 273,
+          "source": "<private-home>/.cache/oss-quality-sql-migration-portable-20261009T164405791392Z/schema-migration-20261009T164452366125Z/project/components/alembic/alembic/runtime/migration.py"
+        },
+        {
+          "autocommit_frame": "return",
+          "line": 344,
+          "source": "<private-home>/.cache/oss-quality-sql-migration-portable-20261009T164405791392Z/schema-migration-20261009T164452366125Z/project/components/alembic/alembic/runtime/migration.py"
+        },
+        {
+          "autocommit_frame": "call",
+          "line": 344,
+          "source": "<private-home>/.cache/oss-quality-sql-migration-portable-20261009T164405791392Z/schema-migration-20261009T164452366125Z/project/components/alembic/alembic/runtime/migration.py"
+        },
+        {
+          "autocommit_frame": "return",
+          "line": 360,
+          "source": "<private-home>/.cache/oss-quality-sql-migration-portable-20261009T164405791392Z/schema-migration-20261009T164452366125Z/project/components/alembic/alembic/runtime/migration.py"
+        }
+      ],
+      "statements": [
+        {
+          "sql": "-- Narrow derivation of pinned test SQL: fixed schema qualification and guarded retry.\n-- MIT notice: ../components/alembic/LICENSE. Strict state validation precedes execution.\nALTER TYPE rehearsal.mood ADD VALUE IF NOT EXISTS 'soso';\n",
+          "dbapi_autocommit": true
+        }
+      ]
+    },
+    {
+      "worker": "activation-expansion",
+      "source": "<private-home>/.cache/oss-quality-sql-migration-portable-20261009T164405791392Z/schema-migration-20261009T164452366125Z/project/components/alembic/alembic/runtime/migration.py",
+      "sha256": "3f0137890bd1eedef93e5f6ec217061e9185f5a6f971430ec9a2b4d2192a5c41",
+      "frames": [
+        {
+          "autocommit_frame": "call",
+          "line": 273,
+          "source": "<private-home>/.cache/oss-quality-sql-migration-portable-20261009T164405791392Z/schema-migration-20261009T164452366125Z/project/components/alembic/alembic/runtime/migration.py"
+        },
+        {
+          "autocommit_frame": "return",
+          "line": 344,
+          "source": "<private-home>/.cache/oss-quality-sql-migration-portable-20261009T164405791392Z/schema-migration-20261009T164452366125Z/project/components/alembic/alembic/runtime/migration.py"
+        },
+        {
+          "autocommit_frame": "call",
+          "line": 344,
+          "source": "<private-home>/.cache/oss-quality-sql-migration-portable-20261009T164405791392Z/schema-migration-20261009T164452366125Z/project/components/alembic/alembic/runtime/migration.py"
+        },
+        {
+          "autocommit_frame": "return",
+          "line": 360,
+          "source": "<private-home>/.cache/oss-quality-sql-migration-portable-20261009T164405791392Z/schema-migration-20261009T164452366125Z/project/components/alembic/alembic/runtime/migration.py"
+        }
+      ],
+      "statements": [
+        {
+          "sql": "-- Narrow derivation of pinned test SQL: fixed schema qualification and guarded retry.\n-- MIT notice: ../components/alembic/LICENSE. Strict state validation precedes execution.\nALTER TYPE rehearsal.mood ADD VALUE IF NOT EXISTS 'soso';\n",
+          "dbapi_autocommit": true
+        }
+      ]
+    }
+  ],
+  "case_observations": {
+    "stop_before_expansion": {
+      "worker_exit": -9,
+      "fresh_at_barrier_labels": [
+        "sad",
+        "ok",
+        "happy"
+      ],
+      "fresh_at_barrier_marker": [],
+      "fresh_after_kill_equal": true,
+      "completion": "completed",
+      "second_resume": "already_complete",
+      "second_resume_full_state_equal": true
+    },
+    "stop_after_durable_expansion": {
+      "worker_exit": -9,
+      "fresh_at_barrier_labels": [
+        "sad",
+        "ok",
+        "happy",
+        "soso"
+      ],
+      "fresh_at_barrier_marker": [],
+      "fresh_after_kill_equal": true,
+      "completion": "completed",
+      "second_resume": "already_complete",
+      "second_resume_full_state_equal": true
+    },
+    "wrong_schema": {
+      "before_after_equal": true,
+      "events": [],
+      "status": "state_drift"
+    },
+    "wrong_type": {
+      "before_after_equal": true,
+      "events": [],
+      "status": "state_drift"
+    },
+    "wrong_table": {
+      "before_after_equal": true,
+      "events": [],
+      "status": "state_drift"
+    },
+    "wrong_gate": {
+      "before_after_equal": true,
+      "events": [],
+      "status": "state_drift"
+    },
+    "contradictory_marker": {
+      "before_after_equal": true,
+      "events": [],
+      "status": "state_drift"
+    },
+    "changed_original_row": {
+      "before_after_equal": true,
+      "events": [],
+      "status": "state_drift"
+    },
+    "wrong_label_order": {
+      "before_after_equal": true,
+      "events": [],
+      "status": "state_drift"
+    },
+    "normal_and_old_clients": {
+      "rejected_new_label": {
+        "sqlstate": "23514",
+        "constraint": "legacy_labels"
+      },
+      "second_resume_full_state_equal": true
+    },
+    "activation_negative_control": {
+      "stored_row": 200,
+      "stored_label": "soso",
+      "reader_error": "Old reader rejects stored label 'soso' at row 200"
+    }
+  },
+  "stopped_probe": {
+    "at_utc": "2026-10-09T16:47:04.633128+00:00",
+    "pg_ctl_exit": 3,
+    "stdout": "pg_ctl: no server running\n",
+    "stderr": "",
+    "postmaster_pid_exists": false,
+    "port": 53869,
+    "port_open": false,
+    "recorded_worker_pids_alive": [],
+    "recorded_postgres_pid_alive": false
+  },
+  "stage_after": {
+    ".gitattributes": {
+      "bytes": 8,
+      "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da"
+    },
+    ".gitignore": {
+      "bytes": 30,
+      "sha256": "22bc478fc0eb97818e8c2efd9a6c8f9dce55490bdd8074a3f2b6b8653c5c12d5"
+    },
+    "LICENSE": {
+      "bytes": 1059,
+      "sha256": "6e68d94a03a0e3e327ddf3e86d1ebedc14eece3922022618fc246a36296fd0cc"
+    },
+    "NOTICE": {
+      "bytes": 960,
+      "sha256": "d3f0fdff0e7eabe8d6565fdc07f2eb1e1c5047d10c5c808379ee418e6e2c5c15"
+    },
+    "PROVENANCE.md": {
+      "bytes": 6173,
+      "sha256": "c55f80f79cc87452c54991f6d3a8f86c45d41764a4d4ac2f1f8a1afa62d0edb3"
+    },
+    "README.md": {
+      "bytes": 6897,
+      "sha256": "576a84ff5db27d743de4559510b097df3b41e985f0ef57b1de6a2e6dc195b381"
+    },
+    "RESEARCH.md": {
+      "bytes": 2136,
+      "sha256": "a862ca1aa9a2009b49140ace3e2106476169daa374d518c78bb906ac93ee4435"
+    },
+    "VERIFICATION.md": {
+      "bytes": 5944,
+      "sha256": "f172cf809263e51f0d039f856a3a133c846ec3e239faa1cb153d234d38bb03fb"
+    },
+    "components/alembic/.github/CODE_OF_CONDUCT.md": {
+      "bytes": 2090,
+      "sha256": "d67fa3b78b462be047e2d7c52953fcd4b5cf5ae2e652de3d44f6799dc6cac1e3"
+    },
+    "components/alembic/.github/CONTRIBUTING.md": {
+      "bytes": 2977,
+      "sha256": "f31fffa7231280edc9e31dc5da2ab5dd0a4551d061df8c8d3e5359bf2abb7e56"
+    },
+    "components/alembic/.github/FUNDING.yml": {
+      "bytes": 108,
+      "sha256": "ae90c24ca997085b9a0d76485c5d7967956ee1ef21d6315edc24754e8e48d4cc"
+    },
+    "components/alembic/.github/ISSUE_TEMPLATE/bug_report.md": {
+      "bytes": 1112,
+      "sha256": "693da0a09609aaad5fc4f8554249602acdb1c5ac1b326e5429568f15fbeb8415"
+    },
+    "components/alembic/.github/ISSUE_TEMPLATE/config.yml": {
+      "bytes": 734,
+      "sha256": "f8ef0a39157de1922bb16f6644500941cc8038febddb1bca3fc037cf40c1c73f"
+    },
+    "components/alembic/.github/ISSUE_TEMPLATE/use_case.md": {
+      "bytes": 842,
+      "sha256": "808ac3ac398d689548141bbd89dd5875d535aac9f4c65eb69dcbf0ccbe605414"
+    },
+    "components/alembic/.github/SECURITY.md": {
+      "bytes": 277,
+      "sha256": "3858d52d46ec322f45800fa4078b97628e8ccc1ff2fdfc5d1977372710dab845"
+    },
+    "components/alembic/.github/dependabot.yml": {
+      "bytes": 903,
+      "sha256": "c1c6566d6a6319010cccf775d490fc05dc66747cfc00495bce1f038a3b42f366"
+    },
+    "components/alembic/.github/pull_request_template.md": {
+      "bytes": 1124,
+      "sha256": "04d12aeea30d2f44f5e9307384c5eca49841cdbae002536d2a64eb76a4b55fa6"
+    },
+    "components/alembic/.github/workflows/run-on-pr.yaml": {
+      "bytes": 2118,
+      "sha256": "2a58d00da15f456eb4396e512fe2e5e01e3753084289dfd13d7fcec771fd562f"
+    },
+    "components/alembic/.github/workflows/run-test.yaml": {
+      "bytes": 2389,
+      "sha256": "c3038ce8b366d4697afd7bffb94e96e9bc0bf78f3e72fb2919696d83481b3d09"
+    },
+    "components/alembic/.gitignore": {
+      "bytes": 280,
+      "sha256": "7bb5a0d0d6e46d8fe82b54cca9218f1487051fed6f0a1be0e54811b6da8c5798"
+    },
+    "components/alembic/.gitreview": {
+      "bytes": 177,
+      "sha256": "2c71d22c54553a0ab431c838a18fc50c75f25b227fbbbca72bfc790df7ea84e8"
+    },
+    "components/alembic/.pre-commit-config.yaml": {
+      "bytes": 697,
+      "sha256": "34c62a9fcb6c32f4361393da6c6ab5555b6e18e6b9e2a4093e73aca080ea4463"
+    },
+    "components/alembic/CHANGES": {
+      "bytes": 178,
+      "sha256": "3a70791e5e2db9819ac8f7c3498daab0104056d2552fb1a220a0ee9333f42325"
+    },
+    "components/alembic/LICENSE": {
+      "bytes": 1059,
+      "sha256": "6e68d94a03a0e3e327ddf3e86d1ebedc14eece3922022618fc246a36296fd0cc"
+    },
+    "components/alembic/MANIFEST.in": {
+      "bytes": 341,
+      "sha256": "c7e535119fa777a8333dc9691439b7dc0bb6fca7f4714bc80080a93d3dfa79cd"
+    },
+    "components/alembic/README.rst": {
+      "bytes": 5737,
+      "sha256": "422e4662fb3bfb4170bd3323db618f3c495cb4d729d077a481ad29730148d87e"
+    },
+    "components/alembic/README.unittests.rst": {
+      "bytes": 15006,
+      "sha256": "eaa5b77d1c3b4cbee1b8621fb4d76ce9bd9fb210abb6718f24ab6dad7992af1c"
+    },
+    "components/alembic/alembic/__init__.py": {
+      "bytes": 92,
+      "sha256": "d8df16a7dbd9a840999607290340b2ce89124926ab0f3f1568e8b901e87ab18c"
+    },
+    "components/alembic/alembic/__main__.py": {
+      "bytes": 78,
+      "sha256": "dfbde6efe4c187bd89aab48c62f886af1087668f9c9f078cf00185f00db63e66"
+    },
+    "components/alembic/alembic/autogenerate/__init__.py": {
+      "bytes": 543,
+      "sha256": "9ed9944d78632e6e3fce6a88c3255a1027693c39fafeed7233dbd893afb9e771"
+    },
+    "components/alembic/alembic/autogenerate/api.py": {
+      "bytes": 22614,
+      "sha256": "85887aac9e1fe3e6cfc47781de1bc7862f2c1f531d1a3a49fa806737f543b4fe"
+    },
+    "components/alembic/alembic/autogenerate/compare/__init__.py": {
+      "bytes": 2217,
+      "sha256": "b0cd39e0e6046cb7a635ff704beaf59dcd8746e0b2c5953810fc1d091b9f558d"
+    },
+    "components/alembic/alembic/autogenerate/compare/comments.py": {
+      "bytes": 3157,
+      "sha256": "e1d93b590b518fe99c061a37bb935d519a03dd212f8a4f902e0015bc51c1d1d2"
+    },
+    "components/alembic/alembic/autogenerate/compare/constraints.py": {
+      "bytes": 27993,
+      "sha256": "9c06148b69990a3fcab8b7192d995958b698d9b4843c1589981c4b8c977abeee"
+    },
+    "components/alembic/alembic/autogenerate/compare/schema.py": {
+      "bytes": 1641,
+      "sha256": "79e8904d8b7e85800a1efd468d4d2c6c4d6bf830c64377f3ce0b0e15296061dd"
+    },
+    "components/alembic/alembic/autogenerate/compare/server_defaults.py": {
+      "bytes": 10678,
+      "sha256": "67fcb2ea4fd3ea225decb2833b71efe114dce6e2b388abf806aaa602270a5f6d"
+    },
+    "components/alembic/alembic/autogenerate/compare/tables.py": {
+      "bytes": 10504,
+      "sha256": "68b2023090fb3081bb704d3b8c165fe8a18ca7a8e932932a5b2f08eaa6a43338"
+    },
+    "components/alembic/alembic/autogenerate/compare/types.py": {
+      "bytes": 3910,
+      "sha256": "0abf40d93739dde8899d1231413215ebb262483c4610e7f849d739d2c47d29b6"
+    },
+    "components/alembic/alembic/autogenerate/compare/util.py": {
+      "bytes": 7196,
+      "sha256": "8d8cf847dc0f17c2f290aef0d588da9c098d7503b52f1f1b848fbfa2f5d95d7e"
+    },
+    "components/alembic/alembic/autogenerate/render.py": {
+      "bytes": 38880,
+      "sha256": "c307dbc9135b02fe0278853cd42eccc1c0cd7296c2c300d396139008f542d348"
+    },
+    "components/alembic/alembic/autogenerate/rewriter.py": {
+      "bytes": 7676,
+      "sha256": "b96ce1d6256210c7bd8dadcafb70a7a72d5637bad4f01dbce463716fe35bbc9c"
+    },
+    "components/alembic/alembic/command.py": {
+      "bytes": 25359,
+      "sha256": "40fa925f798b81fb4f35c8bc8deb25af5ee697ace63bb680856b6de7292e90ad"
+    },
+    "components/alembic/alembic/config.py": {
+      "bytes": 34788,
+      "sha256": "34bfe62f3ee3021a29c22057e5e9c61c3eff128fe92aa9dee31fd20a33552e84"
+    },
+    "components/alembic/alembic/context.py": {
+      "bytes": 195,
+      "sha256": "84ad4024e417276f41867dbbe8661ca2cc5e1bba42e5a6514f913c7386cc2784"
+    },
+    "components/alembic/alembic/context.pyi": {
+      "bytes": 32585,
+      "sha256": "eb39e73baecbfbf0c75a1c5b36339f8e75c21a48323b3549f667d25cedf3d639"
+    },
+    "components/alembic/alembic/ddl/__init__.py": {
+      "bytes": 152,
+      "sha256": "0dff1fcb8567fda6cff01eeadf1f20c85c04c272f0ea1b362e3b7f6d5dc46561"
+    },
+    "components/alembic/alembic/ddl/_autogen.py": {
+      "bytes": 10176,
+      "sha256": "553f968d23c0acc7723dab875663421752e2081d8d34f11ff9ff92f4646ec1d3"
+    },
+    "components/alembic/alembic/ddl/base.py": {
+      "bytes": 12111,
+      "sha256": "c367416334a7e0bab91ace9405c150e9ed59b9dfebdcd6a9ecf91502f85ee42e"
+    },
+    "components/alembic/alembic/ddl/impl.py": {
+      "bytes": 31352,
+      "sha256": "f9c80657e52a12ce879e373b5730bc9eb83ab3cd2070ddbc983e254753e51c0b"
+    },
+    "components/alembic/alembic/ddl/mssql.py": {
+      "bytes": 17121,
+      "sha256": "e16891474fd4b869dc3a4025e5cc9fbf6b5f9cce4b9fb68409b460e53b78f064"
+    },
+    "components/alembic/alembic/ddl/mysql.py": {
+      "bytes": 21188,
+      "sha256": "ffb7fe57fef20eeb3b7fa82851dd9c6828c66a2725ab2d439bc2d2c7ada09a28"
+    },
+    "components/alembic/alembic/ddl/oracle.py": {
+      "bytes": 6212,
+      "sha256": "3c7c667b9de91b48b2a0c3b3eb58d28bca4b2efe795414918baf6c1d727232d2"
+    },
+    "components/alembic/alembic/ddl/postgresql.py": {
+      "bytes": 30061,
+      "sha256": "aa7f1702f93a98b10f140adf3d728c96ad2ab37412223104deaa972c2a424bba"
+    },
+    "components/alembic/alembic/ddl/sqlite.py": {
+      "bytes": 7925,
+      "sha256": "88ccb511e6b106d9547b030aaab3caeef1e47211f4c87cbffb888ffb2e96a215"
+    },
+    "components/alembic/alembic/environment.py": {
+      "bytes": 43,
+      "sha256": "30ce653dac864f4e07dda7a78351fb190f07100b375465f9cb2ea60cb08f2d3e"
+    },
+    "components/alembic/alembic/ext/__init__.py": {
+      "bytes": 318,
+      "sha256": "da4176392444bc6e936266beaa5b7c8c85449dba69a7eb1bddd59a1dad30b655"
+    },
+    "components/alembic/alembic/ext/checkconstraint_byname.py": {
+      "bytes": 6465,
+      "sha256": "aba227d9f145201a784aab7dbec75d34981e53ad5c70dbfdbbebc1f24938b18b"
+    },
+    "components/alembic/alembic/migration.py": {
+      "bytes": 41,
+      "sha256": "315e858eeeab66d9f67d34442b35eb09933a688046208e0e319162c745fe18bb"
+    },
+    "components/alembic/alembic/op.py": {
+      "bytes": 167,
+      "sha256": "7e51ed72c56a383f9981928ada9bfe089e42c21f8a27ba6e314357ce2b21c4bc"
+    },
+    "components/alembic/alembic/op.pyi": {
+      "bytes": 52937,
+      "sha256": "30bcd57e4d83b4df52785beb06132998777e38a5931e1d81e8fe984780e5ebba"
+    },
+    "components/alembic/alembic/operations/__init__.py": {
+      "bytes": 317,
+      "sha256": "c5d6573161894506a6e826d3b4157812468e7bb0d490795a5ec551d9ef626e37"
+    },
+    "components/alembic/alembic/operations/base.py": {
+      "bytes": 77791,
+      "sha256": "78682ee119dae948082c3f687a19988a32ac7a075f91382cacd97833122dcdf0"
+    },
+    "components/alembic/alembic/operations/batch.py": {
+      "bytes": 29518,
+      "sha256": "f13a33aba36068943825d19d51709d34e69d61ce8b466ec3502ccef2a1a5ebe4"
+    },
+    "components/alembic/alembic/operations/ops.py": {
+      "bytes": 98319,
+      "sha256": "f0df2e6f9e88f7cf319df746c9f1243752f9e5119bd683c32ece6043b9951419"
+    },
+    "components/alembic/alembic/operations/schemaobj.py": {
+      "bytes": 8975,
+      "sha256": "babaefacd6e3e6efd74c9023120213f5336a8b09c4cc855d2ca5c2ca495fbeb5"
+    },
+    "components/alembic/alembic/operations/toimpl.py": {
+      "bytes": 8340,
+      "sha256": "c30d6b8e081b1a9c29348ceffa7324269a076d2330a7b5c86a1b30c3e436798a"
+    },
+    "components/alembic/alembic/py.typed": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "components/alembic/alembic/runtime/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "components/alembic/alembic/runtime/environment.py": {
+      "bytes": 42511,
+      "sha256": "ef1e6d897b6df59be0a99dedf32ff09429631873ccb9585e9680efaaf5fc3159"
+    },
+    "components/alembic/alembic/runtime/migration.py": {
+      "bytes": 48090,
+      "sha256": "3f0137890bd1eedef93e5f6ec217061e9185f5a6f971430ec9a2b4d2192a5c41"
+    },
+    "components/alembic/alembic/runtime/plugins.py": {
+      "bytes": 7208,
+      "sha256": "d31de53e33ff8ddd1da495c0fa2b4f5f88e9ad6d9e40bbccdeeeeb3b65a5e7f1"
+    },
+    "components/alembic/alembic/script/__init__.py": {
+      "bytes": 100,
+      "sha256": "9528f4e8edfdd48cb96af5808aaf123ece8df11060c6448f8cff30a5770d0c68"
+    },
+    "components/alembic/alembic/script/base.py": {
+      "bytes": 36992,
+      "sha256": "377bfedf325ccf3cab4c7eaa1dd45613209aeb4d1a1b9223436830e7ec0ee98d"
+    },
+    "components/alembic/alembic/script/revision.py": {
+      "bytes": 61943,
+      "sha256": "e344a758dfabad1925d9cc91f5af9b29cf81e65d184bf48c78f8a5bf02b58a95"
+    },
+    "components/alembic/alembic/script/write_hooks.py": {
+      "bytes": 5369,
+      "sha256": "2961f5db6e7487f25c741906b0b568f492982a935c2710548f067daffafcf017"
+    },
+    "components/alembic/alembic/templates/async/README": {
+      "bytes": 58,
+      "sha256": "21256d00ebeabca93fe5384ce62a0913e94c92f7fd21b92715415553fbcf99ae"
+    },
+    "components/alembic/alembic/templates/async/alembic.ini.mako": {
+      "bytes": 5010,
+      "sha256": "7ac6ee0a7a64ca39ed242ee4f4d9d870203386b450f0d542e295a29de89193fc"
+    },
+    "components/alembic/alembic/templates/async/env.py": {
+      "bytes": 2389,
+      "sha256": "cdb3827f763bc36960f768714b0986d4c33fef2e7a8bfa111f800aa74a50058a"
+    },
+    "components/alembic/alembic/templates/async/script.py.mako": {
+      "bytes": 704,
+      "sha256": "d38920781b4d31ae1c0a71bc09f41c2ade8feab9e5a087e3f30cb4bbf0c1c9d3"
+    },
+    "components/alembic/alembic/templates/generic/README": {
+      "bytes": 38,
+      "sha256": "31595cf53626af9ed16e15c44fa43183209cc163fbc3ebcb904b22ac436a8884"
+    },
+    "components/alembic/alembic/templates/generic/alembic.ini.mako": {
+      "bytes": 5010,
+      "sha256": "da2daf3ec1904a613d5cc88bcfcb52045fd4200f0f265d3e7c0bdb4559a22bfc"
+    },
+    "components/alembic/alembic/templates/generic/env.py": {
+      "bytes": 2103,
+      "sha256": "4cb4563955b75e9b7f4e97fc245ce59e83e7feaa14bbc515efb638a3d5c3eb22"
+    },
+    "components/alembic/alembic/templates/generic/script.py.mako": {
+      "bytes": 704,
+      "sha256": "d38920781b4d31ae1c0a71bc09f41c2ade8feab9e5a087e3f30cb4bbf0c1c9d3"
+    },
+    "components/alembic/alembic/templates/multidb/README": {
+      "bytes": 606,
+      "sha256": "7562c3867060a610383736fbb0d94c7c24b7ff4e98a956c7873fbd3b924dab22"
+    },
+    "components/alembic/alembic/templates/multidb/alembic.ini.mako": {
+      "bytes": 5336,
+      "sha256": "6ac56ddda255c23baec3d6e8a5f3287d5be89cedf57285c16d5e4378c44de9c3"
+    },
+    "components/alembic/alembic/templates/multidb/env.py": {
+      "bytes": 4230,
+      "sha256": "eb33639d6f265c6524edead3b00beb7e1beaa1ccc9fa06a08d5ab56298366084"
+    },
+    "components/alembic/alembic/templates/multidb/script.py.mako": {
+      "bytes": 1235,
+      "sha256": "65b0973242395a3d9dc0d29cc6e54690a67b21abfddc1371fdb338cdb1a2ddcf"
+    },
+    "components/alembic/alembic/templates/pyproject/README": {
+      "bytes": 60,
+      "sha256": "74c848885a1e33b11d79a39706cde6550eb35c008cc865c36ff50107ab06440d"
+    },
+    "components/alembic/alembic/templates/pyproject/alembic.ini.mako": {
+      "bytes": 782,
+      "sha256": "6d09c4a327672ce52083dbcd6d33b2b38af931a5bc966c181574ab95f744124c"
+    },
+    "components/alembic/alembic/templates/pyproject/env.py": {
+      "bytes": 2103,
+      "sha256": "4cb4563955b75e9b7f4e97fc245ce59e83e7feaa14bbc515efb638a3d5c3eb22"
+    },
+    "components/alembic/alembic/templates/pyproject/pyproject.toml.mako": {
+      "bytes": 3000,
+      "sha256": "5bac7f2bec4b7c4bf233c0f8077160d25db43f587a48f2b7df5f3ca6a445ae84"
+    },
+    "components/alembic/alembic/templates/pyproject/script.py.mako": {
+      "bytes": 704,
+      "sha256": "d38920781b4d31ae1c0a71bc09f41c2ade8feab9e5a087e3f30cb4bbf0c1c9d3"
+    },
+    "components/alembic/alembic/templates/pyproject_async/README": {
+      "bytes": 45,
+      "sha256": "d90e57704a2e8aa43e4c9b2c3bdf34e4b44e91551dd05e9def8ad39ee2eb89f0"
+    },
+    "components/alembic/alembic/templates/pyproject_async/alembic.ini.mako": {
+      "bytes": 782,
+      "sha256": "6d09c4a327672ce52083dbcd6d33b2b38af931a5bc966c181574ab95f744124c"
+    },
+    "components/alembic/alembic/templates/pyproject_async/env.py": {
+      "bytes": 2389,
+      "sha256": "cdb3827f763bc36960f768714b0986d4c33fef2e7a8bfa111f800aa74a50058a"
+    },
+    "components/alembic/alembic/templates/pyproject_async/pyproject.toml.mako": {
+      "bytes": 3000,
+      "sha256": "5bac7f2bec4b7c4bf233c0f8077160d25db43f587a48f2b7df5f3ca6a445ae84"
+    },
+    "components/alembic/alembic/templates/pyproject_async/script.py.mako": {
+      "bytes": 704,
+      "sha256": "d38920781b4d31ae1c0a71bc09f41c2ade8feab9e5a087e3f30cb4bbf0c1c9d3"
+    },
+    "components/alembic/alembic/testing/__init__.py": {
+      "bytes": 1178,
+      "sha256": "2a427878890dce5eb2dde5d5277c350ea9471ee311e745a10e5fa2eb53cf186e"
+    },
+    "components/alembic/alembic/testing/assertions.py": {
+      "bytes": 5193,
+      "sha256": "9f55ca2db8b0bd186bc3c59ee70a3390fb86ff5e37ac2f67cc6a608db5ecaa7d"
+    },
+    "components/alembic/alembic/testing/env.py": {
+      "bytes": 11591,
+      "sha256": "a91b281d75bffd04917b199eec4c0af2c4111ad702cb8bf17a665c26b7000703"
+    },
+    "components/alembic/alembic/testing/fixtures.py": {
+      "bytes": 11677,
+      "sha256": "f342d2f9ccc0ebe0775260a6e198ead049f55d5e8923918608db25351753d30c"
+    },
+    "components/alembic/alembic/testing/plugin/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "components/alembic/alembic/testing/plugin/bootstrap.py": {
+      "bytes": 50,
+      "sha256": "f42eb0b631ab215ced67ddbcc36ee1b1013429c8c32c852d50ddddbd92ac3159"
+    },
+    "components/alembic/alembic/testing/requirements.py": {
+      "bytes": 4707,
+      "sha256": "d2e0416637615ab6f0b58c080f272a18e65676f5af8f497601c0e05ded96484f"
+    },
+    "components/alembic/alembic/testing/schemacompare.py": {
+      "bytes": 4838,
+      "sha256": "37952a48d08e25eb48282e2f2a1a58cd01298f4f1791d808a2a06610f437b657"
+    },
+    "components/alembic/alembic/testing/suite/__init__.py": {
+      "bytes": 288,
+      "sha256": "32f13bfa1c1b695375ab734cfb3b46c4e454f5d9c87a550220d2aa3717b09fb6"
+    },
+    "components/alembic/alembic/testing/suite/_autogen_fixtures.py": {
+      "bytes": 14153,
+      "sha256": "c062d8d32d50f628812b58c6221d4bec5e8663036957388a949d2f5bd1de6b0c"
+    },
+    "components/alembic/alembic/testing/suite/test_autogen_comments.py": {
+      "bytes": 6283,
+      "sha256": "6841aa2940f0e241e39c3936f7c6a819c42f5c95a66577085ffd85c47e1c24af"
+    },
+    "components/alembic/alembic/testing/suite/test_autogen_computed.py": {
+      "bytes": 4554,
+      "sha256": "a6e274841b4bccdcfc2e23c6a833d2f2fb1ee9d512f55081a54770f9c3a4b19a"
+    },
+    "components/alembic/alembic/testing/suite/test_autogen_diffs.py": {
+      "bytes": 8394,
+      "sha256": "4f8491d67fe499c38a6214785b5f9d0347b9b1d749ebd0d254bd875bdea40241"
+    },
+    "components/alembic/alembic/testing/suite/test_autogen_fks.py": {
+      "bytes": 32930,
+      "sha256": "c072a30f81207fb219947d07630f9cf2eb62d23849a4e9b92b8d903177f9b48c"
+    },
+    "components/alembic/alembic/testing/suite/test_autogen_identity.py": {
+      "bytes": 5824,
+      "sha256": "91cbaa9e01bba9700a3c90d7e14f2c4733ca1c4244087b99d03b6e692ead5649"
+    },
+    "components/alembic/alembic/testing/suite/test_environment.py": {
+      "bytes": 11260,
+      "sha256": "ac2cf5c014115d097d984691fafa0d4cec382708b6890acf3c9f02276ec0dc7d"
+    },
+    "components/alembic/alembic/testing/suite/test_op.py": {
+      "bytes": 1343,
+      "sha256": "d97402766fcd9a73f11c6b868fb866c4ccc884ac57368b54b0a740097cc4d663"
+    },
+    "components/alembic/alembic/testing/util.py": {
+      "bytes": 3003,
+      "sha256": "44b7a15919403ee6d7c0472335ec54cba04e3de4094b25e8c3a0dc4a729b10ed"
+    },
+    "components/alembic/alembic/testing/warnings.py": {
+      "bytes": 1322,
+      "sha256": "1e8e050fa83560ecddf315eb1da3ec94e8f6dc27426407339ff909218c4a90a5"
+    },
+    "components/alembic/alembic/util/__init__.py": {
+      "bytes": 1781,
+      "sha256": "eea60014e31ea4a88e0429c68bb8cc803fe66eaf9b30c84308119577361dee8e"
+    },
+    "components/alembic/alembic/util/compat.py": {
+      "bytes": 3828,
+      "sha256": "bb769ab0cc9339c72366136df7b23ec0c52b677ffc0a220ba08f6c94f8c8cead"
+    },
+    "components/alembic/alembic/util/editor.py": {
+      "bytes": 2467,
+      "sha256": "15c76ae48fb16451b5c18ea33219a41954137466f8c369928075477b78784d0e"
+    },
+    "components/alembic/alembic/util/exc.py": {
+      "bytes": 944,
+      "sha256": "3ca150476cae5b83db92774b6cfabd1110ba625334e8efe94ec89e6e6936f8cd"
+    },
+    "components/alembic/alembic/util/langhelpers.py": {
+      "bytes": 13053,
+      "sha256": "bb0c7399a0c453b66b0d17da50514f72c66c77fc9ea966c0b88ad826811f63c0"
+    },
+    "components/alembic/alembic/util/messaging.py": {
+      "bytes": 3235,
+      "sha256": "b98946376b27ddd3b21e62ed69247751740206bf1de304f9274ba3ef8c2b0f49"
+    },
+    "components/alembic/alembic/util/pyfiles.py": {
+      "bytes": 4603,
+      "sha256": "3c6d0fdde6a9b92b01cb19e8302a60131373d1f386ecdceba6a722a3f94011c5"
+    },
+    "components/alembic/alembic/util/sqla_compat.py": {
+      "bytes": 19346,
+      "sha256": "b4cf72728c191352e61ef133f028fef036e4cec52b292a3cbc824e2e748bcbab"
+    },
+    "components/alembic/docs/build/Makefile": {
+      "bytes": 3564,
+      "sha256": "23bcf78b241559e8c8723a477dc6f2d89a732832531d2ac726d3f5642af04432"
+    },
+    "components/alembic/docs/build/_static/nature_override.css": {
+      "bytes": 507,
+      "sha256": "19251f5d55a0c51769f29737fbe7a198d2384370537c3098f8d3a1c5e5be151b"
+    },
+    "components/alembic/docs/build/_static/site_custom_css.css": {
+      "bytes": 43,
+      "sha256": "f213bd1206c02d8fb28c28bd1cc2c99addc58463c150fccda5525cb6cb76cf37"
+    },
+    "components/alembic/docs/build/_templates/site_custom_sidebars.html": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "components/alembic/docs/build/api/api_overview.png": {
+      "bytes": 123965,
+      "sha256": "b403281a4d83d6d921600e7f5c4701c956c1ec33f5b07c0430f68399316f2434"
+    },
+    "components/alembic/docs/build/api/autogenerate.rst": {
+      "bytes": 24750,
+      "sha256": "6402e9dc4e3f8b6b65aa4b1838c37ea56e53093dcb32a69d3951b7ef148c944b"
+    },
+    "components/alembic/docs/build/api/commands.rst": {
+      "bytes": 1721,
+      "sha256": "54b90e9bcf861648b5752e2fc1020a78e20de280f635ec24518cde6a060c5815"
+    },
+    "components/alembic/docs/build/api/config.rst": {
+      "bytes": 1232,
+      "sha256": "93747bd208fcd1e78630990baa971a5007994f3ccedd2f1f60ae9df83c9de579"
+    },
+    "components/alembic/docs/build/api/ddl.rst": {
+      "bytes": 1090,
+      "sha256": "9c53c16786947b4864a196220897e0c282cdcaf8fc23713c86880e290bb00cf1"
+    },
+    "components/alembic/docs/build/api/exceptions.rst": {
+      "bytes": 157,
+      "sha256": "754b56572821ad0272adf0d6f5407232c646b18740883d5d36fe3d9091faa424"
+    },
+    "components/alembic/docs/build/api/index.rst": {
+      "bytes": 1037,
+      "sha256": "1d7ce214c5f2370ea3c5b68cc3877dc72c76517c3404eeeef93e3aaefb60f348"
+    },
+    "components/alembic/docs/build/api/operations.rst": {
+      "bytes": 9415,
+      "sha256": "0f77297baa304fd90fa011edfdca2e1547cd8b33590401e7a5a6297cc5ff2414"
+    },
+    "components/alembic/docs/build/api/overview.rst": {
+      "bytes": 3409,
+      "sha256": "a87f41b590ecbf60fc87644a4802e133201fc023ffe3344228e4e1c4e706d694"
+    },
+    "components/alembic/docs/build/api/plugins.rst": {
+      "bytes": 20498,
+      "sha256": "2a2afc9ada1dd5bb00f934376eee09700babc2e401f17064c9a9db06f4e58331"
+    },
+    "components/alembic/docs/build/api/runtime.rst": {
+      "bytes": 1505,
+      "sha256": "21dd263c5a8377d5aa05c878549183ccc2c7931bf9cad42820c8af49e868ac5a"
+    },
+    "components/alembic/docs/build/api/script.rst": {
+      "bytes": 533,
+      "sha256": "ca8c89855d86dc4b94624eeb79cf36fe405572ecc6919efe22765b4a66869e19"
+    },
+    "components/alembic/docs/build/assets/api_overview.graffle": {
+      "bytes": 69295,
+      "sha256": "f728fc67cafd944d318be81563e73256269ca68958422b8df98fae0956a91286"
+    },
+    "components/alembic/docs/build/autogenerate.rst": {
+      "bytes": 42995,
+      "sha256": "c76115a47236cd779097d1535a0490cdf505c83fdadae695b15d59d9ca92e31b"
+    },
+    "components/alembic/docs/build/batch.rst": {
+      "bytes": 17975,
+      "sha256": "99faadcdd062e020e9a76fb8e52c7066980d7aae467800fa62d7457357b26f9b"
+    },
+    "components/alembic/docs/build/branches.rst": {
+      "bytes": 35218,
+      "sha256": "d5a5ec1063e16b264cc15431853bed0947c9851ad571c7c334038e77099559f8"
+    },
+    "components/alembic/docs/build/changelog.rst": {
+      "bytes": 260838,
+      "sha256": "32389d3d8a27e2608583c0a57a2a6ffa3769aaad43f2b9ef74e9815430c0e06d"
+    },
+    "components/alembic/docs/build/conf.py": {
+      "bytes": 8770,
+      "sha256": "35bf9d5e4f053960e049eef0ecb2cc35f526a55eddd586a402d49d0d927d5fc3"
+    },
+    "components/alembic/docs/build/cookbook.rst": {
+      "bytes": 65066,
+      "sha256": "d63835342aad868f68d1fa602634057c8609cc11ae913a58094b4a73a1821cfa"
+    },
+    "components/alembic/docs/build/front.rst": {
+      "bytes": 4323,
+      "sha256": "36d5da0081c0d3dc30fbbab6b00b23a4a1f0114c6fc4d3f270e3ab94949efafd"
+    },
+    "components/alembic/docs/build/index.rst": {
+      "bytes": 533,
+      "sha256": "58a926546f87afb165c70013086d8e81f1317d87ebc60ad649760a75769e113b"
+    },
+    "components/alembic/docs/build/make.bat": {
+      "bytes": 3077,
+      "sha256": "9483b8ec3b7eaac0b84e773b2cb392ff32de565ce9d6f9172496cf1d4776997b"
+    },
+    "components/alembic/docs/build/naming.rst": {
+      "bytes": 11025,
+      "sha256": "34c923c1a7e5b9a393c5b5960639c344c3242a3079e51e1bb0e33011c6389f0b"
+    },
+    "components/alembic/docs/build/offline.rst": {
+      "bytes": 5620,
+      "sha256": "cce36a5f258bc190c94074c62087872b798517c1b7a3fe8f4dc22f7622eebd66"
+    },
+    "components/alembic/docs/build/ops.rst": {
+      "bytes": 2144,
+      "sha256": "ef4fa33d5b8e34c713ff24ab466a8abd4ee895e49ce62c9b7be3338b3eee9501"
+    },
+    "components/alembic/docs/build/requirements.txt": {
+      "bytes": 411,
+      "sha256": "c4aa282e734c5fee38062b21b91a8f300c875ddd36f44dd7bb2dfb7b2f198f29"
+    },
+    "components/alembic/docs/build/tutorial.rst": {
+      "bytes": 43214,
+      "sha256": "34657d5591e198c922448abff12f12f619ecf0b2fbdb2e188b03d8a2e4427d42"
+    },
+    "components/alembic/docs/build/unreleased/1504.rst": {
+      "bytes": 395,
+      "sha256": "4c1dcd2b00de48dcb470aa2fb6c2ef2d16204ad6951314343449379b59224720"
+    },
+    "components/alembic/docs/build/unreleased/1873.rst": {
+      "bytes": 578,
+      "sha256": "4d9c6ff84936a46be9999f56182931756bde68a24544af9c6620d84a02584d46"
+    },
+    "components/alembic/docs/build/unreleased/README.txt": {
+      "bytes": 413,
+      "sha256": "9dd9b3fed6fe8ef6e892045464ecde62e94cc2746a993f92eccb2892b49d3407"
+    },
+    "components/alembic/noxfile.py": {
+      "bytes": 6568,
+      "sha256": "ccfd89eff2aa2f7fa518a6896ea305fa8f3984a359ec6716d0c1506ef5a9d541"
+    },
+    "components/alembic/pyproject.toml": {
+      "bytes": 3446,
+      "sha256": "5290b8729141fc48cf02d9abd06be65e66ecd9be68c2d85465aa51e4a4274fe8"
+    },
+    "components/alembic/reap_dbs.py": {
+      "bytes": 708,
+      "sha256": "66bd9bac399a545bdcd02cc97b95a7995134dce74471f88f8981b5da5e0b343b"
+    },
+    "components/alembic/setup.cfg": {
+      "bytes": 1207,
+      "sha256": "bdeb663c0f787792f757737282fdd70defe9b4072b8e41a13d613733c7c1e89c"
+    },
+    "components/alembic/setup.py": {
+      "bytes": 38,
+      "sha256": "843ac26c38a41abae578250bc0f9419194b320a0f67327d941037a4268f6cfe7"
+    },
+    "components/alembic/tests/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "components/alembic/tests/_large_map.py": {
+      "bytes": 7317,
+      "sha256": "98dbaebcd430d47bb16973677944c72813451d4dece5043e4717e74dc37bb4fe"
+    },
+    "components/alembic/tests/conftest.py": {
+      "bytes": 2278,
+      "sha256": "162a5042948e6f6c8a27e95de2970741adc6e226985761270f85314c4ac3768c"
+    },
+    "components/alembic/tests/requirements.py": {
+      "bytes": 13233,
+      "sha256": "60425c11a2772d1c07a818d90aa1beb6c662006c5b48140e184fb04ec6c75b58"
+    },
+    "components/alembic/tests/test_autogen_check_constraints.py": {
+      "bytes": 30646,
+      "sha256": "6f5bfb3842740cefe4173aa46bff0880dea2f9c5e116825f54f61734e2be565d"
+    },
+    "components/alembic/tests/test_autogen_composition.py": {
+      "bytes": 24596,
+      "sha256": "7962a51bf4bf7825fa273b3ce855ad8a661273c1ab31ca5b421718c4ccaacbd9"
+    },
+    "components/alembic/tests/test_autogen_diffs.py": {
+      "bytes": 82981,
+      "sha256": "883294cf02f40a1a9698466c557e84cdef3a8f57638f10e0421dff96d2d8779d"
+    },
+    "components/alembic/tests/test_autogen_indexes.py": {
+      "bytes": 63794,
+      "sha256": "9c76cf78c689adf18cc8303a443d5fbec58ea37f31fc4deb9511d61351d6ef62"
+    },
+    "components/alembic/tests/test_autogen_render.py": {
+      "bytes": 101647,
+      "sha256": "20abc1b2cb3098987149bff2fe8702787c7505e18dd7a0c74e9986bd346e6bdf"
+    },
+    "components/alembic/tests/test_batch.py": {
+      "bytes": 104107,
+      "sha256": "d7770b8941ee964c218b530a9f03e01c4f25f137a68119badc3bcf479bcebf28"
+    },
+    "components/alembic/tests/test_bulk_insert.py": {
+      "bytes": 10358,
+      "sha256": "0223c6d9da38dc9bb14d591803e676b7a80ed7b6ae8985cda1f5ef21c934fbcc"
+    },
+    "components/alembic/tests/test_command.py": {
+      "bytes": 57964,
+      "sha256": "6ef21fc99a4e49d8235a00b0a815d2a112a5b05fe89b808747d0a50f4c8f2d29"
+    },
+    "components/alembic/tests/test_config.py": {
+      "bytes": 22754,
+      "sha256": "499f787f87ebbafe16882cf954a91baa55768172df2368cd09d797410c8ee3bf"
+    },
+    "components/alembic/tests/test_dispatch.py": {
+      "bytes": 12878,
+      "sha256": "b2031fbf88cab0d3f5bf68214f804688d25289db91c91881983e88bb1c2d8190"
+    },
+    "components/alembic/tests/test_editor.py": {
+      "bytes": 3873,
+      "sha256": "f2a3957cd210f4ebe9072af259ca5f7be8c26e8b5ebc81079da74dffb2777173"
+    },
+    "components/alembic/tests/test_environment.py": {
+      "bytes": 5796,
+      "sha256": "5540b0492ea5d135f41ae1d7b5a56f122db505abab2bff87921e92ea9ad36529"
+    },
+    "components/alembic/tests/test_external_dialect.py": {
+      "bytes": 4093,
+      "sha256": "21a1fef26c679f17ae949193e5016d0549180e629acf045ddfb94e9cc199a222"
+    },
+    "components/alembic/tests/test_impl.py": {
+      "bytes": 2206,
+      "sha256": "56cb8d9cf7aab6190ba87511b2747d9f073cdf4db7185b2ee2a140e94424fbcd"
+    },
+    "components/alembic/tests/test_messaging.py": {
+      "bytes": 996,
+      "sha256": "5b08540d851e116e6929dfe55e4f58651ab6364fdec676959ce3b3e7a6023f70"
+    },
+    "components/alembic/tests/test_mssql.py": {
+      "bytes": 25076,
+      "sha256": "5dd8bacb1624bf064007b6f2f060a809a6bfb68d444ed05e0942d2eb6adbb1d1"
+    },
+    "components/alembic/tests/test_mysql.py": {
+      "bytes": 32908,
+      "sha256": "13c67fafe534465fb4d9dcca757ff045d798ead63b1ab9829f9c7910927a7bc1"
+    },
+    "components/alembic/tests/test_offline_environment.py": {
+      "bytes": 9111,
+      "sha256": "866aad16dc0b1a9d5eddd6e9173a8da5d3ea31fd6214113c62871985e465f437"
+    },
+    "components/alembic/tests/test_op.py": {
+      "bytes": 62401,
+      "sha256": "40142675623b7e9ccdb3408c9e77c6e0230d9d7c7871293b7139fa6f4fcaedaa"
+    },
+    "components/alembic/tests/test_op_naming_convention.py": {
+      "bytes": 6194,
+      "sha256": "277cc93dd245718d15694254a897eca660b0e95e176a864fa40205dc26bf3561"
+    },
+    "components/alembic/tests/test_oracle.py": {
+      "bytes": 14945,
+      "sha256": "285dba7c2652c182458693aeae20424e975e9353c2489f76944daf2ceb4e6030"
+    },
+    "components/alembic/tests/test_plugin.py": {
+      "bytes": 14877,
+      "sha256": "a19fa928f0f8718a13a8824c0d5844b16f4f563eec6bc2a0abf3f14dc937b4d0"
+    },
+    "components/alembic/tests/test_post_write.py": {
+      "bytes": 18704,
+      "sha256": "a94c244ce934ed7ef48fbefa0354803ecdc608a8fed471f1856a9555c170f00d"
+    },
+    "components/alembic/tests/test_postgresql.py": {
+      "bytes": 59754,
+      "sha256": "325797a1eda249606b96066604d8b59308a9893594dcd8bf7935b1634d0da77a"
+    },
+    "components/alembic/tests/test_revision.py": {
+      "bytes": 50763,
+      "sha256": "5e3d2e35cb3af89a4cb416e63fd6285e6408f501c8f7df0a9670b41903a65a64"
+    },
+    "components/alembic/tests/test_script_consumption.py": {
+      "bytes": 36926,
+      "sha256": "f9e8cdbebfdff1d46d34b1db1f06fca04006f81aff44168c5d48dea3a712aec5"
+    },
+    "components/alembic/tests/test_script_production.py": {
+      "bytes": 52610,
+      "sha256": "963ab613e15a41f456f72c5f85a6f94108e92c533fde91f708b8c9b4e13c6855"
+    },
+    "components/alembic/tests/test_sqlite.py": {
+      "bytes": 11115,
+      "sha256": "7df27604ad46b4d9917f0730abaab6d6f197a2daceee63dfed8f628619a8e10e"
+    },
+    "components/alembic/tests/test_stubs.py": {
+      "bytes": 1715,
+      "sha256": "b9b3f6cfcbd48b74e8390ffcc8933e9b1bed98e68a80e8fef9a7efadccb3d76d"
+    },
+    "components/alembic/tests/test_suite.py": {
+      "bytes": 44,
+      "sha256": "fbe621b851a3fa2050de3a60af5d20e79549497c533b8d968503ee2ff830835b"
+    },
+    "components/alembic/tests/test_version_table.py": {
+      "bytes": 15008,
+      "sha256": "833bf0a38c95acdf411007deb78f1d245338824b5adf833eca3811c2b109b493"
+    },
+    "components/alembic/tests/test_version_traversal.py": {
+      "bytes": 47935,
+      "sha256": "aef8aca28544778ace3b67bedd1fb77a72bf21faa33e0cb0cf9c22c7af9717bf"
+    },
+    "components/alembic/tools/toxnox.py": {
+      "bytes": 8965,
+      "sha256": "134a7006275108beacf29f14e0bbab7d62277fde728034391d0215e5a75e8bbe"
+    },
+    "components/alembic/tools/warn_tox.py": {
+      "bytes": 303,
+      "sha256": "30837af102c3cd6c4eea825394217ea6afc2e97618dc3e184c1bb5b1e78da82d"
+    },
+    "components/alembic/tools/write_pyi.py": {
+      "bytes": 14992,
+      "sha256": "7bc15710ff147740b14af4ce1e3cc96e40fe34ea30fb7792a9662a6976e8b282"
+    },
+    "components/alembic/tox.ini": {
+      "bytes": 2948,
+      "sha256": "6e348fba49e43afe403a6f6cf73cffb26010aaf03009675fbff329ccb60dfb62"
+    },
+    "publication-file-manifest.json": {
+      "bytes": 61926,
+      "sha256": "e3b972004244c54aefac26be5b0e42bb12e8efcac6ac1500aaccf31d89e57e25"
+    },
+    "rehearsal/LICENSE": {
+      "bytes": 1059,
+      "sha256": "6e68d94a03a0e3e327ddf3e86d1ebedc14eece3922022618fc246a36296fd0cc"
+    },
+    "rehearsal/activation.sql": {
+      "bytes": 218,
+      "sha256": "58501c611c050ab1eede41ceae82480812751d481c6b1cf772d778851673b81e"
+    },
+    "rehearsal/check_contract.py": {
+      "bytes": 14229,
+      "sha256": "99af223eaeca148d90756439a48593afbbb05dca974cbc79c59766017db76055"
+    },
+    "rehearsal/expand.sql": {
+      "bytes": 235,
+      "sha256": "a2b2a6956fbe4ed14e49132a7cacf8d31a83f32cf4a177482478a5d0bcb1874b"
+    },
+    "rehearsal/fixture.sql": {
+      "bytes": 603,
+      "sha256": "ccc3bda6a4b735357d32a6bdc67a5363458ce7e221eb35bbc1d5dbf8e5912c21"
+    },
+    "rehearsal/source-derivation.json": {
+      "bytes": 1775,
+      "sha256": "b2a3f993e18a32fcec652fd1e47aeab450ba32f19c0fc6f15cd2da225d991452"
+    },
+    "rehearsal/verification.sql": {
+      "bytes": 1370,
+      "sha256": "4b52a31a4cdcf62a926cc8669507f425547ff9cfb95c22892ab8c825867078af"
+    },
+    "rehearsal/worker.py": {
+      "bytes": 5932,
+      "sha256": "74f0435a4b45e665bfa29c98ab9c743b7c1f5899d9b80fe47fd21098e479ead7"
+    },
+    "requirements.lock": {
+      "bytes": 453,
+      "sha256": "9b236ad5b5ff1b907af181b3f2941cd91d0e389ddbcfda8df1993a86bbdee567"
+    },
+    "source-copy-manifest.json": {
+      "bytes": 57766,
+      "sha256": "0d69e3f3fb86b2aa804b755a0ecae13a9cf6efd7e2d536a8636d2fd16b8eac3a"
+    },
+    "tools/run_contract.py": {
+      "bytes": 6251,
+      "sha256": "f8f171e9fda4c4a9bac83ce7e4a2ff0afd62f7c70c0dc2e5e503924fa0e77750"
+    },
+    "tools/verify_source.py": {
+      "bytes": 2020,
+      "sha256": "2cbc00c81f46e09efb23fb6983b6ed363e75bfadfe8ea3af0fe4add5ef6bad85"
+    },
+    "verification/baseline/20261009T152041000712Z-final-status.log": {
+      "bytes": 26,
+      "sha256": "e138ccb54fdb08283c6eb21159c53207bbbbf07077246e2804e18d22efe6e250"
+    },
+    "verification/baseline/20261009T152041000712Z-initdb.log": {
+      "bytes": 1051,
+      "sha256": "ea00f9f412b8d3e4aaa6aafd89efaa4b7d08edc8efbc6ec5a759bcb75a175a0f"
+    },
+    "verification/baseline/20261009T152041000712Z-postgres.log": {
+      "bytes": 857,
+      "sha256": "cd9306658fea2537e13148e26a1c00d7d14b9d202f4026b70176794f7bdbe548"
+    },
+    "verification/baseline/20261009T152041000712Z-start.log": {
+      "bytes": 103,
+      "sha256": "072bdd374cf4acca521b5f507cda71baccaba16e1ebc37c9bcecf8f3f5f1fd02"
+    },
+    "verification/baseline/20261009T152153317939Z-create-duplicate.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "verification/baseline/20261009T152153317939Z-create-original.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "verification/baseline/20261009T152153317939Z-final-status.log": {
+      "bytes": 26,
+      "sha256": "e138ccb54fdb08283c6eb21159c53207bbbbf07077246e2804e18d22efe6e250"
+    },
+    "verification/baseline/20261009T152153317939Z-initdb.log": {
+      "bytes": 1051,
+      "sha256": "7db6952f2e60a7d46d0908dde35d6e40033b98fd7aa307b61c8489c39ba27f27"
+    },
+    "verification/baseline/20261009T152153317939Z-postgres.log": {
+      "bytes": 1681,
+      "sha256": "b4bf008418ad2e4d2db3a3a2b11959304118f14039339d3160e04a9658b339ae"
+    },
+    "verification/baseline/20261009T152153317939Z-pytest-duplicate.log": {
+      "bytes": 5396,
+      "sha256": "ca3d47ab22c10c1df10366053ae0cb9b46cb3a3e3be08c41b0787461c4222612"
+    },
+    "verification/baseline/20261009T152153317939Z-pytest-original.log": {
+      "bytes": 5394,
+      "sha256": "2a453d42871905485e41f20d223f5b069da1e629d75336e6f0e11191b6cda557"
+    },
+    "verification/baseline/20261009T152153317939Z-start.log": {
+      "bytes": 52,
+      "sha256": "66afd0411ccc09366e99fdd99b85f21899c8d2d064f5835126859618802153ad"
+    },
+    "verification/baseline/20261009T152153317939Z-stop.log": {
+      "bytes": 56,
+      "sha256": "ca19178a35ab4153b75b494963b66ce8243e1b94c173107c87b44d09db23652d"
+    },
+    "verification/baseline/20261009T152339414371Z-create-duplicate.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "verification/baseline/20261009T152339414371Z-create-original.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "verification/baseline/20261009T152339414371Z-final-status.log": {
+      "bytes": 26,
+      "sha256": "e138ccb54fdb08283c6eb21159c53207bbbbf07077246e2804e18d22efe6e250"
+    },
+    "verification/baseline/20261009T152339414371Z-initdb.log": {
+      "bytes": 1051,
+      "sha256": "5fdc0316b2d8ad37a7ba9b481e50550d3ecb7f1cc4c3a0061cde1e3cf2ed966f"
+    },
+    "verification/baseline/20261009T152339414371Z-postgres.log": {
+      "bytes": 4173,
+      "sha256": "1838c029cf4e8728e34b22784dfab866ab874280482f7dbd2c0830637efdc485"
+    },
+    "verification/baseline/20261009T152339414371Z-pytest-duplicate.log": {
+      "bytes": 7588,
+      "sha256": "5821cb44f5ffbda600154923ce4bfd056ceab499fb29a942b7fcc0b597071050"
+    },
+    "verification/baseline/20261009T152339414371Z-pytest-original.log": {
+      "bytes": 7586,
+      "sha256": "6cfbaf4284451a9277a9237a270a0fca31a7a02b1e7796757748f90370dbf623"
+    },
+    "verification/baseline/20261009T152339414371Z-start.log": {
+      "bytes": 52,
+      "sha256": "66afd0411ccc09366e99fdd99b85f21899c8d2d064f5835126859618802153ad"
+    },
+    "verification/baseline/20261009T152339414371Z-stop.log": {
+      "bytes": 56,
+      "sha256": "ca19178a35ab4153b75b494963b66ce8243e1b94c173107c87b44d09db23652d"
+    },
+    "verification/baseline/20261009T152911062556Z-configuration-duplicate.log": {
+      "bytes": 125,
+      "sha256": "13f78372d53c980387a4055aeb0d8622ead003bb9979f2abca5c15b0d276081d"
+    },
+    "verification/baseline/20261009T152911062556Z-configuration-original.log": {
+      "bytes": 125,
+      "sha256": "13f78372d53c980387a4055aeb0d8622ead003bb9979f2abca5c15b0d276081d"
+    },
+    "verification/baseline/20261009T152911062556Z-create-duplicate.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "verification/baseline/20261009T152911062556Z-create-original.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "verification/baseline/20261009T152911062556Z-duplicate-observation.json": {
+      "bytes": 1705,
+      "sha256": "2a4e689158f3e480d7d530e0f7127e46dd6bbc00a15d25a9ded710059b0fb9e8"
+    },
+    "verification/baseline/20261009T152911062556Z-final-status.log": {
+      "bytes": 26,
+      "sha256": "e138ccb54fdb08283c6eb21159c53207bbbbf07077246e2804e18d22efe6e250"
+    },
+    "verification/baseline/20261009T152911062556Z-initdb.log": {
+      "bytes": 1051,
+      "sha256": "506f3d8246fbd28345280eed2c09527272373a7fb7bb0c4811355419ddfdafad"
+    },
+    "verification/baseline/20261009T152911062556Z-original-observation.json": {
+      "bytes": 1691,
+      "sha256": "135bc77dab04017cf36d00c288346bd014f2af6fe7b6fa42e3feacecc734c5d6"
+    },
+    "verification/baseline/20261009T152911062556Z-postgres.log": {
+      "bytes": 7639,
+      "sha256": "0f1fcfe247d485b44835a09243a5ded92c128d4d19e1d62431a86d2e5f1e5044"
+    },
+    "verification/baseline/20261009T152911062556Z-pytest-duplicate.log": {
+      "bytes": 868,
+      "sha256": "325acc02cb8ce2dac07c1dc4b3cc1c1858db10807cd4b91cf09fc79ecc8298b1"
+    },
+    "verification/baseline/20261009T152911062556Z-pytest-original.log": {
+      "bytes": 866,
+      "sha256": "6556e1a30134f0ccac904e533f581173eb5ec16419c2737ee7a8472138349d34"
+    },
+    "verification/baseline/20261009T152911062556Z-start.log": {
+      "bytes": 52,
+      "sha256": "66afd0411ccc09366e99fdd99b85f21899c8d2d064f5835126859618802153ad"
+    },
+    "verification/baseline/20261009T152911062556Z-stop.log": {
+      "bytes": 56,
+      "sha256": "ca19178a35ab4153b75b494963b66ce8243e1b94c173107c87b44d09db23652d"
+    },
+    "verification/baseline/baseline-20261009T152041000712Z.json": {
+      "bytes": 3207,
+      "sha256": "e658a01f9f5ce6a8c69981810b49fd2d2b726133ac78796c1ede34cc120ab36c"
+    },
+    "verification/baseline/baseline-20261009T152153317939Z.json": {
+      "bytes": 5608,
+      "sha256": "3a5bffa81a18e65a4ecd53580d21a20005712d4b25e57082457e539533b39f44"
+    },
+    "verification/baseline/baseline-20261009T152339414371Z.json": {
+      "bytes": 5688,
+      "sha256": "d819bc920b2f4d03ec961df209f55589d7845bcc5f8b3efaea3fb12ee085a8a5"
+    },
+    "verification/baseline/baseline-20261009T152911062556Z.json": {
+      "bytes": 7584,
+      "sha256": "6ad522b9640cedd9e631578a334c5f9b00bfb3de2c5252f297cc020c7ed74ef9"
+    },
+    "verification/dependency-notices/Mako-1.4.3/LICENSE": {
+      "bytes": 1098,
+      "sha256": "8c1d171bc5d341ad9cd33d5e2c39b96a82c7bd49b3ae89a470c37e5822232054"
+    },
+    "verification/dependency-notices/MarkupSafe-3.0.4/LICENSE.txt": {
+      "bytes": 1475,
+      "sha256": "489a8e1108509ed98a37bb983e11e0f7e1d31f0bd8f99a79c8448e7ff37d07ea"
+    },
+    "verification/dependency-notices/Pygments-2.21.0/LICENSE": {
+      "bytes": 1331,
+      "sha256": "a9d66f1d526df02e29dce73436d34e56e8632f46c275bbdffc70569e882f9f17"
+    },
+    "verification/dependency-notices/SQLAlchemy-2.1.4/LICENSE": {
+      "bytes": 1100,
+      "sha256": "e862bb5b904fb5513c3e14288d7a25a12eb0ecc7847a0a965d310e9a955e7cb9"
+    },
+    "verification/dependency-notices/black-26.5.1/5789881b8aeb-LICENSE": {
+      "bytes": 12762,
+      "sha256": "5789881b8aeb9c91f5835f5bb7cabe84a0fecd4bb2be2f54c9e6957a78ec799d"
+    },
+    "verification/dependency-notices/black-26.5.1/LICENSE": {
+      "bytes": 1080,
+      "sha256": "9c0428f0c3b4779850cf5bd96e11aaa8afc72d4a86d4a36223d7aba2e58d6e00"
+    },
+    "verification/dependency-notices/click-8.5.0/LICENSE.txt": {
+      "bytes": 1475,
+      "sha256": "9a8ad106a394e853bfe21f42f4e72d592819a22805d991b5f3275029292b658d"
+    },
+    "verification/dependency-notices/execnet-2.1.2/LICENSE": {
+      "bytes": 1054,
+      "sha256": "e89eed1074d3a943198ba139b80844f5b445b860bba74a8aeadc0610566164ea"
+    },
+    "verification/dependency-notices/flake8_import_order-0.19.2/COPYING": {
+      "bytes": 7651,
+      "sha256": "da7eabb7bafdf7d3ae5e9f223aa5bdc1eece45ac569dc21b3b037520b4464768"
+    },
+    "verification/dependency-notices/iniconfig-2.3.1/LICENSE": {
+      "bytes": 1098,
+      "sha256": "3409fa91f7ace557894632676656e32264fe5ef7581535725dc9a23774551bd4"
+    },
+    "verification/dependency-notices/junitparser-5.0.3/LICENSE": {
+      "bytes": 579,
+      "sha256": "51bae38bd50369849f7006fa5fdde9ecbd81824ebb07667800818f63bc82c359"
+    },
+    "verification/dependency-notices/mypy_extensions-1.1.0/LICENSE": {
+      "bytes": 1204,
+      "sha256": "a50450da1d53cd777b80ced77c58ff96abe0ccd879706bd142c3ec20e245f0b4"
+    },
+    "verification/dependency-notices/packaging-26.3/LICENSE": {
+      "bytes": 197,
+      "sha256": "cad1ef5bd340d73e074ba614d26f7deaca5c7940c3d8c34852e65c4909686c48"
+    },
+    "verification/dependency-notices/packaging-26.3/LICENSE.APACHE": {
+      "bytes": 10174,
+      "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594"
+    },
+    "verification/dependency-notices/packaging-26.3/LICENSE.BSD": {
+      "bytes": 1344,
+      "sha256": "b70e7e9b742f1cc6f948b34c16aa39ffece94196364bc88ff0d2180f0028fac5"
+    },
+    "verification/dependency-notices/pathspec-1.1.1/LICENSE": {
+      "bytes": 16726,
+      "sha256": "fab3dd6bdab226f1c08630b1dd917e11fcb4ec5e1e020e2c16f83a0a13863e85"
+    },
+    "verification/dependency-notices/pip-24.0/LICENSE.txt": {
+      "bytes": 1093,
+      "sha256": "634300a669d49aeae65b12c6c48c924c51a4cdf3d1ff086dc3456dc8bcaa2104"
+    },
+    "verification/dependency-notices/platformdirs-4.12.4/LICENSE": {
+      "bytes": 1089,
+      "sha256": "29e0fd62e929850e86eb28c3fdccf0cefdf4fa94879011cffb3d0d4bed6d4db6"
+    },
+    "verification/dependency-notices/pluggy-1.6.0/LICENSE": {
+      "bytes": 1110,
+      "sha256": "d6b65e6c213a5d0b577911d34d6e5949b9f59d76c238c5071a2f3fc16cfb2606"
+    },
+    "verification/dependency-notices/psycopg2-2.9.13/LICENSE": {
+      "bytes": 2238,
+      "sha256": "9614b85dfc9a72c5b2ca33144c1d7e1ed3b1c297459d9fb28a6a5762c2e8d71b"
+    },
+    "verification/dependency-notices/pycodestyle-2.15.0/LICENSE": {
+      "bytes": 1254,
+      "sha256": "f772295e81af3478d34e88e52d076200230ec7dd6a39e123bc5cb35aa66abdae"
+    },
+    "verification/dependency-notices/pyflakes-4.0.3/LICENSE": {
+      "bytes": 1093,
+      "sha256": "22c47569cc0aae531b372361366818af01c6fc2e314770584a7866c92b3a0463"
+    },
+    "verification/dependency-notices/pytest-9.0.3/LICENSE": {
+      "bytes": 1091,
+      "sha256": "ca836a5f9ecca3b2f350230faa20a48fb8b145653b5568d784862df864706b9b"
+    },
+    "verification/dependency-notices/pytest-xdist-3.8.0/LICENSE": {
+      "bytes": 1088,
+      "sha256": "36c15bf831b218a24d122e3b30256b3e1ca285716c24937fe6d8475074ee9032"
+    },
+    "verification/dependency-notices/pytokens-0.4.1/LICENSE": {
+      "bytes": 1072,
+      "sha256": "94bf7ae4ea6833b0853a7cc1f1f28dd8579b34a31c9c162aeb8825dec23ed5dc"
+    },
+    "verification/dependency-notices/setuptools-84.0.0/09c9bcea95ca-NOTICE": {
+      "bytes": 18737,
+      "sha256": "09c9bcea95ca086f8bc5bed174e40bc835b297d40fb5f86bbbb570fe0a5581a7"
+    },
+    "verification/dependency-notices/setuptools-84.0.0/09f1c8c9e941-LICENSE": {
+      "bytes": 1053,
+      "sha256": "09f1c8c9e941af3e584d59641ea9b87d83c0cb0fd007eb5ef391a7e2643c1a46"
+    },
+    "verification/dependency-notices/setuptools-84.0.0/29e0fd62e929-LICENSE": {
+      "bytes": 1089,
+      "sha256": "29e0fd62e929850e86eb28c3fdccf0cefdf4fa94879011cffb3d0d4bed6d4db6"
+    },
+    "verification/dependency-notices/setuptools-84.0.0/458502e12d97-LICENSE": {
+      "bytes": 10278,
+      "sha256": "458502e12d97bbf64438606a20044aa85eb05fb0a8a807bb35dbec253fd1fc04"
+    },
+    "verification/dependency-notices/setuptools-84.0.0/5a57cb4db85e-LICENSE": {
+      "bytes": 1076,
+      "sha256": "5a57cb4db85e2a2dd88c290628908add57e3451449e0a9a71fdfb38776fd759d"
+    },
+    "verification/dependency-notices/setuptools-84.0.0/9755a1851966-LICENSE": {
+      "bytes": 1076,
+      "sha256": "9755a18519666e5f0f4cae3daad3d7012bcae48a600b31237d75e9fe134e6683"
+    },
+    "verification/dependency-notices/setuptools-84.0.0/LICENSE": {
+      "bytes": 1023,
+      "sha256": "86da0f01aeae46348a3c3d465195dc1ceccde79f79e87769a64b8da04b2a4741"
+    },
+    "verification/dependency-notices/setuptools-84.0.0/LICENSE.APACHE": {
+      "bytes": 10174,
+      "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594"
+    },
+    "verification/dependency-notices/setuptools-84.0.0/LICENSE.BSD": {
+      "bytes": 1344,
+      "sha256": "b70e7e9b742f1cc6f948b34c16aa39ffece94196364bc88ff0d2180f0028fac5"
+    },
+    "verification/dependency-notices/setuptools-84.0.0/LICENSE.txt": {
+      "bytes": 1107,
+      "sha256": "30c23618679108f3e8ea1d2a658c7ca417bdfc891c98ef1a89fa4ff0c9828654"
+    },
+    "verification/dependency-notices/setuptools-84.0.0/NOTICE": {
+      "bytes": 493,
+      "sha256": "2dddf08818297a3b89d43d95ff659d8da85741108c9136dfa3a4d856c0623bd8"
+    },
+    "verification/dependency-notices/setuptools-84.0.0/ade78d04982d-LICENSE": {
+      "bytes": 7634,
+      "sha256": "ade78d04982d69972d444a8e14a94f87a2334dd3855cc80348ea8e240aa0df2d"
+    },
+    "verification/dependency-notices/setuptools-84.0.0/b80816b0d530-LICENSE": {
+      "bytes": 1072,
+      "sha256": "b80816b0d530b8accb4c2211783790984a6e3b61922c2b5ee92f3372ab2742fe"
+    },
+    "verification/dependency-notices/setuptools-84.0.0/cad1ef5bd340-LICENSE": {
+      "bytes": 197,
+      "sha256": "cad1ef5bd340d73e074ba614d26f7deaca5c7940c3d8c34852e65c4909686c48"
+    },
+    "verification/dependency-notices/tomli-2.5.0/LICENSE": {
+      "bytes": 1072,
+      "sha256": "b80816b0d530b8accb4c2211783790984a6e3b61922c2b5ee92f3372ab2742fe"
+    },
+    "verification/dependency-notices/typing_extensions-4.16.0/LICENSE": {
+      "bytes": 13936,
+      "sha256": "3b2f81fe21d181c499c59a256c8e1968455d6689d269aa85373bfb6af41da3bf"
+    },
+    "verification/dependency-notices/tzdata-2026.5/LICENSE": {
+      "bytes": 625,
+      "sha256": "df58f69ea88683035d720b5375bcef0cf5aeaa98a1d098d572e0992c378deb46"
+    },
+    "verification/dependency-notices/tzdata-2026.5/LICENSE_APACHE": {
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    "verification/dependency-notices/zimports-0.7.0/LICENSE": {
+      "bytes": 1102,
+      "sha256": "b82716e8df2ddb79b3bd061b3aa984c8e55bc5e356c09b652f37e9e467fe4681"
+    },
+    "verification/environment/dependency-license-inventory.json": {
+      "bytes": 29275,
+      "sha256": "249935cf46b99c5f4a93d834714fb940e84472fd36632d94ef1eb3a43b21fdc1"
+    },
+    "verification/environment/environment.json": {
+      "bytes": 5452,
+      "sha256": "a5a288f414c55c08ade7e183eb90ea506c0dab5bb1499c3dc29752afee9ee47e"
+    },
+    "verification/environment/source-manifest.json": {
+      "bytes": 29669,
+      "sha256": "a99598aae334810a22a3af3b793ae29c9d930f6cdbd4b1adb4c01dd3355448c0"
+    },
+    "verification/environment/test-extension-inventory.json": {
+      "bytes": 7371,
+      "sha256": "2d9791f050f5acedf5e7363fb9c428060159c7cf693c0955b041e5e31d5556a6"
+    },
+    "verification/environment/test-extension-source-verification.json": {
+      "bytes": 2030,
+      "sha256": "bcc88a0155f6d7b30ff831c7b07a886d958ae0cc6a6dde5c3f8a6b12bb7e97a1"
+    },
+    "verification/independent-review.md": {
+      "bytes": 4045,
+      "sha256": "de02dccf90e2b94f1a7788f76fb4a54fbe717754c9d66ddae5dd5b01a96eb3c4"
+    },
+    "verification/redactions.json": {
+      "bytes": 31062,
+      "sha256": "c81a7202565330b1080e1cdb82c77bb43d95054b67663316baf465a9814fe8b1"
+    },
+    "verification/rollout-20261009T154922160131Z/activation-expansion.json": {
+      "bytes": 10357,
+      "sha256": "48e8ba2cfa48850b6ffd6956e5655bd59ed4a5aefea623bf81503170493f2bf9"
+    },
+    "verification/rollout-20261009T154922160131Z/activation-expansion.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "verification/rollout-20261009T154922160131Z/changed_original_row.json": {
+      "bytes": 3360,
+      "sha256": "970c27bd42381b1a8f43badfb221225c27e154e28ffb2a4486656233dd3325f9"
+    },
+    "verification/rollout-20261009T154922160131Z/changed_original_row.stderr.log": {
+      "bytes": 466,
+      "sha256": "8996c3f2b9fdd4fc9525a3551687ea810e309e73831a628ff3198caca1e3eefb"
+    },
+    "verification/rollout-20261009T154922160131Z/contract-result.json": {
+      "bytes": 269676,
+      "sha256": "6e1a5c637e09f898888f7f9407187a6d53f5053d084e251d4928bbba0e14d84c"
+    },
+    "verification/rollout-20261009T154922160131Z/contradictory_marker.json": {
+      "bytes": 3437,
+      "sha256": "a1a237f5187ff3ffa35274e340d60dcee3257235bc69f19c012360782d1cee4a"
+    },
+    "verification/rollout-20261009T154922160131Z/contradictory_marker.stderr.log": {
+      "bytes": 498,
+      "sha256": "14f76e49056c4faa542fca48ae03da09d4dfc5cb558221e34af845338e20c69b"
+    },
+    "verification/rollout-20261009T154922160131Z/createdb-activation_negative_control.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "verification/rollout-20261009T154922160131Z/createdb-changed_original_row.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "verification/rollout-20261009T154922160131Z/createdb-contradictory_marker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "verification/rollout-20261009T154922160131Z/createdb-normal.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "verification/rollout-20261009T154922160131Z/createdb-stop_after_durable_expansion.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "verification/rollout-20261009T154922160131Z/createdb-stop_before_expansion.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "verification/rollout-20261009T154922160131Z/createdb-wrong_gate.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "verification/rollout-20261009T154922160131Z/createdb-wrong_label_order.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "verification/rollout-20261009T154922160131Z/createdb-wrong_schema.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "verification/rollout-20261009T154922160131Z/createdb-wrong_table.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "verification/rollout-20261009T154922160131Z/createdb-wrong_type.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "verification/rollout-20261009T154922160131Z/expected-shape.json": {
+      "bytes": 1960,
+      "sha256": "d78d3d96703c53782a9bccadf10330d483a5b9e74efcd8dd845e0cd52d9338f0"
+    },
+    "verification/rollout-20261009T154922160131Z/initdb.log": {
+      "bytes": 1049,
+      "sha256": "a4aeb29381f3b9de43066a6ea490fed6ca9cfd4f0f721f9bcd7862b9d8445fc7"
+    },
+    "verification/rollout-20261009T154922160131Z/normal-expansion.json": {
+      "bytes": 10627,
+      "sha256": "ee1babbbe228d1415eee76e051696f9f9fa55c875535715e1ac540c5b57804fd"
+    },
+    "verification/rollout-20261009T154922160131Z/normal-expansion.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "verification/rollout-20261009T154922160131Z/normal-resume-again.json": {
+      "bytes": 6745,
+      "sha256": "4736e2c3b2b5a97472ce7d6c70675e7dee111dba2e7e9b2d8552674a0b7d6081"
+    },
+    "verification/rollout-20261009T154922160131Z/normal-resume-again.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "verification/rollout-20261009T154922160131Z/normal-resume.json": {
+      "bytes": 6745,
+      "sha256": "4736e2c3b2b5a97472ce7d6c70675e7dee111dba2e7e9b2d8552674a0b7d6081"
+    },
+    "verification/rollout-20261009T154922160131Z/normal-resume.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "verification/rollout-20261009T154922160131Z/postgres.log": {
+      "bytes": 198757,
+      "sha256": "829d900bca2ac3182bdacc3a9fb884ea255c3d4e2ecd47e510c3f895b5b4e218"
+    },
+    "verification/rollout-20261009T154922160131Z/start.log": {
+      "bytes": 52,
+      "sha256": "66afd0411ccc09366e99fdd99b85f21899c8d2d064f5835126859618802153ad"
+    },
+    "verification/rollout-20261009T154922160131Z/stop.log": {
+      "bytes": 56,
+      "sha256": "ca19178a35ab4153b75b494963b66ce8243e1b94c173107c87b44d09db23652d"
+    },
+    "verification/rollout-20261009T154922160131Z/stop_after_durable_expansion-resume-again.json": {
+      "bytes": 6565,
+      "sha256": "894439ac23f43c653f8adb4190ee309033a9fa9b60694fefd1f0166371b00413"
+    },
+    "verification/rollout-20261009T154922160131Z/stop_after_durable_expansion-resume-again.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "verification/rollout-20261009T154922160131Z/stop_after_durable_expansion-resume.json": {
+      "bytes": 10641,
+      "sha256": "cd1e2cafbe1252a45cf45d5242dde38a15dc6ae17aedadba8652d5cad7e8c144"
+    },
+    "verification/rollout-20261009T154922160131Z/stop_after_durable_expansion-resume.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "verification/rollout-20261009T154922160131Z/stop_after_durable_expansion.json": {
+      "bytes": 7367,
+      "sha256": "f3a4e2d17635d12149b9ab5923a018a4242cd19483dc3d625e60173c7b298c24"
+    },
+    "verification/rollout-20261009T154922160131Z/stop_after_durable_expansion.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "verification/rollout-20261009T154922160131Z/stop_before_expansion-resume-again.json": {
+      "bytes": 6565,
+      "sha256": "894439ac23f43c653f8adb4190ee309033a9fa9b60694fefd1f0166371b00413"
+    },
+    "verification/rollout-20261009T154922160131Z/stop_before_expansion-resume-again.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "verification/rollout-20261009T154922160131Z/stop_before_expansion-resume.json": {
+      "bytes": 10627,
+      "sha256": "ee1babbbe228d1415eee76e051696f9f9fa55c875535715e1ac540c5b57804fd"
+    },
+    "verification/rollout-20261009T154922160131Z/stop_before_expansion-resume.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "verification/rollout-20261009T154922160131Z/stop_before_expansion.json": {
+      "bytes": 3361,
+      "sha256": "a7cd1d23757c93657f67e340cf6f9456719048cfded3361e47923889a7ff2fac"
+    },
+    "verification/rollout-20261009T154922160131Z/stop_before_expansion.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "verification/rollout-20261009T154922160131Z/wrong_gate.json": {
+      "bytes": 3207,
+      "sha256": "80ef511fb36ec19b12be0ce2a305758a3d2e2402bacc923a12a649c7388b8cb6"
+    },
+    "verification/rollout-20261009T154922160131Z/wrong_gate.stderr.log": {
+      "bytes": 540,
+      "sha256": "b7b9f0dcff725f9540291073fe62ad56fa0620061faa86d5d5655dc7a0cc3ac5"
+    },
+    "verification/rollout-20261009T154922160131Z/wrong_label_order.json": {
+      "bytes": 3360,
+      "sha256": "4bf83c485eab3fdadc1e962000f62ac440a4a7201d35ffd8d57eaa134924dce3"
+    },
+    "verification/rollout-20261009T154922160131Z/wrong_label_order.stderr.log": {
+      "bytes": 472,
+      "sha256": "e4921783a5433dd2fa6589159f684f0e4494608992a17850e0ca4d20ee694bd0"
+    },
+    "verification/rollout-20261009T154922160131Z/wrong_schema.json": {
+      "bytes": 689,
+      "sha256": "29211879c9d4908a8131b6a972e5af499d82a0ae8fc31efdf91f5ea5c4154933"
+    },
+    "verification/rollout-20261009T154922160131Z/wrong_schema.stderr.log": {
+      "bytes": 540,
+      "sha256": "b7b9f0dcff725f9540291073fe62ad56fa0620061faa86d5d5655dc7a0cc3ac5"
+    },
+    "verification/rollout-20261009T154922160131Z/wrong_table.json": {
+      "bytes": 3627,
+      "sha256": "092d14ee71cd1a1f3bdb671e15898228947cafed969c98bf909ec9f2fd56d6aa"
+    },
+    "verification/rollout-20261009T154922160131Z/wrong_table.stderr.log": {
+      "bytes": 540,
+      "sha256": "b7b9f0dcff725f9540291073fe62ad56fa0620061faa86d5d5655dc7a0cc3ac5"
+    },
+    "verification/rollout-20261009T154922160131Z/wrong_type.json": {
+      "bytes": 3343,
+      "sha256": "f31d64dacf927b5a1257a06a900f7da3bf10170b62a0f819294d619dde0044e3"
+    },
+    "verification/rollout-20261009T154922160131Z/wrong_type.stderr.log": {
+      "bytes": 540,
+      "sha256": "b7b9f0dcff725f9540291073fe62ad56fa0620061faa86d5d5655dc7a0cc3ac5"
+    },
+    "verification/source/postgresql-COPYRIGHT": {
+      "bytes": 1198,
+      "sha256": "3d6af92ff8a4c2cdf69afb1cf44edea727922f5cd0cf8b5f72b11cdecac8fdfd"
+    },
+    "verification/source/upstream-commit.json": {
+      "bytes": 10193,
+      "sha256": "6cc4bd76865a426b0aa704efecbeb072633f4540499e02e7ec6b11a5ce882551"
+    },
+    "verification/source/upstream-tree.json": {
+      "bytes": 67432,
+      "sha256": "91c88a25837f04c3a15c68809344da238d5fee4de530deefcefe9d54ece42b2e"
+    }
+  },
+  "stage_bytes_unchanged": true,
+  "scope": "Only the source-v2 portable adapter was newly executed, using the existing exact environment. No baseline/unrelated suite, dependency acquisition, provider, public write or deletion.",
+  "unresolved": [
+    "Fresh dependency acquisition and clean-machine development-file availability remain untested.",
+    "Version-only dependency lock, offline packaging, English/Gemini/root meaning and authored-glue distribution review remain unresolved.",
+    "Fixed single-coordinator client contract; controlled termination is not power loss; preceding work can be committed by copied autocommit; no enum removal/concurrent-schema/distributed/zero-downtime/production/security/customer guarantee."
+  ],
+  "completed_at_utc": "2026-10-09T16:47:11.698758+00:00",
+  "english_report": {
+    "path": "<private-workspace>/work/oss-quality-20261008/portfolio-twenty-20261009/reviews/sql-migration-component-20261010T014405-portable.en.md",
+    "sha256": "6190440d59ded03390b23d2dcc5f488b6929b282fce033d1d181e1230c7b72e5",
+    "local_links_checked": 1,
+    "broken_links": 0,
+    "language_review": "Pending established English/Gemini/root meaning review; no provider call in this execution."
+  },
+  "frozen_documentation_followup": "Source-v2 bytes remain unchanged by instruction. A later authorized curation must incorporate this successful adapter result and retain the fresh-acquisition caveat.",
+  "lock_count_clarification": {
+    "nonblank_lock_pins": 26,
+    "observed_installed_distributions": 27,
+    "omitted_from_version_lock": {
+      "pip": "24.0"
+    },
+    "existing_inventory_metadata": [
+      {
+        "name": "pip",
+        "version": "24.0",
+        "license_expression": null,
+        "license_metadata": "MIT",
+        "license_classifiers": [
+          "License :: OSI Approved :: MIT License"
+        ],
+        "notice_files": [
+          {
+            "installed_path": "<private-home>/.cache/oss-quality-sql-migration-component-20261009T151827793829Z/venv/lib/python3.12/site-packages/pip-24.0.dist-info/LICENSE.txt",
+            "retained_path": "<historical-candidate>/evidence/dependency-notices/pip-24.0/LICENSE.txt",
+            "sha256": "634300a669d49aeae65b12c6c48c924c51a4cdf3d1ff086dc3456dc8bcaa2104",
+            "readback_equal": true
+          }
+        ]
+      }
+    ],
+    "requirements_lock_sha256": "9b236ad5b5ff1b907af181b3f2941cd91d0e389ddbcfda8df1993a86bbdee567",
+    "finding": "README/provenance wording about 27 pins/distributions in the version lock conflates 26 explicit pins with 27 installed distributions. pip 24.0 is present in both observed portable metadata and retained dependency inventory; it is not explicitly pinned or checked by the adapter's pin loop. Specific bootstrap provenance was not separately traced.",
+    "correction_scope": "Frozen v2 untouched. Later documentation should state 26 explicit pins and 27 observed installed distributions, including unpinned pip 24.0; a bootstrap pin is a separate distribution decision."
+  }
+}

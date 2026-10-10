@@ -1,0 +1,87 @@
+2026-10-10 00:29:17.895 JST [32973] LOG:  starting PostgreSQL 18.6 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0, 64-bit
+2026-10-10 00:29:17.895 JST [32973] LOG:  listening on IPv4 address "127.0.0.1", port 48225
+2026-10-10 00:29:17.911 JST [32979] LOG:  database system was shut down at 2026-10-10 00:29:17 JST
+2026-10-10 00:29:17.917 JST [32973] LOG:  database system is ready to accept connections
+2026-10-10 00:29:17.981 JST [32984] LOG:  statement: SELECT pg_catalog.set_config('search_path', '', false);
+2026-10-10 00:29:17.982 JST [32984] LOG:  statement: CREATE DATABASE sql_baseline_original TEMPLATE template0;
+2026-10-10 00:29:18.993 JST [32993] LOG:  statement: BEGIN
+2026-10-10 00:29:18.993 JST [32993] LOG:  statement: SELECT t.oid, typarray
+	FROM pg_type t JOIN pg_namespace ns
+	    ON typnamespace = ns.oid
+	WHERE typname = 'hstore';
+	
+2026-10-10 00:29:18.994 JST [32993] LOG:  statement: ROLLBACK
+2026-10-10 00:29:18.995 JST [32993] LOG:  statement: BEGIN
+2026-10-10 00:29:18.995 JST [32993] LOG:  statement: select pg_catalog.version()
+2026-10-10 00:29:18.996 JST [32993] LOG:  statement: select current_schema()
+2026-10-10 00:29:18.996 JST [32993] LOG:  statement: show transaction isolation level
+2026-10-10 00:29:18.996 JST [32993] LOG:  statement: show standard_conforming_strings
+2026-10-10 00:29:18.996 JST [32993] LOG:  statement: ROLLBACK
+2026-10-10 00:29:18.997 JST [32993] LOG:  statement: BEGIN
+2026-10-10 00:29:18.997 JST [32993] LOG:  statement: CREATE EXTENSION IF NOT EXISTS citext
+2026-10-10 00:29:19.005 JST [32993] LOG:  statement: COMMIT
+2026-10-10 00:29:19.013 JST [32993] LOG:  statement: BEGIN
+2026-10-10 00:29:19.014 JST [32993] LOG:  statement: CREATE EXTENSION IF NOT EXISTS hstore
+2026-10-10 00:29:19.019 JST [32993] LOG:  statement: COMMIT
+2026-10-10 00:29:20.817 JST [32993] LOG:  statement: BEGIN
+2026-10-10 00:29:20.817 JST [32993] LOG:  statement: CREATE TYPE mood AS ENUM ('sad', 'ok', 'happy')
+2026-10-10 00:29:20.818 JST [32993] LOG:  statement: COMMIT
+2026-10-10 00:29:20.847 JST [32995] LOG:  statement: BEGIN
+2026-10-10 00:29:20.847 JST [32995] LOG:  statement: SELECT enumlabel FROM pg_enum e JOIN pg_type t ON t.oid=e.enumtypid JOIN pg_namespace n ON n.oid=t.typnamespace WHERE n.nspname='public' AND t.typname='mood' ORDER BY enumsortorder
+2026-10-10 00:29:20.849 JST [32994] LOG:  statement: BEGIN
+2026-10-10 00:29:20.849 JST [32994] LOG:  statement: show transaction isolation level
+2026-10-10 00:29:20.850 JST [32994] LOG:  statement: ROLLBACK
+2026-10-10 00:29:20.850 JST [32994] LOG:  statement: ALTER TYPE mood ADD VALUE 'soso'
+2026-10-10 00:29:20.856 JST [32996] LOG:  statement: BEGIN
+2026-10-10 00:29:20.856 JST [32996] LOG:  statement: SELECT enumlabel FROM pg_enum e JOIN pg_type t ON t.oid=e.enumtypid JOIN pg_namespace n ON n.oid=t.typnamespace WHERE n.nspname='public' AND t.typname='mood' ORDER BY enumsortorder
+2026-10-10 00:29:20.861 JST [32993] LOG:  statement: BEGIN
+2026-10-10 00:29:20.862 JST [32993] LOG:  statement: DROP TYPE mood
+2026-10-10 00:29:20.862 JST [32993] LOG:  statement: COMMIT
+2026-10-10 00:29:20.869 JST [32997] LOG:  statement: BEGIN
+2026-10-10 00:29:20.869 JST [32997] LOG:  statement: SELECT enumlabel FROM pg_enum e JOIN pg_type t ON t.oid=e.enumtypid JOIN pg_namespace n ON n.oid=t.typnamespace WHERE n.nspname='public' AND t.typname='mood' ORDER BY enumsortorder
+2026-10-10 00:29:21.279 JST [32999] LOG:  statement: SELECT current_setting('server_version'), current_setting('extension_control_path'); SELECT extname,extversion FROM pg_extension WHERE extname IN ('citext','hstore') ORDER BY extname
+2026-10-10 00:29:21.290 JST [33001] LOG:  statement: SELECT pg_catalog.set_config('search_path', '', false);
+2026-10-10 00:29:21.291 JST [33001] LOG:  statement: CREATE DATABASE sql_baseline_duplicate TEMPLATE template0;
+2026-10-10 00:29:21.993 JST [33003] LOG:  statement: BEGIN
+2026-10-10 00:29:21.993 JST [33003] LOG:  statement: SELECT t.oid, typarray
+	FROM pg_type t JOIN pg_namespace ns
+	    ON typnamespace = ns.oid
+	WHERE typname = 'hstore';
+	
+2026-10-10 00:29:21.994 JST [33003] LOG:  statement: ROLLBACK
+2026-10-10 00:29:21.994 JST [33003] LOG:  statement: BEGIN
+2026-10-10 00:29:21.994 JST [33003] LOG:  statement: select pg_catalog.version()
+2026-10-10 00:29:21.995 JST [33003] LOG:  statement: select current_schema()
+2026-10-10 00:29:21.995 JST [33003] LOG:  statement: show transaction isolation level
+2026-10-10 00:29:21.995 JST [33003] LOG:  statement: show standard_conforming_strings
+2026-10-10 00:29:21.995 JST [33003] LOG:  statement: ROLLBACK
+2026-10-10 00:29:21.996 JST [33003] LOG:  statement: BEGIN
+2026-10-10 00:29:21.996 JST [33003] LOG:  statement: CREATE EXTENSION IF NOT EXISTS citext
+2026-10-10 00:29:22.002 JST [33003] LOG:  statement: COMMIT
+2026-10-10 00:29:22.005 JST [33003] LOG:  statement: BEGIN
+2026-10-10 00:29:22.005 JST [33003] LOG:  statement: CREATE EXTENSION IF NOT EXISTS hstore
+2026-10-10 00:29:22.009 JST [33003] LOG:  statement: COMMIT
+2026-10-10 00:29:23.665 JST [33003] LOG:  statement: BEGIN
+2026-10-10 00:29:23.665 JST [33003] LOG:  statement: CREATE TYPE mood AS ENUM ('sad', 'ok', 'happy')
+2026-10-10 00:29:23.665 JST [33003] LOG:  statement: COMMIT
+2026-10-10 00:29:23.694 JST [33006] LOG:  statement: BEGIN
+2026-10-10 00:29:23.694 JST [33006] LOG:  statement: SELECT enumlabel FROM pg_enum e JOIN pg_type t ON t.oid=e.enumtypid JOIN pg_namespace n ON n.oid=t.typnamespace WHERE n.nspname='public' AND t.typname='mood' ORDER BY enumsortorder
+2026-10-10 00:29:23.696 JST [33005] LOG:  statement: BEGIN
+2026-10-10 00:29:23.696 JST [33005] LOG:  statement: show transaction isolation level
+2026-10-10 00:29:23.697 JST [33005] LOG:  statement: ROLLBACK
+2026-10-10 00:29:23.697 JST [33005] LOG:  statement: ALTER TYPE mood ADD VALUE 'soso'
+2026-10-10 00:29:23.702 JST [33007] LOG:  statement: BEGIN
+2026-10-10 00:29:23.703 JST [33007] LOG:  statement: SELECT enumlabel FROM pg_enum e JOIN pg_type t ON t.oid=e.enumtypid JOIN pg_namespace n ON n.oid=t.typnamespace WHERE n.nspname='public' AND t.typname='mood' ORDER BY enumsortorder
+2026-10-10 00:29:23.709 JST [33003] LOG:  statement: BEGIN
+2026-10-10 00:29:23.710 JST [33003] LOG:  statement: DROP TYPE mood
+2026-10-10 00:29:23.710 JST [33003] LOG:  statement: COMMIT
+2026-10-10 00:29:23.714 JST [33008] LOG:  statement: BEGIN
+2026-10-10 00:29:23.715 JST [33008] LOG:  statement: SELECT enumlabel FROM pg_enum e JOIN pg_type t ON t.oid=e.enumtypid JOIN pg_namespace n ON n.oid=t.typnamespace WHERE n.nspname='public' AND t.typname='mood' ORDER BY enumsortorder
+2026-10-10 00:29:24.127 JST [33010] LOG:  statement: SELECT current_setting('server_version'), current_setting('extension_control_path'); SELECT extname,extversion FROM pg_extension WHERE extname IN ('citext','hstore') ORDER BY extname
+2026-10-10 00:29:24.136 JST [32973] LOG:  received fast shutdown request
+2026-10-10 00:29:24.141 JST [32973] LOG:  aborting any active transactions
+2026-10-10 00:29:24.141 JST [32973] LOG:  background worker "logical replication launcher" (PID 32982) exited with exit code 1
+2026-10-10 00:29:24.141 JST [32977] LOG:  shutting down
+2026-10-10 00:29:24.145 JST [32977] LOG:  checkpoint starting: shutdown immediate
+2026-10-10 00:29:24.351 JST [32977] LOG:  checkpoint complete: wrote 1875 buffers (11.4%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.064 s, sync=0.124 s, total=0.210 s; sync files=601, longest=0.014 s, average=0.001 s; distance=8956 kB, estimate=8956 kB; lsn=0/1FAE5A8, redo lsn=0/1FAE5A8
+2026-10-10 00:29:24.376 JST [32973] LOG:  database system is shut down

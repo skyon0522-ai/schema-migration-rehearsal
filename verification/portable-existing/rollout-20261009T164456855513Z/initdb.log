@@ -1,0 +1,23 @@
+The files belonging to this database system will be owned by user "saiky".
+This user must also own the server process.
+
+The database cluster will be initialized with locale "C".
+The default text search configuration will be set to "english".
+
+Data page checksums are enabled.
+
+creating directory <private-home>/.cache/oss-quality-sql-migration-portable-20261009T164405791392Z/schema-migration-20261009T164452366125Z/native/rollout-20261009T164456855513Z/pgdata ... ok
+creating subdirectories ... ok
+selecting dynamic shared memory implementation ... posix
+selecting default "max_connections" ... 100
+selecting default "shared_buffers" ... 128MB
+selecting default time zone ... Asia/Tokyo
+creating configuration files ... ok
+running bootstrap script ... ok
+performing post-bootstrap initialization ... ok
+syncing data to disk ... ok
+
+Success. You can now start the database server using:
+
+    <private-home>/.local/opt/oss-quality-postgres-18.6/bin/pg_ctl -D <private-home>/.cache/oss-quality-sql-migration-portable-20261009T164405791392Z/schema-migration-20261009T164452366125Z/native/rollout-20261009T164456855513Z/pgdata -l logfile start
+

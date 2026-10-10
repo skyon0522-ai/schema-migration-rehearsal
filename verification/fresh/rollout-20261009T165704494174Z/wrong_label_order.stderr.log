@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "<private-home>/.cache/oss-quality-sql-migration-fresh-20261009T165253131882Z/runs/schema-migration-20261009T165659645202Z/project/rehearsal/worker.py", line 128, in <module>
+    rehearse(args.uri, json.loads(args.expected.read_text()), args.out, args.pause)
+  File "<private-home>/.cache/oss-quality-sql-migration-fresh-20261009T165253131882Z/runs/schema-migration-20261009T165659645202Z/project/rehearsal/worker.py", line 81, in rehearse
+    validate(state, expected)
+  File "<private-home>/.cache/oss-quality-sql-migration-fresh-20261009T165253131882Z/runs/schema-migration-20261009T165659645202Z/project/rehearsal/worker.py", line 47, in validate
+    raise StateDrift("Unexpected enum labels or order")
+StateDrift: Unexpected enum labels or order

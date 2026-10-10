@@ -1,0 +1,210 @@
+{
+  "at_utc": "2026-10-09T15:29:11.070422+00:00",
+  "run_directory": "<private-home>/.cache/oss-quality-sql-migration-component-20261009T151827793829Z/baseline-20261009T152911062556Z",
+  "cluster": "<private-home>/.cache/oss-quality-sql-migration-component-20261009T151827793829Z/baseline-20261009T152911062556Z/pgdata",
+  "listen": "127.0.0.1",
+  "port": 48225,
+  "python": "<private-home>/.cache/oss-quality-sql-migration-component-20261009T151827793829Z/venv/bin/python",
+  "libpq_directory": "<private-home>/.local/opt/oss-quality-postgres-18.6/lib",
+  "extension_search_path": "<private-home>/.cache/oss-quality-sql-migration-component-20261009T151827793829Z/extensions/share",
+  "node": "tests/test_postgresql.py::PGAutocommitBlockTest::test_alter_enum",
+  "commands": [
+    {
+      "command": [
+        "<private-home>/.local/opt/oss-quality-postgres-18.6/bin/initdb",
+        "-D",
+        "<private-home>/.cache/oss-quality-sql-migration-component-20261009T151827793829Z/baseline-20261009T152911062556Z/pgdata",
+        "-U",
+        "sql_rehearsal",
+        "--auth=trust",
+        "--no-locale",
+        "--encoding=UTF8"
+      ],
+      "cwd": "",
+      "exit_code": 0,
+      "log": "<historical-candidate>/evidence/20261009T152911062556Z-initdb.log"
+    },
+    {
+      "command": [
+        "<private-home>/.local/opt/oss-quality-postgres-18.6/bin/pg_ctl",
+        "-D",
+        "<private-home>/.cache/oss-quality-sql-migration-component-20261009T151827793829Z/baseline-20261009T152911062556Z/pgdata",
+        "-l",
+        "<private-home>/.cache/oss-quality-sql-migration-component-20261009T151827793829Z/baseline-20261009T152911062556Z/postgres.log",
+        "-o",
+        "-h 127.0.0.1 -p 48225 -c unix_socket_directories= -c log_statement=all -c extension_control_path=<private-home>/.cache/oss-quality-sql-migration-component-20261009T151827793829Z/extensions/share",
+        "-w",
+        "start"
+      ],
+      "cwd": "",
+      "exit_code": 0,
+      "log": "<historical-candidate>/evidence/20261009T152911062556Z-start.log"
+    },
+    {
+      "command": [
+        "<private-home>/.local/opt/oss-quality-postgres-18.6/bin/createdb",
+        "-h",
+        "127.0.0.1",
+        "-p",
+        "48225",
+        "-U",
+        "sql_rehearsal",
+        "-T",
+        "template0",
+        "sql_baseline_original"
+      ],
+      "cwd": "",
+      "exit_code": 0,
+      "log": "<historical-candidate>/evidence/20261009T152911062556Z-create-original.log"
+    },
+    {
+      "command": [
+        "<private-home>/.cache/oss-quality-sql-migration-component-20261009T151827793829Z/venv/bin/python",
+        "-m",
+        "pytest",
+        "--dburi=postgresql+psycopg2://sql_rehearsal@127.0.0.1:48225/sql_baseline_original",
+        "tests/test_postgresql.py::PGAutocommitBlockTest::test_alter_enum",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "-p",
+        "baseline_observer"
+      ],
+      "cwd": "<historical-candidate>/original/alembic",
+      "exit_code": 0,
+      "log": "<historical-candidate>/evidence/20261009T152911062556Z-pytest-original.log"
+    },
+    {
+      "command": [
+        "<private-home>/.local/opt/oss-quality-postgres-18.6/bin/psql",
+        "-h",
+        "127.0.0.1",
+        "-p",
+        "48225",
+        "-U",
+        "sql_rehearsal",
+        "-d",
+        "sql_baseline_original",
+        "-At",
+        "-c",
+        "SELECT current_setting('server_version'), current_setting('extension_control_path'); SELECT extname,extversion FROM pg_extension WHERE extname IN ('citext','hstore') ORDER BY extname"
+      ],
+      "cwd": "",
+      "exit_code": 0,
+      "log": "<historical-candidate>/evidence/20261009T152911062556Z-configuration-original.log"
+    },
+    {
+      "command": [
+        "<private-home>/.local/opt/oss-quality-postgres-18.6/bin/createdb",
+        "-h",
+        "127.0.0.1",
+        "-p",
+        "48225",
+        "-U",
+        "sql_rehearsal",
+        "-T",
+        "template0",
+        "sql_baseline_duplicate"
+      ],
+      "cwd": "",
+      "exit_code": 0,
+      "log": "<historical-candidate>/evidence/20261009T152911062556Z-create-duplicate.log"
+    },
+    {
+      "command": [
+        "<private-home>/.cache/oss-quality-sql-migration-component-20261009T151827793829Z/venv/bin/python",
+        "-m",
+        "pytest",
+        "--dburi=postgresql+psycopg2://sql_rehearsal@127.0.0.1:48225/sql_baseline_duplicate",
+        "tests/test_postgresql.py::PGAutocommitBlockTest::test_alter_enum",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "-p",
+        "baseline_observer"
+      ],
+      "cwd": "<historical-candidate>/components/alembic",
+      "exit_code": 0,
+      "log": "<historical-candidate>/evidence/20261009T152911062556Z-pytest-duplicate.log"
+    },
+    {
+      "command": [
+        "<private-home>/.local/opt/oss-quality-postgres-18.6/bin/psql",
+        "-h",
+        "127.0.0.1",
+        "-p",
+        "48225",
+        "-U",
+        "sql_rehearsal",
+        "-d",
+        "sql_baseline_duplicate",
+        "-At",
+        "-c",
+        "SELECT current_setting('server_version'), current_setting('extension_control_path'); SELECT extname,extversion FROM pg_extension WHERE extname IN ('citext','hstore') ORDER BY extname"
+      ],
+      "cwd": "",
+      "exit_code": 0,
+      "log": "<historical-candidate>/evidence/20261009T152911062556Z-configuration-duplicate.log"
+    },
+    {
+      "command": [
+        "<private-home>/.local/opt/oss-quality-postgres-18.6/bin/pg_ctl",
+        "-D",
+        "<private-home>/.cache/oss-quality-sql-migration-component-20261009T151827793829Z/baseline-20261009T152911062556Z/pgdata",
+        "-m",
+        "fast",
+        "-w",
+        "stop"
+      ],
+      "cwd": "",
+      "exit_code": 0,
+      "log": "<historical-candidate>/evidence/20261009T152911062556Z-stop.log"
+    },
+    {
+      "command": [
+        "<private-home>/.local/opt/oss-quality-postgres-18.6/bin/pg_ctl",
+        "-D",
+        "<private-home>/.cache/oss-quality-sql-migration-component-20261009T151827793829Z/baseline-20261009T152911062556Z/pgdata",
+        "status"
+      ],
+      "cwd": "",
+      "exit_code": 3,
+      "log": "<historical-candidate>/evidence/20261009T152911062556Z-final-status.log"
+    }
+  ],
+  "runs": [
+    {
+      "label": "original",
+      "source": "<historical-candidate>/original/alembic",
+      "database": "sql_baseline_original",
+      "exit_code": 0,
+      "observation": "<historical-candidate>/evidence/20261009T152911062556Z-original-observation.json",
+      "server_configuration": "18.6|<private-home>/.cache/oss-quality-sql-migration-component-20261009T151827793829Z/extensions/share\ncitext|1.8\nhstore|1.8\n",
+      "configuration_exit_code": 0
+    },
+    {
+      "label": "duplicate",
+      "source": "<historical-candidate>/components/alembic",
+      "database": "sql_baseline_duplicate",
+      "exit_code": 0,
+      "observation": "<historical-candidate>/evidence/20261009T152911062556Z-duplicate-observation.json",
+      "server_configuration": "18.6|<private-home>/.cache/oss-quality-sql-migration-component-20261009T151827793829Z/extensions/share\ncitext|1.8\nhstore|1.8\n",
+      "configuration_exit_code": 0
+    }
+  ],
+  "server_pid": 32973,
+  "status": "passed",
+  "stop_exit_code": 0,
+  "final": {
+    "pg_ctl_status_exit": 3,
+    "postmaster_pid_exists": false,
+    "port_open": false,
+    "stopped": true
+  },
+  "source_after": {
+    "original_unchanged": true,
+    "duplicate_unchanged": true,
+    "original_duplicate_equal": true
+  },
+  "postgres_sql_log": "<historical-candidate>/evidence/20261009T152911062556Z-postgres.log"
+}

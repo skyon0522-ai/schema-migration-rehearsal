@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "<historical-candidate>/rehearsal/worker.py", line 128, in <module>
+    rehearse(args.uri, json.loads(args.expected.read_text()), args.out, args.pause)
+  File "<historical-candidate>/rehearsal/worker.py", line 81, in rehearse
+    validate(state, expected)
+  File "<historical-candidate>/rehearsal/worker.py", line 55, in validate
+    raise StateDrift("Completion marker contradicts the enum state")
+StateDrift: Completion marker contradicts the enum state

@@ -1,0 +1,21 @@
+{
+  "status": "state_drift",
+  "events": [],
+  "source": "<historical-candidate>/components/alembic/alembic/runtime/migration.py",
+  "source_sha256": "3f0137890bd1eedef93e5f6ec217061e9185f5a6f971430ec9a2b4d2192a5c41",
+  "alembic_file": "<historical-candidate>/components/alembic/alembic/__init__.py",
+  "unwrapped_code_source": "<historical-candidate>/components/alembic/alembic/runtime/migration.py",
+  "before": {
+    "schema_exists": false,
+    "shape": {
+      "type": [],
+      "relations": [],
+      "columns": [],
+      "constraints": []
+    },
+    "labels": [],
+    "rows": [],
+    "marker": []
+  },
+  "error": "Schema/type/table/constraint shape differs from the fixed fixture"
+}

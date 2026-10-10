@@ -1,0 +1,1777 @@
+{
+  "sha": "1bc21b86dd6ddd07ac696e2d73b6cb200dd97bbd",
+  "url": "https://api.github.com/repos/sqlalchemy/alembic/git/trees/1bc21b86dd6ddd07ac696e2d73b6cb200dd97bbd",
+  "tree": [
+    {
+      "path": ".github",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "38570d09cccb3e95bcfebb7ae1f3715535982793",
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/trees/38570d09cccb3e95bcfebb7ae1f3715535982793"
+    },
+    {
+      "path": ".github/CODE_OF_CONDUCT.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "27395431b19bbb56bd1c2b4a2f93a5b1e477a1cf",
+      "size": 2090,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/27395431b19bbb56bd1c2b4a2f93a5b1e477a1cf"
+    },
+    {
+      "path": ".github/CONTRIBUTING.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9ee6682edc33ef307fe629b3523279e6d36ba7a2",
+      "size": 2977,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/9ee6682edc33ef307fe629b3523279e6d36ba7a2"
+    },
+    {
+      "path": ".github/FUNDING.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "38f1cf06dd5e2693639d7c230d301dd2ff484763",
+      "size": 108,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/38f1cf06dd5e2693639d7c230d301dd2ff484763"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f376f24c368516b3366c49767bd134deef069875",
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/trees/f376f24c368516b3366c49767bd134deef069875"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/bug_report.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "52622d3e9cdc3ae207e403501270844401f6fc21",
+      "size": 1112,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/52622d3e9cdc3ae207e403501270844401f6fc21"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/config.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4d5c5824b472b9c4dc19ce1a30dba9273a834a74",
+      "size": 734,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/4d5c5824b472b9c4dc19ce1a30dba9273a834a74"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/use_case.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "28381e63cde4b51ab4873bcc16b08b747393492f",
+      "size": 842,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/28381e63cde4b51ab4873bcc16b08b747393492f"
+    },
+    {
+      "path": ".github/SECURITY.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b400b2582dc527baaf6b743ed6a3ca1fc3526fb1",
+      "size": 277,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/b400b2582dc527baaf6b743ed6a3ca1fc3526fb1"
+    },
+    {
+      "path": ".github/dependabot.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6c3d1a93907475d2bfdcbafde9216b1728b223f4",
+      "size": 903,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/6c3d1a93907475d2bfdcbafde9216b1728b223f4"
+    },
+    {
+      "path": ".github/pull_request_template.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a09214bbb9b2104315e86ab782092a95e1550e92",
+      "size": 1124,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/a09214bbb9b2104315e86ab782092a95e1550e92"
+    },
+    {
+      "path": ".github/workflows",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "50bbaf38e7f5f0d61f837e0527d64a7892375796",
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/trees/50bbaf38e7f5f0d61f837e0527d64a7892375796"
+    },
+    {
+      "path": ".github/workflows/run-on-pr.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "62f21fb69135bbf5b0d57cea3a6bc0d1f73eec13",
+      "size": 2118,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/62f21fb69135bbf5b0d57cea3a6bc0d1f73eec13"
+    },
+    {
+      "path": ".github/workflows/run-test.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ebe6a0f68d944383cf31dccc6bc4553539808e2e",
+      "size": 2389,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/ebe6a0f68d944383cf31dccc6bc4553539808e2e"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd75881881349c9804d7ed24c5c312af09c81a23",
+      "size": 280,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/fd75881881349c9804d7ed24c5c312af09c81a23"
+    },
+    {
+      "path": ".gitreview",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "238b58e044c88a2349a0e973e63ef97d5a38b742",
+      "size": 177,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/238b58e044c88a2349a0e973e63ef97d5a38b742"
+    },
+    {
+      "path": ".pre-commit-config.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af478101e2f2e856e1108e840c98c3862e5842bd",
+      "size": 697,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/af478101e2f2e856e1108e840c98c3862e5842bd"
+    },
+    {
+      "path": "CHANGES",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d4fd8d239909a751f8041b640c7de56f4b1d169a",
+      "size": 178,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/d4fd8d239909a751f8041b640c7de56f4b1d169a"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b03e235f9a94f5893b5d33eb8756eee57a26853f",
+      "size": 1059,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/b03e235f9a94f5893b5d33eb8756eee57a26853f"
+    },
+    {
+      "path": "MANIFEST.in",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ace73359bb75740c5658b73c31431804f76745f4",
+      "size": 341,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/ace73359bb75740c5658b73c31431804f76745f4"
+    },
+    {
+      "path": "README.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "478a7ba0e8e6f473450138d41ce231d0b9127a84",
+      "size": 5737,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/478a7ba0e8e6f473450138d41ce231d0b9127a84"
+    },
+    {
+      "path": "README.unittests.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6e7dcd2ca53c0a7dfc9719f948bb5d36b9971411",
+      "size": 15006,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/6e7dcd2ca53c0a7dfc9719f948bb5d36b9971411"
+    },
+    {
+      "path": "alembic",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e5574054f8a26a48cdb7fb373af67aa4169c388c",
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/trees/e5574054f8a26a48cdb7fb373af67aa4169c388c"
+    },
+    {
+      "path": "alembic/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "673fd65aa32b6b92c406786347d36f49d498416c",
+      "size": 92,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/673fd65aa32b6b92c406786347d36f49d498416c"
+    },
+    {
+      "path": "alembic/__main__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af1b8e8702f4986b4e17ca129dab18f338803da4",
+      "size": 78,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/af1b8e8702f4986b4e17ca129dab18f338803da4"
+    },
+    {
+      "path": "alembic/autogenerate",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b4341ce142cda0c7da005d16b1c82c86dcbdd83c",
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/trees/b4341ce142cda0c7da005d16b1c82c86dcbdd83c"
+    },
+    {
+      "path": "alembic/autogenerate/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "445ddb25125aa63994052dd4ecea1362dc91656d",
+      "size": 543,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/445ddb25125aa63994052dd4ecea1362dc91656d"
+    },
+    {
+      "path": "alembic/autogenerate/api.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "40b940a764ba8cfac497065c64cd584fe6a0ca16",
+      "size": 22614,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/40b940a764ba8cfac497065c64cd584fe6a0ca16"
+    },
+    {
+      "path": "alembic/autogenerate/compare",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1dd1800102b410b04a3ea6ec1b2ce2754324e102",
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/trees/1dd1800102b410b04a3ea6ec1b2ce2754324e102"
+    },
+    {
+      "path": "alembic/autogenerate/compare/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8e889b9fdb31fa840350a627d472f14619b91538",
+      "size": 2217,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/8e889b9fdb31fa840350a627d472f14619b91538"
+    },
+    {
+      "path": "alembic/autogenerate/compare/comments.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8db56606ddf7c4c7b0c47e061f6d94e4ad506209",
+      "size": 3157,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/8db56606ddf7c4c7b0c47e061f6d94e4ad506209"
+    },
+    {
+      "path": "alembic/autogenerate/compare/constraints.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eeb032a163bd95f78c3865555ad09be95f5d031e",
+      "size": 27993,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/eeb032a163bd95f78c3865555ad09be95f5d031e"
+    },
+    {
+      "path": "alembic/autogenerate/compare/schema.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aef15abdd04e1da44f5e8504fb9358404c8981cb",
+      "size": 1641,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/aef15abdd04e1da44f5e8504fb9358404c8981cb"
+    },
+    {
+      "path": "alembic/autogenerate/compare/server_defaults.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f5d6d0d97d33bd0dbaf331df0795451a6ef72a54",
+      "size": 10678,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/f5d6d0d97d33bd0dbaf331df0795451a6ef72a54"
+    },
+    {
+      "path": "alembic/autogenerate/compare/tables.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "88d96cc708b4c054db9918b0be6b3333577fc85b",
+      "size": 10504,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/88d96cc708b4c054db9918b0be6b3333577fc85b"
+    },
+    {
+      "path": "alembic/autogenerate/compare/types.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "73826c56868cae477f586cc21e99fdd9042c1048",
+      "size": 3910,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/73826c56868cae477f586cc21e99fdd9042c1048"
+    },
+    {
+      "path": "alembic/autogenerate/compare/util.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fef4c9c3655d6307f084867c3ed00f9bea24fd2f",
+      "size": 7196,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/fef4c9c3655d6307f084867c3ed00f9bea24fd2f"
+    },
+    {
+      "path": "alembic/autogenerate/render.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "84e21bfa7f9d3fcc1dd943df618c0cfc6aebf046",
+      "size": 38880,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/84e21bfa7f9d3fcc1dd943df618c0cfc6aebf046"
+    },
+    {
+      "path": "alembic/autogenerate/rewriter.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69db6320b164c3e79fb1aea135443c3089330d7",
+      "size": 7676,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/e69db6320b164c3e79fb1aea135443c3089330d7"
+    },
+    {
+      "path": "alembic/command.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a73f1a630aeef0ae4d37dd6cdb8dff49db4870df",
+      "size": 25359,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/a73f1a630aeef0ae4d37dd6cdb8dff49db4870df"
+    },
+    {
+      "path": "alembic/config.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9f32f5a229f29acb80062198f857a07d7a7a2cfa",
+      "size": 34788,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/9f32f5a229f29acb80062198f857a07d7a7a2cfa"
+    },
+    {
+      "path": "alembic/context.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "758fca8756c8bac18ea91888b6de484a11618018",
+      "size": 195,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/758fca8756c8bac18ea91888b6de484a11618018"
+    },
+    {
+      "path": "alembic/context.pyi",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0374b2a4bf632a53e377e6657a6bc702e13b9293",
+      "size": 32585,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/0374b2a4bf632a53e377e6657a6bc702e13b9293"
+    },
+    {
+      "path": "alembic/ddl",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "21d2c99699a01f5f32b0de1742fef9ae8e47b51a",
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/trees/21d2c99699a01f5f32b0de1742fef9ae8e47b51a"
+    },
+    {
+      "path": "alembic/ddl/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f2f72b3dd8d3748b36cb7acfcda7abf8468b6926",
+      "size": 152,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/f2f72b3dd8d3748b36cb7acfcda7abf8468b6926"
+    },
+    {
+      "path": "alembic/ddl/_autogen.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9b9a020793ea3cb77c2a30aa3e72c07970d98804",
+      "size": 10176,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/9b9a020793ea3cb77c2a30aa3e72c07970d98804"
+    },
+    {
+      "path": "alembic/ddl/base.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "723083e2832f53662a390641db65e733efa8350f",
+      "size": 12111,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/723083e2832f53662a390641db65e733efa8350f"
+    },
+    {
+      "path": "alembic/ddl/impl.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "be5dbb5aff338b3321807af88062fb3772a443b2",
+      "size": 31352,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/be5dbb5aff338b3321807af88062fb3772a443b2"
+    },
+    {
+      "path": "alembic/ddl/mssql.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a396b40a5cd4fc16cd6ba787f779e052fc0957e7",
+      "size": 17121,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/a396b40a5cd4fc16cd6ba787f779e052fc0957e7"
+    },
+    {
+      "path": "alembic/ddl/mysql.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "19ef3e828f5fca56539b726289e0a2949fa3d1f3",
+      "size": 21188,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/19ef3e828f5fca56539b726289e0a2949fa3d1f3"
+    },
+    {
+      "path": "alembic/ddl/oracle.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c93fa4b5d3799a9938d679c6862f101e2ada0d01",
+      "size": 6212,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/c93fa4b5d3799a9938d679c6862f101e2ada0d01"
+    },
+    {
+      "path": "alembic/ddl/postgresql.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "47317c7faa8e984eabdb55a13cbfdefe5e7c62ad",
+      "size": 30061,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/47317c7faa8e984eabdb55a13cbfdefe5e7c62ad"
+    },
+    {
+      "path": "alembic/ddl/sqlite.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c1bf062ed666396520b4614be61b8079ca64cc12",
+      "size": 7925,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/c1bf062ed666396520b4614be61b8079ca64cc12"
+    },
+    {
+      "path": "alembic/environment.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "adfc93eb0c2fdf4e8104faab95bdb4bdd210fbaa",
+      "size": 43,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/adfc93eb0c2fdf4e8104faab95bdb4bdd210fbaa"
+    },
+    {
+      "path": "alembic/ext",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "52ca1b5bca61eb8ab19d3e19375548adf9dc9f99",
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/trees/52ca1b5bca61eb8ab19d3e19375548adf9dc9f99"
+    },
+    {
+      "path": "alembic/ext/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b3a1e8c08977ee51af70ba3c5a87a9851c974c19",
+      "size": 318,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/b3a1e8c08977ee51af70ba3c5a87a9851c974c19"
+    },
+    {
+      "path": "alembic/ext/checkconstraint_byname.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af028305cf165d2c4134525ac0a1665fd236807c",
+      "size": 6465,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/af028305cf165d2c4134525ac0a1665fd236807c"
+    },
+    {
+      "path": "alembic/migration.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "02626e2cf6d4cbe7f57dc95fce2399ea93df0dbc",
+      "size": 41,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/02626e2cf6d4cbe7f57dc95fce2399ea93df0dbc"
+    },
+    {
+      "path": "alembic/op.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f3f5fac0cf5c1e56d44f42051b6d829f7026c86d",
+      "size": 167,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/f3f5fac0cf5c1e56d44f42051b6d829f7026c86d"
+    },
+    {
+      "path": "alembic/op.pyi",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c4ef92f27a43850681d8fea41831c0468779b18b",
+      "size": 52937,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/c4ef92f27a43850681d8fea41831c0468779b18b"
+    },
+    {
+      "path": "alembic/operations",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "72e45c7a02db996a934fe2b577a2fdda949519c0",
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/trees/72e45c7a02db996a934fe2b577a2fdda949519c0"
+    },
+    {
+      "path": "alembic/operations/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fabe0e20fb3e7dc492b896b48eefeb0b1f89c167",
+      "size": 317,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/fabe0e20fb3e7dc492b896b48eefeb0b1f89c167"
+    },
+    {
+      "path": "alembic/operations/base.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "41e186c602af70840b4de4b00c0f7ea60223d399",
+      "size": 77791,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/41e186c602af70840b4de4b00c0f7ea60223d399"
+    },
+    {
+      "path": "alembic/operations/batch.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b54c54a7cf571674fc9e601d96fc001782001fc7",
+      "size": 29518,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/b54c54a7cf571674fc9e601d96fc001782001fc7"
+    },
+    {
+      "path": "alembic/operations/ops.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b5511c6c583bd032131fbf8e5db25b2b8c82fab",
+      "size": 98319,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/0b5511c6c583bd032131fbf8e5db25b2b8c82fab"
+    },
+    {
+      "path": "alembic/operations/schemaobj.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e24a4b4842fa50a78a0968e5e69d17edbc4ca5a5",
+      "size": 8975,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/e24a4b4842fa50a78a0968e5e69d17edbc4ca5a5"
+    },
+    {
+      "path": "alembic/operations/toimpl.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c4eef3d77fe33ac6bc59ba7fa3d06f19ce93ab72",
+      "size": 8340,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/c4eef3d77fe33ac6bc59ba7fa3d06f19ce93ab72"
+    },
+    {
+      "path": "alembic/py.typed",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "alembic/runtime",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f4fd286777b6aaa06526a3a3b199b4f94684f763",
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/trees/f4fd286777b6aaa06526a3a3b199b4f94684f763"
+    },
+    {
+      "path": "alembic/runtime/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "alembic/runtime/environment.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "39df47a963a27580a9f74911197a0f2922c3a341",
+      "size": 42511,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/39df47a963a27580a9f74911197a0f2922c3a341"
+    },
+    {
+      "path": "alembic/runtime/migration.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "305a4441eba4f503cf9500643a86e5f76f4b1287",
+      "size": 48090,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/305a4441eba4f503cf9500643a86e5f76f4b1287"
+    },
+    {
+      "path": "alembic/runtime/plugins.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4cf111d95c2bc854b45ca1e0884442f3836a20ea",
+      "size": 7208,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/4cf111d95c2bc854b45ca1e0884442f3836a20ea"
+    },
+    {
+      "path": "alembic/script",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "df4563404ba462c082c0be0684018adb428ee0d0",
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/trees/df4563404ba462c082c0be0684018adb428ee0d0"
+    },
+    {
+      "path": "alembic/script/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d78f3f1dc54c13a52b64e8d668c2baf708eb20bc",
+      "size": 100,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/d78f3f1dc54c13a52b64e8d668c2baf708eb20bc"
+    },
+    {
+      "path": "alembic/script/base.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cc136d8bc467b0bd1ad33a249812eec6e025acbe",
+      "size": 36992,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/cc136d8bc467b0bd1ad33a249812eec6e025acbe"
+    },
+    {
+      "path": "alembic/script/revision.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "649cf508dfbad0592b8f5308cc3040ea3ee5a4b5",
+      "size": 61943,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/649cf508dfbad0592b8f5308cc3040ea3ee5a4b5"
+    },
+    {
+      "path": "alembic/script/write_hooks.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3dd49d9108bd9b7b11737fdc2a307be08456d008",
+      "size": 5369,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/3dd49d9108bd9b7b11737fdc2a307be08456d008"
+    },
+    {
+      "path": "alembic/templates",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d860faba8b15e0b501338fa23472dbdfec055bda",
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/trees/d860faba8b15e0b501338fa23472dbdfec055bda"
+    },
+    {
+      "path": "alembic/templates/async",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "17a6b0b785b1f8f32a2e65614d18c6668cec15c6",
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/trees/17a6b0b785b1f8f32a2e65614d18c6668cec15c6"
+    },
+    {
+      "path": "alembic/templates/async/README",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e0d0858f266ec27b243e8b92301fc7002e1f2745",
+      "size": 58,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/e0d0858f266ec27b243e8b92301fc7002e1f2745"
+    },
+    {
+      "path": "alembic/templates/async/alembic.ini.mako",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "02ccb0f6de8d6654b151721a0fe4f9441d194318",
+      "size": 5010,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/02ccb0f6de8d6654b151721a0fe4f9441d194318"
+    },
+    {
+      "path": "alembic/templates/async/env.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9f2d51940080a1a7c954a8916dab86f00d5a4aa5",
+      "size": 2389,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/9f2d51940080a1a7c954a8916dab86f00d5a4aa5"
+    },
+    {
+      "path": "alembic/templates/async/script.py.mako",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "11016301e749297acb67822efc7974ee53c905c6",
+      "size": 704,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/11016301e749297acb67822efc7974ee53c905c6"
+    },
+    {
+      "path": "alembic/templates/generic",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c27e8282d2412ba1d2695e0a41550957d04a11dc",
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/trees/c27e8282d2412ba1d2695e0a41550957d04a11dc"
+    },
+    {
+      "path": "alembic/templates/generic/README",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "98e4f9c44effe479ed38c66ba922e7bcc672916f",
+      "size": 38,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/98e4f9c44effe479ed38c66ba922e7bcc672916f"
+    },
+    {
+      "path": "alembic/templates/generic/alembic.ini.mako",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0127b2af8da1d11127062dc22de75206211c081f",
+      "size": 5010,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/0127b2af8da1d11127062dc22de75206211c081f"
+    },
+    {
+      "path": "alembic/templates/generic/env.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "36112a3c68590d6a8e07fea0ce70a5afb38c951a",
+      "size": 2103,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/36112a3c68590d6a8e07fea0ce70a5afb38c951a"
+    },
+    {
+      "path": "alembic/templates/generic/script.py.mako",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "11016301e749297acb67822efc7974ee53c905c6",
+      "size": 704,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/11016301e749297acb67822efc7974ee53c905c6"
+    },
+    {
+      "path": "alembic/templates/multidb",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7c319b65985d23b1f78243f70f7e5d8118356ead",
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/trees/7c319b65985d23b1f78243f70f7e5d8118356ead"
+    },
+    {
+      "path": "alembic/templates/multidb/README",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f046ec91427e2f4edd53dcb5409b21955c8fd0af",
+      "size": 606,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/f046ec91427e2f4edd53dcb5409b21955c8fd0af"
+    },
+    {
+      "path": "alembic/templates/multidb/alembic.ini.mako",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "76846465bead038ac27e7460c8dd9079f4850a1f",
+      "size": 5336,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/76846465bead038ac27e7460c8dd9079f4850a1f"
+    },
+    {
+      "path": "alembic/templates/multidb/env.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e937b64eeed2fd980c214ab87505d75041b581ad",
+      "size": 4230,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/e937b64eeed2fd980c214ab87505d75041b581ad"
+    },
+    {
+      "path": "alembic/templates/multidb/script.py.mako",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8e667d84c8a46494a83c38d950e57e96abffd7b7",
+      "size": 1235,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/8e667d84c8a46494a83c38d950e57e96abffd7b7"
+    },
+    {
+      "path": "alembic/templates/pyproject",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c03bd08ddab72ec4377a883f90905a3d5e11de0f",
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/trees/c03bd08ddab72ec4377a883f90905a3d5e11de0f"
+    },
+    {
+      "path": "alembic/templates/pyproject/README",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fdacc05f68ff5abb9bd31a924ccaa48ba8d23de9",
+      "size": 60,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/fdacc05f68ff5abb9bd31a924ccaa48ba8d23de9"
+    },
+    {
+      "path": "alembic/templates/pyproject/alembic.ini.mako",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3d10f0e46cb36643685750db6dd5084fcbb33c32",
+      "size": 782,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/3d10f0e46cb36643685750db6dd5084fcbb33c32"
+    },
+    {
+      "path": "alembic/templates/pyproject/env.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "36112a3c68590d6a8e07fea0ce70a5afb38c951a",
+      "size": 2103,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/36112a3c68590d6a8e07fea0ce70a5afb38c951a"
+    },
+    {
+      "path": "alembic/templates/pyproject/pyproject.toml.mako",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7edd43b0c9aad1e751220c1bd2beacd31873d5d6",
+      "size": 3000,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/7edd43b0c9aad1e751220c1bd2beacd31873d5d6"
+    },
+    {
+      "path": "alembic/templates/pyproject/script.py.mako",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "11016301e749297acb67822efc7974ee53c905c6",
+      "size": 704,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/11016301e749297acb67822efc7974ee53c905c6"
+    },
+    {
+      "path": "alembic/templates/pyproject_async",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "844e04a6f5275491c83459c95ff14cbcd4e8d632",
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/trees/844e04a6f5275491c83459c95ff14cbcd4e8d632"
+    },
+    {
+      "path": "alembic/templates/pyproject_async/README",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dfd718d3b9ba72cdc7b5f14fc5802e2bd4fa0dfa",
+      "size": 45,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/dfd718d3b9ba72cdc7b5f14fc5802e2bd4fa0dfa"
+    },
+    {
+      "path": "alembic/templates/pyproject_async/alembic.ini.mako",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3d10f0e46cb36643685750db6dd5084fcbb33c32",
+      "size": 782,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/3d10f0e46cb36643685750db6dd5084fcbb33c32"
+    },
+    {
+      "path": "alembic/templates/pyproject_async/env.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9f2d51940080a1a7c954a8916dab86f00d5a4aa5",
+      "size": 2389,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/9f2d51940080a1a7c954a8916dab86f00d5a4aa5"
+    },
+    {
+      "path": "alembic/templates/pyproject_async/pyproject.toml.mako",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7edd43b0c9aad1e751220c1bd2beacd31873d5d6",
+      "size": 3000,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/7edd43b0c9aad1e751220c1bd2beacd31873d5d6"
+    },
+    {
+      "path": "alembic/templates/pyproject_async/script.py.mako",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "11016301e749297acb67822efc7974ee53c905c6",
+      "size": 704,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/11016301e749297acb67822efc7974ee53c905c6"
+    },
+    {
+      "path": "alembic/testing",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b9e1ecf50f6c13c2b12796e4d09c0a1134357a15",
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/trees/b9e1ecf50f6c13c2b12796e4d09c0a1134357a15"
+    },
+    {
+      "path": "alembic/testing/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3ab58e30f6c922717d127dbf9b6827e415a74fd9",
+      "size": 1178,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/3ab58e30f6c922717d127dbf9b6827e415a74fd9"
+    },
+    {
+      "path": "alembic/testing/assertions.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "76b65e0eb0b662574af8ec235a9ebed0df583e60",
+      "size": 5193,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/76b65e0eb0b662574af8ec235a9ebed0df583e60"
+    },
+    {
+      "path": "alembic/testing/env.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a76d92520017c98963ccda37c923e0a192c47610",
+      "size": 11591,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/a76d92520017c98963ccda37c923e0a192c47610"
+    },
+    {
+      "path": "alembic/testing/fixtures.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "931e4e2620e571170ab3534c8fb7e81fa6a42870",
+      "size": 11677,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/931e4e2620e571170ab3534c8fb7e81fa6a42870"
+    },
+    {
+      "path": "alembic/testing/plugin",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a08638959d68873e1c55a82c9b249daa4a5780bc",
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/trees/a08638959d68873e1c55a82c9b249daa4a5780bc"
+    },
+    {
+      "path": "alembic/testing/plugin/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "alembic/testing/plugin/bootstrap.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d4a2c5521847f6d34003b49b2826ae49b1d84c29",
+      "size": 50,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/d4a2c5521847f6d34003b49b2826ae49b1d84c29"
+    },
+    {
+      "path": "alembic/testing/requirements.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ff7d6f7012b1b967b9391bc9e7f53083e8fe5bd5",
+      "size": 4707,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/ff7d6f7012b1b967b9391bc9e7f53083e8fe5bd5"
+    },
+    {
+      "path": "alembic/testing/schemacompare.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "204cc4ddc15b1457cdbacb2c238a625e19c49100",
+      "size": 4838,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/204cc4ddc15b1457cdbacb2c238a625e19c49100"
+    },
+    {
+      "path": "alembic/testing/suite",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c08eba08513d0f688f121853b746c020df15eb58",
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/trees/c08eba08513d0f688f121853b746c020df15eb58"
+    },
+    {
+      "path": "alembic/testing/suite/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3da498d289ed11e1eb140384db8d601bfcd524aa",
+      "size": 288,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/3da498d289ed11e1eb140384db8d601bfcd524aa"
+    },
+    {
+      "path": "alembic/testing/suite/_autogen_fixtures.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8915c2dd0d66c738cfd3de009d64dd07de85362f",
+      "size": 14153,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/8915c2dd0d66c738cfd3de009d64dd07de85362f"
+    },
+    {
+      "path": "alembic/testing/suite/test_autogen_comments.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7ef074f57893180048c6193455b0dd1d507c0603",
+      "size": 6283,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/7ef074f57893180048c6193455b0dd1d507c0603"
+    },
+    {
+      "path": "alembic/testing/suite/test_autogen_computed.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "586691b2654af4fa2cb11bd4e8fd9061410166cb",
+      "size": 4554,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/586691b2654af4fa2cb11bd4e8fd9061410166cb"
+    },
+    {
+      "path": "alembic/testing/suite/test_autogen_diffs.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "75bcd37aeec53d4afb2447a0f7aaf8ab5ef4c160",
+      "size": 8394,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/75bcd37aeec53d4afb2447a0f7aaf8ab5ef4c160"
+    },
+    {
+      "path": "alembic/testing/suite/test_autogen_fks.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d69736e64d0f18f1e7359ba9dc56b1111de9d23f",
+      "size": 32930,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/d69736e64d0f18f1e7359ba9dc56b1111de9d23f"
+    },
+    {
+      "path": "alembic/testing/suite/test_autogen_identity.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3dee9fc9903f74fd06adfaa837f22af51ec6dcd1",
+      "size": 5824,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/3dee9fc9903f74fd06adfaa837f22af51ec6dcd1"
+    },
+    {
+      "path": "alembic/testing/suite/test_environment.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "38c80f358a6929b8edccb344cbf3bac675c7ddd5",
+      "size": 11260,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/38c80f358a6929b8edccb344cbf3bac675c7ddd5"
+    },
+    {
+      "path": "alembic/testing/suite/test_op.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a63b3f2f9f2a7bfd879e5b06a05f0c6a64277b8f",
+      "size": 1343,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/a63b3f2f9f2a7bfd879e5b06a05f0c6a64277b8f"
+    },
+    {
+      "path": "alembic/testing/util.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dd8c4c4b2ba53bad1ed7a4912c959afd577a6362",
+      "size": 3003,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/dd8c4c4b2ba53bad1ed7a4912c959afd577a6362"
+    },
+    {
+      "path": "alembic/testing/warnings.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7d3f535791c3790a1eadbb12fb84f687d24a9d02",
+      "size": 1322,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/7d3f535791c3790a1eadbb12fb84f687d24a9d02"
+    },
+    {
+      "path": "alembic/util",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0c5031c46029c7bef9ead1180e4b6b341e4da0a6",
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/trees/0c5031c46029c7bef9ead1180e4b6b341e4da0a6"
+    },
+    {
+      "path": "alembic/util/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c8280ad55e2f7bc8741ff6f15d5d8fb89d26ca81",
+      "size": 1781,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/c8280ad55e2f7bc8741ff6f15d5d8fb89d26ca81"
+    },
+    {
+      "path": "alembic/util/compat.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f7338f5cc2dcb4a56347d0d874fb427261c45a09",
+      "size": 3828,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/f7338f5cc2dcb4a56347d0d874fb427261c45a09"
+    },
+    {
+      "path": "alembic/util/editor.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f28e9de40ee3ce38acb9f676e1d603514e3060bc",
+      "size": 2467,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/f28e9de40ee3ce38acb9f676e1d603514e3060bc"
+    },
+    {
+      "path": "alembic/util/exc.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "695b3d50326d86e6ddffe04e64643b951d5e15d9",
+      "size": 944,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/695b3d50326d86e6ddffe04e64643b951d5e15d9"
+    },
+    {
+      "path": "alembic/util/langhelpers.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "76a8a4ef2a9fbbf8df6486f0ade1c362d14ce98e",
+      "size": 13053,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/76a8a4ef2a9fbbf8df6486f0ade1c362d14ce98e"
+    },
+    {
+      "path": "alembic/util/messaging.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "366f464194bcc2cbee5a36389064a240312d40d6",
+      "size": 3235,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/366f464194bcc2cbee5a36389064a240312d40d6"
+    },
+    {
+      "path": "alembic/util/pyfiles.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "60e8915e6451eee438167a4ad6d45f4c5b11dbb0",
+      "size": 4603,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/60e8915e6451eee438167a4ad6d45f4c5b11dbb0"
+    },
+    {
+      "path": "alembic/util/sqla_compat.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d1549d4d900efaec9e10017a2c195212c6209cfe",
+      "size": 19346,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/d1549d4d900efaec9e10017a2c195212c6209cfe"
+    },
+    {
+      "path": "docs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b30efe690c34664dd4660f864a817a740ef5e9b5",
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/trees/b30efe690c34664dd4660f864a817a740ef5e9b5"
+    },
+    {
+      "path": "docs/build",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9a6e16b60e2ae17a7e6da47581d837cabf24bdf2",
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/trees/9a6e16b60e2ae17a7e6da47581d837cabf24bdf2"
+    },
+    {
+      "path": "docs/build/Makefile",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e26416092f842d64bdb83ae2c68f5125dd467e41",
+      "size": 3564,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/e26416092f842d64bdb83ae2c68f5125dd467e41"
+    },
+    {
+      "path": "docs/build/_static",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f1c8e5c84c85456585fdcbf01de302fa6b9d73e3",
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/trees/f1c8e5c84c85456585fdcbf01de302fa6b9d73e3"
+    },
+    {
+      "path": "docs/build/_static/nature_override.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57798ad1fadcfe9f5c8f279143ddf4f931044808",
+      "size": 507,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/57798ad1fadcfe9f5c8f279143ddf4f931044808"
+    },
+    {
+      "path": "docs/build/_static/site_custom_css.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8194030b79e0ef94bed9beba44e38991fb7c9265",
+      "size": 43,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/8194030b79e0ef94bed9beba44e38991fb7c9265"
+    },
+    {
+      "path": "docs/build/_templates",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d28e65c1cc4396ea2b37c2d388ee9ed8bb122388",
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/trees/d28e65c1cc4396ea2b37c2d388ee9ed8bb122388"
+    },
+    {
+      "path": "docs/build/_templates/site_custom_sidebars.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "docs/build/api",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "cac24fec18244f0b955a6a144bea869e5632be31",
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/trees/cac24fec18244f0b955a6a144bea869e5632be31"
+    },
+    {
+      "path": "docs/build/api/api_overview.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "37e7312e0e15851146eab91aaa60e683664d445f",
+      "size": 123965,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/37e7312e0e15851146eab91aaa60e683664d445f"
+    },
+    {
+      "path": "docs/build/api/autogenerate.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dcee6fa4b6f0b109519b6c6279b09ffa4959ce9a",
+      "size": 24750,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/dcee6fa4b6f0b109519b6c6279b09ffa4959ce9a"
+    },
+    {
+      "path": "docs/build/api/commands.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "266a20660d6e8de99cd09e9ce73b6b606d4a0351",
+      "size": 1721,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/266a20660d6e8de99cd09e9ce73b6b606d4a0351"
+    },
+    {
+      "path": "docs/build/api/config.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6dd8111b213c1092a5217abbd1c21f2c2ec02724",
+      "size": 1232,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/6dd8111b213c1092a5217abbd1c21f2c2ec02724"
+    },
+    {
+      "path": "docs/build/api/ddl.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2d114c893a5fe93154537667ef577d0afa70c6f4",
+      "size": 1090,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/2d114c893a5fe93154537667ef577d0afa70c6f4"
+    },
+    {
+      "path": "docs/build/api/exceptions.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4e88101e232a4d87382b4e5728bc1fef0c8bf321",
+      "size": 157,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/4e88101e232a4d87382b4e5728bc1fef0c8bf321"
+    },
+    {
+      "path": "docs/build/api/index.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "75b0dd6a48bc048bd265ecd0b10f614224e3a408",
+      "size": 1037,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/75b0dd6a48bc048bd265ecd0b10f614224e3a408"
+    },
+    {
+      "path": "docs/build/api/operations.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd30bf8fc71bee8c420ef6865a608fcada933112",
+      "size": 9415,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/fd30bf8fc71bee8c420ef6865a608fcada933112"
+    },
+    {
+      "path": "docs/build/api/overview.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "94c1f8584bab095ee3ddbbfd72f39e90909ff9ba",
+      "size": 3409,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/94c1f8584bab095ee3ddbbfd72f39e90909ff9ba"
+    },
+    {
+      "path": "docs/build/api/plugins.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "493bda7f487ba83a4723831a1a03b21a967bfb2a",
+      "size": 20498,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/493bda7f487ba83a4723831a1a03b21a967bfb2a"
+    },
+    {
+      "path": "docs/build/api/runtime.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "72cfe60b9663a2614ccec4113004d27d818fdf0a",
+      "size": 1505,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/72cfe60b9663a2614ccec4113004d27d818fdf0a"
+    },
+    {
+      "path": "docs/build/api/script.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cf58bb83dc5a8dffd4dd3dd96dc398943200904a",
+      "size": 533,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/cf58bb83dc5a8dffd4dd3dd96dc398943200904a"
+    },
+    {
+      "path": "docs/build/assets",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "be82da8107de9faa073dd90f59add259c4faeadf",
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/trees/be82da8107de9faa073dd90f59add259c4faeadf"
+    },
+    {
+      "path": "docs/build/assets/api_overview.graffle",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1e58ea5fa6fa9c2449bda5c406563635933a22ff",
+      "size": 69295,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/1e58ea5fa6fa9c2449bda5c406563635933a22ff"
+    },
+    {
+      "path": "docs/build/autogenerate.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c0b2b4ae130ed685be0b2df0b78531891568d8a8",
+      "size": 42995,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/c0b2b4ae130ed685be0b2df0b78531891568d8a8"
+    },
+    {
+      "path": "docs/build/batch.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "595ed0b28a3bcd1f8e208b1b8dfe6c7efe6b49bc",
+      "size": 17975,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/595ed0b28a3bcd1f8e208b1b8dfe6c7efe6b49bc"
+    },
+    {
+      "path": "docs/build/branches.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3e8bee1e41d921f1671b012085ffa3a37a643d68",
+      "size": 35218,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/3e8bee1e41d921f1671b012085ffa3a37a643d68"
+    },
+    {
+      "path": "docs/build/changelog.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fb38d9aa498259f96db47200f2594450e47e0b38",
+      "size": 260838,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/fb38d9aa498259f96db47200f2594450e47e0b38"
+    },
+    {
+      "path": "docs/build/conf.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f8c99d2b2a6f047abc02a7ca3a2aa472af6c6ffe",
+      "size": 8770,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/f8c99d2b2a6f047abc02a7ca3a2aa472af6c6ffe"
+    },
+    {
+      "path": "docs/build/cookbook.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ba8929edaa80f61f81f7f73255b68c22f3a57c67",
+      "size": 65066,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/ba8929edaa80f61f81f7f73255b68c22f3a57c67"
+    },
+    {
+      "path": "docs/build/front.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d7d6d79fbd4dc07f170a23a71804c25015a28bd0",
+      "size": 4323,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/d7d6d79fbd4dc07f170a23a71804c25015a28bd0"
+    },
+    {
+      "path": "docs/build/index.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e587cfb45581074ff8b1929eadb3e665bef0e21d",
+      "size": 533,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/e587cfb45581074ff8b1929eadb3e665bef0e21d"
+    },
+    {
+      "path": "docs/build/make.bat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c334174ed08f3c23545cd8987f6c3c16df0bd936",
+      "size": 3077,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/c334174ed08f3c23545cd8987f6c3c16df0bd936"
+    },
+    {
+      "path": "docs/build/naming.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "89296343ea63634868499747eaa8f75f1f85f833",
+      "size": 11025,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/89296343ea63634868499747eaa8f75f1f85f833"
+    },
+    {
+      "path": "docs/build/offline.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1be4a4a2290b0ce0c0b5ae17cbae34263731f4c0",
+      "size": 5620,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/1be4a4a2290b0ce0c0b5ae17cbae34263731f4c0"
+    },
+    {
+      "path": "docs/build/ops.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8eb9bf7012570a089557be0a9c9140fa48eb165e",
+      "size": 2144,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/8eb9bf7012570a089557be0a9c9140fa48eb165e"
+    },
+    {
+      "path": "docs/build/requirements.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6925fcd3d5ffd30cb3c12cbb3021eaf850ebf4a6",
+      "size": 411,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/6925fcd3d5ffd30cb3c12cbb3021eaf850ebf4a6"
+    },
+    {
+      "path": "docs/build/tutorial.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "60242bd640f876eaa24bc0dfb41de3cb96406a6f",
+      "size": 43214,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/60242bd640f876eaa24bc0dfb41de3cb96406a6f"
+    },
+    {
+      "path": "docs/build/unreleased",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fa297ddfcb34df5426ab00e0a6b2aa590b5c1243",
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/trees/fa297ddfcb34df5426ab00e0a6b2aa590b5c1243"
+    },
+    {
+      "path": "docs/build/unreleased/1504.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "88cd1a25ee5359c7bd36c167c0e846567afb94d6",
+      "size": 395,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/88cd1a25ee5359c7bd36c167c0e846567afb94d6"
+    },
+    {
+      "path": "docs/build/unreleased/1873.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "32ea5d9748923114b344597ad789f2607173331b",
+      "size": 578,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/32ea5d9748923114b344597ad789f2607173331b"
+    },
+    {
+      "path": "docs/build/unreleased/README.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1d2b3446e40f0aba6e6820d0232c7301f46be5f5",
+      "size": 413,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/1d2b3446e40f0aba6e6820d0232c7301f46be5f5"
+    },
+    {
+      "path": "noxfile.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "310f5cdcb48dd9a5a242e6632f4c471962b2859b",
+      "size": 6568,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/310f5cdcb48dd9a5a242e6632f4c471962b2859b"
+    },
+    {
+      "path": "pyproject.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bf695cf23bfc41c296cdd2c0bed37b6c1ad97875",
+      "size": 3446,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/bf695cf23bfc41c296cdd2c0bed37b6c1ad97875"
+    },
+    {
+      "path": "reap_dbs.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "66e503b643cc943ee2100583c2f880dcd617e69e",
+      "size": 708,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/66e503b643cc943ee2100583c2f880dcd617e69e"
+    },
+    {
+      "path": "setup.cfg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eb2676cee8c98f19f978be0b490ce0aa6ed9f7ca",
+      "size": 1207,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/eb2676cee8c98f19f978be0b490ce0aa6ed9f7ca"
+    },
+    {
+      "path": "setup.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "606849326a4002007fd42060b51e69a19c18675c",
+      "size": 38,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/606849326a4002007fd42060b51e69a19c18675c"
+    },
+    {
+      "path": "tests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "044df8cd8b5b2c672e275ea8ff8c69cac97d2548",
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/trees/044df8cd8b5b2c672e275ea8ff8c69cac97d2548"
+    },
+    {
+      "path": "tests/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "tests/_large_map.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "653b5dfbff676efb9052d59a6854565863747c5e",
+      "size": 7317,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/653b5dfbff676efb9052d59a6854565863747c5e"
+    },
+    {
+      "path": "tests/conftest.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e37680771bc5afd215d970171aacc6b344becaf1",
+      "size": 2278,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/e37680771bc5afd215d970171aacc6b344becaf1"
+    },
+    {
+      "path": "tests/requirements.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a9a8de58962444e8025d004ee4a218c0d4445ab5",
+      "size": 13233,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/a9a8de58962444e8025d004ee4a218c0d4445ab5"
+    },
+    {
+      "path": "tests/test_autogen_check_constraints.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "53d4f6dd5fdc27280ac5eba43308c6ce0bd3b210",
+      "size": 30646,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/53d4f6dd5fdc27280ac5eba43308c6ce0bd3b210"
+    },
+    {
+      "path": "tests/test_autogen_composition.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "23697220e1f411cf777052a15a666468b1ef062d",
+      "size": 24596,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/23697220e1f411cf777052a15a666468b1ef062d"
+    },
+    {
+      "path": "tests/test_autogen_diffs.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2d28b02d43361d14c1c4a6ec7b09560f81964d71",
+      "size": 82981,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/2d28b02d43361d14c1c4a6ec7b09560f81964d71"
+    },
+    {
+      "path": "tests/test_autogen_indexes.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d580a46c9c2ec1074b87701cd77d2e4dca203286",
+      "size": 63794,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/d580a46c9c2ec1074b87701cd77d2e4dca203286"
+    },
+    {
+      "path": "tests/test_autogen_render.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7d966934eb76482f4ea6d6e03327b742f0d4a917",
+      "size": 101647,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/7d966934eb76482f4ea6d6e03327b742f0d4a917"
+    },
+    {
+      "path": "tests/test_batch.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "818c0cb4074d7bf3f81e28fd665571349d6f9df3",
+      "size": 104107,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/818c0cb4074d7bf3f81e28fd665571349d6f9df3"
+    },
+    {
+      "path": "tests/test_bulk_insert.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a4894bca5593e718317054381085c1517b3939c4",
+      "size": 10358,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/a4894bca5593e718317054381085c1517b3939c4"
+    },
+    {
+      "path": "tests/test_command.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "826ce4444a19b8644cabd9f1bae3c143f7ee13c9",
+      "size": 57964,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/826ce4444a19b8644cabd9f1bae3c143f7ee13c9"
+    },
+    {
+      "path": "tests/test_config.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "74102e4bf54ed791aeacd57ffa3c90e7c462f04a",
+      "size": 22754,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/74102e4bf54ed791aeacd57ffa3c90e7c462f04a"
+    },
+    {
+      "path": "tests/test_dispatch.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eff3676e8490d042857004b3d0bd19ffe859ea84",
+      "size": 12878,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/eff3676e8490d042857004b3d0bd19ffe859ea84"
+    },
+    {
+      "path": "tests/test_editor.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c5fdc8db0c59cc166be96864bd1d0a0a268d7b2c",
+      "size": 3873,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/c5fdc8db0c59cc166be96864bd1d0a0a268d7b2c"
+    },
+    {
+      "path": "tests/test_environment.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "edbbe051b1346947f7643c120f73b7aa500f1303",
+      "size": 5796,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/edbbe051b1346947f7643c120f73b7aa500f1303"
+    },
+    {
+      "path": "tests/test_external_dialect.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8be1a2566e63db0a7391446054b724d1e68b46cf",
+      "size": 4093,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/8be1a2566e63db0a7391446054b724d1e68b46cf"
+    },
+    {
+      "path": "tests/test_impl.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "093add6e97a8378c413db5a47944247d9f216321",
+      "size": 2206,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/093add6e97a8378c413db5a47944247d9f216321"
+    },
+    {
+      "path": "tests/test_messaging.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b23a63a091e364478864bc2ecb33ee3755d0ee5",
+      "size": 996,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/0b23a63a091e364478864bc2ecb33ee3755d0ee5"
+    },
+    {
+      "path": "tests/test_mssql.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "904a916d057c71351cb4f844c73a0528289eebe9",
+      "size": 25076,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/904a916d057c71351cb4f844c73a0528289eebe9"
+    },
+    {
+      "path": "tests/test_mysql.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ef0d3c6eef9c95a4d79e775d27603f067c8cd869",
+      "size": 32908,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/ef0d3c6eef9c95a4d79e775d27603f067c8cd869"
+    },
+    {
+      "path": "tests/test_offline_environment.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1c0d958d37f57ce11b4e7317a2786b618d688828",
+      "size": 9111,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/1c0d958d37f57ce11b4e7317a2786b618d688828"
+    },
+    {
+      "path": "tests/test_op.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a1901cfc03b6e75b548e472462c4c2dc2593315e",
+      "size": 62401,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/a1901cfc03b6e75b548e472462c4c2dc2593315e"
+    },
+    {
+      "path": "tests/test_op_naming_convention.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b0fa765e544d13e84408fa37cef8cbde79f2e3f3",
+      "size": 6194,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/b0fa765e544d13e84408fa37cef8cbde79f2e3f3"
+    },
+    {
+      "path": "tests/test_oracle.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2b5c4ba95e6be4ffeaddac92212378f520b54a4d",
+      "size": 14945,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/2b5c4ba95e6be4ffeaddac92212378f520b54a4d"
+    },
+    {
+      "path": "tests/test_plugin.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "587ea86c711d6ed9f2b9f2a8ebd85d84ac5b1ecd",
+      "size": 14877,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/587ea86c711d6ed9f2b9f2a8ebd85d84ac5b1ecd"
+    },
+    {
+      "path": "tests/test_post_write.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c1a5c17f4e7e1216baf6416a4a65e0e7cb8ef642",
+      "size": 18704,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/c1a5c17f4e7e1216baf6416a4a65e0e7cb8ef642"
+    },
+    {
+      "path": "tests/test_postgresql.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dd8bd028873ee3428f4bd1e4abc99b7eb647dabc",
+      "size": 59754,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/dd8bd028873ee3428f4bd1e4abc99b7eb647dabc"
+    },
+    {
+      "path": "tests/test_revision.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1534a681aff4634e7816b98192e2f09b8890ee6f",
+      "size": 50763,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/1534a681aff4634e7816b98192e2f09b8890ee6f"
+    },
+    {
+      "path": "tests/test_script_consumption.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5746979d87377dc3c645e18d2ab98c685522cee7",
+      "size": 36926,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/5746979d87377dc3c645e18d2ab98c685522cee7"
+    },
+    {
+      "path": "tests/test_script_production.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "20360f478c66170906a920ae98bbf8945d0b2c52",
+      "size": 52610,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/20360f478c66170906a920ae98bbf8945d0b2c52"
+    },
+    {
+      "path": "tests/test_sqlite.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "45778ae77e3065994d699d9b9e02d7f4041a260a",
+      "size": 11115,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/45778ae77e3065994d699d9b9e02d7f4041a260a"
+    },
+    {
+      "path": "tests/test_stubs.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "583101395dad19df5de1b3c24798c349ec1b7334",
+      "size": 1715,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/583101395dad19df5de1b3c24798c349ec1b7334"
+    },
+    {
+      "path": "tests/test_suite.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "733a0470c3524cff14b8d3a54298cb7055db5599",
+      "size": 44,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/733a0470c3524cff14b8d3a54298cb7055db5599"
+    },
+    {
+      "path": "tests/test_version_table.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8964022c062cd3febf354a73448c150152a57ada",
+      "size": 15008,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/8964022c062cd3febf354a73448c150152a57ada"
+    },
+    {
+      "path": "tests/test_version_traversal.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2fd07a95b604b1607ab7347dfad67cb16b220160",
+      "size": 47935,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/2fd07a95b604b1607ab7347dfad67cb16b220160"
+    },
+    {
+      "path": "tools",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "40100932691ba7acddcf864ad0817b6691552d9c",
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/trees/40100932691ba7acddcf864ad0817b6691552d9c"
+    },
+    {
+      "path": "tools/toxnox.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "29d823a9ed829954f5981186d4981611f9d8c0e7",
+      "size": 8965,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/29d823a9ed829954f5981186d4981611f9d8c0e7"
+    },
+    {
+      "path": "tools/warn_tox.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a4530b8928e4e9897474f4ba742986b320c3f9f2",
+      "size": 303,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/a4530b8928e4e9897474f4ba742986b320c3f9f2"
+    },
+    {
+      "path": "tools/write_pyi.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6da038f108b376f57e8b0c8445eda977b6011bbc",
+      "size": 14992,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/6da038f108b376f57e8b0c8445eda977b6011bbc"
+    },
+    {
+      "path": "tox.ini",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3d7fe7e18222fd54e2e49237a78327cd641e7917",
+      "size": 2948,
+      "url": "https://api.github.com/repos/sqlalchemy/alembic/git/blobs/3d7fe7e18222fd54e2e49237a78327cd641e7917"
+    }
+  ],
+  "truncated": false
+}

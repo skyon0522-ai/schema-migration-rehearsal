@@ -1,0 +1,801 @@
+{
+  "pin": "1bc21b86dd6ddd07ac696e2d73b6cb200dd97bbd",
+  "repository": "https://github.com/sqlalchemy/alembic",
+  "archive_url": "https://codeload.github.com/sqlalchemy/alembic/tar.gz/1bc21b86dd6ddd07ac696e2d73b6cb200dd97bbd",
+  "archive_sha256": "adb56d941ff92aba1fd8c1f8efa3f5f36b54dfd7ade7d7eacf17f147f69f1824",
+  "commit_tree_sha": "e3b8e6cbbd2f64c7b75942a2746dc950a7f97da4",
+  "tree_sha": "1bc21b86dd6ddd07ac696e2d73b6cb200dd97bbd",
+  "complete_git_blob_matches": 195,
+  "original": "<historical-candidate>/original/alembic",
+  "duplicate": "<historical-candidate>/components/alembic",
+  "source_readback_equal": true,
+  "license_notice_paths": {
+    "LICENSE": {
+      "bytes": 1059,
+      "sha256": "6e68d94a03a0e3e327ddf3e86d1ebedc14eece3922022618fc246a36296fd0cc"
+    }
+  },
+  "license": "MIT",
+  "source_files": {
+    ".github/CODE_OF_CONDUCT.md": {
+      "bytes": 2090,
+      "sha256": "d67fa3b78b462be047e2d7c52953fcd4b5cf5ae2e652de3d44f6799dc6cac1e3"
+    },
+    ".github/CONTRIBUTING.md": {
+      "bytes": 2977,
+      "sha256": "f31fffa7231280edc9e31dc5da2ab5dd0a4551d061df8c8d3e5359bf2abb7e56"
+    },
+    ".github/FUNDING.yml": {
+      "bytes": 108,
+      "sha256": "ae90c24ca997085b9a0d76485c5d7967956ee1ef21d6315edc24754e8e48d4cc"
+    },
+    ".github/ISSUE_TEMPLATE/bug_report.md": {
+      "bytes": 1112,
+      "sha256": "693da0a09609aaad5fc4f8554249602acdb1c5ac1b326e5429568f15fbeb8415"
+    },
+    ".github/ISSUE_TEMPLATE/config.yml": {
+      "bytes": 734,
+      "sha256": "f8ef0a39157de1922bb16f6644500941cc8038febddb1bca3fc037cf40c1c73f"
+    },
+    ".github/ISSUE_TEMPLATE/use_case.md": {
+      "bytes": 842,
+      "sha256": "808ac3ac398d689548141bbd89dd5875d535aac9f4c65eb69dcbf0ccbe605414"
+    },
+    ".github/SECURITY.md": {
+      "bytes": 277,
+      "sha256": "3858d52d46ec322f45800fa4078b97628e8ccc1ff2fdfc5d1977372710dab845"
+    },
+    ".github/dependabot.yml": {
+      "bytes": 903,
+      "sha256": "c1c6566d6a6319010cccf775d490fc05dc66747cfc00495bce1f038a3b42f366"
+    },
+    ".github/pull_request_template.md": {
+      "bytes": 1124,
+      "sha256": "04d12aeea30d2f44f5e9307384c5eca49841cdbae002536d2a64eb76a4b55fa6"
+    },
+    ".github/workflows/run-on-pr.yaml": {
+      "bytes": 2118,
+      "sha256": "2a58d00da15f456eb4396e512fe2e5e01e3753084289dfd13d7fcec771fd562f"
+    },
+    ".github/workflows/run-test.yaml": {
+      "bytes": 2389,
+      "sha256": "c3038ce8b366d4697afd7bffb94e96e9bc0bf78f3e72fb2919696d83481b3d09"
+    },
+    ".gitignore": {
+      "bytes": 280,
+      "sha256": "7bb5a0d0d6e46d8fe82b54cca9218f1487051fed6f0a1be0e54811b6da8c5798"
+    },
+    ".gitreview": {
+      "bytes": 177,
+      "sha256": "2c71d22c54553a0ab431c838a18fc50c75f25b227fbbbca72bfc790df7ea84e8"
+    },
+    ".pre-commit-config.yaml": {
+      "bytes": 697,
+      "sha256": "34c62a9fcb6c32f4361393da6c6ab5555b6e18e6b9e2a4093e73aca080ea4463"
+    },
+    "CHANGES": {
+      "bytes": 178,
+      "sha256": "3a70791e5e2db9819ac8f7c3498daab0104056d2552fb1a220a0ee9333f42325"
+    },
+    "LICENSE": {
+      "bytes": 1059,
+      "sha256": "6e68d94a03a0e3e327ddf3e86d1ebedc14eece3922022618fc246a36296fd0cc"
+    },
+    "MANIFEST.in": {
+      "bytes": 341,
+      "sha256": "c7e535119fa777a8333dc9691439b7dc0bb6fca7f4714bc80080a93d3dfa79cd"
+    },
+    "README.rst": {
+      "bytes": 5737,
+      "sha256": "422e4662fb3bfb4170bd3323db618f3c495cb4d729d077a481ad29730148d87e"
+    },
+    "README.unittests.rst": {
+      "bytes": 15006,
+      "sha256": "eaa5b77d1c3b4cbee1b8621fb4d76ce9bd9fb210abb6718f24ab6dad7992af1c"
+    },
+    "alembic/__init__.py": {
+      "bytes": 92,
+      "sha256": "d8df16a7dbd9a840999607290340b2ce89124926ab0f3f1568e8b901e87ab18c"
+    },
+    "alembic/__main__.py": {
+      "bytes": 78,
+      "sha256": "dfbde6efe4c187bd89aab48c62f886af1087668f9c9f078cf00185f00db63e66"
+    },
+    "alembic/autogenerate/__init__.py": {
+      "bytes": 543,
+      "sha256": "9ed9944d78632e6e3fce6a88c3255a1027693c39fafeed7233dbd893afb9e771"
+    },
+    "alembic/autogenerate/api.py": {
+      "bytes": 22614,
+      "sha256": "85887aac9e1fe3e6cfc47781de1bc7862f2c1f531d1a3a49fa806737f543b4fe"
+    },
+    "alembic/autogenerate/compare/__init__.py": {
+      "bytes": 2217,
+      "sha256": "b0cd39e0e6046cb7a635ff704beaf59dcd8746e0b2c5953810fc1d091b9f558d"
+    },
+    "alembic/autogenerate/compare/comments.py": {
+      "bytes": 3157,
+      "sha256": "e1d93b590b518fe99c061a37bb935d519a03dd212f8a4f902e0015bc51c1d1d2"
+    },
+    "alembic/autogenerate/compare/constraints.py": {
+      "bytes": 27993,
+      "sha256": "9c06148b69990a3fcab8b7192d995958b698d9b4843c1589981c4b8c977abeee"
+    },
+    "alembic/autogenerate/compare/schema.py": {
+      "bytes": 1641,
+      "sha256": "79e8904d8b7e85800a1efd468d4d2c6c4d6bf830c64377f3ce0b0e15296061dd"
+    },
+    "alembic/autogenerate/compare/server_defaults.py": {
+      "bytes": 10678,
+      "sha256": "67fcb2ea4fd3ea225decb2833b71efe114dce6e2b388abf806aaa602270a5f6d"
+    },
+    "alembic/autogenerate/compare/tables.py": {
+      "bytes": 10504,
+      "sha256": "68b2023090fb3081bb704d3b8c165fe8a18ca7a8e932932a5b2f08eaa6a43338"
+    },
+    "alembic/autogenerate/compare/types.py": {
+      "bytes": 3910,
+      "sha256": "0abf40d93739dde8899d1231413215ebb262483c4610e7f849d739d2c47d29b6"
+    },
+    "alembic/autogenerate/compare/util.py": {
+      "bytes": 7196,
+      "sha256": "8d8cf847dc0f17c2f290aef0d588da9c098d7503b52f1f1b848fbfa2f5d95d7e"
+    },
+    "alembic/autogenerate/render.py": {
+      "bytes": 38880,
+      "sha256": "c307dbc9135b02fe0278853cd42eccc1c0cd7296c2c300d396139008f542d348"
+    },
+    "alembic/autogenerate/rewriter.py": {
+      "bytes": 7676,
+      "sha256": "b96ce1d6256210c7bd8dadcafb70a7a72d5637bad4f01dbce463716fe35bbc9c"
+    },
+    "alembic/command.py": {
+      "bytes": 25359,
+      "sha256": "40fa925f798b81fb4f35c8bc8deb25af5ee697ace63bb680856b6de7292e90ad"
+    },
+    "alembic/config.py": {
+      "bytes": 34788,
+      "sha256": "34bfe62f3ee3021a29c22057e5e9c61c3eff128fe92aa9dee31fd20a33552e84"
+    },
+    "alembic/context.py": {
+      "bytes": 195,
+      "sha256": "84ad4024e417276f41867dbbe8661ca2cc5e1bba42e5a6514f913c7386cc2784"
+    },
+    "alembic/context.pyi": {
+      "bytes": 32585,
+      "sha256": "eb39e73baecbfbf0c75a1c5b36339f8e75c21a48323b3549f667d25cedf3d639"
+    },
+    "alembic/ddl/__init__.py": {
+      "bytes": 152,
+      "sha256": "0dff1fcb8567fda6cff01eeadf1f20c85c04c272f0ea1b362e3b7f6d5dc46561"
+    },
+    "alembic/ddl/_autogen.py": {
+      "bytes": 10176,
+      "sha256": "553f968d23c0acc7723dab875663421752e2081d8d34f11ff9ff92f4646ec1d3"
+    },
+    "alembic/ddl/base.py": {
+      "bytes": 12111,
+      "sha256": "c367416334a7e0bab91ace9405c150e9ed59b9dfebdcd6a9ecf91502f85ee42e"
+    },
+    "alembic/ddl/impl.py": {
+      "bytes": 31352,
+      "sha256": "f9c80657e52a12ce879e373b5730bc9eb83ab3cd2070ddbc983e254753e51c0b"
+    },
+    "alembic/ddl/mssql.py": {
+      "bytes": 17121,
+      "sha256": "e16891474fd4b869dc3a4025e5cc9fbf6b5f9cce4b9fb68409b460e53b78f064"
+    },
+    "alembic/ddl/mysql.py": {
+      "bytes": 21188,
+      "sha256": "ffb7fe57fef20eeb3b7fa82851dd9c6828c66a2725ab2d439bc2d2c7ada09a28"
+    },
+    "alembic/ddl/oracle.py": {
+      "bytes": 6212,
+      "sha256": "3c7c667b9de91b48b2a0c3b3eb58d28bca4b2efe795414918baf6c1d727232d2"
+    },
+    "alembic/ddl/postgresql.py": {
+      "bytes": 30061,
+      "sha256": "aa7f1702f93a98b10f140adf3d728c96ad2ab37412223104deaa972c2a424bba"
+    },
+    "alembic/ddl/sqlite.py": {
+      "bytes": 7925,
+      "sha256": "88ccb511e6b106d9547b030aaab3caeef1e47211f4c87cbffb888ffb2e96a215"
+    },
+    "alembic/environment.py": {
+      "bytes": 43,
+      "sha256": "30ce653dac864f4e07dda7a78351fb190f07100b375465f9cb2ea60cb08f2d3e"
+    },
+    "alembic/ext/__init__.py": {
+      "bytes": 318,
+      "sha256": "da4176392444bc6e936266beaa5b7c8c85449dba69a7eb1bddd59a1dad30b655"
+    },
+    "alembic/ext/checkconstraint_byname.py": {
+      "bytes": 6465,
+      "sha256": "aba227d9f145201a784aab7dbec75d34981e53ad5c70dbfdbbebc1f24938b18b"
+    },
+    "alembic/migration.py": {
+      "bytes": 41,
+      "sha256": "315e858eeeab66d9f67d34442b35eb09933a688046208e0e319162c745fe18bb"
+    },
+    "alembic/op.py": {
+      "bytes": 167,
+      "sha256": "7e51ed72c56a383f9981928ada9bfe089e42c21f8a27ba6e314357ce2b21c4bc"
+    },
+    "alembic/op.pyi": {
+      "bytes": 52937,
+      "sha256": "30bcd57e4d83b4df52785beb06132998777e38a5931e1d81e8fe984780e5ebba"
+    },
+    "alembic/operations/__init__.py": {
+      "bytes": 317,
+      "sha256": "c5d6573161894506a6e826d3b4157812468e7bb0d490795a5ec551d9ef626e37"
+    },
+    "alembic/operations/base.py": {
+      "bytes": 77791,
+      "sha256": "78682ee119dae948082c3f687a19988a32ac7a075f91382cacd97833122dcdf0"
+    },
+    "alembic/operations/batch.py": {
+      "bytes": 29518,
+      "sha256": "f13a33aba36068943825d19d51709d34e69d61ce8b466ec3502ccef2a1a5ebe4"
+    },
+    "alembic/operations/ops.py": {
+      "bytes": 98319,
+      "sha256": "f0df2e6f9e88f7cf319df746c9f1243752f9e5119bd683c32ece6043b9951419"
+    },
+    "alembic/operations/schemaobj.py": {
+      "bytes": 8975,
+      "sha256": "babaefacd6e3e6efd74c9023120213f5336a8b09c4cc855d2ca5c2ca495fbeb5"
+    },
+    "alembic/operations/toimpl.py": {
+      "bytes": 8340,
+      "sha256": "c30d6b8e081b1a9c29348ceffa7324269a076d2330a7b5c86a1b30c3e436798a"
+    },
+    "alembic/py.typed": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "alembic/runtime/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "alembic/runtime/environment.py": {
+      "bytes": 42511,
+      "sha256": "ef1e6d897b6df59be0a99dedf32ff09429631873ccb9585e9680efaaf5fc3159"
+    },
+    "alembic/runtime/migration.py": {
+      "bytes": 48090,
+      "sha256": "3f0137890bd1eedef93e5f6ec217061e9185f5a6f971430ec9a2b4d2192a5c41"
+    },
+    "alembic/runtime/plugins.py": {
+      "bytes": 7208,
+      "sha256": "d31de53e33ff8ddd1da495c0fa2b4f5f88e9ad6d9e40bbccdeeeeb3b65a5e7f1"
+    },
+    "alembic/script/__init__.py": {
+      "bytes": 100,
+      "sha256": "9528f4e8edfdd48cb96af5808aaf123ece8df11060c6448f8cff30a5770d0c68"
+    },
+    "alembic/script/base.py": {
+      "bytes": 36992,
+      "sha256": "377bfedf325ccf3cab4c7eaa1dd45613209aeb4d1a1b9223436830e7ec0ee98d"
+    },
+    "alembic/script/revision.py": {
+      "bytes": 61943,
+      "sha256": "e344a758dfabad1925d9cc91f5af9b29cf81e65d184bf48c78f8a5bf02b58a95"
+    },
+    "alembic/script/write_hooks.py": {
+      "bytes": 5369,
+      "sha256": "2961f5db6e7487f25c741906b0b568f492982a935c2710548f067daffafcf017"
+    },
+    "alembic/templates/async/README": {
+      "bytes": 58,
+      "sha256": "21256d00ebeabca93fe5384ce62a0913e94c92f7fd21b92715415553fbcf99ae"
+    },
+    "alembic/templates/async/alembic.ini.mako": {
+      "bytes": 5010,
+      "sha256": "7ac6ee0a7a64ca39ed242ee4f4d9d870203386b450f0d542e295a29de89193fc"
+    },
+    "alembic/templates/async/env.py": {
+      "bytes": 2389,
+      "sha256": "cdb3827f763bc36960f768714b0986d4c33fef2e7a8bfa111f800aa74a50058a"
+    },
+    "alembic/templates/async/script.py.mako": {
+      "bytes": 704,
+      "sha256": "d38920781b4d31ae1c0a71bc09f41c2ade8feab9e5a087e3f30cb4bbf0c1c9d3"
+    },
+    "alembic/templates/generic/README": {
+      "bytes": 38,
+      "sha256": "31595cf53626af9ed16e15c44fa43183209cc163fbc3ebcb904b22ac436a8884"
+    },
+    "alembic/templates/generic/alembic.ini.mako": {
+      "bytes": 5010,
+      "sha256": "da2daf3ec1904a613d5cc88bcfcb52045fd4200f0f265d3e7c0bdb4559a22bfc"
+    },
+    "alembic/templates/generic/env.py": {
+      "bytes": 2103,
+      "sha256": "4cb4563955b75e9b7f4e97fc245ce59e83e7feaa14bbc515efb638a3d5c3eb22"
+    },
+    "alembic/templates/generic/script.py.mako": {
+      "bytes": 704,
+      "sha256": "d38920781b4d31ae1c0a71bc09f41c2ade8feab9e5a087e3f30cb4bbf0c1c9d3"
+    },
+    "alembic/templates/multidb/README": {
+      "bytes": 606,
+      "sha256": "7562c3867060a610383736fbb0d94c7c24b7ff4e98a956c7873fbd3b924dab22"
+    },
+    "alembic/templates/multidb/alembic.ini.mako": {
+      "bytes": 5336,
+      "sha256": "6ac56ddda255c23baec3d6e8a5f3287d5be89cedf57285c16d5e4378c44de9c3"
+    },
+    "alembic/templates/multidb/env.py": {
+      "bytes": 4230,
+      "sha256": "eb33639d6f265c6524edead3b00beb7e1beaa1ccc9fa06a08d5ab56298366084"
+    },
+    "alembic/templates/multidb/script.py.mako": {
+      "bytes": 1235,
+      "sha256": "65b0973242395a3d9dc0d29cc6e54690a67b21abfddc1371fdb338cdb1a2ddcf"
+    },
+    "alembic/templates/pyproject/README": {
+      "bytes": 60,
+      "sha256": "74c848885a1e33b11d79a39706cde6550eb35c008cc865c36ff50107ab06440d"
+    },
+    "alembic/templates/pyproject/alembic.ini.mako": {
+      "bytes": 782,
+      "sha256": "6d09c4a327672ce52083dbcd6d33b2b38af931a5bc966c181574ab95f744124c"
+    },
+    "alembic/templates/pyproject/env.py": {
+      "bytes": 2103,
+      "sha256": "4cb4563955b75e9b7f4e97fc245ce59e83e7feaa14bbc515efb638a3d5c3eb22"
+    },
+    "alembic/templates/pyproject/pyproject.toml.mako": {
+      "bytes": 3000,
+      "sha256": "5bac7f2bec4b7c4bf233c0f8077160d25db43f587a48f2b7df5f3ca6a445ae84"
+    },
+    "alembic/templates/pyproject/script.py.mako": {
+      "bytes": 704,
+      "sha256": "d38920781b4d31ae1c0a71bc09f41c2ade8feab9e5a087e3f30cb4bbf0c1c9d3"
+    },
+    "alembic/templates/pyproject_async/README": {
+      "bytes": 45,
+      "sha256": "d90e57704a2e8aa43e4c9b2c3bdf34e4b44e91551dd05e9def8ad39ee2eb89f0"
+    },
+    "alembic/templates/pyproject_async/alembic.ini.mako": {
+      "bytes": 782,
+      "sha256": "6d09c4a327672ce52083dbcd6d33b2b38af931a5bc966c181574ab95f744124c"
+    },
+    "alembic/templates/pyproject_async/env.py": {
+      "bytes": 2389,
+      "sha256": "cdb3827f763bc36960f768714b0986d4c33fef2e7a8bfa111f800aa74a50058a"
+    },
+    "alembic/templates/pyproject_async/pyproject.toml.mako": {
+      "bytes": 3000,
+      "sha256": "5bac7f2bec4b7c4bf233c0f8077160d25db43f587a48f2b7df5f3ca6a445ae84"
+    },
+    "alembic/templates/pyproject_async/script.py.mako": {
+      "bytes": 704,
+      "sha256": "d38920781b4d31ae1c0a71bc09f41c2ade8feab9e5a087e3f30cb4bbf0c1c9d3"
+    },
+    "alembic/testing/__init__.py": {
+      "bytes": 1178,
+      "sha256": "2a427878890dce5eb2dde5d5277c350ea9471ee311e745a10e5fa2eb53cf186e"
+    },
+    "alembic/testing/assertions.py": {
+      "bytes": 5193,
+      "sha256": "9f55ca2db8b0bd186bc3c59ee70a3390fb86ff5e37ac2f67cc6a608db5ecaa7d"
+    },
+    "alembic/testing/env.py": {
+      "bytes": 11591,
+      "sha256": "a91b281d75bffd04917b199eec4c0af2c4111ad702cb8bf17a665c26b7000703"
+    },
+    "alembic/testing/fixtures.py": {
+      "bytes": 11677,
+      "sha256": "f342d2f9ccc0ebe0775260a6e198ead049f55d5e8923918608db25351753d30c"
+    },
+    "alembic/testing/plugin/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "alembic/testing/plugin/bootstrap.py": {
+      "bytes": 50,
+      "sha256": "f42eb0b631ab215ced67ddbcc36ee1b1013429c8c32c852d50ddddbd92ac3159"
+    },
+    "alembic/testing/requirements.py": {
+      "bytes": 4707,
+      "sha256": "d2e0416637615ab6f0b58c080f272a18e65676f5af8f497601c0e05ded96484f"
+    },
+    "alembic/testing/schemacompare.py": {
+      "bytes": 4838,
+      "sha256": "37952a48d08e25eb48282e2f2a1a58cd01298f4f1791d808a2a06610f437b657"
+    },
+    "alembic/testing/suite/__init__.py": {
+      "bytes": 288,
+      "sha256": "32f13bfa1c1b695375ab734cfb3b46c4e454f5d9c87a550220d2aa3717b09fb6"
+    },
+    "alembic/testing/suite/_autogen_fixtures.py": {
+      "bytes": 14153,
+      "sha256": "c062d8d32d50f628812b58c6221d4bec5e8663036957388a949d2f5bd1de6b0c"
+    },
+    "alembic/testing/suite/test_autogen_comments.py": {
+      "bytes": 6283,
+      "sha256": "6841aa2940f0e241e39c3936f7c6a819c42f5c95a66577085ffd85c47e1c24af"
+    },
+    "alembic/testing/suite/test_autogen_computed.py": {
+      "bytes": 4554,
+      "sha256": "a6e274841b4bccdcfc2e23c6a833d2f2fb1ee9d512f55081a54770f9c3a4b19a"
+    },
+    "alembic/testing/suite/test_autogen_diffs.py": {
+      "bytes": 8394,
+      "sha256": "4f8491d67fe499c38a6214785b5f9d0347b9b1d749ebd0d254bd875bdea40241"
+    },
+    "alembic/testing/suite/test_autogen_fks.py": {
+      "bytes": 32930,
+      "sha256": "c072a30f81207fb219947d07630f9cf2eb62d23849a4e9b92b8d903177f9b48c"
+    },
+    "alembic/testing/suite/test_autogen_identity.py": {
+      "bytes": 5824,
+      "sha256": "91cbaa9e01bba9700a3c90d7e14f2c4733ca1c4244087b99d03b6e692ead5649"
+    },
+    "alembic/testing/suite/test_environment.py": {
+      "bytes": 11260,
+      "sha256": "ac2cf5c014115d097d984691fafa0d4cec382708b6890acf3c9f02276ec0dc7d"
+    },
+    "alembic/testing/suite/test_op.py": {
+      "bytes": 1343,
+      "sha256": "d97402766fcd9a73f11c6b868fb866c4ccc884ac57368b54b0a740097cc4d663"
+    },
+    "alembic/testing/util.py": {
+      "bytes": 3003,
+      "sha256": "44b7a15919403ee6d7c0472335ec54cba04e3de4094b25e8c3a0dc4a729b10ed"
+    },
+    "alembic/testing/warnings.py": {
+      "bytes": 1322,
+      "sha256": "1e8e050fa83560ecddf315eb1da3ec94e8f6dc27426407339ff909218c4a90a5"
+    },
+    "alembic/util/__init__.py": {
+      "bytes": 1781,
+      "sha256": "eea60014e31ea4a88e0429c68bb8cc803fe66eaf9b30c84308119577361dee8e"
+    },
+    "alembic/util/compat.py": {
+      "bytes": 3828,
+      "sha256": "bb769ab0cc9339c72366136df7b23ec0c52b677ffc0a220ba08f6c94f8c8cead"
+    },
+    "alembic/util/editor.py": {
+      "bytes": 2467,
+      "sha256": "15c76ae48fb16451b5c18ea33219a41954137466f8c369928075477b78784d0e"
+    },
+    "alembic/util/exc.py": {
+      "bytes": 944,
+      "sha256": "3ca150476cae5b83db92774b6cfabd1110ba625334e8efe94ec89e6e6936f8cd"
+    },
+    "alembic/util/langhelpers.py": {
+      "bytes": 13053,
+      "sha256": "bb0c7399a0c453b66b0d17da50514f72c66c77fc9ea966c0b88ad826811f63c0"
+    },
+    "alembic/util/messaging.py": {
+      "bytes": 3235,
+      "sha256": "b98946376b27ddd3b21e62ed69247751740206bf1de304f9274ba3ef8c2b0f49"
+    },
+    "alembic/util/pyfiles.py": {
+      "bytes": 4603,
+      "sha256": "3c6d0fdde6a9b92b01cb19e8302a60131373d1f386ecdceba6a722a3f94011c5"
+    },
+    "alembic/util/sqla_compat.py": {
+      "bytes": 19346,
+      "sha256": "b4cf72728c191352e61ef133f028fef036e4cec52b292a3cbc824e2e748bcbab"
+    },
+    "docs/build/Makefile": {
+      "bytes": 3564,
+      "sha256": "23bcf78b241559e8c8723a477dc6f2d89a732832531d2ac726d3f5642af04432"
+    },
+    "docs/build/_static/nature_override.css": {
+      "bytes": 507,
+      "sha256": "19251f5d55a0c51769f29737fbe7a198d2384370537c3098f8d3a1c5e5be151b"
+    },
+    "docs/build/_static/site_custom_css.css": {
+      "bytes": 43,
+      "sha256": "f213bd1206c02d8fb28c28bd1cc2c99addc58463c150fccda5525cb6cb76cf37"
+    },
+    "docs/build/_templates/site_custom_sidebars.html": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/build/api/api_overview.png": {
+      "bytes": 123965,
+      "sha256": "b403281a4d83d6d921600e7f5c4701c956c1ec33f5b07c0430f68399316f2434"
+    },
+    "docs/build/api/autogenerate.rst": {
+      "bytes": 24750,
+      "sha256": "6402e9dc4e3f8b6b65aa4b1838c37ea56e53093dcb32a69d3951b7ef148c944b"
+    },
+    "docs/build/api/commands.rst": {
+      "bytes": 1721,
+      "sha256": "54b90e9bcf861648b5752e2fc1020a78e20de280f635ec24518cde6a060c5815"
+    },
+    "docs/build/api/config.rst": {
+      "bytes": 1232,
+      "sha256": "93747bd208fcd1e78630990baa971a5007994f3ccedd2f1f60ae9df83c9de579"
+    },
+    "docs/build/api/ddl.rst": {
+      "bytes": 1090,
+      "sha256": "9c53c16786947b4864a196220897e0c282cdcaf8fc23713c86880e290bb00cf1"
+    },
+    "docs/build/api/exceptions.rst": {
+      "bytes": 157,
+      "sha256": "754b56572821ad0272adf0d6f5407232c646b18740883d5d36fe3d9091faa424"
+    },
+    "docs/build/api/index.rst": {
+      "bytes": 1037,
+      "sha256": "1d7ce214c5f2370ea3c5b68cc3877dc72c76517c3404eeeef93e3aaefb60f348"
+    },
+    "docs/build/api/operations.rst": {
+      "bytes": 9415,
+      "sha256": "0f77297baa304fd90fa011edfdca2e1547cd8b33590401e7a5a6297cc5ff2414"
+    },
+    "docs/build/api/overview.rst": {
+      "bytes": 3409,
+      "sha256": "a87f41b590ecbf60fc87644a4802e133201fc023ffe3344228e4e1c4e706d694"
+    },
+    "docs/build/api/plugins.rst": {
+      "bytes": 20498,
+      "sha256": "2a2afc9ada1dd5bb00f934376eee09700babc2e401f17064c9a9db06f4e58331"
+    },
+    "docs/build/api/runtime.rst": {
+      "bytes": 1505,
+      "sha256": "21dd263c5a8377d5aa05c878549183ccc2c7931bf9cad42820c8af49e868ac5a"
+    },
+    "docs/build/api/script.rst": {
+      "bytes": 533,
+      "sha256": "ca8c89855d86dc4b94624eeb79cf36fe405572ecc6919efe22765b4a66869e19"
+    },
+    "docs/build/assets/api_overview.graffle": {
+      "bytes": 69295,
+      "sha256": "f728fc67cafd944d318be81563e73256269ca68958422b8df98fae0956a91286"
+    },
+    "docs/build/autogenerate.rst": {
+      "bytes": 42995,
+      "sha256": "c76115a47236cd779097d1535a0490cdf505c83fdadae695b15d59d9ca92e31b"
+    },
+    "docs/build/batch.rst": {
+      "bytes": 17975,
+      "sha256": "99faadcdd062e020e9a76fb8e52c7066980d7aae467800fa62d7457357b26f9b"
+    },
+    "docs/build/branches.rst": {
+      "bytes": 35218,
+      "sha256": "d5a5ec1063e16b264cc15431853bed0947c9851ad571c7c334038e77099559f8"
+    },
+    "docs/build/changelog.rst": {
+      "bytes": 260838,
+      "sha256": "32389d3d8a27e2608583c0a57a2a6ffa3769aaad43f2b9ef74e9815430c0e06d"
+    },
+    "docs/build/conf.py": {
+      "bytes": 8770,
+      "sha256": "35bf9d5e4f053960e049eef0ecb2cc35f526a55eddd586a402d49d0d927d5fc3"
+    },
+    "docs/build/cookbook.rst": {
+      "bytes": 65066,
+      "sha256": "d63835342aad868f68d1fa602634057c8609cc11ae913a58094b4a73a1821cfa"
+    },
+    "docs/build/front.rst": {
+      "bytes": 4323,
+      "sha256": "36d5da0081c0d3dc30fbbab6b00b23a4a1f0114c6fc4d3f270e3ab94949efafd"
+    },
+    "docs/build/index.rst": {
+      "bytes": 533,
+      "sha256": "58a926546f87afb165c70013086d8e81f1317d87ebc60ad649760a75769e113b"
+    },
+    "docs/build/make.bat": {
+      "bytes": 3077,
+      "sha256": "9483b8ec3b7eaac0b84e773b2cb392ff32de565ce9d6f9172496cf1d4776997b"
+    },
+    "docs/build/naming.rst": {
+      "bytes": 11025,
+      "sha256": "34c923c1a7e5b9a393c5b5960639c344c3242a3079e51e1bb0e33011c6389f0b"
+    },
+    "docs/build/offline.rst": {
+      "bytes": 5620,
+      "sha256": "cce36a5f258bc190c94074c62087872b798517c1b7a3fe8f4dc22f7622eebd66"
+    },
+    "docs/build/ops.rst": {
+      "bytes": 2144,
+      "sha256": "ef4fa33d5b8e34c713ff24ab466a8abd4ee895e49ce62c9b7be3338b3eee9501"
+    },
+    "docs/build/requirements.txt": {
+      "bytes": 411,
+      "sha256": "c4aa282e734c5fee38062b21b91a8f300c875ddd36f44dd7bb2dfb7b2f198f29"
+    },
+    "docs/build/tutorial.rst": {
+      "bytes": 43214,
+      "sha256": "34657d5591e198c922448abff12f12f619ecf0b2fbdb2e188b03d8a2e4427d42"
+    },
+    "docs/build/unreleased/1504.rst": {
+      "bytes": 395,
+      "sha256": "4c1dcd2b00de48dcb470aa2fb6c2ef2d16204ad6951314343449379b59224720"
+    },
+    "docs/build/unreleased/1873.rst": {
+      "bytes": 578,
+      "sha256": "4d9c6ff84936a46be9999f56182931756bde68a24544af9c6620d84a02584d46"
+    },
+    "docs/build/unreleased/README.txt": {
+      "bytes": 413,
+      "sha256": "9dd9b3fed6fe8ef6e892045464ecde62e94cc2746a993f92eccb2892b49d3407"
+    },
+    "noxfile.py": {
+      "bytes": 6568,
+      "sha256": "ccfd89eff2aa2f7fa518a6896ea305fa8f3984a359ec6716d0c1506ef5a9d541"
+    },
+    "pyproject.toml": {
+      "bytes": 3446,
+      "sha256": "5290b8729141fc48cf02d9abd06be65e66ecd9be68c2d85465aa51e4a4274fe8"
+    },
+    "reap_dbs.py": {
+      "bytes": 708,
+      "sha256": "66bd9bac399a545bdcd02cc97b95a7995134dce74471f88f8981b5da5e0b343b"
+    },
+    "setup.cfg": {
+      "bytes": 1207,
+      "sha256": "bdeb663c0f787792f757737282fdd70defe9b4072b8e41a13d613733c7c1e89c"
+    },
+    "setup.py": {
+      "bytes": 38,
+      "sha256": "843ac26c38a41abae578250bc0f9419194b320a0f67327d941037a4268f6cfe7"
+    },
+    "tests/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "tests/_large_map.py": {
+      "bytes": 7317,
+      "sha256": "98dbaebcd430d47bb16973677944c72813451d4dece5043e4717e74dc37bb4fe"
+    },
+    "tests/conftest.py": {
+      "bytes": 2278,
+      "sha256": "162a5042948e6f6c8a27e95de2970741adc6e226985761270f85314c4ac3768c"
+    },
+    "tests/requirements.py": {
+      "bytes": 13233,
+      "sha256": "60425c11a2772d1c07a818d90aa1beb6c662006c5b48140e184fb04ec6c75b58"
+    },
+    "tests/test_autogen_check_constraints.py": {
+      "bytes": 30646,
+      "sha256": "6f5bfb3842740cefe4173aa46bff0880dea2f9c5e116825f54f61734e2be565d"
+    },
+    "tests/test_autogen_composition.py": {
+      "bytes": 24596,
+      "sha256": "7962a51bf4bf7825fa273b3ce855ad8a661273c1ab31ca5b421718c4ccaacbd9"
+    },
+    "tests/test_autogen_diffs.py": {
+      "bytes": 82981,
+      "sha256": "883294cf02f40a1a9698466c557e84cdef3a8f57638f10e0421dff96d2d8779d"
+    },
+    "tests/test_autogen_indexes.py": {
+      "bytes": 63794,
+      "sha256": "9c76cf78c689adf18cc8303a443d5fbec58ea37f31fc4deb9511d61351d6ef62"
+    },
+    "tests/test_autogen_render.py": {
+      "bytes": 101647,
+      "sha256": "20abc1b2cb3098987149bff2fe8702787c7505e18dd7a0c74e9986bd346e6bdf"
+    },
+    "tests/test_batch.py": {
+      "bytes": 104107,
+      "sha256": "d7770b8941ee964c218b530a9f03e01c4f25f137a68119badc3bcf479bcebf28"
+    },
+    "tests/test_bulk_insert.py": {
+      "bytes": 10358,
+      "sha256": "0223c6d9da38dc9bb14d591803e676b7a80ed7b6ae8985cda1f5ef21c934fbcc"
+    },
+    "tests/test_command.py": {
+      "bytes": 57964,
+      "sha256": "6ef21fc99a4e49d8235a00b0a815d2a112a5b05fe89b808747d0a50f4c8f2d29"
+    },
+    "tests/test_config.py": {
+      "bytes": 22754,
+      "sha256": "499f787f87ebbafe16882cf954a91baa55768172df2368cd09d797410c8ee3bf"
+    },
+    "tests/test_dispatch.py": {
+      "bytes": 12878,
+      "sha256": "b2031fbf88cab0d3f5bf68214f804688d25289db91c91881983e88bb1c2d8190"
+    },
+    "tests/test_editor.py": {
+      "bytes": 3873,
+      "sha256": "f2a3957cd210f4ebe9072af259ca5f7be8c26e8b5ebc81079da74dffb2777173"
+    },
+    "tests/test_environment.py": {
+      "bytes": 5796,
+      "sha256": "5540b0492ea5d135f41ae1d7b5a56f122db505abab2bff87921e92ea9ad36529"
+    },
+    "tests/test_external_dialect.py": {
+      "bytes": 4093,
+      "sha256": "21a1fef26c679f17ae949193e5016d0549180e629acf045ddfb94e9cc199a222"
+    },
+    "tests/test_impl.py": {
+      "bytes": 2206,
+      "sha256": "56cb8d9cf7aab6190ba87511b2747d9f073cdf4db7185b2ee2a140e94424fbcd"
+    },
+    "tests/test_messaging.py": {
+      "bytes": 996,
+      "sha256": "5b08540d851e116e6929dfe55e4f58651ab6364fdec676959ce3b3e7a6023f70"
+    },
+    "tests/test_mssql.py": {
+      "bytes": 25076,
+      "sha256": "5dd8bacb1624bf064007b6f2f060a809a6bfb68d444ed05e0942d2eb6adbb1d1"
+    },
+    "tests/test_mysql.py": {
+      "bytes": 32908,
+      "sha256": "13c67fafe534465fb4d9dcca757ff045d798ead63b1ab9829f9c7910927a7bc1"
+    },
+    "tests/test_offline_environment.py": {
+      "bytes": 9111,
+      "sha256": "866aad16dc0b1a9d5eddd6e9173a8da5d3ea31fd6214113c62871985e465f437"
+    },
+    "tests/test_op.py": {
+      "bytes": 62401,
+      "sha256": "40142675623b7e9ccdb3408c9e77c6e0230d9d7c7871293b7139fa6f4fcaedaa"
+    },
+    "tests/test_op_naming_convention.py": {
+      "bytes": 6194,
+      "sha256": "277cc93dd245718d15694254a897eca660b0e95e176a864fa40205dc26bf3561"
+    },
+    "tests/test_oracle.py": {
+      "bytes": 14945,
+      "sha256": "285dba7c2652c182458693aeae20424e975e9353c2489f76944daf2ceb4e6030"
+    },
+    "tests/test_plugin.py": {
+      "bytes": 14877,
+      "sha256": "a19fa928f0f8718a13a8824c0d5844b16f4f563eec6bc2a0abf3f14dc937b4d0"
+    },
+    "tests/test_post_write.py": {
+      "bytes": 18704,
+      "sha256": "a94c244ce934ed7ef48fbefa0354803ecdc608a8fed471f1856a9555c170f00d"
+    },
+    "tests/test_postgresql.py": {
+      "bytes": 59754,
+      "sha256": "325797a1eda249606b96066604d8b59308a9893594dcd8bf7935b1634d0da77a"
+    },
+    "tests/test_revision.py": {
+      "bytes": 50763,
+      "sha256": "5e3d2e35cb3af89a4cb416e63fd6285e6408f501c8f7df0a9670b41903a65a64"
+    },
+    "tests/test_script_consumption.py": {
+      "bytes": 36926,
+      "sha256": "f9e8cdbebfdff1d46d34b1db1f06fca04006f81aff44168c5d48dea3a712aec5"
+    },
+    "tests/test_script_production.py": {
+      "bytes": 52610,
+      "sha256": "963ab613e15a41f456f72c5f85a6f94108e92c533fde91f708b8c9b4e13c6855"
+    },
+    "tests/test_sqlite.py": {
+      "bytes": 11115,
+      "sha256": "7df27604ad46b4d9917f0730abaab6d6f197a2daceee63dfed8f628619a8e10e"
+    },
+    "tests/test_stubs.py": {
+      "bytes": 1715,
+      "sha256": "b9b3f6cfcbd48b74e8390ffcc8933e9b1bed98e68a80e8fef9a7efadccb3d76d"
+    },
+    "tests/test_suite.py": {
+      "bytes": 44,
+      "sha256": "fbe621b851a3fa2050de3a60af5d20e79549497c533b8d968503ee2ff830835b"
+    },
+    "tests/test_version_table.py": {
+      "bytes": 15008,
+      "sha256": "833bf0a38c95acdf411007deb78f1d245338824b5adf833eca3811c2b109b493"
+    },
+    "tests/test_version_traversal.py": {
+      "bytes": 47935,
+      "sha256": "aef8aca28544778ace3b67bedd1fb77a72bf21faa33e0cb0cf9c22c7af9717bf"
+    },
+    "tools/toxnox.py": {
+      "bytes": 8965,
+      "sha256": "134a7006275108beacf29f14e0bbab7d62277fde728034391d0215e5a75e8bbe"
+    },
+    "tools/warn_tox.py": {
+      "bytes": 303,
+      "sha256": "30837af102c3cd6c4eea825394217ea6afc2e97618dc3e184c1bb5b1e78da82d"
+    },
+    "tools/write_pyi.py": {
+      "bytes": 14992,
+      "sha256": "7bc15710ff147740b14af4ce1e3cc96e40fe34ea30fb7792a9662a6976e8b282"
+    },
+    "tox.ini": {
+      "bytes": 2948,
+      "sha256": "6e348fba49e43afe403a6f6cf73cffb26010aaf03009675fbff329ccb60dfb62"
+    }
+  }
+}
