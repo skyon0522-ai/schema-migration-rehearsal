@@ -50,7 +50,7 @@ The command above uses a version-only lock and may download build dependencies. 
 | Path | Purpose |
 | --- | --- |
 | [components/alembic](components/alembic) | Byte-identical 195-file package/test duplicate actually executed by the worker. |
-| [rehearsal](rehearsal) | Four fixed SQL files, copied-API worker, accepted harness, derivation receipt and retained MIT notice. |
+| [rehearsal](rehearsal) | Four fixed SQL files, [copied-API worker](rehearsal/worker.py), [contract harness](rehearsal/check_contract.py), derivation receipt and retained MIT notice. |
 | [tools](tools) | Source-only verifier and prepared task-local portability adapter. |
 | [requirements.lock](requirements.lock) | 26 exact requirements pins, including upstream baseline test tools; observed bootstrap pip 24.0 is separate. |
 | [requirements.official-artifacts.hashed.lock](requirements.official-artifacts.hashed.lock) | Proposed hashes for the 26 selected official artifacts, scoped to the observed profile. |
