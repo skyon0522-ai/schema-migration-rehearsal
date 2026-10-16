@@ -71,7 +71,16 @@
     "Saved records and ownership markers are editable and unauthenticated.",
     "The fixed contract tests worker SIGKILL, not power loss or arbitrary migrations.",
     "No concurrent schema writers, distributed rollout or zero-downtime guarantee.",
-    "Different machine, remote CI, production use, publication and owner acceptance unperformed.",
+    "At this local operation-verification stage, different-machine execution, remote CI, production use, publication and owner acceptance had not yet occurred.",
     "Concurrent filesystem changes between inspection and deletion are not atomically excluded; independent closure of the cleanup finding remains pending."
-  ]
+  ],
+  "publication_followup": {
+    "verification_date": "2026-10-16",
+    "repository": "skyon0522-ai/schema-migration-rehearsal",
+    "published_head": "fd31b227cac3edb72783d6a88674b56d5db5d1a5",
+    "initial_ci_run_id": 38848337437,
+    "initial_ci_conclusion": "success",
+    "initial_ci_url": "https://github.com/skyon0522-ai/schema-migration-rehearsal/actions/runs/38848337437",
+    "scope": "Initial Linux GitHub Actions run at the published head; follow-up staged documentation is not covered."
+  }
 }

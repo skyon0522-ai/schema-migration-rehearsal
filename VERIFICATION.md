@@ -12,7 +12,7 @@ All 47 focused tests passed: 17 preparation/wrapper boundary tests and 30 saved-
 
 The generated screen matched 11 scenario rows, two interruption rows and four evidence checks to its JSON on desktop and mobile. Keyboard scrolling/details, local links and print styles were checked with no external requests. The [portable example](examples/current/report.html), [review JSON](examples/current/review.json) and [compact observation record](verification/linux-20261015.json) omit raw connection details and machine paths. Raw logs, local wheelhouse/install locks and native binaries remain private; hashes commit to those observed bytes and are not a distributed rebuild package or authentication.
 
-The new [Linux workflow](.github/workflows/linux.yml) follows the observed source-build/preparation/run path and passed actionlint 1.7.12 plus shell/Python syntax checks. Its GitHub Actions execution remains **UNRUN**. Other machines, runtime versions, distributions, reproducible binary bytes and production suitability are unverified.
+The new [Linux workflow](.github/workflows/linux.yml) follows the observed source-build/preparation/run path and passed actionlint 1.7.12 plus shell/Python syntax checks. GitHub Actions execution was **UNRUN** at this pre-publication local review stage. The initial Linux GitHub Actions fixed migration rehearsal run later passed for published commit [`fd31b227cac3edb72783d6a88674b56d5db5d1a5`](https://github.com/skyon0522-ai/schema-migration-rehearsal/commit/fd31b227cac3edb72783d6a88674b56d5db5d1a5) on 2026-10-16 (run [`38848337437`](https://github.com/skyon0522-ai/schema-migration-rehearsal/actions/runs/38848337437)). This result applies to that published commit. Other machines, runtime versions, distributions, reproducible binary bytes and production suitability are unverified.
 
 ## Earlier retained observations: 2026-10-09
 
@@ -60,7 +60,7 @@ The checks cover full source/rehearsal byte identity, retained notices, source-v
 
 The convenient try command uses 26 version pins and a new venv; observed pip 24.0 is separate bootstrap metadata. This convenience route is not the exact verified hash-controlled acquisition/build/install sequence and may resolve build dependencies. Both adapter execution and fresh dependency acquisition are now observed for the documented Linux x86_64/Python 3.12.3/existing PostgreSQL 18.6 profile. The unchanged adapter injects only metadata into an external working copy and selects the existing PostgreSQL shared directory; this harness creates no extensions.
 
-The distribution contains source, notices, artifact metadata and the proposed official-artifact hash lock. No native executables, dependency wheels, environments or caches are distributed; the unchanged upstream documentation PNG is retained as a manifest-bound source asset. The local-built-wheel install lock is not distributed. Root LICENSE remains upstream MIT; LICENSE.authored supplies MIT for authored coordination, documentation and adapters. [Redaction metadata](verification/redactions.json) records original and sanitized hashes while preserving observations. Remote CI, a different-machine run, a bit-reproducible build and fresh PostgreSQL installation were not performed.
+The distribution contains source, notices, artifact metadata and the proposed official-artifact hash lock. No native executables, dependency wheels, environments or caches are distributed; the unchanged upstream documentation PNG is retained as a manifest-bound source asset. The local-built-wheel install lock is not distributed. Root LICENSE remains upstream MIT; LICENSE.authored supplies MIT for authored coordination, documentation and adapters. [Redaction metadata](verification/redactions.json) records original and sanitized hashes while preserving observations. At the time of these earlier local checks, remote CI, a different-machine run, a bit-reproducible build and fresh PostgreSQL installation had not been performed.
 
 ### Limits preserved
 
@@ -105,8 +105,8 @@ also remains byte-identical to the prior staged candidate. The exact public
 profile, operation commands and limits are in
 [`verification/operations-20261016.json`](verification/operations-20261016.json)
 and [the walkthrough](docs/OPERATIONS.md). Private command logs and machine paths
-are kept outside the public candidate. Different-machine execution, remote CI,
-production use, publication and owner acceptance remain unperformed.
+are kept outside the public candidate. At this local operation-verification stage, different-machine execution, remote CI,
+production use, publication and owner acceptance had not yet occurred. The subsequent publication and initial CI success are recorded above.
 
 ### Cleanup traversal repair
 

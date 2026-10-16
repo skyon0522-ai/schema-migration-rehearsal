@@ -54,7 +54,7 @@ SCHEMA_ENV="$HOME/schema-migration-environment"
 
 ## Implementation and verification
 
-The preparation command, isolated runtime wrapper, offline report and focused safety checks are the authored additions. The existing migration runtime, SQL fixtures, worker and contract harness remain unchanged. [Verification](VERIFICATION.md) distinguishes the original baseline, dependency preparation, actual runtime observations and checks of saved records. [Research notes](RESEARCH.md) relate the compatibility and resume questions to the F1 schema-change paper without claiming to implement F1's distributed protocol.
+The preparation command, isolated runtime wrapper, offline report and focused safety checks are the authored additions. The existing migration runtime, SQL fixtures, worker and contract harness remain unchanged. [Verification](VERIFICATION.md) distinguishes the original baseline, dependency preparation, actual runtime observations and checks of saved records. The initial Linux GitHub Actions fixed migration rehearsal run passed for published commit [`fd31b227cac3edb72783d6a88674b56d5db5d1a5`](https://github.com/skyon0522-ai/schema-migration-rehearsal/commit/fd31b227cac3edb72783d6a88674b56d5db5d1a5) on 2026-10-16 (run [`38848337437`](https://github.com/skyon0522-ai/schema-migration-rehearsal/actions/runs/38848337437)). [Research notes](RESEARCH.md) relate the compatibility and resume questions to the F1 schema-change paper without claiming to implement F1's distributed protocol.
 
 ## Limits
 
