@@ -4,6 +4,10 @@
       "bytes": 8,
       "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da"
     },
+    ".github/workflows/linux.yml": {
+      "bytes": 3674,
+      "sha256": "e533fa08a8c174b8c76fafff51819150a86bbae2c3ca2a05e4f3ee7f0cea0bf0"
+    },
     ".gitignore": {
       "bytes": 30,
       "sha256": "22bc478fc0eb97818e8c2efd9a6c8f9dce55490bdd8074a3f2b6b8653c5c12d5"
@@ -17,24 +21,28 @@
       "sha256": "385bc3b6e8b12307d833fb81e09dcc3183cc3c75d7468f9207fd30c17b5b1ec3"
     },
     "NOTICE": {
-      "bytes": 1838,
-      "sha256": "a5be7761e4e74c0033f51806642a9bbea922d7e38b3347731c79cdf45707ef14"
+      "bytes": 1948,
+      "sha256": "1afd27c54008399a2e6d95be798f0b494ae32abbfe452027ea22a92b29a37c01"
     },
     "PROVENANCE.md": {
-      "bytes": 8260,
-      "sha256": "f73ef8be06f8ea093307f72b620908a608df04de7dd66f2a5e28daa2c94829f7"
+      "bytes": 9133,
+      "sha256": "436b0ebad2fb3e235de59044f929094b7911406bdb80d630b547994f5fe46dbe"
     },
     "README.md": {
-      "bytes": 8203,
-      "sha256": "21079af026b37f26774baab9ea77f3909da346e878dba4b20f8d4c7a007d18a3"
+      "bytes": 6216,
+      "sha256": "b8b53225d13c0dd6a7848d38addc86d86636c139426f7eb92fb350acf4ce506b"
     },
     "RESEARCH.md": {
       "bytes": 3880,
       "sha256": "bbab017b55bba3b3b8f8bb0be8e61878b63edccf88b5569415dd6e46f630bce4"
     },
+    "SECURITY.md": {
+      "bytes": 1618,
+      "sha256": "8f448f62e516d2e6f64644a31a5c44bf99eff1ff38b73ea8d11c649ebab1ad0b"
+    },
     "VERIFICATION.md": {
-      "bytes": 9241,
-      "sha256": "7ff1717296aaa76bc9c22851656f18d81489ae2492109cca10544c1b3b2e6699"
+      "bytes": 16977,
+      "sha256": "91ba53481ab0cfa606aa6d85a0f5877e9391c13848ceb28ec427bc5d79b2b7a6"
     },
     "components/alembic/.github/CODE_OF_CONDUCT.md": {
       "bytes": 2090,
@@ -816,6 +824,34 @@
       "bytes": 2948,
       "sha256": "6e348fba49e43afe403a6f6cf73cffb26010aaf03009675fbff329ccb60dfb62"
     },
+    "docs/LINUX.md": {
+      "bytes": 10589,
+      "sha256": "531905c9b989dec53306e3541ad43b72de52ea6a6009f98d16c5e97ccd73e867"
+    },
+    "docs/OPERATIONS.md": {
+      "bytes": 7933,
+      "sha256": "b59a334131bb5d62b79d537a75f084ba5f9d565db752908eac7a718201e1d476"
+    },
+    "docs/assets/report.png": {
+      "bytes": 91355,
+      "sha256": "9e367e7243fedadbef1c9c1f298f1bc94fd4f99fcfbc1198a7241b652d874ed0"
+    },
+    "examples/current/report.html": {
+      "bytes": 5691,
+      "sha256": "56756d609aa8fd52ed7332a6e92bf8280eccb9eb75dccd9fd8f96215c228cf8d"
+    },
+    "examples/current/review.json": {
+      "bytes": 2482,
+      "sha256": "4da891265b0d3422219a6d0798c384d5677c6f828ffc1573a220503db38ff5c0"
+    },
+    "examples/current/summary.txt": {
+      "bytes": 1658,
+      "sha256": "831f80f115924656dc8b90c15fd6d1ef1adc6690568171776c2d042e14c5f541"
+    },
+    "examples/linux-demo.sh": {
+      "bytes": 1355,
+      "sha256": "fb99ee84e80774e18d311c26abcddd15db3f9bf4d055ca2b6910431bf2549ef4"
+    },
     "rehearsal/LICENSE": {
       "bytes": 1059,
       "sha256": "6e68d94a03a0e3e327ddf3e86d1ebedc14eece3922022618fc246a36296fd0cc"
@@ -860,9 +896,29 @@
       "bytes": 57766,
       "sha256": "0d69e3f3fb86b2aa804b755a0ecae13a9cf6efd7e2d536a8636d2fd16b8eac3a"
     },
+    "tests/test_linux_setup.py": {
+      "bytes": 8439,
+      "sha256": "4c9a5405bc38ac374b4a770d59e702a1f6b16f4457913dd1b8ab04e5a3f7c3c1"
+    },
+    "tests/test_operations.py": {
+      "bytes": 5574,
+      "sha256": "3a2afefd6281ba435f825db7b8d8e6fb36f8c212881b3b4e0d7d61e910157e59"
+    },
+    "tests/test_report.py": {
+      "bytes": 11361,
+      "sha256": "7f5cc33de1d2e00bbd3c15aae2a2a012cdce800c6b24688c2b434d1d671256bf"
+    },
+    "tools/report.py": {
+      "bytes": 26741,
+      "sha256": "788a1ab7641f1b7bc506517aadb3a3807b2d29c666b3b732b9648091977f3687"
+    },
     "tools/run_contract.py": {
       "bytes": 6251,
       "sha256": "f8f171e9fda4c4a9bac83ce7e4a2ff0afd62f7c70c0dc2e5e503924fa0e77750"
+    },
+    "tools/sandbox.py": {
+      "bytes": 26044,
+      "sha256": "05c709893ed1322108491d4cd5b7f2ed371215564d7bc55cb9ad8b1e8f9c42d8"
     },
     "tools/verify_source.py": {
       "bytes": 2020,
@@ -1443,6 +1499,14 @@
     "verification/independent-review.md": {
       "bytes": 4045,
       "sha256": "de02dccf90e2b94f1a7788f76fb4a54fbe717754c9d66ddae5dd5b01a96eb3c4"
+    },
+    "verification/linux-20261015.json": {
+      "bytes": 3434,
+      "sha256": "09eaf55fa83735baa61ee524fb980becee272f9bf8e615b6a3bd91cc0e5bea77"
+    },
+    "verification/operations-20261016.json": {
+      "bytes": 4464,
+      "sha256": "95fb0ce0c53e132f2257405142749d5256bffb2fbfe96dbf867e72b8a8113446"
     },
     "verification/portable-existing/portable-run.json": {
       "bytes": 1583,

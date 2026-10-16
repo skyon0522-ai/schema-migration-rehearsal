@@ -1,0 +1,28 @@
+Schema Migration Rehearsal: consistent_record
+11 scenarios; 17 worker exits; recorded cluster and worker cleanup passed.
+Expected controls: 2 SIGKILL exits, 7 drift rejections, 1 old-reader incompatibility.
+stop_before_expansion: labels=sad,ok,happy; marker absent after kill; resume completed; second resume unchanged.
+stop_after_durable_expansion: labels=sad,ok,happy,soso; marker absent after kill; resume completed; second resume unchanged.
+
+Scenarios:
+normal_and_old_clients: Completed with compatible old-client operations
+stop_before_expansion: Completed with compatible old-client operations
+stop_after_durable_expansion: Completed with compatible old-client operations
+wrong_schema: Expected rejection
+wrong_type: Expected rejection
+wrong_table: Expected rejection
+wrong_gate: Expected rejection
+contradictory_marker: Expected rejection
+changed_original_row: Expected rejection
+wrong_label_order: Expected rejection
+activation_negative_control: Expected old-reader incompatibility
+
+Checks:
+complete_adapter_and_profile: passed
+materialized_source_bytes: passed
+eleven_cases_and_seventeen_workers: passed
+recorded_cluster_and_worker_cleanup: passed
+
+Adapter record SHA-256: 9e326e480a85b0f0243e1495756e179c29002be3532af454234e9f5af09f546e
+
+This screen checks saved, editable records for one synthetic PostgreSQL contract. It does not run a database, probe current processes or authenticate the records. Worker SIGKILL is not power-loss recovery. The fixed old-client gate is not a distributed deployment protocol or a production availability guarantee. Use stable owner-controlled files; concurrent hostile filesystem changes are outside this check.

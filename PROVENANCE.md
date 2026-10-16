@@ -26,7 +26,20 @@ The retained upstream MIT notice is Copyright 2009–2026 Michael Bayer. Root [L
 
 Fresh acquisition selected 25 official wheels and one psycopg2 source archive through official PyPI release metadata and artifact URLs; their published sizes/SHA-256 values matched. [Artifact metadata](verification/fresh/artifact-metadata.json) records those URLs and hashes, the Python/compiler/libpq profile and local driver build evidence. The inspected source requires setuptools≥70.1; a separate build environment used acquired setuptools 84.0.0 with no additional build-only distribution. Both new environments initially contained pip 24.0. Compiled/runtime libpq was 180006. This used the existing PostgreSQL 18.6 headers and libraries.
 
-The proposed [official-artifact hash lock](requirements.official-artifacts.hashed.lock) has 26 entries and SHA-256 `4f09da83a4eb96690032990e901240f1749d36baa11c92c6286ac6de645566ac`. It records the selected official wheels and psycopg2 source archive for the observed Linux x86_64 / CPython 3.12.3 profile. The actual installation used a separately recorded runtime-wheel hash lock and local wheelhouse with `--no-index --no-deps --require-hashes`. That local-built-wheel lock and wheel binaries remain private; their hashes appear only as profile-specific evidence. No standalone public acquisition/build script, bit-reproducible rebuild or cross-machine validation is claimed.
+The [official-artifact hash lock](requirements.official-artifacts.hashed.lock) has 26 entries and SHA-256 `4f09da83a4eb96690032990e901240f1749d36baa11c92c6286ac6de645566ac`. It records the selected official wheels and psycopg2 source archive for the observed Linux x86_64 / CPython 3.12.3 profile. The actual installation used a separately recorded runtime-wheel hash lock and local wheelhouse with `--no-index --no-deps --require-hashes`. That local-built-wheel lock and wheel binaries remain private; their hashes appear only as profile-specific evidence. The later authored `tools/sandbox.py prepare` automates this recorded acquisition/build/install route. No bit-reproducible rebuild or cross-machine validation is claimed.
+
+## Operation additions
+
+The operation walkthrough and `examples/linux-demo.sh` reuse the existing doctor,
+prepare, run and offline-report commands. `tools/report.py` now supports read-only
+terminal/JSON inspection and writes `summary.txt` beside generated HTML/JSON.
+`tools/sandbox.py cleanup` checks an explicitly selected stopped wrapper-owned
+run and removes it only with `--remove`; it never removes prepared environments.
+Its local matching ownership records help prevent accidental selection but are
+editable and unauthenticated. These changes do not alter `tools/run_contract.py`,
+the 195 imported Alembic files or the eight protected rehearsal files. The
+inspected implementation references are the retained Alembic autocommit method
+and enum test above, and the existing wrapper/report exclusive-output patterns.
 
 Historical PostgreSQL test bootstrap needed `citext` and `hstore`. Only those contrib modules were built into a private task directory from verified PostgreSQL 18.6 source; the existing PostgreSQL installation was unchanged. The [source-verification receipt](verification/environment/test-extension-source-verification.json) retains the 48 source/license readbacks and official archive SHA-256 `555610c24d53e4316da5b7d3fc25c279d96856d5e0e23ee308c328c5fa881d9f`. Its control-file adaptation used task-local library paths, and `extension_control_path` selected task-local controls. Those built libraries are not distributed here. The improvement harness does not create either extension and does not use the upstream pytest bootstrap.
 

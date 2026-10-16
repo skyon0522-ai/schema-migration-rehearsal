@@ -14,8 +14,9 @@ LICENSE.authored supplies the MIT notice:
 Copyright (c) 2026 skyon0522-ai. It covers task-authored coordination in
 rehearsal/worker.py and rehearsal/check_contract.py, authored gate/table/marker
 and observation/activation portions of the four SQL files, root authored
-documentation/provenance metadata, and tools/verify_source.py and
-tools/run_contract.py. It does not replace upstream or dependency licenses,
+documentation/provenance metadata, tools/verify_source.py, tools/run_contract.py,
+tools/sandbox.py, tools/report.py, authored tests, examples/linux-demo.sh and
+the generated report/summary examples. It does not replace upstream or dependency licenses,
 reassign imported/derived authorship, or remove Michael Bayer attribution.
 
 The retained dependency notice files describe the historical installed set;

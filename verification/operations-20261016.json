@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "observation_date_jst": "2026-10-16",
+  "scope": "Local operation acceptance on existing Ubuntu 24.04 WSL; paths below are placeholders, not unredacted command logs.",
+  "status": "passed",
+  "profile": {
+    "python": "3.12.3",
+    "bootstrap_pip": "24.0",
+    "postgresql": "18.6",
+    "compiled_libpq": 180006,
+    "runtime_libpq": 180006,
+    "dependency_pins": 26,
+    "installed_distributions_including_pip": 27
+  },
+  "installation": {
+    "fresh_native_checkout_and_application_environments": true,
+    "official_artifacts_newly_downloaded_and_hash_checked": 26,
+    "pip_cache_used": false,
+    "existing_postgresql_binaries_reused": true,
+    "new_postgresql_build": false,
+    "fresh_os": false,
+    "sudo_or_system_package_changes": false
+  },
+  "commands": [
+    {"command": "bash -n examples/linux-demo.sh", "exit_code": 0},
+    {"command": "bash examples/linux-demo.sh PYTHON_3_12_3 PG_18_6_BIN WORK_PARENT", "phase": "first use", "exit_code": 0},
+    {"command": "bash examples/linux-demo.sh PYTHON_3_12_3 PG_18_6_BIN WORK_PARENT", "phase": "repeat", "exit_code": 0},
+    {"command": "python3.12 -B tools/report.py --run SECOND_RUN", "exit_code": 0},
+    {"command": "python3.12 -B tools/report.py --run SECOND_RUN --json", "exit_code": 0},
+    {"command": "SCHEMA_RECORDED_RUN=SECOND_RUN python3.12 -B -m unittest discover -s tests -v", "exit_code": 0, "tests": 53},
+    {"command": "python3.12 -B tools/sandbox.py cleanup --run-parent FIRST_RUN_PARENT", "exit_code": 0, "removed": false},
+    {"command": "python3.12 -B tools/sandbox.py cleanup --run-parent FIRST_RUN_PARENT --remove", "exit_code": 0, "removed": true}
+  ],
+  "observations": {
+    "full_rehearsals": 2,
+    "adapter_invocations_per_rehearsal": 1,
+    "scenarios_per_rehearsal": 11,
+    "worker_exits_per_rehearsal": 17,
+    "recorded_cluster_and_worker_cleanup_per_rehearsal": "passed",
+    "repeat_environment_receipt_runtime_lock_and_install_report_unchanged": true,
+    "first_run_removed_after_retaining_records_and_report_outside_it": true,
+    "second_raw_run_and_prepared_environment_retained": true,
+    "protected_alembic_files_unchanged": 195,
+    "protected_rehearsal_files_unchanged": 8,
+    "contract_adapter_unchanged": true
+  },
+  "negative_cases": [
+    "missing PostgreSQL bin directory: exit 2, no work state created",
+    "mounted output parent: exit 2, no work state created",
+    "work parent as cleanup target: exit 2, retained",
+    "prepared environment as cleanup target: exit 2, retained",
+    "unit checks: altered ownership, foreign contents, top/nested symlinks and postmaster.pid refuse removal",
+    "unit checks: incomplete saved evidence returns failure and terminal inspection creates no output"
+  ],
+  "cleanup_traversal_repair": {
+    "status": "worker_verified_independent_closure_pending",
+    "finding": "Default os.walk error handling skipped an unreadable descendant and allowed partial deletion before failure.",
+    "change": "Raise on any traversal error before cleanup can reach shutil.rmtree.",
+    "regression": "Real nested mode 000 directory with postmaster.pid and binary evidence; inspection and explicit removal refused with every original file name and byte retained.",
+    "commands": [
+      {"command": "python3.12 -B -m unittest discover -s tests -p test_operations.py -v", "exit_code": 0, "tests": 7, "skipped": 0},
+      {"command": "SCHEMA_RECORDED_RUN=SECOND_RUN python3.12 -B -m unittest discover -s tests -v", "exit_code": 0, "tests": 54, "skipped": 0},
+      {"command": "python3.12 -B tools/verify_source.py", "exit_code": 0, "protected_alembic_files": 195, "protected_rehearsal_files": 8, "changed": []}
+    ],
+    "runtime_and_test_bytes_match_native_checkout": true,
+    "original_53_test_logs_and_independent_finding_retained": true,
+    "installation_or_database_rehearsal_repeated": false,
+    "retained_environment_and_run_receipts_unchanged": true
+  },
+  "limits": [
+    "Saved records and ownership markers are editable and unauthenticated.",
+    "The fixed contract tests worker SIGKILL, not power loss or arbitrary migrations.",
+    "No concurrent schema writers, distributed rollout or zero-downtime guarantee.",
+    "Different machine, remote CI, production use, publication and owner acceptance unperformed.",
+    "Concurrent filesystem changes between inspection and deletion are not atomically excluded; independent closure of the cleanup finding remains pending."
+  ]
+}

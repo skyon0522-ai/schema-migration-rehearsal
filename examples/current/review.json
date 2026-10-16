@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "status": "consistent_record",
+  "evidence_passed": true,
+  "input_record_sha256": "9e326e480a85b0f0243e1495756e179c29002be3532af454234e9f5af09f546e",
+  "checks": {
+    "complete_adapter_and_profile": true,
+    "materialized_source_bytes": true,
+    "eleven_cases_and_seventeen_workers": true,
+    "recorded_cluster_and_worker_cleanup": true
+  },
+  "cases": [
+    {
+      "case": "normal_and_old_clients",
+      "outcome": "Completed with compatible old-client operations"
+    },
+    {
+      "case": "stop_before_expansion",
+      "outcome": "Completed with compatible old-client operations"
+    },
+    {
+      "case": "stop_after_durable_expansion",
+      "outcome": "Completed with compatible old-client operations"
+    },
+    {
+      "case": "wrong_schema",
+      "outcome": "Expected rejection"
+    },
+    {
+      "case": "wrong_type",
+      "outcome": "Expected rejection"
+    },
+    {
+      "case": "wrong_table",
+      "outcome": "Expected rejection"
+    },
+    {
+      "case": "wrong_gate",
+      "outcome": "Expected rejection"
+    },
+    {
+      "case": "contradictory_marker",
+      "outcome": "Expected rejection"
+    },
+    {
+      "case": "changed_original_row",
+      "outcome": "Expected rejection"
+    },
+    {
+      "case": "wrong_label_order",
+      "outcome": "Expected rejection"
+    },
+    {
+      "case": "activation_negative_control",
+      "outcome": "Expected old-reader incompatibility"
+    }
+  ],
+  "interruptions": [
+    {
+      "case": "stop_before_expansion",
+      "labels_after_kill": [
+        "sad",
+        "ok",
+        "happy"
+      ],
+      "marker_after_kill": false,
+      "worker_exit": -9,
+      "resumed": true,
+      "second_resume_unchanged": true
+    },
+    {
+      "case": "stop_after_durable_expansion",
+      "labels_after_kill": [
+        "sad",
+        "ok",
+        "happy",
+        "soso"
+      ],
+      "marker_after_kill": false,
+      "worker_exit": -9,
+      "resumed": true,
+      "second_resume_unchanged": true
+    }
+  ],
+  "worker_count": 17,
+  "scope": "This screen checks saved, editable records for one synthetic PostgreSQL contract. It does not run a database, probe current processes or authenticate the records. Worker SIGKILL is not power-loss recovery. The fixed old-client gate is not a distributed deployment protocol or a production availability guarantee. Use stable owner-controlled files; concurrent hostile filesystem changes are outside this check.",
+  "failure_stage": null
+}

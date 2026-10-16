@@ -1,0 +1,77 @@
+name: Linux fixed migration rehearsal
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  linux:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12.3'
+      - name: Native build prerequisites on this disposable runner
+        run: |
+          sudo apt-get update
+          sudo apt-get install --no-install-recommends -y build-essential bison flex perl zlib1g-dev curl ca-certificates bzip2
+      - name: Verify and build PostgreSQL 18.6 in a new task directory
+        env:
+          SCHEMA_PG_WORK: ${{ runner.temp }}/schema-postgresql-18.6
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir "$SCHEMA_PG_WORK"
+          curl --fail --location --proto '=https' --tlsv1.2 \
+            https://ftp.postgresql.org/pub/source/v18.6/postgresql-18.6.tar.bz2 \
+            --output "$SCHEMA_PG_WORK/postgresql-18.6.tar.bz2"
+          printf '%s  %s\n' 555610c24d53e4316da5b7d3fc25c279d96856d5e0e23ee308c328c5fa881d9f \
+            "$SCHEMA_PG_WORK/postgresql-18.6.tar.bz2" | sha256sum --check -
+          mkdir "$SCHEMA_PG_WORK/source" "$SCHEMA_PG_WORK/build"
+          tar -xjf "$SCHEMA_PG_WORK/postgresql-18.6.tar.bz2" -C "$SCHEMA_PG_WORK/source"
+          cd "$SCHEMA_PG_WORK/build"
+          "$SCHEMA_PG_WORK/source/postgresql-18.6/configure" \
+            --prefix="$SCHEMA_PG_WORK/install" --without-icu --without-readline
+          make -j2 all
+          make install
+      - name: Doctor, hash-checked fresh preparation, one rehearsal and tests
+        env:
+          SCHEMA_PG_BIN: ${{ runner.temp }}/schema-postgresql-18.6/install/bin
+          SCHEMA_ENV: ${{ runner.temp }}/schema-runtime
+        shell: python
+        run: |
+          import json
+          import os
+          import subprocess
+          import sys
+          base = [sys.executable, '-B', 'tools/sandbox.py']
+          subprocess.run([*base, 'doctor', '--python', sys.executable, '--pg-bin', os.environ['SCHEMA_PG_BIN'],
+                          '--output-parent', os.environ['RUNNER_TEMP']], check=True)
+          subprocess.run([*base, 'prepare', '--python', sys.executable, '--pg-bin', os.environ['SCHEMA_PG_BIN'],
+                          '--work-dir', os.environ['SCHEMA_ENV']], check=True)
+          run = subprocess.run([*base, 'run', '--environment', os.environ['SCHEMA_ENV'],
+                                '--output-parent', os.environ['RUNNER_TEMP']], capture_output=True, text=True)
+          print(run.stdout)
+          print(run.stderr, file=sys.stderr)
+          if run.returncode:
+              raise SystemExit(run.returncode)
+          record = json.loads(run.stdout)
+          env = os.environ.copy()
+          env['SCHEMA_RECORDED_RUN'] = record['run']
+          subprocess.run([sys.executable, '-B', '-m', 'unittest', 'discover', '-s', 'tests', '-v'], env=env, check=True)
+      - name: Preserve report and setup diagnostics
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: linux-rehearsal-evidence
+          if-no-files-found: warn
+          path: |
+            ${{ runner.temp }}/schema-postgresql-18.6/build/config.log
+            ${{ runner.temp }}/schema-runtime/environment.json
+            ${{ runner.temp }}/schema-runtime/logs/
+            ${{ runner.temp }}/schema-run-*/run-wrapper.json
+            ${{ runner.temp }}/schema-run-*/adapter.*.log
+            ${{ runner.temp }}/schema-run-*/schema-migration-*/report/
